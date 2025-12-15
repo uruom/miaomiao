@@ -1,0 +1,16 @@
+{
+  "project_summary": {
+    "theme": "男主作为一个程序员穿越到了一个玄幻小说中，他惊奇的发现所谓的修仙竟然只是编程",
+    "total_chapters": 3,
+    "generated_chapters": 3,
+    "completion_time": "2025-10-02 17:44:57"
+  },
+  "files": {
+    "outline": "novel_outline_*.json and novel_outline_*.txt",
+    "chapters": [
+      "novel_chapter_1_*.json and novel_chapter_1_*.txt",
+      "novel_chapter_2_*.json and novel_chapter_2_*.txt",
+      "novel_chapter_3_*.json and novel_chapter_3_*.txt"
+    ]
+  }
+}
