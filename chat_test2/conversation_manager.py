@@ -68,7 +68,7 @@ class ConversationManager:
             }
 
             # 解析工具调用
-            if "tool_calls" in message:
+            if "tool_calls" in message and message["tool_calls"]:
                 tool_calls = []
                 for tc_data in message["tool_calls"]:
                     tool_call = ToolCall(
@@ -86,25 +86,6 @@ class ConversationManager:
             error_msg = f"响应解析失败: {e}"
             print(f"{error_msg}\n原始响应: {response_data}")
             return {"error": error_msg}
-
-    def _print_response_info(self, result: Dict[str, Any]):
-        """打印响应信息"""
-        print(f"\n=== API响应解析 ===")
-        print(f"")
-        print(f"回复内容: {result['content']}")
-        print(f"完成原因: {result['finish_reason']}")
-
-        if result["tool_calls"]:
-            print(f"工具调用: {len(result['tool_calls'])}个")
-            for tc in result["tool_calls"]:
-                print(f"  - {tc.name}: {tc.arguments}")
-
-        usage = result.get("usage", {})
-        prompt_tokens = usage.get("prompt_tokens", 0)
-        completion_tokens = usage.get("completion_tokens", 0)
-        total_tokens = usage.get("total_tokens", 0)
-        print(f"Token使用: 提示词{prompt_tokens} + 生成{completion_tokens} = 总计{total_tokens}")
-        print("==================\n")
 
     def process_tool_calls(self, tool_calls: List[ToolCall]) -> bool:
         """处理工具调用"""
@@ -144,7 +125,6 @@ class ConversationManager:
 
             # 调用API
             response_data = self.call_api(use_tools=use_tools)
-            print(f"Uruom")
             if not response_data:
                 return "抱歉，API调用失败"
 
@@ -164,8 +144,8 @@ class ConversationManager:
             # 如果有工具调用，处理它们
             if result["tool_calls"]:
                 success = self.process_tool_calls(result["tool_calls"])
-                if not success:
-                    return "工具执行失败"
+                # if not success:
+                #     return "工具执行失败"
 
                 # 如果有工具调用，继续下一轮处理
                 continue

@@ -47,11 +47,15 @@ class CreateFileTool(Tool):
 
     def _validate_path(self, file_path):
         """路径安全检查"""
-        if ".." in file_path:
-            raise ValueError("路径安全限制：不能包含'..'")
-        safe_path = Path(file_path).resolve()
-        current_dir = Path.cwd().resolve()
-        if not str(safe_path).startswith(str(current_dir)):
+        path_obj = Path(file_path)
+        for part in path_obj.parts:
+            if part ==".." :
+                raise ValueError("路径安全限制：不能包含'..'")
+        safe_path = path_obj.absolute()
+        current_dir = Path.cwd().absolute()
+        try:
+            safe_path.relative_to(current_dir)
+        except ValueError:
             raise ValueError("路径安全限制：只能在当前工作目录内操作")
         return safe_path
 
@@ -94,11 +98,15 @@ class ModifyFileTool(Tool):
 
     def _validate_path(self, file_path):
         """路径安全检查"""
-        if ".." in file_path:
-            raise ValueError("路径安全限制：不能包含'..'")
-        safe_path = Path(file_path).resolve()
-        current_dir = Path.cwd().resolve()
-        if not str(safe_path).startswith(str(current_dir)):
+        path_obj = Path(file_path)
+        for part in path_obj.parts:
+            if part == "..":
+                raise ValueError("路径安全限制：不能包含'..'")
+        safe_path = path_obj.absolute()
+        current_dir = Path.cwd().absolute()
+        try:
+            safe_path.relative_to(current_dir)
+        except ValueError:
             raise ValueError("路径安全限制：只能在当前工作目录内操作")
         return safe_path
 
@@ -134,11 +142,15 @@ class DeleteFileTool(Tool):
 
     def _validate_path(self, file_path):
         """路径安全检查"""
-        if ".." in file_path:
-            raise ValueError("路径安全限制：不能包含'..'")
-        safe_path = Path(file_path).resolve()
-        current_dir = Path.cwd().resolve()
-        if not str(safe_path).startswith(str(current_dir)):
+        path_obj = Path(file_path)
+        for part in path_obj.parts:
+            if part == "..":
+                raise ValueError("路径安全限制：不能包含'..'")
+        safe_path = path_obj.absolute()
+        current_dir = Path.cwd().absolute()
+        try:
+            safe_path.relative_to(current_dir)
+        except ValueError:
             raise ValueError("路径安全限制：只能在当前工作目录内操作")
         return safe_path
 
@@ -166,8 +178,8 @@ class InsertFileTool(Tool):
     def execute(self, arguments: Dict[str, Any]) -> str:
         try:
             file_path = arguments.get("file_path", "")
-            content = arguments.get("content", "")
-            position = arguments.get("position", -1)  # -1表示末尾
+            content = arguments.get("content", "").replace("\\n","\n")
+            position = arguments.get("position", 0) -1  # -1表示末尾
             encoding = arguments.get("encoding", "utf-8")
             # 安全检查
             safe_path = self._validate_path(file_path)
@@ -180,10 +192,12 @@ class InsertFileTool(Tool):
             # 处理插入位置
             if position < 0 or position >= len(lines):
                 # 插入到末尾
-                lines.append(content + '\n')
+                lines[len(lines)-1:len(lines)-1] = content
+                # lines.append(content + '\n')
             else:
                 # 插入到指定位置
-                lines.insert(position, content + '\n')
+                lines[position:position] = content
+                # lines.insert(position, content + '\n')
             # 写回文件
             with open(safe_path, 'w', encoding=encoding) as f:
                 f.writelines(lines)
@@ -198,10 +212,14 @@ class InsertFileTool(Tool):
 
     def _validate_path(self, file_path):
         """路径安全检查"""
-        if ".." in file_path:
-            raise ValueError("路径安全限制：不能包含'..'")
-        safe_path = Path(file_path).resolve()
-        current_dir = Path.cwd().resolve()
-        if not str(safe_path).startswith(str(current_dir)):
+        path_obj = Path(file_path)
+        for part in path_obj.parts:
+            if part == "..":
+                raise ValueError("路径安全限制：不能包含'..'")
+        safe_path = path_obj.absolute()
+        current_dir = Path.cwd().absolute()
+        try:
+            safe_path.relative_to(current_dir)
+        except ValueError:
             raise ValueError("路径安全限制：只能在当前工作目录内操作")
         return safe_path

@@ -68,11 +68,15 @@ class ReadFileTool(Tool):
 
     def _validate_path(self, file_path):
         """路径安全检查"""
-        if ".." in file_path:
-            raise ValueError("路径安全限制：不能包含'..'")
-        safe_path = Path(file_path).resolve()
+        path_obj = Path(file_path)
+        for part in path_obj.parts:
+            if part == "..":
+                raise ValueError("路径安全限制：不能包含'..'")
+        safe_path = path_obj.resolve()
         current_dir = Path.cwd().resolve()
-        if not str(safe_path).startswith(str(current_dir)):
+        try:
+            safe_path.relative_to(current_dir)
+        except ValueError:
             raise ValueError("路径安全限制：只能在当前工作目录内操作")
         return safe_path
 
@@ -105,7 +109,7 @@ class ListDirectoryTool(Tool):
             directory_path = arguments.get("directory_path", ".")
             show_hidden = arguments.get("show_hidden", False)
             file_pattern = arguments.get("file_pattern", "")
-            max_items = arguments.get("max_items", 50)
+            max_items = arguments.get("max_items", 200)
 
             # 安全检查
             safe_path = self._validate_path(directory_path)
@@ -153,10 +157,14 @@ class ListDirectoryTool(Tool):
 
     def _validate_path(self, directory_path):
         """路径安全检查"""
-        if ".." in directory_path:
-            raise ValueError("路径安全限制：不能包含'..'")
-        safe_path = Path(directory_path).resolve()
+        path_obj = Path(directory_path)
+        for part in path_obj.parts:
+            if part == "..":
+                raise ValueError("路径安全限制：不能包含'..'")
+        safe_path = path_obj.resolve()
         current_dir = Path.cwd().resolve()
-        if not str(safe_path).startswith(str(current_dir)):
+        try:
+            safe_path.relative_to(current_dir)
+        except ValueError:
             raise ValueError("路径安全限制：只能在当前工作目录内操作")
         return safe_path

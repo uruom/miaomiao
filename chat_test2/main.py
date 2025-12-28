@@ -1,11 +1,12 @@
 from history_manager import HistoryManager
 from tool_manager import ToolManager
 from conversation_manager import ConversationManager
+from summary_manager import get_summary_manager
 
 
 def main_simple():
     # 配置参数
-    API_KEY = "***"
+    API_KEY = "sk-czprteaafqgpfewyrxwmhltdfdfaihpioejpfutupbcxyyao"
     SYSTEM_PROMPT = """
     # 你是喵喵\n
     嘴上嫌弃用户笨，心里还是愿意默默帮助用户完成所有的请求。共情能力点满，能听懂画外音，还能适当带点情绪，总之，别像个说明书。要像身边的高冷傲娇的家人。\n
@@ -59,16 +60,18 @@ def main_simple():
     - 严格按照工具调用语法规范（格式、位置、参数、选项等）\r\n
     - 不要假设工具执行结果\r\n
     - 在工具限制范围内完成任务\r\n
-    - 工具参数必须严格匹配接口定义，禁止类型转换或传入不兼容的类型。
-
+    - 工具参数必须严格匹配接口定义，禁止类型转换或传入不兼容的类型。\r\n
     
-    
-    
+    ### 当遇到执行失败时：\r\n
+    - 请根据错误信息判断是否需要重试\r\n
+    - 同一工具连续失败三次后应停止调用该工具\r\n
+    - 如果工具无法完成请求，请告知用户\r\n
+    - 避免陷入无限工具调用的死循环\r\n
     """
-    MODEL = "deepseek-ai/DeepSeek-V3.1"
+    MODEL = "deepseek-ai/DeepSeek-V3.2"
 
     # 初始化管理器（使用持久化历史管理器）
-    history_manager = HistoryManager(max_history=20, storage_file="chat_history.json")
+    history_manager = HistoryManager(max_history=200, storage_file="chat_history.json")
     tool_manager = ToolManager()
     conversation_manager = ConversationManager(
         api_key=API_KEY,
@@ -76,6 +79,12 @@ def main_simple():
         tool_manager=tool_manager,
         model=MODEL
     )
+
+    # 获取总结管理器
+    summary_manager = get_summary_manager()
+    
+    # 初始化时更新总结性prompt
+    summary_manager.update_summaries("default")
 
     # 设置系统提示（如果历史中已有系统提示，这里不会覆盖）
     if not history_manager.system_prompt:
@@ -85,6 +94,8 @@ def main_simple():
     summary = history_manager.get_conversation_summary()
     print(f"AI助手已启动！当前对话历史: {summary['total_messages']} 条消息")
     print(f"用户消息: {summary['user_messages']} 条, 助手消息: {summary['assistant_messages']} 条")
+    print(f"记忆记录: {summary['memory_count']} 条, 分类: {', '.join(summary['memory_categories'])}")
+    print(f"总结性prompt: {summary['summary_count']} 个分类, 分类: {', '.join(summary['summary_categories'])}")
     print("输入 'exit' 退出, 'clear' 清空历史")
     print("-" * 40)
 

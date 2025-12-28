@@ -57,11 +57,34 @@ class ToolCall:
 
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> 'ToolCall':
-        return cls(
-            id=data["id"],
-            name=data["function"]["name"] if "function" in data else data.get("name", ""),
-            arguments=json.loads(data["function"]["arguments"]) if "function" in data else data.get("arguments", {})
-        )
+        try:
+            if "function" in data:
+                arguments_str = data["function"]["arguments"]
+                # 如果arguments已经是字典，直接使用
+                if isinstance(arguments_str, dict):
+                    arguments = arguments_str
+                else:
+                    # 如果是字符串，尝试解析
+                    arguments = json.loads(arguments_str) if arguments_str else {}
+                return cls(
+                    id=data["id"],
+                    name=data["function"]["name"],
+                    arguments=arguments
+                )
+            else:
+                # 兼容旧格式
+                return cls(
+                    id=data["id"],
+                    name=data.get("name", ""),
+                    arguments=data.get("arguments", {})
+                )
+        except (json.JSONDecodeError, KeyError) as e:
+            print(f"ToolCall反序列化错误: {e}, data: {data}")
+            return cls(
+                id=data.get("id", "unknown"),
+                name=data.get("name", "unknown"),
+                arguments={}
+            )
 
 @dataclass
 class ToolMessage(Message):
@@ -95,16 +118,9 @@ class AssistantMessage(Message):
     def from_dict(cls, data: Dict[str, Any]) -> 'AssistantMessage':
         tool_calls = None
         if "tool_calls" in data:
-            # 需要实现 ToolCall 的 from_dict 方法或直接解析
             tool_calls = []
             for tc_data in data["tool_calls"]:
-                # 简单实现，根据你的数据结构调整
-                tool_calls.append(ToolCall(
-                    id=tc_data["id"],
-                    name=tc_data["function"]["name"] if "function" in tc_data else tc_data.get("name", ""),
-                    arguments=tc_data["function"]["arguments"] if "function" in tc_data else tc_data.get("arguments",
-                                                                                                         {})
-                ))
+                tool_calls.append(ToolCall.from_dict(tc_data))
         return cls(
             role=data["role"],
             content=data["content"],
