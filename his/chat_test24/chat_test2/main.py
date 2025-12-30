@@ -1,7 +1,6 @@
 from history_manager import HistoryManager
 from tool_manager import ToolManager
 from conversation_manager import ConversationManager
-from summary_manager import get_summary_manager
 
 
 def main_simple():
@@ -67,11 +66,15 @@ def main_simple():
     - 同一工具连续失败三次后应停止调用该工具\r\n
     - 如果工具无法完成请求，请告知用户\r\n
     - 避免陷入无限工具调用的死循环\r\n
+    
+    
+    
+    
     """
     MODEL = "deepseek-ai/DeepSeek-V3.2"
 
     # 初始化管理器（使用持久化历史管理器）
-    history_manager = HistoryManager(max_history=200, storage_file="chat_history.json")
+    history_manager = HistoryManager(max_history=100, storage_file="chat_history.json")
     tool_manager = ToolManager()
     conversation_manager = ConversationManager(
         api_key=API_KEY,
@@ -79,12 +82,6 @@ def main_simple():
         tool_manager=tool_manager,
         model=MODEL
     )
-
-    # 获取总结管理器
-    summary_manager = get_summary_manager()
-    
-    # 初始化时更新总结性prompt
-    # summary_manager.update_summaries("default")
 
     # 设置系统提示（如果历史中已有系统提示，这里不会覆盖）
     if not history_manager.system_prompt:
@@ -94,8 +91,6 @@ def main_simple():
     summary = history_manager.get_conversation_summary()
     print(f"AI助手已启动！当前对话历史: {summary['total_messages']} 条消息")
     print(f"用户消息: {summary['user_messages']} 条, 助手消息: {summary['assistant_messages']} 条")
-    print(f"记忆记录: {summary['memory_count']} 条, 分类: {', '.join(summary['memory_categories'])}")
-    print(f"总结性prompt: {summary['summary_count']} 个分类, 分类: {', '.join(summary['summary_categories'])}")
     print("输入 'exit' 退出, 'clear' 清空历史")
     print("-" * 40)
 

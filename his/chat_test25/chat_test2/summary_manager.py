@@ -1,7 +1,6 @@
 # summary_manager.py
 import json
 import os
-import requests
 from typing import Dict, Any, List, Optional
 from datetime import datetime
 from memory_manager import get_memory_manager
@@ -24,11 +23,6 @@ class SummaryManager:
             "task": "任务需求",
             "technical": "技术相关"
         }
-        
-        # API配置 - 与conversation_manager保持一致
-        self.api_key = "sk-czprteaafqgpfewyrxwmhltdfdfaihpioejpfutupbcxyyao"
-        self.model = "deepseek-ai/DeepSeek-V3.1"
-        self.api_url = "https://api.siliconflow.cn/v1/chat/completions"
         
     def load_summaries(self):
         """加载总结文件"""
@@ -53,88 +47,16 @@ class SummaryManager:
         except IOError as e:
             print(f"保存总结文件失败: {e}")
             
-    def call_model_for_summary(self, category: str, memories: List[str]) -> Optional[str]:
-        """调用模型生成总结"""
-        if not memories:
-            return None
-            
-        try:
-            # 准备调用模型的prompt
-            category_name = self.categories.get(category, category)
-            memory_text = "\n".join([f"- {memory}" for memory in memories])
-            
-            # 构建总结请求的prompt
-            prompt = f"""你是喵喵的副脑，负责对用户的记忆进行总结和归纳。
-
-当前需要总结的类别是：{category_name}
-
-以下是相关的记忆内容：
-{memory_text}
-
-请根据以上记忆内容，生成一段简洁、准确的总结性描述。总结应该：
-1. 概括核心信息
-2. 保持语言简洁
-3. 突出重要内容
-4. 使用自然的中文表达
-
-请直接输出总结内容，不要添加额外的解释或格式。"""
-            
-            # 构建API请求 - 参照conversation_manager.py的真实调用方式
-            headers = {
-                "Authorization": f"Bearer {self.api_key}",
-                "Content-Type": "application/json"
-            }
-            
-            payload = {
-                "model": self.model,
-                "messages": [
-                    {"role": "user", "content": prompt}
-                ],
-                "temperature": 0.3,  # 使用较低的温度以获得更稳定的总结
-                "max_tokens": 500
-            }
-            
-            # 调用API
-            response = requests.post(self.api_url, headers=headers, json=payload, timeout=300000)
-            response.raise_for_status()
-            response_data = response.json()
-            
-            # 解析响应
-            if response_data and "choices" in response_data and response_data["choices"]:
-                choice = response_data["choices"][0]
-                message = choice.get("message", {})
-                summary = message.get("content", "").strip()
-                
-                if summary:
-                    print(f"成功生成{category_name}总结")
-                    return summary
-                else:
-                    print(f"模型返回的总结内容为空")
-                    return None
-            else:
-                print(f"API响应格式异常: {response_data}")
-                return None
-                
-        except requests.exceptions.RequestException as e:
-            print(f"调用模型生成总结失败（网络错误）: {e}")
-            return None
-        except json.JSONDecodeError as e:
-            print(f"调用模型生成总结失败（JSON解析错误）: {e}")
-            return None
-        except Exception as e:
-            print(f"调用模型生成总结失败: {e}")
-            return None
-            
-    def generate_category_summary(self, category: str, memories: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
+    def generate_category_summary(self, category: str, memories: List[Dict[str, Any]]) -> str:
         """为特定分类生成总结性prompt"""
         if not memories:
-            return None
+            return ""
             
         # 获取该分类的所有记忆内容
-        category_memories = [m for m in memories if m.get("type") == category]
+        category_memories = [m for m in memories if m.get("category") == category]
         
         if not category_memories:
-            return None
+            return ""
             
         # 提取内容并去重
         contents = []
@@ -146,25 +68,20 @@ class SummaryManager:
                 contents.append(content)
                 
         if not contents:
-            return None
+            return ""
             
-        # 调用模型生成总结
-        summary_text = self.call_model_for_summary(category, contents)
+        # 生成总结性prompt
+        category_name = self.categories.get(category, category)
         
-        if not summary_text:
-            # 如果模型调用失败，使用简单总结
-            category_name = self.categories.get(category, category)
-            if len(contents) <= 3:
-                summary_text = f"{category_name}：{'；'.join(contents)}"
-            else:
-                summary_text = f"{category_name}（最近记录）：{'；'.join(contents[-3:])}"
-                
-        # 返回总结数据
-        return {
-            "summary": summary_text,
-            "last_updated": datetime.now().isoformat(),
-            "memory_count": len(category_memories)
-        }
+        # 如果内容较少，直接连接
+        if len(contents) <= 3:
+            summary = f"{category_name}：{'；'.join(contents)}"
+        else:
+            # 内容较多时，取最近的一些内容
+            recent_contents = contents[-3:]  # 取最近3条
+            summary = f"{category_name}（最近记录）：{'；'.join(recent_contents)}"
+            
+        return summary
         
     def update_summaries(self, user_id: str = "default"):
         """更新所有分类的总结性prompt"""
@@ -185,15 +102,16 @@ class SummaryManager:
         # 为每个分类生成总结
         updated = False
         for category in self.categories:
-            summary_data = self.generate_category_summary(category, memories)
+            summary = self.generate_category_summary(category, memories)
             
-            if summary_data:
-                if category not in self.summaries[user_id]["summaries"]:
-                    self.summaries[user_id]["summaries"][category] = {}
-                    
-                self.summaries[user_id]["summaries"][category] = summary_data
+            if summary:
+                self.summaries[user_id]["summaries"][category] = {
+                    "content": summary,
+                    "last_updated": datetime.now().isoformat(),
+                    "category_name": self.categories[category],
+                    "memory_count": len([m for m in memories if m.get("category") == category])
+                }
                 updated = True
-                print(f"更新了 {category} 分类的总结")
                 
         if updated:
             self.summaries[user_id]["last_updated"] = datetime.now().isoformat()
@@ -212,9 +130,9 @@ class SummaryManager:
         # 生成喵喵副脑格式的prompt
         summary_parts = []
         for category, data in summaries.items():
-            summary_text = data.get("summary", "")
-            if summary_text:
-                summary_parts.append(summary_text)
+            content = data.get("content", "")
+            if content:
+                summary_parts.append(content)
                 
         if not summary_parts:
             return ""
@@ -231,7 +149,7 @@ class SummaryManager:
             
         summaries = self.summaries[user_id].get("summaries", {})
         if category in summaries:
-            return summaries[category].get("summary", "")
+            return summaries[category].get("content", "")
         return None
         
     def clear_summaries(self, user_id: str = "default"):
@@ -239,7 +157,7 @@ class SummaryManager:
         if user_id in self.summaries:
             del self.summaries[user_id]
             self.save_summaries()
-            print(f"已清除用户 {user_id} 的总结")
+
 
 # 单例模式
 _summary_manager_instance = None

@@ -1,11 +1,9 @@
 import json
 import os
-import threading
 from datetime import datetime
 from typing import Dict, Any, List, Optional
 from model_message import Message, AssistantMessage, ToolMessage, MessageType
 from memory_manager import get_memory_manager
-from summary_manager import get_summary_manager
 
 
 class HistoryManager:
@@ -17,7 +15,6 @@ class HistoryManager:
         self.conversation_history: List[Message] = []
         self.system_prompt: Optional[Message] = None
         self.memory_manager = get_memory_manager()
-        self.summary_manager = get_summary_manager()
         self.load_conversation()
 
     def set_system_prompt(self, prompt: str):
@@ -43,29 +40,12 @@ class HistoryManager:
         else:
             self.conversation_history.append(message)
             
-            # 自动记录用户消息到记忆 - 异步处理
+            # 自动记录用户消息到记忆
             if message.role == "user":
-                # 使用线程异步执行记忆记录和总结更新
-                thread = threading.Thread(
-                    target=self._handle_user_message_async,
-                    args=(message.content,),
-                    daemon=True  # 设置为守护线程，主程序退出时自动结束
-                )
-                thread.start()
+                self.memory_manager.add_memory("default", message.content, "user")
 
         self._trim_history()
         self.save_conversation()
-
-    def _handle_user_message_async(self, content: str):
-        """异步处理用户消息：记录记忆和更新总结"""
-        try:
-            # 记录用户消息到记忆
-            self.memory_manager.add_memory("default", content, "user")
-            
-            # 更新总结性prompt
-            self.summary_manager.update_summaries("default")
-        except Exception as e:
-            print(f"异步处理用户消息时出错: {e}")
 
     def add_user_message(self, content: str):
         """添加用户消息"""
@@ -97,24 +77,14 @@ class HistoryManager:
 
     def get_context_messages(self) -> List[Dict[str, Any]]:
         """获取API调用所需的上下文消息"""
-        # 获取总结性prompt
-        summary_prompt = self.summary_manager.get_summary_prompt("default")
+        # 获取用户记忆摘要
+        memory_summary = self.memory_manager.get_memory_summary("default")
         
-        # 如果有总结性prompt，添加到系统提示中
-        if summary_prompt and self.system_prompt:
-            # 检查是否已包含喵喵副脑
+        # 如果有记忆，添加到系统提示中
+        if memory_summary and self.system_prompt:
+            # 检查是否已包含记忆
             if "喵喵副脑" not in self.system_prompt.content:
-                enhanced_prompt = self.system_prompt.content + summary_prompt
-                return [{"role": "system", "content": enhanced_prompt}] + [msg.to_dict() for msg in self.conversation_history[1:]]
-            else:
-                # 如果已包含，需要更新它
-                # 这里我们可以简单地在每次对话前重新构建system prompt
-                base_prompt = self.system_prompt.content
-                # 移除旧的喵喵副脑部分（如果存在）
-                if "### 喵喵副脑：" in base_prompt:
-                    base_prompt = base_prompt.split("### 喵喵副脑：")[0].strip()
-                
-                enhanced_prompt = base_prompt + summary_prompt
+                enhanced_prompt = self.system_prompt.content + f"\n\n## 喵喵副脑\n{memory_summary}"
                 return [{"role": "system", "content": enhanced_prompt}] + [msg.to_dict() for msg in self.conversation_history[1:]]
         
         return [msg.to_dict() for msg in self.conversation_history]
@@ -137,20 +107,13 @@ class HistoryManager:
         # 获取记忆统计
         memories = self.memory_manager.get_user_memories("default")
         
-        # 获取总结统计
-        summaries = {}
-        if "default" in self.summary_manager.summaries:
-            summaries = self.summary_manager.summaries["default"].get("summaries", {})
-        
         return {
             "total_messages": len(self.conversation_history),
             "user_messages": user_count,
             "assistant_messages": assistant_count,
             "tool_messages": tool_count,
             "memory_count": len(memories),
-            "memory_categories": list(set([m["type"] for m in memories])),
-            "summary_count": len(summaries),
-            "summary_categories": list(summaries.keys()),
+            "memory_categories": list(set([m["category"] for m in memories])),
             "system_prompt": self.system_prompt.content if self.system_prompt else "无"
         }
 

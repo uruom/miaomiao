@@ -1,6 +1,5 @@
 import json
 import os
-import threading
 from datetime import datetime
 from typing import Dict, Any, List, Optional
 from model_message import Message, AssistantMessage, ToolMessage, MessageType
@@ -43,29 +42,15 @@ class HistoryManager:
         else:
             self.conversation_history.append(message)
             
-            # 自动记录用户消息到记忆 - 异步处理
+            # 自动记录用户消息到记忆
             if message.role == "user":
-                # 使用线程异步执行记忆记录和总结更新
-                thread = threading.Thread(
-                    target=self._handle_user_message_async,
-                    args=(message.content,),
-                    daemon=True  # 设置为守护线程，主程序退出时自动结束
-                )
-                thread.start()
+                self.memory_manager.add_memory("default", message.content, "user")
+                
+                # 用户消息添加后，更新总结性prompt
+                self.summary_manager.update_summaries("default")
 
         self._trim_history()
         self.save_conversation()
-
-    def _handle_user_message_async(self, content: str):
-        """异步处理用户消息：记录记忆和更新总结"""
-        try:
-            # 记录用户消息到记忆
-            self.memory_manager.add_memory("default", content, "user")
-            
-            # 更新总结性prompt
-            self.summary_manager.update_summaries("default")
-        except Exception as e:
-            print(f"异步处理用户消息时出错: {e}")
 
     def add_user_message(self, content: str):
         """添加用户消息"""
@@ -148,7 +133,7 @@ class HistoryManager:
             "assistant_messages": assistant_count,
             "tool_messages": tool_count,
             "memory_count": len(memories),
-            "memory_categories": list(set([m["type"] for m in memories])),
+            "memory_categories": list(set([m["category"] for m in memories])),
             "summary_count": len(summaries),
             "summary_categories": list(summaries.keys()),
             "system_prompt": self.system_prompt.content if self.system_prompt else "无"
