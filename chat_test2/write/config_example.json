@@ -1,0 +1,42 @@
+{
+  "title": "勇者传奇",
+  "genre": "奇幻",
+  "style": "文学",
+  "word_count": 10000,
+  "characters": [
+    {
+      "name": "亚瑟",
+      "role": "主角",
+      "age": 25,
+      "personality": "勇敢、正直、有点冲动",
+      "background": "普通村民之子，意外获得勇者之剑"
+    },
+    {
+      "name": "梅林",
+      "role": "导师",
+      "age": 300,
+      "personality": "睿智、神秘、偶尔幽默",
+      "background": "古老的魔法师，守护着王国的秘密"
+    }
+  ],
+  "settings": {
+    "world": "艾泽拉斯大陆",
+    "era": "中世纪奇幻",
+    "magic_system": "元素魔法",
+    "technology_level": "中世纪",
+    "culture": "混合了欧洲和东方元素"
+  },
+  "requirements": {
+    "plot_twists": 2,
+    "romance_subplot": false,
+    "comic_relief": true,
+    "moral_lesson": "勇气与责任"
+  },
+  "model_settings": {
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "top_p": 0.9,
+    "frequency_penalty": 0.1,
+    "presence_penalty": 0.1
+  }
+}

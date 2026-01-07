@@ -81,7 +81,7 @@ def main_simple():
     )
 
     # 获取总结管理器
-    summary_manager = get_summary_manager()
+    # summary_manager = get_summary_manager()
     
     # 初始化时更新总结性prompt
     # summary_manager.update_summaries("default")

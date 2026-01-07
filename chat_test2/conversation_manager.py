@@ -11,7 +11,7 @@ class ConversationManager:
     """对话管理器"""
 
     def __init__(self, api_key: str, history_manager: HistoryManager,
-                 tool_manager: ToolManager, model: str = "deepseek-ai/DeepSeek-V3.1"):
+                 tool_manager: ToolManager, model: str = "deepseek-ai/DeepSeek-V3.2"):
         self.api_key = api_key
         self.model = model
         self.history_manager = history_manager

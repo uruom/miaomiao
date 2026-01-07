@@ -11,7 +11,7 @@ from summary_manager import get_summary_manager
 class HistoryManager:
     """历史管理器（带持久化功能）"""
 
-    def __init__(self, max_history: int = 10, storage_file: str = "conversation_history.json"):
+    def __init__(self, max_history: int = 100, storage_file: str = "conversation_history.json"):
         self.max_history = max_history
         self.storage_file = storage_file
         self.conversation_history: List[Message] = []
@@ -44,14 +44,14 @@ class HistoryManager:
             self.conversation_history.append(message)
             
             # 自动记录用户消息到记忆 - 异步处理
-            if message.role == "user":
-                # 使用线程异步执行记忆记录和总结更新
-                thread = threading.Thread(
-                    target=self._handle_user_message_async,
-                    args=(message.content,),
-                    daemon=True  # 设置为守护线程，主程序退出时自动结束
-                )
-                thread.start()
+            # if message.role == "user":
+            #     # 使用线程异步执行记忆记录和总结更新
+            #     thread = threading.Thread(
+            #         target=self._handle_user_message_async,
+            #         args=(message.content,),
+            #         daemon=True  # 设置为守护线程，主程序退出时自动结束
+            #     )
+            #     thread.start()
 
         self._trim_history()
         self.save_conversation()

@@ -27,7 +27,7 @@ class SummaryManager:
         
         # API配置 - 与conversation_manager保持一致
         self.api_key = "sk-czprteaafqgpfewyrxwmhltdfdfaihpioejpfutupbcxyyao"
-        self.model = "deepseek-ai/DeepSeek-V3.1"
+        self.model = "deepseek-ai/DeepSeek-V3.2"
         self.api_url = "https://api.siliconflow.cn/v1/chat/completions"
         
     def load_summaries(self):
