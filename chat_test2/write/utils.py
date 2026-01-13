@@ -134,19 +134,40 @@ class JsonStorage:
 
 
 class ModelManager:
-    """模型管理器（占位实现）"""
+    """模型管理器（兼容接口）"""
     
     def __init__(self, model_name: str = "default"):
         self.model_name = model_name
         self.history = []
+        
+        # 尝试导入实际模型管理器
+        try:
+            from .model_manager import APIModelManager, ModelConfig
+            from .prompt_config import PromptManager
+            
+            # 创建配置
+            config = ModelConfig()
+            self.api_manager = APIModelManager(config)
+            self.prompt_manager = PromptManager()
+            self.use_api = True
+            logger.info(f"使用API模型管理器: {model_name}")
+        except ImportError as e:
+            logger.warning(f"无法导入API模型管理器，使用模拟模式: {e}")
+            self.api_manager = None
+            self.prompt_manager = None
+            self.use_api = False
     
     def call_model(self, prompt: str, **kwargs) -> str:
-        """调用模型（占位实现）"""
+        """调用模型"""
         logger.info(f"调用模型 {self.model_name}: {prompt[:50]}...")
         
-        # 这里应该是实际的模型调用
-        # 目前返回模拟响应
-        response = f"模型响应: {prompt[:100]}..."
+        if self.use_api and self.api_manager:
+            # 使用API管理器
+            system_prompt = kwargs.pop('system_prompt', '')
+            response = self.api_manager.call_model(prompt, system_prompt, **kwargs)
+        else:
+            # 使用模拟模式
+            response = f"模型响应: {prompt[:100]}...（模拟模式）"
         
         # 记录历史
         self.history.append({
@@ -157,36 +178,47 @@ class ModelManager:
         
         return response
     
+    def call_with_template(self, template_name: str, template_data: Dict[str, Any], **kwargs) -> str:
+        """使用模板调用模型"""
+        if self.use_api and self.api_manager and self.prompt_manager:
+            # 使用模板和API
+            return self.api_manager.call_with_template(template_name, template_data, **kwargs)
+        else:
+            # 模拟调用
+            logger.info(f"模拟模板调用: {template_name}")
+            return f"模板响应: {template_name} - {template_data}"
+    
     def extract_json(self, text: str) -> Optional[Dict[str, Any]]:
         """从文本中提取JSON"""
-        try:
-            # 尝试查找JSON块
-            json_pattern = r'```json\s*(.*?)\s*```'
-            matches = re.findall(json_pattern, text, re.DOTALL)
-            
-            if matches:
-                return json.loads(matches[0])
-            
-            # 如果没有代码块标记，尝试直接解析
-            return json.loads(text)
-        except (json.JSONDecodeError, IndexError):
-            logger.warning("无法从文本中提取JSON")
-            return None
+        if self.use_api and self.api_manager:
+            return self.api_manager.extract_json(text)
+        else:
+            # 简单提取
+            try:
+                json_pattern = r'```json\s*(.*?)\s*```'
+                matches = re.findall(json_pattern, text, re.DOTALL)
+                
+                if matches:
+                    return json.loads(matches[0])
+                
+                # 尝试直接解析
+                return json.loads(text)
+            except (json.JSONDecodeError, IndexError):
+                logger.warning("无法从文本中提取JSON")
+                return None
     
     def generate_with_template(self, template_name: str, data: Dict[str, Any]) -> str:
-        """使用模板生成内容"""
-        templates = {
-            "outline": "根据以下信息生成故事大纲: {theme}",
-            "detail": "为以下大纲章节生成详细细纲: {chapter_title}",
-            "frame": "为以下场景生成固定帧描述: {scene_description}",
-            "writing": "扩写以下固定帧为完整段落: {frame_content}"
-        }
-        
-        if template_name not in templates:
-            raise ValueError(f"未知模板: {template_name}")
-        
-        prompt = templates[template_name].format(**data)
-        return self.call_model(prompt)
+        """使用模板生成内容（兼容旧接口）"""
+        return self.call_with_template(template_name, data)
+    
+    def set_api_config(self, **kwargs):
+        """设置API配置"""
+        if self.use_api and self.api_manager:
+            self.api_manager.set_config(**kwargs)
+    
+    def get_history(self):
+        """获取调用历史"""
+        return self.history
 
 
 class TextProcessor:
@@ -251,6 +283,11 @@ def test_utils():
     storage.save_entity("characters", "hero", {"name": "英雄", "age": 25})
     hero_data = storage.load_entity("characters", "hero")
     print(f"JSON存储测试: {hero_data}")
+    
+    # 测试模型管理器
+    mm = ModelManager("test_model")
+    response = mm.call_model("测试消息")
+    print(f"模型管理器测试: {response[:50]}...")
     
     # 清理测试目录
     import shutil

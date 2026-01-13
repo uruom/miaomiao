@@ -1,14 +1,51 @@
 项目创建时间: 2025-01-01
-项目状态: 框架搭建完成
-当前步骤: 创建主程序和配置文件
+项目状态: 项目框架完成
+当前步骤: 项目完成，等待测试
 已完成: 
   - 创建write文件夹和cache记录
   - 创建__init__.py
   - 创建core.py (核心引擎)
   - 创建utils.py (工具类)
   - 创建modules.py (四个核心模块)
-待完成: 
   - 创建main.py (主程序)
-  - 创建配置文件
-  - 创建示例数据和测试脚本
-  - 完善模型调用接口（需要接入实际模型）
+  - 创建config_example.json (示例配置)
+  - 创建model_manager.py (实际模型调用)
+  - 创建prompt_config.py (提示词配置管理)
+  - 创建run_example.py (运行示例)
+  - 更新__init__.py包含所有新模块
+  - 更新utils.py兼容新旧接口
+
+项目结构:
+write/
+├── __init__.py              # 包定义
+├── cache.txt               # 项目进度记录
+├── core.py                 # 核心引擎
+├── modules.py              # 四个核心模块
+├── utils.py                # 工具类
+├── model_manager.py        # 实际模型调用API
+├── prompt_config.py        # 提示词配置管理
+├── main.py                 # 主程序入口
+├── config_example.json     # 示例配置文件
+└── run_example.py          # 运行示例
+
+使用说明:
+1. 模拟模式: python run_example.py
+2. API模式: 在model_manager.py中设置API Key
+3. 完整运行: python main.py --project my_story --concept '故事概念'
+
+提示词配置:
+- 默认模板在prompt_config.py中
+- 可自定义模板并保存到prompt_configs文件夹
+- 支持JSON格式的模板导入导出
+
+模型调用:
+- 支持真实API调用(需要API Key)
+- 支持模拟模式(无API Key时)
+- 可配置模型参数和超时时间
+
+下一步建议:
+1. 测试各个模块功能
+2. 优化提示词模板
+3. 添加更多错误处理
+4. 实现进度保存和恢复
+5. 添加批量处理功能

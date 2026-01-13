@@ -8,7 +8,10 @@
 
 from .core import StoryEngine
 from .modules import OutlineModule, DetailOutlineModule, FrameModule, WritingModule
-from .utils import FileManager, ModelManager, JsonStorage
+from .utils import FileManager, ModelManager, JsonStorage, TextProcessor
+from .model_manager import APIModelManager, ModelConfig
+from .prompt_config import PromptManager, PromptTemplate
+from .main import AutoStoryWriter
 
 __all__ = [
     'StoryEngine',
@@ -18,7 +21,13 @@ __all__ = [
     'WritingModule',
     'FileManager',
     'ModelManager',
-    'JsonStorage'
+    'JsonStorage',
+    'TextProcessor',
+    'APIModelManager',
+    'ModelConfig',
+    'PromptManager',
+    'PromptTemplate',
+    'AutoStoryWriter'
 ]
 
 __version__ = '0.1.0'
