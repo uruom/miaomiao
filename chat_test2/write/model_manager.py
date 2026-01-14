@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 @dataclass
 class ModelConfig:
     """模型配置"""
-    api_key: str = ""
+    api_key: str = "sk-czprteaafqgpfewyrxwmhltdfdfaihpioejpfutupbcxyyao"
     model_name: str = "deepseek-ai/DeepSeek-V3.2"
     api_url: str = "https://api.siliconflow.cn/v1/chat/completions"
     temperature: float = 0.7

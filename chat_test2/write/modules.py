@@ -7,7 +7,7 @@ from dataclasses import dataclass, asdict, field
 import re
 from datetime import datetime
 
-from .utils import FileManager, ModelManager, JsonStorage
+from utils import FileManager, ModelManager, JsonStorage
 
 
 @dataclass

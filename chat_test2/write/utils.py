@@ -142,8 +142,8 @@ class ModelManager:
         
         # 尝试导入实际模型管理器
         try:
-            from .model_manager import APIModelManager, ModelConfig
-            from .prompt_config import PromptManager
+            from model_manager import APIModelManager, ModelConfig
+            from prompt_config import PromptManager
             
             # 创建配置
             config = ModelConfig()
@@ -165,6 +165,7 @@ class ModelManager:
             # 使用API管理器
             system_prompt = kwargs.pop('system_prompt', '')
             response = self.api_manager.call_model(prompt, system_prompt, **kwargs)
+            print(response)
         else:
             # 使用模拟模式
             response = f"模型响应: {prompt[:100]}...（模拟模式）"
@@ -195,6 +196,11 @@ class ModelManager:
         else:
             # 简单提取
             try:
+                try:
+                    json_f = text.replace('```json','').replace('```','')
+                    return json.loads(json_f)
+                except json.JSONDecodeError:
+                    logger.warning("无法从文本中提取JSONuruom")
                 json_pattern = r'```json\s*(.*?)\s*```'
                 matches = re.findall(json_pattern, text, re.DOTALL)
                 
