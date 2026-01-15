@@ -170,5 +170,633 @@
       "chapter_id": "P3C2",
       "chapter_title": "往事书"
     }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-15T18:29:20.099942",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数是数十万字以上，背景和剑三一样就好，其中以徒弟男主为视角"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-15T18:29:20.104319",
+    "data": {
+      "outline_title": "眉间雪·江湖未远",
+      "parts_count": 4
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:29:20.106319",
+    "data": {
+      "chapter_id": "P3C2",
+      "chapter_title": "往事书"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:29:20.113318",
+    "data": {
+      "chapter_id": "P3C2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:29:20.115319",
+    "data": {
+      "chapter_id": "P3C3",
+      "chapter_title": "昆仑雪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:29:20.120318",
+    "data": {
+      "chapter_id": "P3C3",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:29:20.121319",
+    "data": {
+      "chapter_id": "P4C1",
+      "chapter_title": "传承"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:29:20.125319",
+    "data": {
+      "chapter_id": "P4C1",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:29:20.127319",
+    "data": {
+      "chapter_id": "P4C2",
+      "chapter_title": "新雪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:29:20.131319",
+    "data": {
+      "chapter_id": "P4C2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:29:20.134319",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "清晨的村庄"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:29:20.142320",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:29:20.144320",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "清晨的村庄"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:29:20.151320",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:29:20.153320",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "清晨的村庄"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:29:20.160318",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:29:20.162318",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "清晨的村庄"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:29:20.168318",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "writing_expansion_start",
+    "timestamp": "2026-01-15T18:29:20.172319",
+    "data": {
+      "frame_id": "frame_1",
+      "timestamp": "场景开始"
+    }
+  },
+  {
+    "step": "writing_expansion_complete",
+    "timestamp": "2026-01-15T18:29:20.176319",
+    "data": {
+      "frame_id": "frame_1",
+      "text_length": 1089
+    }
+  },
+  {
+    "step": "writing_expansion_start",
+    "timestamp": "2026-01-15T18:29:20.179318",
+    "data": {
+      "frame_id": "frame_1",
+      "timestamp": "场景开始"
+    }
+  },
+  {
+    "step": "writing_expansion_complete",
+    "timestamp": "2026-01-15T18:29:20.182318",
+    "data": {
+      "frame_id": "frame_1",
+      "text_length": 1089
+    }
+  },
+  {
+    "step": "writing_expansion_start",
+    "timestamp": "2026-01-15T18:29:20.186319",
+    "data": {
+      "frame_id": "frame_1",
+      "timestamp": "场景开始"
+    }
+  },
+  {
+    "step": "writing_expansion_complete",
+    "timestamp": "2026-01-15T18:29:20.190319",
+    "data": {
+      "frame_id": "frame_1",
+      "text_length": 1089
+    }
+  },
+  {
+    "step": "writing_expansion_start",
+    "timestamp": "2026-01-15T18:29:20.193320",
+    "data": {
+      "frame_id": "frame_1",
+      "timestamp": "场景开始"
+    }
+  },
+  {
+    "step": "writing_expansion_complete",
+    "timestamp": "2026-01-15T18:29:20.196320",
+    "data": {
+      "frame_id": "frame_1",
+      "text_length": 1089
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-15T18:31:00.368490",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数是数十万字以上，背景和剑三一样就好，其中以徒弟男主为视角"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-15T18:31:08.921155",
+    "data": {
+      "outline_title": "眉间雪·江湖未远",
+      "parts_count": 4
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:31:59.249431",
+    "data": {
+      "chapter_id": "P3C2",
+      "chapter_title": "往事书"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:31:59.261439",
+    "data": {
+      "chapter_id": "P3C2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:31:59.264438",
+    "data": {
+      "chapter_id": "P3C3",
+      "chapter_title": "昆仑雪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:31:59.270439",
+    "data": {
+      "chapter_id": "P3C3",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:31:59.273439",
+    "data": {
+      "chapter_id": "P4C1",
+      "chapter_title": "传承"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:31:59.282438",
+    "data": {
+      "chapter_id": "P4C1",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:31:59.284439",
+    "data": {
+      "chapter_id": "P4C2",
+      "chapter_title": "新雪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:31:59.291438",
+    "data": {
+      "chapter_id": "P4C2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:31:59.295438",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "清晨的村庄"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:31:59.304916",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:31:59.307916",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "清晨的村庄"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:31:59.317928",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:31:59.319928",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "清晨的村庄"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:31:59.328928",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:31:59.331928",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "清晨的村庄"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:31:59.340927",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "writing_expansion_start",
+    "timestamp": "2026-01-15T18:31:59.344927",
+    "data": {
+      "frame_id": "frame_1",
+      "timestamp": "场景开始"
+    }
+  },
+  {
+    "step": "writing_expansion_complete",
+    "timestamp": "2026-01-15T18:31:59.350928",
+    "data": {
+      "frame_id": "frame_1",
+      "text_length": 1089
+    }
+  },
+  {
+    "step": "writing_expansion_start",
+    "timestamp": "2026-01-15T18:31:59.355928",
+    "data": {
+      "frame_id": "frame_1",
+      "timestamp": "场景开始"
+    }
+  },
+  {
+    "step": "writing_expansion_complete",
+    "timestamp": "2026-01-15T18:31:59.361927",
+    "data": {
+      "frame_id": "frame_1",
+      "text_length": 1089
+    }
+  },
+  {
+    "step": "writing_expansion_start",
+    "timestamp": "2026-01-15T18:31:59.365928",
+    "data": {
+      "frame_id": "frame_1",
+      "timestamp": "场景开始"
+    }
+  },
+  {
+    "step": "writing_expansion_complete",
+    "timestamp": "2026-01-15T18:31:59.371929",
+    "data": {
+      "frame_id": "frame_1",
+      "text_length": 1089
+    }
+  },
+  {
+    "step": "writing_expansion_start",
+    "timestamp": "2026-01-15T18:31:59.375928",
+    "data": {
+      "frame_id": "frame_1",
+      "timestamp": "场景开始"
+    }
+  },
+  {
+    "step": "writing_expansion_complete",
+    "timestamp": "2026-01-15T18:31:59.382931",
+    "data": {
+      "frame_id": "frame_1",
+      "text_length": 1089
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-15T18:32:12.916985",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数是数十万字以上，背景和剑三一样就好，其中以徒弟男主为视角"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-15T18:32:12.925982",
+    "data": {
+      "outline_title": "眉间雪·江湖未远",
+      "parts_count": 4
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:32:24.044641",
+    "data": {
+      "chapter_id": "P3C2",
+      "chapter_title": "往事书"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:33:37.240585",
+    "data": {
+      "chapter_id": "P3C2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-15T18:34:55.397864",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数是数十万字以上，背景和剑三一样就好，其中以徒弟男主为视角"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-15T18:34:55.402864",
+    "data": {
+      "outline_title": "眉间雪·江湖未远",
+      "parts_count": 4
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:34:55.404864",
+    "data": {
+      "chapter_id": "P3C2",
+      "chapter_title": "往事书"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:36:46.353045",
+    "data": {
+      "chapter_id": "P3C2",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:36:46.357040",
+    "data": {
+      "chapter_id": "P3C3",
+      "chapter_title": "昆仑雪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:38:19.362683",
+    "data": {
+      "chapter_id": "P3C3",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:38:19.365683",
+    "data": {
+      "chapter_id": "P4C1",
+      "chapter_title": "传承"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:40:07.537822",
+    "data": {
+      "chapter_id": "P4C1",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T18:40:07.540823",
+    "data": {
+      "chapter_id": "P4C2",
+      "chapter_title": "新雪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T18:41:28.800713",
+    "data": {
+      "chapter_id": "P4C2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:41:28.807713",
+    "data": {
+      "scene_id": "scene_5_1",
+      "scene_title": "故纸堆中的微光"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:43:59.178458",
+    "data": {
+      "scene_id": "scene_5_1",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:43:59.182461",
+    "data": {
+      "scene_id": "scene_5_2",
+      "scene_title": "血色残页"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:46:12.534179",
+    "data": {
+      "scene_id": "scene_5_2",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:46:12.537180",
+    "data": {
+      "scene_id": "scene_5_3",
+      "scene_title": "瞿塘峡的线索"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:49:47.522942",
+    "data": {
+      "scene_id": "scene_5_3",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:49:47.525941",
+    "data": {
+      "scene_id": "scene_5_4",
+      "scene_title": "拼图与疑云"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:52:15.293924",
+    "data": {
+      "scene_id": "scene_5_4",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:52:15.297924",
+    "data": {
+      "scene_id": "scene_5_5",
+      "scene_title": "暗影浮现"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:54:43.486290",
+    "data": {
+      "scene_id": "scene_5_5",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:54:43.490296",
+    "data": {
+      "scene_id": "scene_5_6",
+      "scene_title": "抉择与归途"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-15T18:56:38.816497",
+    "data": {
+      "scene_id": "scene_5_6",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-15T18:56:38.819497",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景"
+    }
   }
 ]

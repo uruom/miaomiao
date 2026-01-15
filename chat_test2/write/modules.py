@@ -481,8 +481,9 @@ class DetailOutlineModule:
         return template.format(
             title=chapter.get("title", "未命名章节"),
             summary=chapter.get("summary", ""),
-            characters=", ".join(chapter.get("characters", [])),
-            locations=", ".join(chapter.get("locations", [])),
+            # characters=", ".join(chapter.get("characters", [])),
+            characters=", ".join(str(c) for c in chapter.get("characters", [])),
+            locations=", ".join(str(c) for c in chapter.get("locations", [])),
             words=chapter.get("estimated_words", 0)
         )
     

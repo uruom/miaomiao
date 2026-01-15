@@ -1,0 +1,56 @@
+  [
+  {
+    "frame_id": "frame_1",
+    "scene_id": "scene_1",
+    "timestamp": "清晨6点",
+    "characters_present": [
+      {
+        "character_id": "char_1",
+        "name": "亚瑟",
+        "position": "床边",
+        "action": "起床伸懒腰",
+        "emotion": "平静",
+        "dialogue_line": ""
+      }
+    ],
+    "location": {
+      "name": "亚瑟的小屋",
+      "description": "简陋但整洁的小木屋",
+      "lighting": "清晨的阳光透过窗户",
+      "sounds": [
+        "鸟叫声",
+        "远处的鸡鸣"
+      ],
+      "smells": [
+        "木头的香气",
+        "清晨的空气"
+      ]
+    },
+    "environment": {
+      "weather": "晴朗",
+      "time_of_day": "清晨",
+      "temperature": "凉爽",
+      "atmosphere": "宁静"
+    },
+    "objects": [
+      {
+        "object_id": "obj_1",
+        "name": "木床",
+        "description": "简单的木制床铺",
+        "position": "房间角落",
+        "state": "整洁"
+      }
+    ],
+    "current_action": "亚瑟从睡梦中醒来",
+    "dialogue": [],
+    "inner_thoughts": [
+      "又是平静的一天"
+    ],
+    "sensory_details": {
+      "visual": "阳光在地板上形成光斑",
+      "auditory": "远处传来村庄的声音",
+      "olfactory": "清新的空气",
+      "tactile": "粗糙的亚麻床单"
+    }
+  }
+]

@@ -94,6 +94,7 @@ class AutoStoryWriter:
         
         # 确定要处理的章节
         chapters_to_process = []
+        chapter_ids = ["P3C2","P3C3","P4C1","P4C2"]
         if chapter_ids:
             # 处理指定章节
             for part in outline_data["parts"]:

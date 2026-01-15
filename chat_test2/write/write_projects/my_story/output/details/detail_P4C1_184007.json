@@ -1,0 +1,30 @@
+{
+  "section_id": "P4C1",
+  "title": "传承",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "清微将代表纯阳一脉的剑印与心法全篇正式传予陆昭，承认他已青出于蓝。两人关系从师徒渐变为亦师亦友的知己。清微告知陆昭，自己将留在昆仑秘境疗伤修行，或许不再下山。她希望陆昭去走自己的路，守护这片他们共同牵挂的江湖。",
+      "characters_involved": [
+        "陆昭",
+        [
+          "清微"
+        ]
+      ],
+      "location": "昆仑秘境",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}
