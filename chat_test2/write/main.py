@@ -354,7 +354,7 @@ def parse_arguments():
     parser.add_argument(
         "--concept", 
         type=str,
-        default="一个有关师徒爱情的故事，类似剑三音乐中眉间雪那样，大概字数是十万字以上，背景和剑三一样就好",
+        default="一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数是数十万字以上，背景和剑三一样就好，其中以徒弟男主为视角",
         help="故事概念（必填）"
     )
     

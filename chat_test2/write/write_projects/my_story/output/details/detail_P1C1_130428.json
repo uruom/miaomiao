@@ -1,0 +1,28 @@
+{
+  "section_id": "P1C1",
+  "title": "雪落纯阳",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "战乱中失去亲人的少年陆昭，于纯阳宫山门外被一身着道袍、眉目清冷的女子所救。女子自称‘清微’，问其可愿拜师。陆昭为求安身与力量，叩首拜师，却不知师父眼底深藏的孤寂与过往。",
+      "characters_involved": [
+        "陆昭（少年）",
+        "清微"
+      ],
+      "location": "纯阳宫山门",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

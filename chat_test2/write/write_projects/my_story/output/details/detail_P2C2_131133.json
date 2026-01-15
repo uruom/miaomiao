@@ -1,0 +1,29 @@
+{
+  "section_id": "P2C2",
+  "title": "裂隙",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "陆昭欲调查师父旧事，私下前往枫华谷，意外卷入一场针对当年战役幸存者的阴谋，身受重伤。清微及时赶到救下他，却第一次对他动了怒，责其冒进。两人爆发争吵，陆昭质问师父为何总是推开自己，清微终只留下一句‘你的江湖不应困于我的过往’，飘然离去。",
+      "characters_involved": [
+        "陆昭",
+        "清微",
+        "神秘黑衣人（反派线索）"
+      ],
+      "location": "枫华谷",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

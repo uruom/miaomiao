@@ -1,0 +1,29 @@
+{
+  "section_id": "P1C3",
+  "title": "初涉江湖",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "陆昭武功初成，随清微下山执行第一次门派任务——护送物资前往洛阳。途中遭遇狼牙军斥候，清微为护陆昭首次展现惊人剑艺，却因动用真气过度引发旧疾。陆昭方知师父身体有损，内心震动。",
+      "characters_involved": [
+        "陆昭",
+        "清微",
+        "狼牙军斥候"
+      ],
+      "location": "华山小道",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

@@ -1,0 +1,28 @@
+{
+  "section_id": "P2C3",
+  "title": "空山",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "清微留下书信，让陆昭出师，并嘱其前往万花谷寻医圣治疗体内暗伤。陆昭回到纯阳，只见空荡的院落与积满雪的棋盘。他从掌教处得知，清微为救他强行出关，旧疾加剧，已前往昆仑绝地寻找疗伤之法，归期不定。陆昭悔恨不已。",
+      "characters_involved": [
+        "陆昭",
+        "纯阳掌教"
+      ],
+      "location": "纯阳宫·清微居所",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

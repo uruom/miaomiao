@@ -20,5 +20,155 @@
       "outline_title": "```json",
       "parts_count": 0
     }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-15T12:54:20.026951",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数是数十万字以上，背景和剑三一样就好，其中以徒弟男主为视角"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-15T12:55:54.396156",
+    "data": {
+      "outline_title": "```json",
+      "parts_count": 0
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-15T13:02:37.724939",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数是数十万字以上，背景和剑三一样就好，其中以徒弟男主为视角"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-15T13:02:37.735785",
+    "data": {
+      "outline_title": "眉间雪·江湖未远",
+      "parts_count": 4
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T13:02:37.736785",
+    "data": {
+      "chapter_id": "P1C1",
+      "chapter_title": "雪落纯阳"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T13:04:28.413712",
+    "data": {
+      "chapter_id": "P1C1",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T13:04:28.415711",
+    "data": {
+      "chapter_id": "P1C2",
+      "chapter_title": "问道"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T13:06:10.525871",
+    "data": {
+      "chapter_id": "P1C2",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T13:06:10.527389",
+    "data": {
+      "chapter_id": "P1C3",
+      "chapter_title": "初涉江湖"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T13:08:08.830983",
+    "data": {
+      "chapter_id": "P1C3",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T13:08:08.832996",
+    "data": {
+      "chapter_id": "P2C1",
+      "chapter_title": "名动四方"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T13:09:51.361367",
+    "data": {
+      "chapter_id": "P2C1",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T13:09:51.363356",
+    "data": {
+      "chapter_id": "P2C2",
+      "chapter_title": "裂隙"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T13:11:33.909466",
+    "data": {
+      "chapter_id": "P2C2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T13:11:33.911464",
+    "data": {
+      "chapter_id": "P2C3",
+      "chapter_title": "空山"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T13:13:11.009162",
+    "data": {
+      "chapter_id": "P2C3",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T13:13:11.011162",
+    "data": {
+      "chapter_id": "P3C1",
+      "chapter_title": "独行客"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-15T13:14:39.682051",
+    "data": {
+      "chapter_id": "P3C1",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-15T13:14:39.684052",
+    "data": {
+      "chapter_id": "P3C2",
+      "chapter_title": "往事书"
+    }
   }
 ]

@@ -1,0 +1,30 @@
+{
+  "section_id": "P2C1",
+  "title": "名动四方",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "数年过去，陆昭成长为青年才俊，在名剑大会崭露头角，结交各路侠士（可引入重要配角如天策好友、七秀红颜）。清微却渐渐减少亲自指导，更多时间独自闭关或远游。陆昭渴望与师父分享喜悦，却常找不到人，心生困惑与淡淡埋怨。",
+      "characters_involved": [
+        "陆昭（青年）",
+        "清微",
+        "天策将领-秦烽",
+        "七秀弟子-苏婉（配角）"
+      ],
+      "location": "名剑大会会场",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}
