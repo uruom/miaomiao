@@ -1,0 +1,28 @@
+{
+  "section_id": "P4C2",
+  "title": "远行客",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "秦烽决定重返天策府，以新的心境重建与守护。李忘尘送其至山门，一如当年师父送他。两人没有过多言语，秦烽郑重行礼后策马离去。",
+      "characters_involved": [
+        "李忘尘",
+        "秦烽"
+      ],
+      "location": "纯阳宫山门",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

@@ -1,0 +1,29 @@
+{
+  "section_id": "P2C2",
+  "title": "参商离",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "秦烽为复仇追踪狼牙军，却与赶来寻他的李忘尘错过。李忘尘在秦烽留下的痕迹中，仿佛看到当年自己执着于江湖恩怨、与师父一次次分别的影子。",
+      "characters_involved": [
+        "李忘尘",
+        "秦烽（痕迹）",
+        "云无月（回忆）"
+      ],
+      "location": "枫华谷",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

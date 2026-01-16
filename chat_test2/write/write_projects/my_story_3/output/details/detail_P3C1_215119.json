@@ -1,0 +1,29 @@
+{
+  "section_id": "P3C1",
+  "title": "寒潭月",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "李忘尘终于在昆仑寒潭边找到重伤濒危的秦烽。为其疗伤时，秦烽在昏迷中呢喃‘为何守护的总会失去’，令李忘尘彻底回想起师父离世前的情景与未解的对话。",
+      "characters_involved": [
+        "李忘尘",
+        "秦烽（昏迷）",
+        "云无月（完整回忆）"
+      ],
+      "location": "昆仑寒潭",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

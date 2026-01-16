@@ -1,0 +1,28 @@
+{
+  "section_id": "P3C2",
+  "title": "薪火传",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "秦烽伤愈，但心灰意冷。李忘尘未再劝解，而是带他回到纯阳，将师父当年教导自己的方式——静观四季、剑理自然——潜移默化传递给秦烽。两人关系从教导变为共悟。",
+      "characters_involved": [
+        "李忘尘",
+        "秦烽"
+      ],
+      "location": "纯阳宫·太极广场",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

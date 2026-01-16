@@ -1,0 +1,29 @@
+{
+  "section_id": "P2C1",
+  "title": "白骨哀",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "秦烽赶到天策府据点，却发现已遭狼牙军屠戮，遍地同泽尸骸。他在废墟中找到挚友的残破枪头，悲愤发誓复仇。消息传回，李忘尘心生不祥预感。",
+      "characters_involved": [
+        "秦烽",
+        "狼牙军将领",
+        "阵亡天策同袍（回忆）"
+      ],
+      "location": "天策府废弃据点",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

@@ -1,0 +1,29 @@
+{
+  "section_id": "P2C3",
+  "title": "问心镜",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "李忘尘在寻找秦烽途中，于客栈听闻说书人讲述‘痴师徒’的江湖轶事，心境波动。他梦见师父在雪中问他：‘如今，你可懂了？’",
+      "characters_involved": [
+        "李忘尘",
+        "说书人",
+        "云无月（梦境）"
+      ],
+      "location": "客栈",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

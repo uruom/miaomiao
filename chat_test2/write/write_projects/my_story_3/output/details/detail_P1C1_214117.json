@@ -1,0 +1,29 @@
+{
+  "section_id": "P1C1",
+  "title": "扬州雪",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "纯阳弟子李忘尘于扬州城中救下重伤的天策少年秦烽，少年眼中孤狼般的眼神让他想起多年前的自己。风雪中，他决定收秦烽为徒。",
+      "characters_involved": [
+        "李忘尘",
+        "秦烽",
+        "茶馆掌柜"
+      ],
+      "location": "扬州城",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

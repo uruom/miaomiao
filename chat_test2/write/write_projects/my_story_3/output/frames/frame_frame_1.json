@@ -1,0 +1,38 @@
+{
+  "frame_id": "frame_1",
+  "scene_id": "scene_1",
+  "timestamp": "场景开始",
+  "characters_present": [
+    {
+      "character_id": "char_1",
+      "name": "李忘尘",
+      "position": "场景中心",
+      "action": "站立",
+      "emotion": "中性",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "纯阳宫·论剑峰",
+    "description": "默认地点描述",
+    "lighting": "正常",
+    "sounds": [],
+    "smells": []
+  },
+  "environment": {
+    "weather": "晴朗",
+    "time_of_day": "白天",
+    "temperature": "舒适",
+    "atmosphere": "平静"
+  },
+  "objects": [],
+  "current_action": "场景开始",
+  "dialogue": [],
+  "inner_thoughts": [],
+  "sensory_details": {
+    "visual": "默认视觉描述",
+    "auditory": "安静",
+    "olfactory": "无特殊气味",
+    "tactile": "正常"
+  }
+}

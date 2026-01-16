@@ -1,0 +1,29 @@
+{
+  "section_id": "P1C2",
+  "title": "旧剑痕",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "李忘尘开始传授秦烽纯阳剑法，却在纠正其招式时，恍惚间看到师父云无月的身影。夜间，他取出师父留下的旧剑，陷入回忆。",
+      "characters_involved": [
+        "李忘尘",
+        "秦烽",
+        "云无月（回忆）"
+      ],
+      "location": "纯阳宫·论剑峰",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

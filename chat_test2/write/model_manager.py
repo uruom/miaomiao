@@ -2,6 +2,8 @@
 
 import json
 import os
+import re
+
 import requests
 import time
 from typing import Dict, Any, List, Optional, Union
@@ -142,16 +144,25 @@ class APIModelManager:
         return self.call_model(prompt, system_prompt, **kwargs)
     
     def extract_json(self, text: str) -> Optional[Dict[str, Any]]:
-        """从文本中提取JSON"""
+        """从文本中提取JSON，包含中文标点符号的后处理"""
         import re
         
         try:
+            # 首先尝试直接解析（可能已经是有效的JSON）
+            try:
+                return json.loads(text)
+            except json.JSONDecodeError:
+                pass
+            
             # 尝试查找JSON代码块
             json_pattern = r'```json\s*(.*?)\s*```'
             matches = re.findall(json_pattern, text, re.DOTALL | re.IGNORECASE)
             
             if matches:
-                return json.loads(matches[0])
+                json_text = matches[0]
+                # 进行后处理修复
+                json_text = self._fix_json_format(json_text)
+                return json.loads(json_text)
             
             # 尝试查找普通JSON
             json_pattern2 = r'\{.*\}'
@@ -161,18 +172,102 @@ class APIModelManager:
                 # 尝试从后往前找到最长的有效JSON
                 for match in reversed(matches2):
                     try:
-                        return json.loads(match)
+                        # 进行后处理修复
+                        fixed_match = self._fix_json_format(match)
+                        return json.loads(fixed_match)
                     except json.JSONDecodeError:
                         continue
             
-            # 如果都没有，尝试直接解析整个文本
-            return json.loads(text)
+            # 如果都没有，尝试对整个文本进行后处理
+            fixed_text = self._fix_json_format(text)
+            return json.loads(fixed_text)
             
         except json.JSONDecodeError as e:
             logger.warning(f"JSON提取失败: {e}")
-            return None
+            # 尝试更宽松的解析
+            return self._parse_json_with_fallback(text)
         except Exception as e:
             logger.warning(f"JSON提取异常: {e}")
+            return None
+    
+    def _fix_json_format(self, text: str) -> str:
+        """修复JSON格式问题，特别是中文标点符号"""
+        if not text:
+            return text
+        
+        # 首先，我们需要智能地替换中文标点，但只在JSON结构部分，而不是字符串内容部分
+        # 使用正则表达式来识别JSON结构中的标点符号
+        
+        # 1. 修复JSON键名和值分隔符中的中文标点
+        # 匹配模式："键名"后跟中文标点，然后是值
+        text = re.sub(r'"([^"]+)"\s*：\s*', r'"\1": ', text)
+        
+        # 2. 修复JSON结构中的中文逗号（在属性之间）
+        # 匹配模式：值后跟中文逗号，然后是下一个属性
+        text = re.sub(r'(["\]\dtruefalsenull])\s*，\s*"', r'\1, "', text)
+        
+        # 3. 修复数组中的中文逗号
+        text = re.sub(r'(["\]\dtruefalsenull])\s*，\s*(["\[\]\dtruefalsenull])', r'\1, \2', text)
+        
+        # 4. 修复中文双引号问题 - 只在JSON结构部分替换，不在字符串内容中替换
+        # 先尝试找到JSON结构部分，然后只替换结构中的中文双引号
+        
+        # 策略：先尝试解析，如果失败再逐步修复
+        # 这里我们采用更保守的方法，只修复明显的结构问题
+        
+        # 5. 修复属性名缺少引号的问题
+        text = re.sub(r'(\{|\,)\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*:', r'\1"\2":', text)
+        
+        # 6. 修复数组和对象末尾的逗号问题
+        text = re.sub(r',\s*([\}\]])', r'\1', text)
+        
+        # 7. 修复布尔值大小写问题
+        text = re.sub(r'\btrue\b', 'true', text, flags=re.IGNORECASE)
+        text = re.sub(r'\bfalse\b', 'false', text, flags=re.IGNORECASE)
+        text = re.sub(r'\bnull\b', 'null', text, flags=re.IGNORECASE)
+        
+        # 8. 修复数字格式问题
+        text = re.sub(r'\b(\d+)\.(\d+)\b', r'\1.\2', text)
+        
+        logger.debug(f"修复后的JSON文本: {text[:200]}...")
+        return text
+    
+    def _parse_json_with_fallback(self, text: str) -> Optional[Dict[str, Any]]:
+        """使用更宽松的方式解析JSON，作为最后的手段"""
+        try:
+            # 尝试多种修复策略
+            text = self._fix_json_format(text)
+            
+            # 策略1: 尝试找到最长的可能JSON对象
+            json_pattern = r'\{(?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*\}'
+            matches = re.findall(json_pattern, text, re.DOTALL)
+            
+            if matches:
+                # 选择最长的匹配项
+                longest_match = max(matches, key=len)
+                return json.loads(longest_match)
+            
+            # 策略2: 尝试手动构建JSON
+            lines = text.split('\n')
+            json_data = {}
+            
+            for line in lines:
+                line = line.strip()
+                if ':' in line:
+                    parts = line.split(':', 1)
+                    if len(parts) == 2:
+                        key = parts[0].strip().strip('"\'')  # 移除可能的引号
+                        value = parts[1].strip().strip('"\'')
+                        json_data[key] = value
+            
+            if json_data:
+                return json_data
+            
+            # 策略3: 如果所有方法都失败，返回None
+            return None
+            
+        except Exception as e:
+            logger.warning(f"宽松JSON解析失败: {e}")
             return None
     
     def _mock_response(self, prompt: str) -> str:
