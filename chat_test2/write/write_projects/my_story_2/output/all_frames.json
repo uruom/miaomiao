@@ -1,0 +1,1242 @@
+{
+  "C1": [
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_01",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "纯阳宫山门石阶",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_02",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒（少年）",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "纯阳宫山门（回忆中）",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_03",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "太极广场·三清殿前",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_04",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "论剑峰顶",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_05",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "纯阳宫山门",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    }
+  ],
+  "C2": [
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_1",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "洛阳城",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    }
+  ],
+  "C3": [
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_1",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "李承锋",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "洛阳郊外破庙",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_2",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "破庙内",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_3",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "破庙内（夜转黎明）",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_4",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "洛阳至纯阳的官道（初期）",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_5",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "山路、溪边、林间营地",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_6",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "纯阳宫山门外",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    }
+  ],
+  "C4": [
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_1",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "纯阳宫后山",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    }
+  ],
+  "C5": [
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_1",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "枫华谷",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    }
+  ],
+  "C6": [
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_01",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "华山山道",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_02",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "李承锋",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "纯阳宫演武场及外围山地",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_03",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "顾清寒的居所（纯阳宫）",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_04",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "华山下山山道",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_05",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "华山脚下官道岔路口",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_06",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "岔路口（顾清寒视角）",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    }
+  ],
+  "C7": [
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_1",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "雁门关",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    }
+  ],
+  "C8": [
+    {
+      "frame_id": "frame_1",
+      "scene_id": "sc_06_01",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "雁门关伤兵营营帐内",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "sc_06_02",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "雁门关城墙之上",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "sc_06_03",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒（讲述者）",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "回忆场景：昆仑山脚破庙",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "sc_06_04",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒（讲述者）",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "回忆场景：昆仑雪巅、冰瀑、绝壁",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "sc_06_05",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒（讲述者）",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "回忆场景：山下小镇、江湖客栈、隐居处",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "sc_06_06",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "雁门关城墙之上（接续场景二）",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    },
+    {
+      "frame_id": "frame_1",
+      "scene_id": "sc_06_07",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "雁门关城墙之上（黎明）",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    }
+  ],
+  "C9": [
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_1",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "雁门关市集",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    }
+  ],
+  "C10": [
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_1",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "南下路途",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    }
+  ],
+  "C11": [
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_1",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "苗疆幽谷",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    }
+  ],
+  "C12": [
+    {
+      "frame_id": "frame_1",
+      "scene_id": "scene_1",
+      "timestamp": "场景开始",
+      "characters_present": [
+        {
+          "character_id": "char_1",
+          "name": "顾清寒",
+          "position": "场景中心",
+          "action": "站立",
+          "emotion": "中性",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "龙门荒漠遗迹",
+        "description": "默认地点描述",
+        "lighting": "正常",
+        "sounds": [],
+        "smells": []
+      },
+      "environment": {
+        "weather": "晴朗",
+        "time_of_day": "白天",
+        "temperature": "舒适",
+        "atmosphere": "平静"
+      },
+      "objects": [],
+      "current_action": "场景开始",
+      "dialogue": [],
+      "inner_thoughts": [],
+      "sensory_details": {
+        "visual": "默认视觉描述",
+        "auditory": "安静",
+        "olfactory": "无特殊气味",
+        "tactile": "正常"
+      }
+    }
+  ]
+}

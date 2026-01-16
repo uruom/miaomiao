@@ -1,0 +1,30 @@
+{
+  "section_id": "C9",
+  "title": "暗涌",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "战事暂缓，但江湖暗流涌动。当年“白骨哀“事件背后的势力再次出现，目标直指李承锋及其手中的父亲遗物。同时，有零星星的消息指向谢云流可能在南方出现。顾清寒面临选择：是继续守护徒弟追查阴谋，还是南下寻找师父的踪迹？",
+      "characters_involved": [
+        "顾清寒",
+        "李承锋",
+        "神秘组织杀手",
+        "天策同袍"
+      ],
+      "location": "雁门关市集",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

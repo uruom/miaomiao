@@ -1,0 +1,29 @@
+{
+  "section_id": "C2",
+  "title": "洛阳旧识",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "顾清寒抵达洛阳，调查中发现此事涉及多年前战死的天策将士遗物。在一处旧宅，他遇到了一个倔强而狼狈的少年——李承锋，一个因战争失去家人、一心想要加入天策府却屡屡被拒的孤儿。",
+      "characters_involved": [
+        "顾清寒",
+        "李承锋",
+        "天策府校尉"
+      ],
+      "location": "洛阳城",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

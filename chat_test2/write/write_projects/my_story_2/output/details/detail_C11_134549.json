@@ -1,0 +1,28 @@
+{
+  "section_id": "C11",
+  "title": "再见如寄",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "顾清寒在苗疆一处与世隔绝的山谷中，终于找到了隐居多年、已是白发苍苍的谢云流。师徒重逢，没有激动的话语，只有一壶酒，一场静默的雪。谢云流点明顾清寒已找到了自己的“道“——即守护与传承，不必再执着于寻找师父。",
+      "characters_involved": [
+        "顾清寒",
+        "谢云流"
+      ],
+      "location": "苗疆幽谷",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

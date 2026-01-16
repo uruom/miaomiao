@@ -191,7 +191,7 @@ class ModelManager:
     
     def extract_json(self, text: str) -> Optional[Dict[str, Any]]:
         """从文本中提取JSON"""
-        if self.use_api and self.api_manager:
+        if False:
             return self.api_manager.extract_json(text)
         else:
             # 简单提取

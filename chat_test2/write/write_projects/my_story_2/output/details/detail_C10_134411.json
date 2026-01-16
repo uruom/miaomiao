@@ -1,0 +1,30 @@
+{
+  "section_id": "C10",
+  "title": "双线寻踪",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "顾清寒决定与李承锋分头行动：李承锋借助天策力量调查神秘组织，而顾清寒则南下苗疆追寻谢云流可能的踪迹。两条线索逐渐交汇，揭示出更大的阴谋——神秘组织意图利用当年战死将士的遗物（包括白骨哀）施行某种禁忌之术。",
+      "characters_involved": [
+        "顾清寒",
+        "李承锋",
+        "苗疆向导",
+        "天策情报人员"
+      ],
+      "location": "南下路途",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

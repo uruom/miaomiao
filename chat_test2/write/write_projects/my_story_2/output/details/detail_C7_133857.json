@@ -1,0 +1,30 @@
+{
+  "section_id": "C7",
+  "title": "雁门烽烟",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "数年过去，顾清寒听闻天策府在雁门关与外敌激战，心中牵挂，遂下山寻徒。在战火纷飞的边关，他找到了已成为天校尉、却因战友接连牺牲而变得沉默坚毅的李承锋。师徒并肩作战，关系亦师亦友。",
+      "characters_involved": [
+        "顾清寒",
+        "李承锋",
+        "天策将士",
+        "狼牙军"
+      ],
+      "location": "雁门关",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

@@ -94,7 +94,7 @@ class AutoStoryWriter:
         
         # 确定要处理的章节
         chapters_to_process = []
-        chapter_ids = ["P3C2","P3C3","P4C1","P4C2"]
+        # chapter_ids = ["P3C2","P3C3","P4C1","P4C2"]
         if chapter_ids:
             # 处理指定章节
             for part in outline_data["parts"]:
@@ -348,14 +348,14 @@ def parse_arguments():
     parser.add_argument(
         "--project", 
         type=str, 
-        default="my_story",
+        default="my_story_2",
         help="项目名称（默认: my_story）"
     )
     
     parser.add_argument(
         "--concept", 
         type=str,
-        default="一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数是数十万字以上，背景和剑三一样就好，其中以徒弟男主为视角",
+        default="一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名",
         help="故事概念（必填）"
     )
     

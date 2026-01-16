@@ -1,0 +1,30 @@
+{
+  "section_id": "C5",
+  "title": "白骨哀",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "李承锋终于得知父亲当年战死的真相及遗物“白骨哀“笛的下落（与天策著名剧情关联）。他执意前往枫华谷寻找。顾清寒不放心，陪同前往。两人在红叶湖畔找到线索，却也卷入江湖纷争，李承锋首次体会到战争的残酷与遗属的悲痛。",
+      "characters_involved": [
+        "顾清寒",
+        "李承锋",
+        "神秘红衣女子（白骨哀相关人物）",
+        "江湖势力"
+      ],
+      "location": "枫华谷",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}

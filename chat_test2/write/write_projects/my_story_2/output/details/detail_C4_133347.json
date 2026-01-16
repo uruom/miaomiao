@@ -1,0 +1,28 @@
+{
+  "section_id": "C4",
+  "title": "华山授业",
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_title": "开场场景",
+      "description": "顾清寒以纯阳心法为基础，为李承锋打下内功根基，同时根据其体质传授一些天策府的基础枪术（顾清寒早年从谢云流处涉猎颇广）。两人在华山之巅朝夕相处，初现师徒温情，但李承锋始终心系天策。",
+      "characters_involved": [
+        "顾清寒",
+        "李承锋"
+      ],
+      "location": "纯阳宫后山",
+      "key_events": [
+        "故事开始"
+      ],
+      "emotional_tone": "中性"
+    }
+  ],
+  "transitions": [
+    "时间推移"
+  ],
+  "key_events": [
+    "主要事件"
+  ],
+  "emotional_arc": "平稳发展",
+  "pace": "中等"
+}
