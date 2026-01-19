@@ -189,8 +189,11 @@ class DetailOutlineModule:
         
         os.makedirs(self.output_dir, exist_ok=True)
     
-    def generate_details(self, outline_data: Dict[str, Any], chapter_id: str) -> Dict[str, Any]:
-        """为指定章节生成详细细纲"""
+    def generate_details(self, outline_data: Dict[str, Any], chapter_id: str, 
+                        previous_chapters: List[Dict] = None, 
+                        next_chapters: List[Dict] = None,
+                        existing_details: List[Dict] = None) -> Dict[str, Any]:
+        """为指定章节生成详细细纲，包含上下文信息"""
         print(f"为章节 {chapter_id} 生成详细细纲...")
         
         # 查找章节
@@ -200,7 +203,7 @@ class DetailOutlineModule:
             return {}
         
         # 构建提示词
-        prompt = self._build_detail_prompt(chapter)
+        prompt = self._build_detail_prompt(chapter, outline_data, previous_chapters, next_chapters, existing_details)
         
         # 调用模型
         response = self.model_manager.call_model(prompt)
@@ -223,9 +226,18 @@ class DetailOutlineModule:
                     return chapter
         return None
     
-    def _build_detail_prompt(self, chapter: Dict[str, Any]) -> str:
-        """构建细纲生成提示词"""
+    def _build_detail_prompt(self, chapter: Dict[str, Any], outline_data: Dict[str, Any], 
+                          previous_chapters: List[Dict] = None, 
+                          next_chapters: List[Dict] = None,
+                          existing_details: List[Dict] = None) -> str:
+        """构建细纲生成提示词，包含上下文信息"""
+        
+        # 构建上下文信息
+        context_info = self._build_context_info(chapter, outline_data, previous_chapters, next_chapters, existing_details)
+        
         template = """请为以下章节生成详细的细纲：
+
+{context_info}
 
 章节信息：
 标题：{title}
@@ -264,13 +276,49 @@ class DetailOutlineModule:
 }}"""
         
         return template.format(
+            context_info=context_info,
             title=chapter.get("title", "未命名章节"),
             summary=chapter.get("summary", ""),
-            # characters=", ".join(chapter.get("characters", [])),
             characters=", ".join(str(c) for c in chapter.get("characters", [])),
             locations=", ".join(str(c) for c in chapter.get("locations", [])),
             words=chapter.get("estimated_words", 0)
         )
+    
+    def _build_context_info(self, current_chapter: Dict[str, Any], outline_data: Dict[str, Any], 
+                           previous_chapters: List[Dict] = None, 
+                           next_chapters: List[Dict] = None,
+                           existing_details: List[Dict] = None) -> str:
+        """构建上下文信息"""
+        context_parts = []
+        
+        # 故事概述
+        context_parts.append(f"故事概述：{outline_data.get('title', '未命名故事')} - {outline_data.get('concept', '')}")
+        
+        # 前一章节信息
+        if previous_chapters:
+            prev_info = []
+            for i, chapter in enumerate(previous_chapters[-2:]):  # 最近2个章节
+                prev_info.append(f"{chapter.get('title', '')}: {chapter.get('summary', '')}")
+            if prev_info:
+                context_parts.append("前一章节信息：" + " | ".join(prev_info))
+        
+        # 下一章节信息
+        if next_chapters:
+            next_info = []
+            for i, chapter in enumerate(next_chapters[:2]):  # 后续2个章节
+                next_info.append(f"{chapter.get('title', '')}: {chapter.get('summary', '')}")
+            if next_info:
+                context_parts.append("下一章节信息：" + " | ".join(next_info))
+        
+        # 已有细纲信息
+        if existing_details:
+            existing_info = []
+            for detail in existing_details:
+                existing_info.append(f"{detail.get('title', '')} - {len(detail.get('scenes', []))}个场景")
+            if existing_info:
+                context_parts.append("已有细纲：" + ", ".join(existing_info))
+        
+        return "\n".join(context_parts) if context_parts else "无上下文信息"
     
     def _parse_detail_response(self, response: str, chapter: Dict[str, Any]) -> Dict[str, Any]:
         """解析细纲响应"""
@@ -314,8 +362,12 @@ class FrameModule:
         
         os.makedirs(self.output_dir, exist_ok=True)
     
-    def generate_frames(self, detail_data: Dict[str, Any], scene_id: str) -> List[Dict[str, Any]]:
-        """为指定场景生成固定帧"""
+    def generate_frames(self, detail_data: Dict[str, Any], scene_id: str,
+                       previous_scenes: List[Dict] = None,
+                       next_scenes: List[Dict] = None,
+                       existing_frames: List[Dict] = None,
+                       outline_data: Dict[str, Any] = None) -> List[Dict[str, Any]]:
+        """为指定场景生成固定帧，包含上下文信息"""
         print(f"为场景 {scene_id} 生成固定帧...")
         
         # 查找场景
@@ -325,7 +377,7 @@ class FrameModule:
             return []
         
         # 生成固定帧
-        frames = self._create_frames_for_scene(scene, detail_data)
+        frames = self._create_frames_for_scene(scene, detail_data, previous_scenes, next_scenes, existing_frames, outline_data)
         
         # 保存固定帧
         for frame in frames:
@@ -345,10 +397,14 @@ class FrameModule:
                 return scene
         return None
     
-    def _create_frames_for_scene(self, scene: Dict[str, Any], detail_data: Dict[str, Any]) -> List[Dict[str, Any]]:
-        """为场景创建固定帧"""
+    def _create_frames_for_scene(self, scene: Dict[str, Any], detail_data: Dict[str, Any],
+                               previous_scenes: List[Dict] = None,
+                               next_scenes: List[Dict] = None,
+                               existing_frames: List[Dict] = None,
+                               outline_data: Dict[str, Any] = None) -> List[Dict[str, Any]]:
+        """为场景创建固定帧，包含上下文信息"""
         # 构建提示词
-        prompt = self._build_frame_prompt(scene, detail_data)
+        prompt = self._build_frame_prompt(scene, detail_data, previous_scenes, next_scenes, existing_frames, outline_data)
         
         # 调用模型
         response = self.model_manager.call_model(prompt)
@@ -358,9 +414,19 @@ class FrameModule:
         
         return frames_data
     
-    def _build_frame_prompt(self, scene: Dict[str, Any], detail_data: Dict[str, Any]) -> str:
-        """构建固定帧生成提示词"""
+    def _build_frame_prompt(self, scene: Dict[str, Any], detail_data: Dict[str, Any],
+                          previous_scenes: List[Dict] = None,
+                          next_scenes: List[Dict] = None,
+                          existing_frames: List[Dict] = None,
+                          outline_data: Dict[str, Any] = None) -> str:
+        """构建固定帧生成提示词，包含上下文信息"""
+        
+        # 构建上下文信息
+        context_info = self._build_frame_context_info(scene, detail_data, previous_scenes, next_scenes, existing_frames, outline_data)
+        
         template = """请为以下场景生成2-5个"固定帧"，每个固定帧代表故事中的一个瞬间快照：
+
+{context_info}
 
 场景信息：
 标题：{scene_title}
@@ -437,14 +503,57 @@ class FrameModule:
 请确保每个固定帧都是独立的、完整的瞬间描述。"""
         
         return template.format(
+            context_info=context_info,
             scene_title=scene.get("scene_title", "未命名场景"),
             scene_description=scene.get("description", ""),
             characters=", ".join(str(c) for c in scene.get("characters_involved", [])),
-            # characters=", ".join(scene.get("characters_involved", [])),
             location=scene.get("location", "未知地点"),
             events=", ".join(str(sc) for sc in scene.get("key_events", [])),
             tone=scene.get("emotional_tone", "中性")
         )
+    
+    def _build_frame_context_info(self, current_scene: Dict[str, Any], detail_data: Dict[str, Any],
+                                 previous_scenes: List[Dict] = None,
+                                 next_scenes: List[Dict] = None,
+                                 existing_frames: List[Dict] = None,
+                                 outline_data: Dict[str, Any] = None) -> str:
+        """构建固定帧上下文信息"""
+        context_parts = []
+        
+        # 章节信息
+        context_parts.append(f"章节：{detail_data.get('title', '未命名章节')}")
+        context_parts.append(f"章节概要：{detail_data.get('emotional_arc', '')}")
+        
+        # 前一场景信息
+        if previous_scenes:
+            prev_info = []
+            for i, scene in enumerate(previous_scenes[-2:]):  # 最近2个场景
+                prev_info.append(f"{scene.get('scene_title', '')}: {scene.get('description', '')[:50]}...")
+            if prev_info:
+                context_parts.append("前一场景：" + " | ".join(prev_info))
+        
+        # 下一场景信息
+        if next_scenes:
+            next_info = []
+            for i, scene in enumerate(next_scenes[:2]):  # 后续2个场景
+                next_info.append(f"{scene.get('scene_title', '')}: {scene.get('description', '')[:50]}...")
+            if next_info:
+                context_parts.append("下一场景：" + " | ".join(next_info))
+        
+        # 已有固定帧信息
+        if existing_frames:
+            frame_info = []
+            for frame in existing_frames:
+                frame_info.append(f"{frame.get('timestamp', '')} - {frame.get('current_action', '')[:30]}...")
+            if frame_info:
+                context_parts.append("已有固定帧：" + ", ".join(frame_info))
+        
+        # 大纲信息
+        if outline_data:
+            context_parts.append(f"故事主题：{outline_data.get('title', '')}")
+            context_parts.append(f"故事概念：{outline_data.get('concept', '')[:100]}...")
+        
+        return "\n".join(context_parts) if context_parts else "无上下文信息"
     
     def _parse_frames_response(self, response: str, scene: Dict[str, Any]) -> List[Dict[str, Any]]:
         """解析固定帧响应"""
@@ -538,12 +647,21 @@ class WritingModule:
         
         os.makedirs(self.output_dir, exist_ok=True)
     
-    def expand_frame(self, frame_data: Dict[str, Any], writing_style: str = "文学") -> str:
-        """将固定帧扩写为文章段落"""
+    def expand_frame(self, frame_data: Dict[str, Any], writing_style: str = "文学",
+                    previous_frames: List[Dict] = None,
+                    next_frames: List[Dict] = None,
+                    existing_writings: List[str] = None,
+                    scene_data: Dict[str, Any] = None,
+                    detail_data: Dict[str, Any] = None,
+                    outline_data: Dict[str, Any] = None) -> str:
+        """将固定帧扩写为文章段落，包含上下文信息"""
         print(f"扩写固定帧 {frame_data.get('frame_id', 'unknown')}...")
         
         # 构建提示词
-        prompt = self._build_writing_prompt(frame_data, writing_style)
+        prompt = self._build_writing_prompt(frame_data, writing_style, 
+                                           previous_frames, next_frames, 
+                                           existing_writings, scene_data,
+                                           detail_data, outline_data)
         
         # 调用模型
         response = self.model_manager.call_model(prompt)
@@ -558,9 +676,23 @@ class WritingModule:
         print(f"扩写已保存: {chapter_file}")
         return expanded_text
     
-    def _build_writing_prompt(self, frame_data: Dict[str, Any], style: str) -> str:
-        """构建扩写提示词"""
+    def _build_writing_prompt(self, frame_data: Dict[str, Any], style: str,
+                           previous_frames: List[Dict] = None,
+                           next_frames: List[Dict] = None,
+                           existing_writings: List[str] = None,
+                           scene_data: Dict[str, Any] = None,
+                           detail_data: Dict[str, Any] = None,
+                           outline_data: Dict[str, Any] = None) -> str:
+        """构建扩写提示词，包含上下文信息"""
+        
+        # 构建上下文信息
+        context_info = self._build_writing_context_info(frame_data, previous_frames, 
+                                                       next_frames, existing_writings,
+                                                       scene_data, detail_data, outline_data)
+        
         template = """请将以下"固定帧"扩写为一个完整的文学段落：
+
+{context_info}
 
 固定帧信息：
 时间：{timestamp}
@@ -595,6 +727,7 @@ class WritingModule:
 4. 适当添加过渡和细节描述
 5. 字数控制在300-800字
 6. 使用生动的语言和恰当的修辞
+7. 注意与前文和后文的衔接，保持故事连贯性
 
 请直接输出扩写后的段落，不需要额外的说明或标记。"""
         
@@ -626,6 +759,7 @@ class WritingModule:
         sensory_text = f"视觉: {sensory.get('visual', '')}, 听觉: {sensory.get('auditory', '')}, 嗅觉: {sensory.get('olfactory', '')}, 触觉: {sensory.get('tactile', '')}"
         
         return template.format(
+            context_info=context_info,
             timestamp=frame_data.get("timestamp", "未知时间"),
             scene_id=frame_data.get("scene_id", "未知场景"),
             current_action=frame_data.get("current_action", ""),
@@ -638,6 +772,57 @@ class WritingModule:
             sensory_details=sensory_text,
             style=style
         )
+    
+    def _build_writing_context_info(self, current_frame: Dict[str, Any],
+                                   previous_frames: List[Dict] = None,
+                                   next_frames: List[Dict] = None,
+                                   existing_writings: List[str] = None,
+                                   scene_data: Dict[str, Any] = None,
+                                   detail_data: Dict[str, Any] = None,
+                                   outline_data: Dict[str, Any] = None) -> str:
+        """构建扩写上下文信息"""
+        context_parts = []
+        
+        # 前一固定帧信息
+        if previous_frames:
+            prev_info = []
+            for i, frame in enumerate(previous_frames[-2:]):  # 最近2个固定帧
+                prev_info.append(f"{frame.get('timestamp', '')} - {frame.get('current_action', '')[:30]}...")
+            if prev_info:
+                context_parts.append("前一固定帧：" + " | ".join(prev_info))
+        
+        # 下一固定帧信息
+        if next_frames:
+            next_info = []
+            for i, frame in enumerate(next_frames[:2]):  # 后续2个固定帧
+                next_info.append(f"{frame.get('timestamp', '')} - {frame.get('current_action', '')[:30]}...")
+            if next_info:
+                context_parts.append("下一固定帧：" + " | ".join(next_info))
+        
+        # 已有扩写内容
+        if existing_writings:
+            writing_info = []
+            for i, writing in enumerate(existing_writings[-2:]):  # 最近2个扩写
+                writing_info.append(f"段落{i+1}: {writing[:50]}...")
+            if writing_info:
+                context_parts.append("已有扩写：" + " | ".join(writing_info))
+        
+        # 场景信息
+        if scene_data:
+            context_parts.append(f"场景：{scene_data.get('scene_title', '')}")
+            context_parts.append(f"场景描述：{scene_data.get('description', '')[:100]}...")
+        
+        # 章节信息
+        if detail_data:
+            context_parts.append(f"章节：{detail_data.get('title', '未命名章节')}")
+            context_parts.append(f"章节概要：{detail_data.get('emotional_arc', '')[:100]}...")
+        
+        # 大纲信息
+        if outline_data:
+            context_parts.append(f"故事主题：{outline_data.get('title', '')}")
+            context_parts.append(f"故事概念：{outline_data.get('concept', '')[:100]}...")
+        
+        return "\n".join(context_parts) if context_parts else "无上下文信息"
     
     def _clean_writing_response(self, response: str) -> str:
         """清理扩写响应"""

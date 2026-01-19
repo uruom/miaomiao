@@ -115,7 +115,31 @@ class AutoStoryWriter:
                 "chapter_title": chapter.get("title")
             })
             
-            detail = self.modules["detail"].generate_details(outline_data, chapter["id"])
+            # 构建上下文信息
+            previous_chapters = []
+            next_chapters = []
+            existing_details = []
+            
+            # 获取前一章节信息
+            if i > 0:
+                prev_chapter = chapters_to_process[i-1]
+                prev_detail = all_details.get(prev_chapter["id"])
+                if prev_detail:
+                    previous_chapters = [prev_chapter]
+                    existing_details = [prev_detail]
+            
+            # 获取下一章节信息
+            if i < len(chapters_to_process) - 1:
+                next_chapter = chapters_to_process[i+1]
+                next_chapters = [next_chapter]
+            
+            detail = self.modules["detail"].generate_details(
+                outline_data, 
+                chapter["id"],
+                previous_chapters=previous_chapters,
+                next_chapters=next_chapters,
+                existing_details=existing_details
+            )
             
             if detail:
                 all_details[chapter["id"]] = detail
@@ -163,7 +187,33 @@ class AutoStoryWriter:
                     "scene_title": scene.get("scene_title")
                 })
                 
-                frames = self.modules["frame"].generate_frames(detail, scene.get("scene_id"))
+                # 构建上下文信息
+                previous_scenes = []
+                next_scenes = []
+                existing_frames = []
+                
+                # 获取前一场景信息
+                if i > 0:
+                    prev_scene = scenes_to_process[i-1]
+                    previous_scenes = [prev_scene]
+                
+                # 获取下一场景信息
+                if i < len(scenes_to_process) - 1:
+                    next_scene = scenes_to_process[i+1]
+                    next_scenes = [next_scene]
+                
+                # 获取已有固定帧信息
+                if chapter_frames:
+                    existing_frames = chapter_frames
+                
+                frames = self.modules["frame"].generate_frames(
+                    detail, 
+                    scene.get("scene_id"),
+                    previous_scenes=previous_scenes,
+                    next_scenes=next_scenes,
+                    existing_frames=existing_frames,
+                    outline_data=detail
+                )
                 
                 if frames:
                     chapter_frames.extend(frames)
@@ -187,14 +237,30 @@ class AutoStoryWriter:
         return all_frames
     
     def expand_to_story(self, frames_data: Dict[str, Any], style: str = "文学") -> Dict[str, Any]:
-        """将固定帧扩写为完整故事"""
+        """将固定帧扩写为完整故事，支持断点续传"""
         print("扩写为完整故事...")
         
         all_chapters = {}
         total_frames = 0
         
+        # 检查当前进度
+        progress = self.engine.get_progress()
+        completed_chapters = progress.get("completed_chapters", [])
+        
         # 遍历所有章节的固定帧
         for chapter_id, frames in frames_data.items():
+            # 跳过已完成的章节
+            if chapter_id in completed_chapters:
+                print(f"跳过已完成的章节: {chapter_id}")
+                # 加载已完成的章节内容
+                chapter_file = os.path.join(self.project_path, "output", "chapters", f"chapter_{chapter_id}.txt")
+                if os.path.exists(chapter_file):
+                    chapter_content = self.file_manager.read_text(chapter_file)
+                    if chapter_content:
+                        all_chapters[chapter_id] = chapter_content
+                        print(f"✓ 加载已完成的章节: {chapter_id}")
+                continue
+                
             chapter_text = []
             
             # 按顺序扩写每个固定帧
@@ -206,7 +272,46 @@ class AutoStoryWriter:
                     "timestamp": frame.get("timestamp")
                 })
                 
-                expanded = self.modules["writing"].expand_frame(frame, style)
+                # 构建上下文信息
+                previous_frames = []
+                next_frames = []
+                existing_writings = []
+                
+                # 获取前一固定帧信息
+                if i > 0:
+                    prev_frame = frames[i-1]
+                    previous_frames = [prev_frame]
+                
+                # 获取下一固定帧信息
+                if i < len(frames) - 1:
+                    next_frame = frames[i+1]
+                    next_frames = [next_frame]
+                
+                # 获取已有扩写内容
+                if chapter_text:
+                    existing_writings = chapter_text
+                
+                # 获取场景和章节信息（需要从固定帧中提取）
+                scene_data = None
+                detail_data = None
+                outline_data = None
+                
+                # 尝试从固定帧中获取场景信息
+                if "scene_id" in frame:
+                    # 这里需要从细节数据中查找对应的场景信息
+                    # 由于当前结构限制，暂时不传递这些信息
+                    pass
+                
+                expanded = self.modules["writing"].expand_frame(
+                    frame, 
+                    style,
+                    previous_frames=previous_frames,
+                    next_frames=next_frames,
+                    existing_writings=existing_writings,
+                    scene_data=scene_data,
+                    detail_data=detail_data,
+                    outline_data=outline_data
+                )
                 
                 if expanded:
                     chapter_text.append(expanded)
@@ -225,6 +330,9 @@ class AutoStoryWriter:
                 # 保存章节文件
                 chapter_file = os.path.join(self.project_path, "output", "chapters", f"chapter_{chapter_id}.txt")
                 self.file_manager.write_text(chapter_file, full_chapter)
+                
+                # 更新进度
+                self.engine.update_progress(completed_chapters=[chapter_id])
         
         # 组合完整故事
         if all_chapters:
@@ -250,14 +358,29 @@ class AutoStoryWriter:
         
         return {}
     
-    def run_full_pipeline(self, story_concept: str, style: str = "文学"):
-        """运行完整流水线"""
+    def run_full_pipeline(self, story_concept: str, style: str = "文学", resume: bool = True):
+        """运行完整流水线，支持断点续传"""
         print("="*60)
         print("开始运行完整故事生成流水线")
         print("="*60)
         
+        # 检查当前状态
+        progress = self.engine.get_progress()
+        current_stage = progress["current_stage"]
+        
+        if resume and current_stage != "init":
+            print(f"检测到未完成的项目，当前阶段: {current_stage}")
+            print(f"已完成章节: {progress['completed_chapters']}")
+            print(f"已完成场景: {progress['completed_scenes']}")
+            print(f"已完成帧: {progress['completed_frames']}")
+            
+            # 自动继续执行，不询问
+            print("自动从断点处继续执行...")
+            return self._resume_pipeline(story_concept, style)
+        
         # 1. 生成大纲
         print("\n[阶段1] 生成故事大纲")
+        self.engine.update_stage("outline")
         outline = self.generate_outline(story_concept)
         if not outline:
             print("大纲生成失败，停止流程")
@@ -265,6 +388,7 @@ class AutoStoryWriter:
         
         # 2. 生成细纲
         print("\n[阶段2] 生成详细细纲")
+        self.engine.update_stage("detail")
         details = self.generate_details(outline)
         if not details:
             print("细纲生成失败，停止流程")
@@ -272,6 +396,7 @@ class AutoStoryWriter:
         
         # 3. 生成固定帧
         print("\n[阶段3] 生成固定帧")
+        self.engine.update_stage("frame")
         frames = self.generate_frames(details)
         if not frames:
             print("固定帧生成失败，停止流程")
@@ -279,13 +404,130 @@ class AutoStoryWriter:
         
         # 4. 扩写为故事
         print("\n[阶段4] 扩写为完整故事")
+        self.engine.update_stage("writing")
         result = self.expand_to_story(frames, style)
+        
+        # 标记完成
+        self.engine.update_stage("complete")
         
         print("\n" + "="*60)
         print("故事生成流水线完成！")
         print("="*60)
         
         return result
+    
+    def _resume_pipeline(self, story_concept: str, style: str = "文学") -> Dict[str, Any]:
+        """从断点处恢复流水线"""
+        print("\n从断点处恢复执行...")
+        
+        progress = self.engine.get_progress()
+        current_stage = progress["current_stage"]
+        
+        result = {}
+        
+        if current_stage == "outline":
+            # 从大纲阶段开始
+            print("\n[阶段1] 生成故事大纲")
+            outline = self.generate_outline(story_concept)
+            if outline:
+                result = self._continue_pipeline(outline, style)
+        
+        elif current_stage == "detail":
+            # 从细纲阶段开始
+            print("\n[阶段2] 生成详细细纲")
+            outline = self._load_outline()
+            if outline:
+                # 在恢复时也需要构建上下文信息
+                details = self.generate_details(outline)
+                if details:
+                    result = self._continue_pipeline_from_details(details, style)
+        
+        elif current_stage == "frame":
+            # 从固定帧阶段开始
+            print("\n[阶段3] 生成固定帧")
+            details = self._load_details()
+            if details:
+                # 在恢复时也需要构建上下文信息
+                frames = self.generate_frames(details)
+                if frames:
+                    result = self._continue_pipeline_from_frames(frames, style)
+        
+        elif current_stage == "writing":
+            # 从扩写阶段开始
+            print("\n[阶段4] 扩写为完整故事")
+            frames = self._load_frames()
+            if frames:
+                # 在恢复时也需要构建上下文信息
+                result = self.expand_to_story(frames, style)
+                self.engine.update_stage("complete")
+        
+        return result
+    
+    def _continue_pipeline(self, outline: Dict[str, Any], style: str) -> Dict[str, Any]:
+        """从大纲阶段继续流水线"""
+        # 2. 生成细纲
+        print("\n[阶段2] 生成详细细纲")
+        self.engine.update_stage("detail")
+        details = self.generate_details(outline)
+        if not details:
+            print("细纲生成失败，停止流程")
+            return {}
+        
+        # 继续后续阶段
+        return self._continue_pipeline_from_details(details, style)
+    
+    def _continue_pipeline_from_details(self, details: Dict[str, Any], style: str) -> Dict[str, Any]:
+        """从细纲阶段继续流水线"""
+        # 3. 生成固定帧
+        print("\n[阶段3] 生成固定帧")
+        self.engine.update_stage("frame")
+        frames = self.generate_frames(details)
+        if not frames:
+            print("固定帧生成失败，停止流程")
+            return {}
+        
+        # 继续后续阶段
+        return self._continue_pipeline_from_frames(frames, style)
+    
+    def _continue_pipeline_from_frames(self, frames: Dict[str, Any], style: str) -> Dict[str, Any]:
+        """从固定帧阶段继续流水线"""
+        # 4. 扩写为故事
+        print("\n[阶段4] 扩写为完整故事")
+        self.engine.update_stage("writing")
+        result = self.expand_to_story(frames, style)
+        self.engine.update_stage("complete")
+        
+        return result
+    
+    def _load_outline(self) -> Optional[Dict[str, Any]]:
+        """从文件加载大纲"""
+        outline_file = os.path.join(self.project_path, "output", "all_details.json")
+        if os.path.exists(outline_file):
+            return self.file_manager.read_json(outline_file)
+        return None
+    
+    def _load_details(self) -> Optional[Dict[str, Any]]:
+        """从文件加载细纲"""
+        details_file = os.path.join(self.project_path, "output", "all_details.json")
+        if os.path.exists(details_file):
+            return self.file_manager.read_json(details_file)
+        return None
+    
+    def _load_frames(self) -> Optional[Dict[str, Any]]:
+        """从文件加载固定帧"""
+        frames_file = os.path.join(self.project_path, "output", "all_frames.json")
+        if os.path.exists(frames_file):
+            return self.file_manager.read_json(frames_file)
+        return None
+    
+    def _ask_to_resume(self) -> bool:
+        """询问用户是否继续执行"""
+        try:
+            response = input("是否继续执行上次未完成的任务？(y/n): ").strip().lower()
+            return response in ['y', 'yes', '是', '继续']
+        except:
+            # 如果无法获取用户输入，默认继续
+            return True
     
     def get_status(self) -> Dict[str, Any]:
         """获取项目状态"""
@@ -348,7 +590,7 @@ def parse_arguments():
     parser.add_argument(
         "--project", 
         type=str, 
-        default="my_story_3",
+        default="my_story_4",
         help="项目名称（默认: my_story）"
     )
     
@@ -385,6 +627,18 @@ def parse_arguments():
         "--status", 
         action="store_true",
         help="显示项目状态"
+    )
+    
+    parser.add_argument(
+        "--resume", 
+        action="store_true",
+        help="启用断点续传功能"
+    )
+    
+    parser.add_argument(
+        "--no-resume", 
+        action="store_true",
+        help="禁用断点续传功能"
     )
     
     return parser.parse_args()
@@ -433,8 +687,18 @@ def main():
     
     # 根据模式运行
     if args.mode == "full":
-        # 完整流水线
-        writer.run_full_pipeline(args.concept, args.style)
+        # 完整流水线 - 默认自动启用断点续传
+        resume = False  # 默认启用断点续传
+        if args.no_resume:
+            resume = False
+            print("已禁用断点续传功能")
+        elif args.resume:
+            resume = True
+            print("已启用断点续传功能")
+        else:
+            print("断点续传功能已自动启用")
+        
+        writer.run_full_pipeline(args.concept, args.style, resume)
     
     elif args.mode == "outline":
         # 仅生成大纲

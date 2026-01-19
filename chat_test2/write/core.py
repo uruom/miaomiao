@@ -120,6 +120,61 @@ class StoryEngine:
             self.state.project_name = os.path.basename(self.project_path)
             self._save_state()
     
+    def reset_state(self, stage: str = "init"):
+        """重置状态到指定阶段"""
+        self.state.current_stage = stage
+        self.state.completed_chapters = []
+        self.state.completed_scenes = []
+        self.state.completed_frames = []
+        self.state.current_chapter = ""
+        self.state.current_scene = ""
+        self.state.current_frame = ""
+        self.state.error_count = {}
+        self.state.retry_attempts = {}
+        self.state.last_update = time.time()
+        self._save_state()
+        logger.info(f"状态已重置到阶段: {stage}")
+    
+    def get_progress(self) -> Dict[str, Any]:
+        """获取当前进度信息"""
+        return {
+            "current_stage": self.state.current_stage,
+            "completed_chapters": len(self.state.completed_chapters),
+            "completed_scenes": len(self.state.completed_scenes),
+            "completed_frames": len(self.state.completed_frames),
+            "current_chapter": self.state.current_chapter,
+            "current_scene": self.state.current_scene,
+            "current_frame": self.state.current_frame,
+            "error_count": self.state.error_count,
+            "retry_attempts": self.state.retry_attempts,
+            "elapsed_time": time.time() - self.state.start_time
+        }
+    
+    def can_resume_from_stage(self, target_stage: str) -> bool:
+        """检查是否可以从指定阶段恢复"""
+        stage_order = ["init", "outline", "detail", "frame", "writing", "complete"]
+        
+        try:
+            current_index = stage_order.index(self.state.current_stage)
+            target_index = stage_order.index(target_stage)
+            
+            # 如果当前阶段在目标阶段之前，可以恢复
+            return current_index >= target_index
+        except ValueError:
+            return False
+    
+    def get_remaining_work(self) -> Dict[str, Any]:
+        """获取剩余工作列表"""
+        remaining = {
+            "chapters": [],
+            "scenes": [],
+            "frames": []
+        }
+        
+        # 这里需要根据实际数据文件来获取剩余工作
+        # 暂时返回空列表，后续可以根据文件系统状态来填充
+        return remaining
+    
     def _save_state(self):
         """保存当前状态"""
         try:
@@ -138,6 +193,30 @@ class StoryEngine:
         self.state.current_stage = stage
         self._save_state()
         logger.info(f"阶段更新: {stage}")
+
+    def update_progress(self, 
+                       completed_chapters: Optional[List[str]] = None,
+                       completed_scenes: Optional[List[str]] = None,
+                       completed_frames: Optional[List[str]] = None,
+                       error_count: Optional[int] = None) -> None:
+        """更新进度信息"""
+        if completed_chapters:
+            self.state.completed_chapters.extend(completed_chapters)
+            # 去重
+            self.state.completed_chapters = list(set(self.state.completed_chapters))
+        
+        if completed_scenes:
+            self.state.completed_scenes.extend(completed_scenes)
+            self.state.completed_scenes = list(set(self.state.completed_scenes))
+        
+        if completed_frames:
+            self.state.completed_frames.extend(completed_frames)
+            self.state.completed_frames = list(set(self.state.completed_frames))
+        
+        if error_count is not None:
+            self.state.error_count = error_count
+        
+        self._save_state()
     
     def mark_chapter_completed(self, chapter_id: str):
         """标记章节完成"""

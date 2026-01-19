@@ -191,41 +191,159 @@ class APIModelManager:
             return None
     
     def _fix_json_format(self, text: str) -> str:
-        """修复JSON格式问题，特别是中文标点符号"""
+        """修复JSON格式问题，特别是中文标点符号，只修复结构部分"""
         if not text:
             return text
         
-        # 首先，我们需要智能地替换中文标点，但只在JSON结构部分，而不是字符串内容部分
-        # 使用正则表达式来识别JSON结构中的标点符号
+        # 首先尝试直接解析，如果成功则无需修复
+        try:
+            json.loads(text)
+            return text
+        except json.JSONDecodeError:
+            pass
         
-        # 1. 修复JSON键名和值分隔符中的中文标点
-        # 匹配模式："键名"后跟中文标点，然后是值
-        text = re.sub(r'"([^"]+)"\s*：\s*', r'"\1": ', text)
+        original_text = text
         
-        # 2. 修复JSON结构中的中文逗号（在属性之间）
-        # 匹配模式：值后跟中文逗号，然后是下一个属性
-        text = re.sub(r'(["\]\dtruefalsenull])\s*，\s*"', r'\1, "', text)
+        # 使用状态机方法，只修复JSON结构中的标点，不修改字符串内容
+        def fix_json_structure_only(text):
+            """只修复JSON结构中的标点，不修改字符串内容"""
+            result = []
+            in_string = False
+            escape_next = False
+            bracket_level = 0
+            
+            i = 0
+            while i < len(text):
+                char = text[i]
+                
+                if escape_next:
+                    result.append(char)
+                    escape_next = False
+                    i += 1
+                    continue
+                
+                if char == '\\':
+                    result.append(char)
+                    escape_next = True
+                    i += 1
+                    continue
+                
+                if char == '"':
+                    in_string = not in_string
+                    result.append(char)
+                    i += 1
+                    continue
+                
+                if in_string:
+                    # 在字符串内，直接复制，不修改任何内容
+                    result.append(char)
+                    i += 1
+                    continue
+                
+                # 在JSON结构部分，修复标点
+                if char == '：':  # 中文冒号
+                    result.append(':')
+                    i += 1
+                    continue
+                
+                if char == '，':  # 中文逗号
+                    # 检查上下文，确保这是属性分隔符，而不是字符串内容
+                    # 向前查找，如果是属性分隔符，则替换
+                    if i > 0 and i < len(text) - 1:
+                        prev_char = text[i-1]
+                        next_char = text[i+1]
+                        # 如果是属性分隔符（前面是值，后面是属性名）
+                        if (prev_char in '}"\']0123456789truefalsenull' and 
+                            next_char in ' "{}\'['):
+                            result.append(',')
+                            i += 1
+                            continue
+                    
+                    # 如果是数组分隔符
+                    if i > 0 and i < len(text) - 1:
+                        prev_char = text[i-1]
+                        next_char = text[i+1]
+                        if (prev_char in ']"\'0123456789truefalsenull' and 
+                            next_char in ' "\'0123456789truefalsenull[{'):
+                            result.append(',')
+                            i += 1
+                            continue
+                    
+                    # 否则保留原字符（可能是字符串内容中的逗号）
+                    result.append(char)
+                    i += 1
+                    continue
+                
+                if char == '；':  # 中文分号
+                    # 检查是否在JSON结构中
+                    if i > 0 and i < len(text) - 1:
+                        prev_char = text[i-1]
+                        next_char = text[i+1]
+                        if (prev_char in '}"\']0123456789truefalsenull' and 
+                            next_char in ' "{}\'['):
+                            result.append(',')
+                            i += 1
+                            continue
+                    
+                    result.append(char)
+                    i += 1
+                    continue
+                
+                if char == '。':  # 中文句号
+                    # 检查是否在JSON结构中
+                    if i > 0 and i < len(text) - 1:
+                        prev_char = text[i-1]
+                        next_char = text[i+1]
+                        if (prev_char in '}"\']0123456789truefalsenull' and 
+                            next_char in ' "{}\'['):
+                            result.append(',')
+                            i += 1
+                            continue
+                    
+                    result.append(char)
+                    i += 1
+                    continue
+                
+                # 其他字符直接复制
+                result.append(char)
+                i += 1
+            
+            return ''.join(result)
         
-        # 3. 修复数组中的中文逗号
-        text = re.sub(r'(["\]\dtruefalsenull])\s*，\s*(["\[\]\dtruefalsenull])', r'\1, \2', text)
+        # 应用修复
+        text = fix_json_structure_only(text)
         
-        # 4. 修复中文双引号问题 - 只在JSON结构部分替换，不在字符串内容中替换
-        # 先尝试找到JSON结构部分，然后只替换结构中的中文双引号
-        
-        # 策略：先尝试解析，如果失败再逐步修复
-        # 这里我们采用更保守的方法，只修复明显的结构问题
-        
-        # 5. 修复属性名缺少引号的问题
+        # 阶段2: 修复属性名缺少引号的问题（只在结构部分）
         text = re.sub(r'(\{|\,)\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*:', r'\1"\2":', text)
         
-        # 6. 修复数组和对象末尾的逗号问题
-        text = re.sub(r',\s*([\}\]])', r'\1', text)
+        # 阶段3: 修复数组和对象末尾的逗号问题
+        text = re.sub(r',\s*([\]}])', r'\1', text)
         
-        # 7. 修复布尔值大小写问题
+        # 阶段4: 修复布尔值大小写问题（只在结构部分）
         text = re.sub(r'\btrue\b', 'true', text, flags=re.IGNORECASE)
         text = re.sub(r'\bfalse\b', 'false', text, flags=re.IGNORECASE)
         text = re.sub(r'\bnull\b', 'null', text, flags=re.IGNORECASE)
         
+        # 尝试解析修复后的文本
+        try:
+            json.loads(text)
+            logger.debug(f"JSON修复成功: {text[:200]}...")
+            return text
+        except json.JSONDecodeError as e:
+            logger.warning(f"智能修复失败: {e}")
+            
+            # 如果智能修复失败，尝试更保守的修复
+            # 只修复最明显的问题：键值分隔符中的中文冒号
+            text = re.sub(r'"([^"]+)"\s*：\s*', r'"\1": ', original_text)
+            
+            try:
+                json.loads(text)
+                logger.debug(f"保守修复成功: {text[:200]}...")
+                return text
+            except json.JSONDecodeError:
+                logger.warning(f"所有修复策略都失败，返回原始文本")
+                return original_text
+
         # 8. 修复数字格式问题
         text = re.sub(r'\b(\d+)\.(\d+)\b', r'\1.\2', text)
         
