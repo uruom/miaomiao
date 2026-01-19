@@ -590,7 +590,7 @@ def parse_arguments():
     parser.add_argument(
         "--project", 
         type=str, 
-        default="my_story_5",
+        default="my_story_7",
         help="项目名称（默认: my_story）"
     )
     
@@ -688,7 +688,7 @@ def main():
     # 根据模式运行
     if args.mode == "full":
         # 完整流水线 - 默认自动启用断点续传
-        resume = False  # 默认启用断点续传
+        resume = True  # 默认启用断点续传
         if args.no_resume:
             resume = False
             print("已禁用断点续传功能")

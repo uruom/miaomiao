@@ -1,0 +1,72 @@
+[
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-19T21:24:55.493456",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-19T21:32:27.431088",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-19T21:37:27.645431",
+    "data": {
+      "outline_title": "勇者传奇",
+      "parts_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-19T21:37:27.647441",
+    "data": {
+      "chapter_id": "ch_1",
+      "chapter_title": "平凡的开始"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-19T21:38:58.516604",
+    "data": {
+      "chapter_id": "ch_1",
+      "scenes_count": 8
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-19T21:38:58.518571",
+    "data": {
+      "chapter_id": "ch_2",
+      "chapter_title": "命运的召唤"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-19T21:40:24.155829",
+    "data": {
+      "chapter_id": "ch_2",
+      "scenes_count": 8
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-19T21:40:24.160840",
+    "data": {
+      "scene_id": "sc_01",
+      "scene_title": "晨光与日常"
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-19T21:52:55.146166",
+    "data": {
+      "scene_id": "sc_01",
+      "scene_title": "晨光与日常"
+    }
+  }
+]

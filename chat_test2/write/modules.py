@@ -87,16 +87,18 @@ class OutlineModule:
     
     def _build_outline_prompt(self, concept: str, kwargs: Dict) -> str:
         """构建大纲生成提示词"""
-        template = """请为以下故事概念生成一个详细的故事大纲：
+        template = """
+        你是江南，《龙族》作者，擅长写作与构思
+        请为以下小说思路生成一个详细的小说大纲：
 
-故事概念：{concept}
+小说思路：{concept}
 
 要求：
-1. 将故事分为3-5个主要部分（起承转合）
-2. 每个部分包含2-4个章节
-3. 为每个章节提供标题和简要描述
-4. 估计每个章节的字数
-5. 列出每个章节涉及的主要角色和场景
+1. 将故事分为6-8个主要部分，每个部分都应有一个或多个大的爆点与高潮，能够留住读者。
+2. 每个部分包含6-8卷，同理，每个卷也应有一个或多个大的爆点与高潮，能够留住读者。
+3. 为每个卷提供标题和简要描述
+4. 估计每个卷的章节数
+5. 列出每个卷涉及的主要角色和场景
 6. 返回STRICT JSON格式，必须使用：
 - 英文引号 ",不要使用中文双引号
 - 英文冒号: ,不要使用中文冒号，
@@ -235,24 +237,30 @@ class DetailOutlineModule:
         # 构建上下文信息
         context_info = self._build_context_info(chapter, outline_data, previous_chapters, next_chapters, existing_details)
         
-        template = """请为以下章节生成详细的细纲：
+        template = """
+        你是江南，《龙族》作者，擅长写作与构思
+        请为以下章节生成详细的细纲：
 
 {context_info}
 
-章节信息：
-标题：{title}
+卷信息：
+卷题：{title}
 概要：{summary}
 涉及角色：{characters}
 场景：{locations}
 预估字数：{words}
 
 请生成包含以下内容的详细细纲：
-1. 3-8个具体场景
-2. 每个场景的主要事件
-3. 场景之间的过渡
-4. 关键转折点
-5. 情感发展弧线
-6. 节奏控制
+1. 6-8个具体事件/场景（每个场景大约有3-4个章节），每个场景包含有高潮点，让读者情绪起伏，能让读者产生共鸣。
+2. 场景之间的过渡，如何衔接，人物的转变
+3. 关键转折点，如何让读者产生共鸣
+4. 情感发展弧线
+5. 节奏控制
+6. 返回STRICT JSON格式，必须使用：
+- 英文引号 ",不要使用中文双引号
+- 英文冒号: ,不要使用中文冒号，
+- 任何字符串内容中可以包含中文符号，若为json特殊字符请转移，json结构必须是英文标点，不要在Json格式中加入任何不能被解析的字符
+请以JSON格式返回，结构如下：
 
 以JSON格式返回，结构如下：
 {{
@@ -290,8 +298,7 @@ class DetailOutlineModule:
                            existing_details: List[Dict] = None) -> str:
         """构建上下文信息"""
         context_parts = []
-        
-        # 故事概述
+# 故事概述
         context_parts.append(f"故事概述：{outline_data.get('title', '未命名故事')} - {outline_data.get('concept', '')}")
         
         # 前一章节信息
@@ -424,7 +431,9 @@ class FrameModule:
         # 构建上下文信息
         context_info = self._build_frame_context_info(scene, detail_data, previous_scenes, next_scenes, existing_frames, outline_data)
         
-        template = """请为以下场景生成2-5个"固定帧"，每个固定帧代表故事中的一个瞬间快照：
+        template = """
+        你是江南，《龙族》作者，擅长写作与构思
+        请为以下场景生成6-8个"章节帧段"，每个帧代表这章中最为高潮，最吸引读者的瞬间：
 
 {context_info}
 
@@ -436,13 +445,18 @@ class FrameModule:
 关键事件：{events}
 情感基调：{tone}
 
-固定帧要求：
-1. 每个固定帧包含该瞬间的完整状态
-2. 包括在场角色及其状态（位置、动作、情绪）
-3. 环境描述（光线、声音、气味等）
-4. 物品状态
-5. 当前进行的对话或动作
-6. 角色的内心想法
+章节帧要求：
+1. 每个章节帧包含该瞬间的完整状态
+2. 包括在场角色及其状态（位置、动作、情绪）、环境描述（光线、声音、气味等）、物品状态
+3. 当前进行的对话或动作
+4. 角色的内心想法，
+5. 如何过度到这个高潮帧，该帧前后是如何设计，以及后续描写的指导，如何让读者产生共鸣，如何让这个高潮帧成为下一个高潮的铺垫
+6. 返回STRICT JSON格式，必须使用：
+- 英文引号 ",不要使用中文双引号
+- 英文冒号: ,不要使用中文冒号，
+- 任何字符串内容中可以包含中文符号，若为json特殊字符请转移，json结构必须是英文标点，不要在Json格式中加入任何不能被解析的字符
+请以JSON格式返回，结构如下：
+
 
 以JSON数组格式返回，每个固定帧结构如下：
 [
@@ -557,18 +571,50 @@ class FrameModule:
     
     def _parse_frames_response(self, response: str, scene: Dict[str, Any]) -> List[Dict[str, Any]]:
         """解析固定帧响应"""
-        data = self.model_manager.extract_json(response)
-        if not data or not isinstance(data, list):
-            # 创建默认固定帧
+        try:
+            data = self.model_manager.extract_json(response)
+            if not data:
+                # 创建默认固定帧
+                return [self._create_default_frame(scene)]
+            
+            # 处理不同的返回类型：列表或字典
+            frames_data = []
+            if isinstance(data, list):
+                # 如果是列表，直接使用
+                frames_data = data
+            elif isinstance(data, dict):
+                # 如果是字典，检查是否包含frame_id，如果是单个帧对象
+                if "frame_id" in data or "timestamp" in data or "characters_present" in data:
+                    frames_data = [data]
+                else:
+                    # 可能是包含frames键的字典
+                    frames_data = data.get("frames", [])
+                    if not isinstance(frames_data, list):
+                        frames_data = [data]
+            else:
+                # 其他类型，创建默认固定帧
+                return [self._create_default_frame(scene)]
+            
+            # 确保frames_data是列表且不为空
+            if not isinstance(frames_data, list) or len(frames_data) == 0:
+                return [self._create_default_frame(scene)]
+            
+            # 确保每个帧都有正确的数据结构
+            valid_frames = []
+            for frame in frames_data:
+                if isinstance(frame, dict):
+                    # 确保每个帧都有scene_id
+                    frame["scene_id"] = scene.get("scene_id", "unknown")
+                    if "frame_id" not in frame:
+                        frame["frame_id"] = f"frame_{len(valid_frames) + 1}"
+                    valid_frames.append(frame)
+            
+            return valid_frames if valid_frames else [self._create_default_frame(scene)]
+            
+        except Exception as e:
+            print(f"解析固定帧响应时出错: {e}")
+            # 出错时返回默认固定帧
             return [self._create_default_frame(scene)]
-        
-        # 确保每个帧都有scene_id
-        for frame in data:
-            frame["scene_id"] = scene.get("scene_id", "unknown")
-            if "frame_id" not in frame:
-                frame["frame_id"] = f"frame_{len(data)}"
-        
-        return data
     
     def _create_default_frame(self, scene: Dict[str, Any]) -> Dict[str, Any]:
         """创建默认固定帧"""

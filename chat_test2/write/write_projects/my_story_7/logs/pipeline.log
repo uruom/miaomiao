@@ -1,0 +1,105 @@
+[
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-19T22:09:04.175021",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-19T22:14:04.390142",
+    "data": {
+      "outline_title": "勇者传奇",
+      "parts_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-19T22:14:04.393142",
+    "data": {
+      "chapter_id": "ch_1",
+      "chapter_title": "平凡的开始"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-19T22:15:31.512268",
+    "data": {
+      "chapter_id": "ch_1",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-19T22:15:31.513288",
+    "data": {
+      "chapter_id": "ch_2",
+      "chapter_title": "命运的召唤"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-19T22:16:44.353822",
+    "data": {
+      "chapter_id": "ch_2",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-19T22:16:44.358372",
+    "data": {
+      "scene_id": "s1",
+      "scene_title": "平静的日常与内心的躁动"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-19T22:19:15.477861",
+    "data": {
+      "scene_id": "s1",
+      "frames_count": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-19T22:19:15.479852",
+    "data": {
+      "scene_id": "s2",
+      "scene_title": "林中的意外与古老的传说"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-19T22:24:15.699382",
+    "data": {
+      "scene_id": "s2",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-19T22:24:15.701382",
+    "data": {
+      "scene_id": "s3",
+      "scene_title": "废墟的微光与心跳的共鸣"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-19T22:27:37.474372",
+    "data": {
+      "scene_id": "s3",
+      "frames_count": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-19T22:27:37.476372",
+    "data": {
+      "scene_id": "s4",
+      "scene_title": "触碰与觉醒"
+    }
+  }
+]
