@@ -249,43 +249,163 @@ class ModelManager:
         if not text:
             return text
         
-        # 首先，我们需要智能地替换中文标点，但只在JSON结构部分，而不是字符串内容部分
-        # 使用正则表达式来识别JSON结构中的标点符号
+        # 首先尝试直接解析，如果成功则无需修复
+        try:
+            json.loads(text)
+            return text
+        except json.JSONDecodeError:
+            pass
         
-        # 1. 修复JSON键名和值分隔符中的中文标点
-        # 匹配模式："键名"后跟中文标点，然后是值
-        text = re.sub(r'"([^"]+)"\s*：\s*', r'"\1": ', text)
+        original_text = text
         
-        # 2. 修复JSON结构中的中文逗号（在属性之间）
-        # 匹配模式：值后跟中文逗号，然后是下一个属性
-        text = re.sub(r'(["\]\dtruefalsenull])\s*，\s*"', r'\1, "', text)
+        # 1. 替换所有中文标点为英文标点
+        text = text.replace('：', ':').replace('，', ',').replace('；', ',').replace('。', ',')
         
-        # 3. 修复数组中的中文逗号
-        text = re.sub(r'(["\]\dtruefalsenull])\s*，\s*(["\[\]\dtruefalsenull])', r'\1, \2', text)
+        # 2. 按行处理，修复键值对的引号问题
+        lines = text.split('\n')
+        fixed_lines = []
         
-        # 4. 修复中文双引号问题 - 只在JSON结构部分替换，不在字符串内容中替换
-        # 先尝试找到JSON结构部分，然后只替换结构中的中文双引号
+        for line in lines:
+            line = line.strip()
+            if not line or ':' not in line:
+                fixed_lines.append(line)
+                continue
+            
+            # 分割键和值
+            parts = line.split(':', 1)
+            if len(parts) != 2:
+                fixed_lines.append(line)
+                continue
+            
+            key_part = parts[0].strip()
+            value_part = parts[1].strip()
+            
+            # 修复键部分的引号
+            if key_part:
+                # 检查键是否已经有引号
+                has_quotes = (key_part.startswith('"') and key_part.endswith('"')) or \
+                            (key_part.startswith('"') and key_part.endswith('"'))
+                
+                if not has_quotes:
+                    # 如果键没有引号，检查是否需要添加
+                    # 如果键包含空格或特殊字符，需要加引号
+                    if re.search(r'[^\w]', key_part) or ' ' in key_part:
+                        key_part = f'"{key_part}"'
+                    else:
+                        # 简单键名，直接加引号
+                        key_part = f'"{key_part}"'
+                else:
+                    # 已经有引号，检查是否为中文引号
+                    if key_part.startswith('"'):
+                        # 中文左引号，替换为英文
+                        key_part = '"' + key_part[1:]
+                    if key_part.endswith('"'):
+                        # 中文右引号，替换为英文
+                        key_part = key_part[:-1] + '"'
+            
+            # 修复值部分的引号
+            if value_part:
+                # 检查值是否为复杂结构（对象或数组）
+                is_complex_value = value_part.startswith('{') or value_part.startswith('[')
+                
+                if not is_complex_value:
+                    # 简单值，检查引号
+                    has_quotes = (value_part.startswith('"') and value_part.endswith('"')) or \
+                                (value_part.startswith('"') and value_part.endswith('"'))
+                    
+                    if not has_quotes:
+                        # 如果值没有引号，检查是否需要添加
+                        # 如果值包含空格或看起来像字符串，加引号
+                        if re.search(r'[^\w\s]', value_part) or ' ' in value_part:
+                            value_part = f'"{value_part}"'
+                    else:
+                        # 已经有引号，检查是否为中文引号
+                        if value_part.startswith('"'):
+                            # 中文左引号，替换为英文
+                            value_part = '"' + value_part[1:]
+                        if value_part.endswith('"'):
+                            # 中文右引号，替换为英文
+                            value_part = value_part[:-1] + '"'
+            
+            # 重新组合行
+            fixed_line = f'{key_part}: {value_part}'
+            fixed_lines.append(fixed_line)
         
-        # 策略：先尝试解析，如果失败再逐步修复
-        # 这里我们采用更保守的方法，只修复明显的结构问题
+        # 重新组合文本
+        text = '\n'.join(fixed_lines)
         
-        # 5. 修复属性名缺少引号的问题
-        text = re.sub(r'(\{|\,)\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*:', r'\1"\2":', text)
+        # 3. 修复数组和对象末尾的逗号问题
+        text = re.sub(r',\s*([\]}])', r'\1', text)
         
-        # 6. 修复数组和对象末尾的逗号问题
-        text = re.sub(r',\s*([\}\]])', r'\1', text)
-        
-        # 7. 修复布尔值大小写问题
+        # 4. 修复布尔值大小写问题
         text = re.sub(r'\btrue\b', 'true', text, flags=re.IGNORECASE)
         text = re.sub(r'\bfalse\b', 'false', text, flags=re.IGNORECASE)
         text = re.sub(r'\bnull\b', 'null', text, flags=re.IGNORECASE)
         
-        # 8. 修复数字格式问题
+        # 5. 修复数字格式问题
         text = re.sub(r'\b(\d+)\.(\d+)\b', r'\1.\2', text)
         
-        logger.debug(f"修复后的JSON文本: {text[:200]}...")
-        return text
-    
+        # 尝试解析修复后的文本
+        try:
+            json.loads(text)
+            logger.debug(f"JSON修复成功: {text[:200]}...")
+            return text
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON修复失败: {e}")
+            
+            # 如果修复失败，尝试更激进的修复
+            # 使用状态机确保只修复JSON结构中的标点
+            def aggressive_fix(text):
+                result = []
+                in_string = False
+                escape_next = False
+                
+                for char in text:
+                    if escape_next:
+                        result.append(char)
+                        escape_next = False
+                        continue
+                    
+                    if char == '\\':
+                        result.append(char)
+                        escape_next = True
+                        continue
+                    
+                    if char == '"':
+                        in_string = not in_string
+                        result.append(char)
+                        continue
+                    
+                    if in_string:
+                        # 在字符串内，直接复制，不修改任何内容
+                        result.append(char)
+                        continue
+                    
+                    # 在JSON结构部分，直接替换所有中文标点
+                    if char == '：':
+                        result.append(':')
+                    elif char == '，':
+                        result.append(',')
+                    elif char == '；':
+                        result.append(',')
+                    elif char == '。':
+                        result.append(',')
+                    else:
+                        result.append(char)
+                
+                return ''.join(result)
+            
+            text = aggressive_fix(original_text)
+            
+            # 再次尝试解析
+            try:
+                json.loads(text)
+                logger.debug(f"激进修复成功: {text[:200]}...")
+                return text
+            except json.JSONDecodeError:
+                logger.warning(f"所有修复策略都失败，返回原始文本")
+                return original_text
+
     def _parse_json_with_fallback(self, text: str) -> Optional[Dict[str, Any]]:
         """使用更宽松的方式解析JSON，作为最后的手段"""
         try:
