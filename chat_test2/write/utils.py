@@ -8,6 +8,8 @@ from typing import Any, Dict, List, Optional, Union
 from pathlib import Path
 import logging
 
+from json_repair import repair_json
+
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
@@ -202,6 +204,11 @@ class ModelManager:
         """本地JSON解析，包含中文标点符号修复"""
         try:
             # 首先尝试直接解析（可能已经是有效的JSON）
+            try:
+                fixed_text = repair_json(text,ensure_ascii = False)
+                return json.loads(fixed_text)
+            except json.JSONDecodeError:
+                pass
             try:
                 fixed_text = self._fix_json_format(text)
                 return json.loads(fixed_text)

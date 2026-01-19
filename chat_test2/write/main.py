@@ -590,7 +590,7 @@ def parse_arguments():
     parser.add_argument(
         "--project", 
         type=str, 
-        default="my_story_4",
+        default="my_story_5",
         help="项目名称（默认: my_story）"
     )
     

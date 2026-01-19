@@ -10,6 +10,8 @@ from typing import Dict, Any, List, Optional, Union
 from dataclasses import dataclass, asdict
 import logging
 
+from json_repair import repair_json
+
 logger = logging.getLogger(__name__)
 
 
@@ -149,6 +151,12 @@ class APIModelManager:
         
         try:
             # 首先尝试直接解析（可能已经是有效的JSON）
+            try:
+                fixed_text = repair_json(text,ensure_ascii = False)
+                return json.loads(fixed_text)
+            except json.JSONDecodeError:
+                pass
+
             try:
                 return json.loads(text)
             except json.JSONDecodeError:
