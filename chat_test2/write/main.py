@@ -90,6 +90,12 @@ class AutoStoryWriter:
             print("无效的大纲数据")
             return {}
         
+        # 调试：检查parts字段的类型
+        print(f"DEBUG: outline_data['parts'] 类型: {type(outline_data['parts'])}")
+        if outline_data["parts"]:
+            print(f"DEBUG: outline_data['parts'][0] 类型: {type(outline_data['parts'][0])}")
+            print(f"DEBUG: outline_data['parts'][0] 内容: {outline_data['parts'][0]}")
+        
         all_details = {}
         
         # 确定要处理的章节
@@ -98,13 +104,21 @@ class AutoStoryWriter:
         if chapter_ids:
             # 处理指定章节
             for part in outline_data["parts"]:
-                for chapter in part["chapters"]:
+                # 检查part类型
+                if not isinstance(part, dict):
+                    print(f"ERROR: part 不是字典类型，而是 {type(part)}: {part}")
+                    continue
+                for chapter in part.get("chapters", []):
                     if chapter["id"] in chapter_ids:
                         chapters_to_process.append(chapter)
         else:
             # 处理所有章节
             for part in outline_data["parts"]:
-                chapters_to_process.extend(part["chapters"])
+                # 检查part类型
+                if not isinstance(part, dict):
+                    print(f"ERROR: part 不是字典类型，而是 {type(part)}: {part}")
+                    continue
+                chapters_to_process.extend(part.get("chapters", []))
         
         # 生成每个章节的细纲
         for i, chapter in enumerate(chapters_to_process):
@@ -590,7 +604,7 @@ def parse_arguments():
     parser.add_argument(
         "--project", 
         type=str, 
-        default="my_story_7",
+        default="my_story_8",
         help="项目名称（默认: my_story）"
     )
     
@@ -688,7 +702,7 @@ def main():
     # 根据模式运行
     if args.mode == "full":
         # 完整流水线 - 默认自动启用断点续传
-        resume = True  # 默认启用断点续传
+        resume = False  # 默认启用断点续传
         if args.no_resume:
             resume = False
             print("已禁用断点续传功能")

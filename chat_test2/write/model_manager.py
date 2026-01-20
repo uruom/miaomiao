@@ -26,7 +26,7 @@ class ModelConfig:
     top_p: float = 0.9
     frequency_penalty: float = 0.1
     presence_penalty: float = 0.1
-    timeout: int = 300  # 秒
+    timeout: int = 30000  # 秒
 
 
 class APIModelManager:

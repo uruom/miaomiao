@@ -72,11 +72,11 @@ class OutlineModule:
         # 调用模型
         response = self.model_manager.call_model(prompt)
         # 提取JSON
-        outline_data = self._parse_outline_response(response)
-        
-        if not outline_data:
-            print("大纲生成失败，使用默认结构")
-            outline_data = self._create_default_outline(story_concept)
+        try:
+            outline_data = self._parse_outline_response(response)
+        except ValueError as e:
+            print(f"大纲生成失败: {e}")
+            raise ValueError(f"generate_outline方法失败：{str(e)}")
         
         # 保存大纲
         outline_file = os.path.join(self.output_dir, f"outline_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json")
@@ -129,33 +129,32 @@ class OutlineModule:
         additional = kwargs.get('requirements', '无')
         return template.format(concept=concept, additional_requirements=additional)
     
-    def _parse_outline_response(self, response: str) -> Optional[Dict[str, Any]]:
+    def _parse_outline_response(self, response: str) -> Dict[str, Any]:
         """解析模型响应"""
         try:
             # 尝试提取JSON
             data = self.model_manager.extract_json(response)
-            if data:
-                return data
+            if not data:
+                raise ValueError("JSON解析失败：无法从响应中提取有效数据")
             
-            # 如果没有JSON，尝试重构
-            lines = response.split('\n')
-            outline = {
-                "title": lines[0] if lines else "未命名故事",
-                "concept": "",
-                "parts": []
-            }
+            if not isinstance(data, dict):
+                raise ValueError(f"JSON解析失败：期望字典类型，但得到 {type(data).__name__}")
             
-            current_part = None
-            for line in lines:
-                if line.strip().startswith('#'):
-                    if current_part:
-                        outline["parts"].append(current_part)
-                    current_part = {"part_title": line.strip('# '), "chapters": []}
+            # 验证必要字段
+            required_fields = ["title", "concept", "parts"]
+            for field in required_fields:
+                if field not in data:
+                    raise ValueError(f"JSON解析失败：缺少必要字段 '{field}'")
             
-            return outline
+            # 验证parts字段
+            if not isinstance(data.get("parts"), list):
+                raise ValueError(f"JSON解析失败：parts字段应为列表类型，但得到 {type(data.get('parts')).__name__}")
+            
+            return data
+            
         except Exception as e:
             print(f"解析大纲失败: {e}")
-            return None
+            raise ValueError(f"_parse_outline_response方法解析失败：{str(e)}")
     
     def _create_default_outline(self, concept: str) -> Dict[str, Any]:
         """创建默认大纲结构"""
@@ -211,7 +210,11 @@ class DetailOutlineModule:
         response = self.model_manager.call_model(prompt)
         
         # 解析响应
-        detail_data = self._parse_detail_response(response, chapter)
+        try:
+            detail_data = self._parse_detail_response(response, chapter)
+        except ValueError as e:
+            print(f"细纲生成失败: {e}")
+            raise ValueError(f"generate_details方法失败：{str(e)}")
         
         # 保存细纲
         detail_file = os.path.join(self.output_dir, f"detail_{chapter_id}_{datetime.now().strftime('%H%M%S')}.json")
@@ -329,31 +332,32 @@ class DetailOutlineModule:
     
     def _parse_detail_response(self, response: str, chapter: Dict[str, Any]) -> Dict[str, Any]:
         """解析细纲响应"""
-        data = self.model_manager.extract_json(response)
-        if not data:
-            # 创建默认细纲
-            data = {
-                "section_id": chapter.get("id", "unknown"),
-                "title": chapter.get("title", "未命名章节"),
-                "scenes": [
-                    {
-                        "scene_id": "scene_1",
-                        "scene_title": "开场场景",
-                        "description": chapter.get("summary", ""),
-                        "characters_involved": chapter.get("characters", []),
-                        "location": chapter.get("locations", [""])[0] if chapter.get("locations") else "未知地点",
-                        "key_events": ["故事开始"],
-                        "emotional_tone": "中性"
-                    }
-                ],
-                "transitions": ["时间推移"],
-                "key_events": ["主要事件"],
-                "emotional_arc": "平稳发展",
-                "pace": "中等"
-            }
-        
-        data["section_id"] = chapter.get("id", data.get("section_id", "unknown"))
-        return data
+        try:
+            data = self.model_manager.extract_json(response)
+            if not data:
+                raise ValueError("JSON解析失败：无法从响应中提取有效数据")
+            
+            if not isinstance(data, dict):
+                raise ValueError(f"JSON解析失败：期望字典类型，但得到 {type(data).__name__}")
+            
+            # 验证必要字段
+            required_fields = ["section_id", "title", "scenes"]
+            for field in required_fields:
+                if field not in data:
+                    raise ValueError(f"JSON解析失败：缺少必要字段 '{field}'")
+            
+            # 验证scenes字段
+            if not isinstance(data.get("scenes"), list):
+                raise ValueError(f"JSON解析失败：scenes字段应为列表类型，但得到 {type(data.get('scenes')).__name__}")
+            
+            # 确保section_id正确
+            data["section_id"] = chapter.get("id", data.get("section_id", "unknown"))
+            
+            return data
+            
+        except Exception as e:
+            print(f"解析细纲响应时出错: {e}")
+            raise ValueError(f"_parse_detail_response方法解析失败：{str(e)}")
 
 
 class FrameModule:
@@ -417,7 +421,11 @@ class FrameModule:
         response = self.model_manager.call_model(prompt)
         
         # 解析响应
-        frames_data = self._parse_frames_response(response, scene)
+        try:
+            frames_data = self._parse_frames_response(response, scene)
+        except ValueError as e:
+            print(f"固定帧生成失败: {e}")
+            raise ValueError(f"generate_frames方法失败：{str(e)}")
         
         return frames_data
     
@@ -574,8 +582,7 @@ class FrameModule:
         try:
             data = self.model_manager.extract_json(response)
             if not data:
-                # 创建默认固定帧
-                return [self._create_default_frame(scene)]
+                raise ValueError("JSON解析失败：无法从响应中提取有效数据")
             
             # 处理不同的返回类型：列表或字典
             frames_data = []
@@ -592,29 +599,48 @@ class FrameModule:
                     if not isinstance(frames_data, list):
                         frames_data = [data]
             else:
-                # 其他类型，创建默认固定帧
-                return [self._create_default_frame(scene)]
+                raise ValueError(f"JSON解析失败：期望列表或字典类型，但得到 {type(data).__name__}")
             
             # 确保frames_data是列表且不为空
-            if not isinstance(frames_data, list) or len(frames_data) == 0:
-                return [self._create_default_frame(scene)]
+            if not isinstance(frames_data, list):
+                raise ValueError(f"JSON解析失败：frames_data应为列表类型，但得到 {type(frames_data).__name__}")
+            
+            if len(frames_data) == 0:
+                raise ValueError("JSON解析失败：frames_data为空列表")
             
             # 确保每个帧都有正确的数据结构
             valid_frames = []
-            for frame in frames_data:
-                if isinstance(frame, dict):
-                    # 确保每个帧都有scene_id
-                    frame["scene_id"] = scene.get("scene_id", "unknown")
-                    if "frame_id" not in frame:
-                        frame["frame_id"] = f"frame_{len(valid_frames) + 1}"
-                    valid_frames.append(frame)
+            for i, frame in enumerate(frames_data):
+                if not isinstance(frame, dict):
+                    raise ValueError(f"JSON解析失败：第{i+1}个帧不是字典类型，而是 {type(frame).__name__}")
+                
+                # 确保每个帧都有scene_id
+                frame["scene_id"] = scene.get("scene_id", "unknown")
+                
+                # 验证和清理frame_id
+                if "frame_id" not in frame:
+                    frame["frame_id"] = f"frame_{len(valid_frames) + 1}"
+                else:
+                    # 清理frame_id中的非法字符
+                    frame_id = str(frame["frame_id"]).strip()
+                    # 移除换行符、制表符等空白字符
+                    frame_id = re.sub(r'\s+', '_', frame_id)
+                    # 移除文件名非法字符
+                    frame_id = re.sub(r'[<>:"/\\|?*，。！？]', '', frame_id)
+                    # 限制长度并确保不为空
+                    frame_id = frame_id[:50] if frame_id else f"frame_{len(valid_frames) + 1}"
+                    frame["frame_id"] = frame_id
+                
+                valid_frames.append(frame)
             
-            return valid_frames if valid_frames else [self._create_default_frame(scene)]
+            if not valid_frames:
+                raise ValueError("JSON解析失败：没有有效的帧数据")
+            
+            return valid_frames
             
         except Exception as e:
             print(f"解析固定帧响应时出错: {e}")
-            # 出错时返回默认固定帧
-            return [self._create_default_frame(scene)]
+            raise ValueError(f"_parse_frames_response方法解析失败：{str(e)}")
     
     def _create_default_frame(self, scene: Dict[str, Any]) -> Dict[str, Any]:
         """创建默认固定帧"""
