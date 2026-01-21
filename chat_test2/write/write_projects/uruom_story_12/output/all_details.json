@@ -1,0 +1,62 @@
+{
+  "ch_1": {
+    "section_id": "ch_1",
+    "title": "平凡的开始",
+    "scenes": [
+      {
+        "scene_id": "scene_1",
+        "scene_title": "清晨的村庄",
+        "description": "亚瑟在村庄中开始新的一天",
+        "characters_involved": [
+          "亚瑟",
+          "村民"
+        ],
+        "location": "亚瑟的村庄",
+        "key_events": [
+          "亚瑟起床",
+          "与村民打招呼",
+          "开始日常工作"
+        ],
+        "emotional_tone": "平静"
+      }
+    ],
+    "transitions": [
+      "时间推移到中午"
+    ],
+    "key_events": [
+      "亚瑟发现异常"
+    ],
+    "emotional_arc": "从平静到好奇",
+    "pace": "缓慢"
+  },
+  "ch_2": {
+    "section_id": "ch_2",
+    "title": "平凡的开始",
+    "scenes": [
+      {
+        "scene_id": "scene_1",
+        "scene_title": "清晨的村庄",
+        "description": "亚瑟在村庄中开始新的一天",
+        "characters_involved": [
+          "亚瑟",
+          "村民"
+        ],
+        "location": "亚瑟的村庄",
+        "key_events": [
+          "亚瑟起床",
+          "与村民打招呼",
+          "开始日常工作"
+        ],
+        "emotional_tone": "平静"
+      }
+    ],
+    "transitions": [
+      "时间推移到中午"
+    ],
+    "key_events": [
+      "亚瑟发现异常"
+    ],
+    "emotional_arc": "从平静到好奇",
+    "pace": "缓慢"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "frame_id": "frame_2",
+  "scene_id": "scene_1",
+  "timestamp": "演示结束后，顾念第一次尝试挥剑时",
+  "characters_present": [
+    {
+      "character_id": "character_guqingchen",
+      "name": "顾清尘",
+      "position": "退后两步，负手而立，目光紧盯着顾念",
+      "action": "身体僵硬地站着，右手在背后不自觉地握紧了拳",
+      "emotion": "高度紧张、期待又害怕出错",
+      "dialogue_line": "\"照我刚才做的，试一次。\""
+    },
+    {
+      "character_id": "character_gunian",
+      "name": "顾念",
+      "position": "站在原先位置，深吸一口气，试图摆出起手式",
+      "action": "笨拙地调整脚步和握剑姿势，小脸因为用力而皱成一团，然后猛地向前挥出木剑",
+      "emotion": "全神贯注、孤注一掷",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "太极广场",
+    "description": "同前。阳光稍微亮了一些，但寒意未减。",
+    "lighting": "光线照亮了顾念因用力而紧绷的小小身影和脱手飞出的木剑轨迹",
+    "sounds": [
+      "顾念挥剑时短促的“嘿”声",
+      "木剑脱手后划破空气的呼啸",
+      "木剑撞击远处石板并弹跳的“哐当”脆响"
+    ],
+    "smells": [
+      "同前"
+    ]
+  },
+  "environment": {
+    "weather": "晴，寒冷",
+    "time_of_day": "清晨",
+    "temperature": "接近冰点",
+    "atmosphere": "瞬间的动感后陷入更深的寂静和尴尬"
+  },
+  "objects": [
+    {
+      "object_id": "object_wooden_sword_nian_flying",
+      "name": "顾念脱手的木剑",
+      "description": "",
+      "position": "/在空中旋转着飞出三丈远，最终落在湿滑的石板上，又滑行了一段才停下/",
+      "/state/": "/静止，躺在远处/"
+    }
+  ],
+  "/current_action/": "/顾念第一次挥剑失败，木剑脱手飞出。顾清尘目睹全过程。/",
+  "/dialogue/": [],
+  "/inner_thoughts/": [
+    "/顾清尘：\"……果然。和我当年第一次一样。接下来该说那句话了……\"/",
+    "/顾念：\"啊！\"（脑中一片空白，只剩下惊慌和羞耻）"
+  ],
+  "/sensory_details/": {
+    "/visual/": "/木剑在空中划出的抛物线格外刺眼。顾念保持着一个可笑的挥空姿势僵在原地，小脸瞬间由红转白。/",
+    "/auditory/": "/木剑落地的声音在寂静中格外响亮、漫长。随后只剩下风声和顾念逐渐加重的、带着哭腔的呼吸。/",
+    "/olfactory/": "/同前。/",
+    "/tactile/": "/顾念感到手掌火辣辣的疼（被粗糙剑柄磨的），以及心脏砰砰狂跳几乎要撞出胸口。顾清尘背在身后的手，指甲掐进了掌心。/"
+  }
+}

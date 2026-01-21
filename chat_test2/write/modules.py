@@ -70,7 +70,7 @@ class OutlineModule:
         prompt = self._build_outline_prompt(story_concept, kwargs)
         
         # 调用模型
-        response = self.model_manager.call_model(prompt, response_format={"type": "json_object"})
+        response = self.model_manager.call_model(prompt, system_prompt="", response_format={"type": "json_object"})
         # 提取JSON
         try:
             outline_data = self._parse_outline_response(response)
@@ -207,7 +207,7 @@ class DetailOutlineModule:
         prompt = self._build_detail_prompt(chapter, outline_data, previous_chapters, next_chapters, existing_details)
         
         # 调用模型
-        response = self.model_manager.call_model(prompt, response_format={"type": "json_object"})
+        response = self.model_manager.call_model(prompt, system_prompt="", response_format={"type": "json_object"})
         
         # 解析响应
         try:
@@ -216,8 +216,11 @@ class DetailOutlineModule:
             print(f"细纲生成失败: {e}")
             raise ValueError(f"generate_details方法失败：{str(e)}")
         
+        # 清理章节ID中的非法字符
+        clean_chapter_id = re.sub(r'[<>:"/\\|?*]', '_', chapter_id)
+        
         # 保存细纲
-        detail_file = os.path.join(self.output_dir, f"detail_{chapter_id}_{datetime.now().strftime('%H%M%S')}.json")
+        detail_file = os.path.join(self.output_dir, f"detail_{clean_chapter_id}_{datetime.now().strftime('%H%M%S')}.json")
         self.file_manager.write_json(detail_file, detail_data)
         
         print(f"细纲已保存: {detail_file}")
@@ -366,6 +369,11 @@ class DetailOutlineModule:
         except Exception as e:
             print(f"解析细纲响应时出错: {e}")
             print(f"原始响应内容: {response[:500]}...")
+            # 记录完整的解析失败内容到文件
+            import logging
+            logger = logging.getLogger("modules")
+            logger.error(f"细纲解析失败: {e}")
+            logger.error(f"完整响应内容:\n{response}")
             raise ValueError(f"_parse_detail_response方法解析失败：{str(e)}")
 
 
@@ -401,7 +409,9 @@ class FrameModule:
         
         # 保存固定帧
         for frame in frames:
-            frame_file = os.path.join(self.output_dir, f"frame_{frame['frame_id']}.json")
+            # 清理frame_id中的非法字符
+            clean_frame_id = re.sub(r'[<>:"/\\|?*]', '_', frame['frame_id'])
+            frame_file = os.path.join(self.output_dir, f"frame_{clean_frame_id}.json")
             self.file_manager.write_json(frame_file, frame)
             
             # 提取并保存角色、地点等信息
@@ -418,10 +428,10 @@ class FrameModule:
         return None
     
     def _create_frames_for_scene(self, scene: Dict[str, Any], detail_data: Dict[str, Any],
-                               previous_scenes: List[Dict] = None,
-                               next_scenes: List[Dict] = None,
-                               existing_frames: List[Dict] = None,
-                               outline_data: Dict[str, Any] = None) -> List[Dict[str, Any]]:
+                              previous_scenes: List[Dict] = None,
+                              next_scenes: List[Dict] = None,
+                              existing_frames: List[Dict] = None,
+                              outline_data: Dict[str, Any] = None) -> List[Dict[str, Any]]:
         """为场景创建固定帧，包含上下文信息"""
         # 构建提示词
         prompt = self._build_frame_prompt(scene, detail_data, previous_scenes, next_scenes, existing_frames, outline_data)
@@ -430,11 +440,7 @@ class FrameModule:
         response = self.model_manager.call_model(prompt, response_format={"type": "json_object"})
         
         # 解析响应
-        try:
-            frames_data = self._parse_frames_response(response, scene)
-        except ValueError as e:
-            print(f"固定帧生成失败: {e}")
-            raise ValueError(f"generate_frames方法失败：{str(e)}")
+        frames_data = self._parse_frames_response(response, scene)
         
         return frames_data
     
@@ -593,6 +599,16 @@ class FrameModule:
             if not data:
                 raise ValueError("JSON解析失败：无法从响应中提取有效数据")
             
+            # 检测是否是细纲数据（错误的数据格式）
+            if isinstance(data, dict):
+                # 检查是否包含细纲特有的字段
+                if ("section_id" in data or "title" in data or "scenes" in data or 
+                    "transitions" in data or "emotional_arc" in data):
+                    print("错误：模型返回了细纲数据而非固定帧数据")
+                    print("这可能是因为模型没有正确理解提示词要求")
+                    print(f"原始响应内容: {response[:500]}...")
+                    raise ValueError("模型返回了错误的格式（细纲数据而非固定帧数据）")
+            
             # 处理不同的返回类型：列表或字典
             frames_data = []
             if isinstance(data, list):
@@ -615,6 +631,8 @@ class FrameModule:
                 raise ValueError(f"JSON解析失败：frames_data应为列表类型，但得到 {type(frames_data).__name__}")
             
             if len(frames_data) == 0:
+                print("错误：frames_data为空列表")
+                print(f"原始响应内容: {response[:500]}...")
                 raise ValueError("JSON解析失败：frames_data为空列表")
             
             # 确保每个帧都有正确的数据结构
@@ -644,6 +662,8 @@ class FrameModule:
                 valid_frames.append(processed_frame)
             
             if not valid_frames:
+                print("错误：没有有效的帧数据")
+                print(f"原始响应内容: {response[:500]}...")
                 raise ValueError("JSON解析失败：没有有效的帧数据")
             
             return valid_frames
@@ -651,7 +671,12 @@ class FrameModule:
         except Exception as e:
             print(f"解析固定帧响应时出错: {e}")
             print(f"原始响应内容: {response[:500]}...")
-            raise ValueError(f"_parse_frames_response方法解析失败：{str(e)}")
+            # 记录完整的解析失败内容到文件
+            import logging
+            logger = logging.getLogger("modules")
+            logger.error(f"固定帧解析失败: {e}")
+            logger.error(f"完整响应内容:\n{response}")
+            raise ValueError(f"固定帧解析失败: {e}")
     
     def _process_frame(self, frame: Dict[str, Any], scene: Dict[str, Any], frame_index: int) -> Dict[str, Any]:
         """处理单个帧数据"""

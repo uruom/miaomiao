@@ -1,0 +1,163 @@
+[
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T08:33:50.614278",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-21T08:33:52.649740",
+    "data": {
+      "outline_title": "勇者传奇",
+      "parts_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T08:33:52.653251",
+    "data": {
+      "chapter_id": "ch_1",
+      "chapter_title": "平凡的开始"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T08:33:54.664638",
+    "data": {
+      "chapter_id": "ch_1",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T08:33:54.667641",
+    "data": {
+      "chapter_id": "ch_2",
+      "chapter_title": "命运的召唤"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T08:33:56.685696",
+    "data": {
+      "chapter_id": "ch_2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T08:33:56.692740",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "清晨的村庄"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T08:37:35.142561",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-21T08:37:37.171596",
+    "data": {
+      "outline_title": "勇者传奇",
+      "parts_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T08:37:37.174594",
+    "data": {
+      "chapter_id": "ch_1",
+      "chapter_title": "平凡的开始"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T08:37:39.222042",
+    "data": {
+      "chapter_id": "ch_1",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T08:37:39.224547",
+    "data": {
+      "chapter_id": "ch_2",
+      "chapter_title": "命运的召唤"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T08:37:41.266040",
+    "data": {
+      "chapter_id": "ch_2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T08:37:41.271573",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "清晨的村庄"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T08:38:54.255464",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T08:40:28.227896",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T08:42:06.388643",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T09:13:20.116322",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-21T09:19:24.906719",
+    "data": {
+      "outline_title": "勇者传奇",
+      "parts_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T09:19:24.911246",
+    "data": {
+      "chapter_id": "ch_1",
+      "chapter_title": "平凡的开始"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T09:19:37.513836",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  }
+]

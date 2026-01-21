@@ -1,0 +1,773 @@
+[
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T09:31:53.211598",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-21T09:33:47.372035",
+    "data": {
+      "outline_title": "如寄风雪",
+      "parts_count": 2
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T09:33:47.376035",
+    "data": {
+      "chapter_id": "P1C1",
+      "chapter_title": "纯阳雪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T09:36:31.213526",
+    "data": {
+      "chapter_id": "P1C1",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T09:36:31.216051",
+    "data": {
+      "chapter_id": "P1C2",
+      "chapter_title": "旧剑痕"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T09:38:59.357912",
+    "data": {
+      "chapter_id": "P1C2",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T09:38:59.359910",
+    "data": {
+      "chapter_id": "P1C3",
+      "chapter_title": "一纸书信"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T09:42:10.892912",
+    "data": {
+      "chapter_id": "P1C3",
+      "scenes_count": 8
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T09:42:10.895420",
+    "data": {
+      "chapter_id": "P1C4",
+      "chapter_title": "洛阳雨"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T09:45:11.394406",
+    "data": {
+      "chapter_id": "P1C4",
+      "scenes_count": 8
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T09:45:11.395926",
+    "data": {
+      "chapter_id": "P1C5",
+      "chapter_title": "天策焰"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T09:47:56.970088",
+    "data": {
+      "chapter_id": "P1C5",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T09:47:56.973087",
+    "data": {
+      "chapter_id": "P1C6",
+      "chapter_title": "离经叛道"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T09:50:51.782694",
+    "data": {
+      "chapter_id": "P1C6",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T09:50:51.784704",
+    "data": {
+      "chapter_id": "P1C7",
+      "chapter_title": "夜话"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T09:53:57.620087",
+    "data": {
+      "chapter_id": "P1C7",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T09:53:57.622591",
+    "data": {
+      "chapter_id": "P1C8",
+      "chapter_title": "抉择"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T09:56:24.585854",
+    "data": {
+      "chapter_id": "P1C8",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T09:56:24.588853",
+    "data": {
+      "chapter_id": "P2C1",
+      "chapter_title": "新兵李长风"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T09:59:12.854762",
+    "data": {
+      "chapter_id": "P2C1",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T09:59:12.856762",
+    "data": {
+      "chapter_id": "P2C2",
+      "chapter_title": "雁门寒"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T10:01:57.522595",
+    "data": {
+      "chapter_id": "P2C2",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T10:01:57.525103",
+    "data": {
+      "chapter_id": "P2C2a",
+      "chapter_title": ""
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T10:04:50.277117",
+    "data": {
+      "chapter_id": "P2C2a",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T10:04:50.285469",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "晨课初授"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T10:11:44.205458",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 6
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T10:11:44.206458",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "跌倒与倔强"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T11:11:49.653160",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-21T11:18:38.559505",
+    "data": {
+      "outline_title": "剑意如寄",
+      "parts_count": 5
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:18:38.563514",
+    "data": {
+      "chapter_id": "1-1",
+      "chapter_title": "西湖初逢"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:21:00.022908",
+    "data": {
+      "chapter_id": "1-1",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:21:00.025424",
+    "data": {
+      "chapter_id": "1-2",
+      "chapter_title": "笨鸟先飞"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:23:15.941578",
+    "data": {
+      "chapter_id": "1-2",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:23:15.944030",
+    "data": {
+      "chapter_id": "1-3",
+      "chapter_title": "梅雪之约"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:24:29.979615",
+    "data": {
+      "chapter_id": "1-3",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:24:29.983650",
+    "data": {
+      "chapter_id": "1-4",
+      "chapter_title": "剑试锋芒"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:24:30.549111",
+    "data": {
+      "chapter_id": "1-4",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:24:30.552107",
+    "data": {
+      "chapter_id": "1-5",
+      "chapter_title": "江湖夜雨"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:24:31.104443",
+    "data": {
+      "chapter_id": "1-5",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:24:31.107961",
+    "data": {
+      "chapter_id": "1-6",
+      "chapter_title": "暗涌初现"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:24:31.650927",
+    "data": {
+      "chapter_id": "1-6",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:24:31.652924",
+    "data": {
+      "chapter_id": "1-7",
+      "chapter_title": "风雪别离"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:24:32.198255",
+    "data": {
+      "chapter_id": "1-7",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:24:32.201314",
+    "data": {
+      "chapter_id": "2-1",
+      "chapter_title": "空山新雨"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:24:32.861545",
+    "data": {
+      "chapter_id": "2-1",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:24:32.864546",
+    "data": {
+      "chapter_id": "2-2",
+      "chapter_title": "洛道尸人"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:24:33.448454",
+    "data": {
+      "chapter_id": "2-2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:24:33.450463",
+    "data": {
+      "chapter_id": "2-3",
+      "chapter_title": "枫华谷谜案"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:24:34.090818",
+    "data": {
+      "chapter_id": "2-3",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:24:34.093835",
+    "data": {
+      "chapter_id": "2-4",
+      "chapter_title": "长安灯影"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:24:34.663133",
+    "data": {
+      "chapter_id": "2-4",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:24:34.665648",
+    "data": {
+      "chapter_id": "2-5",
+      "chapter_title": "潼关烽火"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:24:35.327553",
+    "data": {
+      "chapter_id": "2-5",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:24:35.331707",
+    "data": {
+      "chapter_id": "3-1",
+      "chapter_title": "病中授业"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:24:35.897339",
+    "data": {
+      "chapter_id": "3-1",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:24:35.900878",
+    "data": {
+      "chapter_id": "3-2",
+      "chapter_title": "拜师之礼"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:24:36.567686",
+    "data": {
+      "chapter_id": "3-2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:24:36.570687",
+    "data": {
+      "chapter_id": "\"3-3\"",
+      "chapter_title": null
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T11:35:38.006308",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-21T11:38:25.256729",
+    "data": {
+      "outline_title": "勇者传奇",
+      "parts_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:38:25.260727",
+    "data": {
+      "chapter_id": "ch_1",
+      "chapter_title": "平凡的开始"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:38:26.393701",
+    "data": {
+      "chapter_id": "ch_1",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T11:38:26.395995",
+    "data": {
+      "chapter_id": "ch_2",
+      "chapter_title": "命运的召唤"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T11:38:26.967603",
+    "data": {
+      "chapter_id": "ch_2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T11:38:26.971630",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "清晨的村庄"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T12:05:35.419876",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-21T12:07:56.228536",
+    "data": {
+      "outline_title": "眉间雪·如寄",
+      "parts_count": 4
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:07:56.233055",
+    "data": {
+      "chapter_id": "1-1",
+      "chapter_title": "扬州雪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:11:08.990650",
+    "data": {
+      "chapter_id": "1-1",
+      "scenes_count": 8
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:11:08.993648",
+    "data": {
+      "chapter_id": "1-2",
+      "chapter_title": "问道纯阳"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:14:04.308341",
+    "data": {
+      "chapter_id": "1-2",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:14:04.311854",
+    "data": {
+      "chapter_id": "1-3",
+      "chapter_title": "旧物惊心"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:16:53.983926",
+    "data": {
+      "chapter_id": "1-3",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:16:53.986926",
+    "data": {
+      "chapter_id": "1-4",
+      "chapter_title": "洛道尸潮"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:19:42.525845",
+    "data": {
+      "chapter_id": "1-4",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:19:42.529213",
+    "data": {
+      "chapter_id": "1-5",
+      "chapter_title": "红衣之影"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:22:13.058812",
+    "data": {
+      "chapter_id": "1-5",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:22:13.062818",
+    "data": {
+      "chapter_id": "1-6",
+      "chapter_title": "决意下山"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:24:38.317488",
+    "data": {
+      "chapter_id": "1-6",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:24:38.321870",
+    "data": {
+      "chapter_id": "2-1",
+      "chapter_title": "天策魂"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:28:31.338554",
+    "data": {
+      "chapter_id": "2-1",
+      "scenes_count": 8
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:28:31.342563",
+    "data": {
+      "chapter_id": "2-2",
+      "chapter_title": "白骨哀歌起"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:31:16.275775",
+    "data": {
+      "chapter_id": "2-2",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:31:16.278775",
+    "data": {
+      "chapter_id": "2-3",
+      "chapter_title": "千里驰援"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:31:16.874565",
+    "data": {
+      "chapter_id": "2-3",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:31:16.879097",
+    "data": {
+      "chapter_id": "2-4",
+      "chapter_title": "往昔初现"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:31:18.015071",
+    "data": {
+      "chapter_id": "2-4",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:31:18.019593",
+    "data": {
+      "chapter_id": "2-5",
+      "chapter_title": "安魂之仪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:31:18.601682",
+    "data": {
+      "chapter_id": "2-5",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:31:18.604674",
+    "data": {
+      "chapter_id": "2-6",
+      "chapter_title": "暗流涌动"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:31:19.161504",
+    "data": {
+      "chapter_id": "2-6",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:31:19.167516",
+    "data": {
+      "chapter_id": "3-1",
+      "chapter_title": ""
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:31:19.747815",
+    "data": {
+      "chapter_id": "3-1",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T12:31:19.751825",
+    "data": {
+      "chapter_id": "",
+      "chapter_title": ""
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T12:31:20.401816",
+    "data": {
+      "chapter_id": "",
+      "scenes_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T12:31:20.412091",
+    "data": {
+      "scene_id": "1.1",
+      "scene_title": "风雪归途"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T12:59:08.845286",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  }
+]

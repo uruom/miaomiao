@@ -47,11 +47,10 @@ class APIModelManager:
                 setattr(self.config, key, value)
     
     def call_model(self, prompt: str, system_prompt: str = "", **kwargs) -> str:
-        """调用模型API"""
-        # 如果未设置API Key，使用模拟模式
+        """调用模型API，最多重试三次"""
+        # 如果未设置API Key，直接抛出异常
         if not self.config.api_key:
-            logger.info("使用模拟模式（未设置API Key）")
-            return self._mock_response(prompt)
+            raise ValueError("未设置API Key，无法调用模型")
         
         # 构建消息
         messages = []
@@ -86,52 +85,83 @@ class APIModelManager:
             "Content-Type": "application/json"
         }
         
-        try:
-            logger.info(f"调用模型: {self.config.model_name}")
-            logger.debug(f"请求参数: {json.dumps(payload, ensure_ascii=False, indent=2)}")
-            
-            response = requests.post(
-                self.config.api_url,
-                headers=headers,
-                json=payload,
-                timeout=self.config.timeout
-            )
-            response.raise_for_status()
-            
-            result = response.json()
-            
-            # 提取响应内容
-            if "choices" in result and len(result["choices"]) > 0:
-                content = result["choices"][0]["message"]["content"]
+        # 重试机制
+        max_retries = 3
+        last_exception = None
+        
+        for attempt in range(max_retries):
+            try:
+                logger.info(f"调用模型: {self.config.model_name} (尝试 {attempt + 1}/{max_retries})")
+                logger.debug(f"请求参数: {json.dumps(payload, ensure_ascii=False, indent=2)}")
                 
-                # 记录历史
-                self.history.append({
-                    "timestamp": time.time(),
-                    "prompt": prompt,
-                    "response": content,
-                    "config": asdict(self.config),
-                    "kwargs": kwargs
-                })
+                response = requests.post(
+                    self.config.api_url,
+                    headers=headers,
+                    json=payload,
+                    timeout=self.config.timeout
+                )
+                response.raise_for_status()
                 
-                logger.info(f"模型调用成功，响应长度: {len(content)}")
-                return content
-            else:
-                logger.error(f"API响应格式异常: {result}")
-                return self._mock_response(prompt)
+                result = response.json()
                 
-        except requests.exceptions.RequestException as e:
-            logger.error(f"API请求错误: {e}")
-            return self._mock_response(prompt)
-        except json.JSONDecodeError as e:
-            logger.error(f"响应解析错误: {e}")
-            return self._mock_response(prompt)
-        except Exception as e:
-            logger.error(f"模型调用异常: {e}")
-            return self._mock_response(prompt)
+                # 提取响应内容
+                if "choices" in result and len(result["choices"]) > 0:
+                    content = result["choices"][0]["message"]["content"]
+                    
+                    # 记录历史
+                    self.history.append({
+                        "timestamp": time.time(),
+                        "prompt": prompt,
+                        "response": content,
+                        "config": asdict(self.config),
+                        "kwargs": kwargs,
+                        "attempt": attempt + 1
+                    })
+                    
+                    logger.info(f"模型调用成功，响应长度: {len(content)}")
+                    return content
+                else:
+                    logger.error(f"API响应格式异常: {result}")
+                    raise ValueError(f"API响应格式异常: {result}")
+                    
+            except requests.exceptions.RequestException as e:
+                last_exception = e
+                logger.warning(f"API请求错误 (尝试 {attempt + 1}/{max_retries}): {e}")
+                
+                # 如果不是最后一次尝试，等待一段时间后重试
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt  # 指数退避策略
+                    logger.info(f"等待 {wait_time} 秒后重试...")
+                    time.sleep(wait_time)
+                
+            except json.JSONDecodeError as e:
+                last_exception = e
+                logger.error(f"响应解析错误 (尝试 {attempt + 1}/{max_retries}): {e}")
+                
+                # 如果不是最后一次尝试，等待一段时间后重试
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt
+                    logger.info(f"等待 {wait_time} 秒后重试...")
+                    time.sleep(wait_time)
+                
+            except Exception as e:
+                last_exception = e
+                logger.error(f"模型调用异常 (尝试 {attempt + 1}/{max_retries}): {e}")
+                
+                # 如果不是最后一次尝试，等待一段时间后重试
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt
+                    logger.info(f"等待 {wait_time} 秒后重试...")
+                    time.sleep(wait_time)
+        
+        # 所有重试都失败，抛出异常
+        error_msg = f"模型调用失败，经过 {max_retries} 次重试后仍然无法成功"
+        logger.error(error_msg)
+        raise Exception(error_msg) from last_exception
     
     def call_with_template(self, template_name: str, template_data: Dict[str, Any], 
                           system_prompt: str = "", **kwargs) -> str:
-        """使用模板调用模型"""
+        """使用模板调用模型，支持重试机制"""
         from .prompt_config import PromptManager
         
         # 获取模板
@@ -140,7 +170,7 @@ class APIModelManager:
         
         if not prompt:
             logger.error(f"未找到模板: {template_name}")
-            return ""
+            raise ValueError(f"未找到模板: {template_name}")
         
         # 获取系统提示词
         if not system_prompt:
@@ -405,16 +435,23 @@ class APIModelManager:
         logger.info(f"模拟响应: {prompt[:50]}...")
         
         # 根据prompt类型返回模拟响应
-        if "大纲" in prompt or "outline" in prompt.lower():
+        prompt_lower = prompt.lower()
+        if "大纲" in prompt or "outline" in prompt_lower:
             return self._mock_outline_response()
-        elif "细纲" in prompt or "detail" in prompt.lower():
+        elif "细纲" in prompt or "detail" in prompt_lower:
             return self._mock_detail_response()
-        elif "固定帧" in prompt or "frame" in prompt.lower():
+        elif "固定帧" in prompt or "frame" in prompt_lower:
             return self._mock_frame_response()
-        elif "扩写" in prompt or "writing" in prompt.lower():
+        elif "扩写" in prompt or "writing" in prompt_lower:
             return self._mock_writing_response()
         else:
-            return f"模型响应: {prompt[:100]}...（模拟模式）"
+            # 返回有效的JSON格式，而不是提示词内容
+            logger.warning("模拟响应：返回默认JSON格式")
+            return json.dumps({
+                "error": "API调用失败，使用模拟响应",
+                "prompt_preview": prompt[:100],
+                "type": "mock_response"
+            }, ensure_ascii=False, indent=2)
     
     def _mock_outline_response(self) -> str:
         """模拟大纲响应"""
@@ -521,17 +558,11 @@ class APIModelManager:
     
     def _mock_writing_response(self) -> str:
         """模拟扩写响应"""
-        return """清晨的第一缕阳光透过木窗的缝隙，在地板上洒下斑驳的光点。亚瑟缓缓睁开眼，感受到粗糙的亚麻床单贴在皮肤上的触感。他伸了个懒腰，关节发出轻微的响声。
-
-小屋的空气里弥漫着木头的香气，混合着从窗外飘来的清晨的清新气息。远处传来鸡鸣声，还有鸟儿在枝头欢快的歌唱。亚瑟坐起身，揉了揉惺忪的睡眼。
-
-"又是平静的一天。"他心想。这样的早晨已经重复了无数个日夜，村庄的生活就像一条缓慢流淌的小河，波澜不惊。
-
-他穿上简单的布衣，走到窗边。透过窗户，可以看到村庄开始苏醒。炊烟从几户人家的烟囱升起，在清晨的空气中缓缓飘散。亚瑟深吸一口气，准备开始新的一天。
-
-阳光越来越明亮，小屋里的光线也变得更加清晰。亚瑟可以看到空气中的微尘在光柱中飞舞，像是一群微小的精灵。他拿起木桌上的水壶，倒了杯水，清凉的液体顺着喉咙滑下，驱散了最后一丝睡意。
-
-又是一个平凡的开始，在这座宁静的村庄里。亚瑟并不知道，命运的齿轮已经开始转动，而他平静的生活即将迎来翻天覆地的变化。"""
+        return json.dumps({
+            "content": "清晨的第一缕阳光透过木窗的缝隙，在地板上洒下斑驳的光点。亚瑟缓缓睁开眼，感受到粗糙的亚麻床单贴在皮肤上的触感。他伸了个懒腰，关节发出轻微的响声。\n\n小屋的空气里弥漫着木头的香气，混合着从窗外飘来的清晨的清新气息。远处传来鸡鸣声，还有鸟儿在枝头欢快的歌唱。亚瑟坐起身，揉了揉惺忪的睡眼。\n\n\"又是平静的一天。\"他心想。这样的早晨已经重复了无数个日夜，村庄的生活就像一条缓慢流淌的小河，波澜不惊。\n\n他穿上简单的布衣，走到窗边。透过窗户，可以看到村庄开始苏醒。炊烟从几户人家的烟囱升起，在清晨的空气中缓缓飘散。亚瑟深吸一口气，准备开始新的一天。\n\n阳光越来越明亮，小屋里的光线也变得更加清晰。亚瑟可以看到空气中的微尘在光柱中飞舞，像是一群微小的精灵。他拿起木桌上的水壶，倒了杯水，清凉的液体顺着喉咙滑下，驱散了最后一丝睡意。\n\n又是一个平凡的开始，在这座宁静的村庄里。亚瑟并不知道，命运的齿轮已经开始转动，而他平静的生活即将迎来翻天覆地的变化。",
+            "type": "writing_response",
+            "length": 500
+        }, ensure_ascii=False, indent=2)
     
     def get_history(self) -> List[Dict[str, Any]]:
         """获取调用历史"""

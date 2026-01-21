@@ -1,0 +1,37 @@
+{
+  "title": "勇者传奇",
+  "concept": "一个关于勇者击败恶龙的故事",
+  "parts": [
+    {
+      "part_title": "开端",
+      "chapters": [
+        {
+          "id": "ch_1",
+          "title": "平凡的开始",
+          "summary": "主角亚瑟在村庄过着平静的生活",
+          "estimated_words": 800,
+          "characters": [
+            "亚瑟",
+            "村民"
+          ],
+          "locations": [
+            "亚瑟的村庄"
+          ]
+        },
+        {
+          "id": "ch_2",
+          "title": "命运的召唤",
+          "summary": "亚瑟意外发现勇者之剑",
+          "estimated_words": 1200,
+          "characters": [
+            "亚瑟",
+            "梅林"
+          ],
+          "locations": [
+            "村庄神庙"
+          ]
+        }
+      ]
+    }
+  ]
+}

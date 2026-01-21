@@ -61,26 +61,52 @@ class AutoStoryWriter:
         print("项目设置完成")
     
     def generate_outline(self, story_concept: str, **kwargs) -> Dict[str, Any]:
-        """生成故事大纲"""
+        """生成故事大纲，支持重试机制"""
         print(f"生成故事大纲: {story_concept[:50]}...")
         
         # 记录开始时间
         self._log_step("outline_generation_start", {"concept": story_concept})
         
-        # 调用大纲模块
-        outline = self.modules["outline"].generate_outline(story_concept, **kwargs)
+        # 重试机制
+        max_retries = 3
+        last_exception = None
         
-        # 保存到项目配置
-        if outline:
-            self.engine.set_config(title=outline.get("title", "未命名故事"))
-            
-            # 记录完成时间
-            self._log_step("outline_generation_complete", {
-                "outline_title": outline.get("title"),
-                "parts_count": len(outline.get("parts", []))
-            })
+        for attempt in range(max_retries):
+            try:
+                # 调用大纲模块
+                outline = self.modules["outline"].generate_outline(story_concept, **kwargs)
+                
+                # 保存到项目配置
+                if outline:
+                    self.engine.set_config(title=outline.get("title", "未命名故事"))
+                    
+                    # 记录完成时间
+                    self._log_step("outline_generation_complete", {
+                        "outline_title": outline.get("title"),
+                        "parts_count": len(outline.get("parts", [])),
+                        "attempt": attempt + 1
+                    })
+                
+                return outline
+                
+            except Exception as e:
+                last_exception = e
+                print(f"大纲生成失败 (尝试 {attempt + 1}/{max_retries}): {e}")
+                
+                # 如果不是最后一次尝试，等待一段时间后重试
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt  # 指数退避策略
+                    print(f"等待 {wait_time} 秒后重试...")
+                    import time
+                    time.sleep(wait_time)
         
-        return outline
+        # 所有重试都失败
+        print(f"大纲生成失败，经过 {max_retries} 次重试后仍然无法成功")
+        self._log_step("outline_generation_failed", {
+            "error": str(last_exception),
+            "max_retries": max_retries
+        })
+        return {}
     
     def generate_details(self, outline_data: Dict[str, Any], chapter_ids: Optional[list] = None) -> Dict[str, Any]:
         """生成详细细纲"""
@@ -147,21 +173,49 @@ class AutoStoryWriter:
                 next_chapter = chapters_to_process[i+1]
                 next_chapters = [next_chapter]
             
-            detail = self.modules["detail"].generate_details(
-                outline_data, 
-                chapter["id"],
-                previous_chapters=previous_chapters,
-                next_chapters=next_chapters,
-                existing_details=existing_details
-            )
+            # 重试机制
+            max_retries = 3
+            last_exception = None
             
-            if detail:
-                all_details[chapter["id"]] = detail
-                
-                self._log_step("detail_generation_complete", {
-                    "chapter_id": chapter["id"],
-                    "scenes_count": len(detail.get("scenes", []))
-                })
+            for attempt in range(max_retries):
+                try:
+                    detail = self.modules["detail"].generate_details(
+                        outline_data, 
+                        chapter["id"],
+                        previous_chapters=previous_chapters,
+                        next_chapters=next_chapters,
+                        existing_details=existing_details
+                    )
+                    
+                    if detail:
+                        all_details[chapter["id"]] = detail
+                        
+                        self._log_step("detail_generation_complete", {
+                            "chapter_id": chapter["id"],
+                            "scenes_count": len(detail.get("scenes", [])),
+                            "attempt": attempt + 1
+                        })
+                    
+                    break  # 成功则跳出重试循环
+                    
+                except Exception as e:
+                    last_exception = e
+                    print(f"章节 {chapter['id']} 细纲生成失败 (尝试 {attempt + 1}/{max_retries}): {e}")
+                    
+                    # 如果不是最后一次尝试，等待一段时间后重试
+                    if attempt < max_retries - 1:
+                        wait_time = 2 ** attempt  # 指数退避策略
+                        print(f"等待 {wait_time} 秒后重试...")
+                        import time
+                        time.sleep(wait_time)
+                    else:
+                        # 最后一次尝试也失败
+                        print(f"章节 {chapter['id']} 细纲生成失败，经过 {max_retries} 次重试后仍然无法成功")
+                        self._log_step("detail_generation_failed", {
+                            "chapter_id": chapter["id"],
+                            "error": str(last_exception),
+                            "max_retries": max_retries
+                        })
         
         # 保存所有细纲
         if all_details:
@@ -220,23 +274,51 @@ class AutoStoryWriter:
                 if chapter_frames:
                     existing_frames = chapter_frames
                 
-                frames = self.modules["frame"].generate_frames(
-                    detail, 
-                    scene.get("scene_id"),
-                    previous_scenes=previous_scenes,
-                    next_scenes=next_scenes,
-                    existing_frames=existing_frames,
-                    outline_data=detail
-                )
+                # 重试机制
+                max_retries = 3
+                last_exception = None
                 
-                if frames:
-                    chapter_frames.extend(frames)
-                    total_scenes += 1
-                    
-                    self._log_step("frame_generation_complete", {
-                        "scene_id": scene.get("scene_id"),
-                        "frames_count": len(frames)
-                    })
+                for attempt in range(max_retries):
+                    try:
+                        frames = self.modules["frame"].generate_frames(
+                            detail, 
+                            scene.get("scene_id"),
+                            previous_scenes=previous_scenes,
+                            next_scenes=next_scenes,
+                            existing_frames=existing_frames,
+                            outline_data=detail
+                        )
+                        
+                        if frames:
+                            chapter_frames.extend(frames)
+                            total_scenes += 1
+                            
+                            self._log_step("frame_generation_complete", {
+                                "scene_id": scene.get("scene_id"),
+                                "frames_count": len(frames),
+                                "attempt": attempt + 1
+                            })
+                        
+                        break  # 成功则跳出重试循环
+                        
+                    except Exception as e:
+                        last_exception = e
+                        print(f"场景 {scene.get('scene_id')} 固定帧生成失败 (尝试 {attempt + 1}/{max_retries}): {e}")
+                        
+                        # 如果不是最后一次尝试，等待一段时间后重试
+                        if attempt < max_retries - 1:
+                            wait_time = 2 ** attempt  # 指数退避策略
+                            print(f"等待 {wait_time} 秒后重试...")
+                            import time
+                            time.sleep(wait_time)
+                        else:
+                            # 最后一次尝试也失败
+                            print(f"场景 {scene.get('scene_id')} 固定帧生成失败，经过 {max_retries} 次重试后仍然无法成功")
+                            self._log_step("frame_generation_failed", {
+                                "scene_id": scene.get("scene_id"),
+                                "error": str(last_exception),
+                                "max_retries": max_retries
+                            })
             
             if chapter_frames:
                 all_frames[chapter_id] = chapter_frames
@@ -316,25 +398,57 @@ class AutoStoryWriter:
                     # 由于当前结构限制，暂时不传递这些信息
                     pass
                 
-                expanded = self.modules["writing"].expand_frame(
-                    frame, 
-                    style,
-                    previous_frames=previous_frames,
-                    next_frames=next_frames,
-                    existing_writings=existing_writings,
-                    scene_data=scene_data,
-                    detail_data=detail_data,
-                    outline_data=outline_data
-                )
+                # 重试机制
+                max_retries = 3
+                last_exception = None
                 
-                if expanded:
-                    chapter_text.append(expanded)
-                    total_frames += 1
-                    
-                    self._log_step("writing_expansion_complete", {
-                        "frame_id": frame.get("frame_id"),
-                        "text_length": len(expanded)
-                    })
+                for attempt in range(max_retries):
+                    try:
+                        expanded = self.modules["writing"].expand_frame(
+                            frame, 
+                            style,
+                            previous_frames=previous_frames,
+                            next_frames=next_frames,
+                            existing_writings=existing_writings,
+                            scene_data=scene_data,
+                            detail_data=detail_data,
+                            outline_data=outline_data
+                        )
+                        
+                        if expanded:
+                            chapter_text.append(expanded)
+                            total_frames += 1
+                            
+                            self._log_step("writing_expansion_complete", {
+                                "frame_id": frame.get("frame_id"),
+                                "text_length": len(expanded),
+                                "attempt": attempt + 1
+                            })
+                        
+                        break  # 成功则跳出重试循环
+                        
+                    except Exception as e:
+                        last_exception = e
+                        print(f"固定帧 {frame.get('frame_id')} 扩写失败 (尝试 {attempt + 1}/{max_retries}): {e}")
+                        
+                        # 如果不是最后一次尝试，等待一段时间后重试
+                        if attempt < max_retries - 1:
+                            wait_time = 2 ** attempt  # 指数退避策略
+                            print(f"等待 {wait_time} 秒后重试...")
+                            import time
+                            time.sleep(wait_time)
+                        else:
+                            # 最后一次尝试也失败
+                            print(f"固定帧 {frame.get('frame_id')} 扩写失败，经过 {max_retries} 次重试后仍然无法成功")
+                            self._log_step("writing_expansion_failed", {
+                                "frame_id": frame.get("frame_id"),
+                                "error": str(last_exception),
+                                "max_retries": max_retries
+                            })
+                            # 创建默认的扩写内容以避免流程中断
+                            default_expanded = f"[扩写失败] 固定帧 {frame.get('frame_id', '未知')} 的扩写内容生成失败。错误: {str(last_exception)}"
+                            chapter_text.append(default_expanded)
+                            total_frames += 1
             
             # 组合章节内容
             if chapter_text:
@@ -395,31 +509,54 @@ class AutoStoryWriter:
         # 1. 生成大纲
         print("\n[阶段1] 生成故事大纲")
         self.engine.update_stage("outline")
-        outline = self.generate_outline(story_concept)
-        if not outline:
-            print("大纲生成失败，停止流程")
+        try:
+            outline = self.generate_outline(story_concept)
+            if not outline:
+                print("大纲生成失败，停止流程")
+                self.engine.update_stage("failed")
+                return
+        except Exception as e:
+            print(f"大纲生成阶段发生异常: {e}")
+            self.engine.update_stage("failed")
             return
         
         # 2. 生成细纲
         print("\n[阶段2] 生成详细细纲")
         self.engine.update_stage("detail")
-        details = self.generate_details(outline)
-        if not details:
-            print("细纲生成失败，停止流程")
+        try:
+            details = self.generate_details(outline)
+            if not details:
+                print("细纲生成失败，停止流程")
+                self.engine.update_stage("failed")
+                return
+        except Exception as e:
+            print(f"细纲生成阶段发生异常: {e}")
+            self.engine.update_stage("failed")
             return
         
         # 3. 生成固定帧
         print("\n[阶段3] 生成固定帧")
         self.engine.update_stage("frame")
-        frames = self.generate_frames(details)
-        if not frames:
-            print("固定帧生成失败，停止流程")
+        try:
+            frames = self.generate_frames(details)
+            if not frames:
+                print("固定帧生成失败，停止流程")
+                self.engine.update_stage("failed")
+                return
+        except Exception as e:
+            print(f"固定帧生成阶段发生异常: {e}")
+            self.engine.update_stage("failed")
             return
         
         # 4. 扩写为故事
         print("\n[阶段4] 扩写为完整故事")
         self.engine.update_stage("writing")
-        result = self.expand_to_story(frames, style)
+        try:
+            result = self.expand_to_story(frames, style)
+        except Exception as e:
+            print(f"扩写阶段发生异常: {e}")
+            self.engine.update_stage("failed")
+            return
         
         # 标记完成
         self.engine.update_stage("complete")
@@ -482,9 +619,15 @@ class AutoStoryWriter:
         # 2. 生成细纲
         print("\n[阶段2] 生成详细细纲")
         self.engine.update_stage("detail")
-        details = self.generate_details(outline)
-        if not details:
-            print("细纲生成失败，停止流程")
+        try:
+            details = self.generate_details(outline)
+            if not details:
+                print("细纲生成失败，停止流程")
+                self.engine.update_stage("failed")
+                return {}
+        except Exception as e:
+            print(f"细纲生成阶段发生异常: {e}")
+            self.engine.update_stage("failed")
             return {}
         
         # 继续后续阶段
@@ -495,9 +638,15 @@ class AutoStoryWriter:
         # 3. 生成固定帧
         print("\n[阶段3] 生成固定帧")
         self.engine.update_stage("frame")
-        frames = self.generate_frames(details)
-        if not frames:
-            print("固定帧生成失败，停止流程")
+        try:
+            frames = self.generate_frames(details)
+            if not frames:
+                print("固定帧生成失败，停止流程")
+                self.engine.update_stage("failed")
+                return {}
+        except Exception as e:
+            print(f"固定帧生成阶段发生异常: {e}")
+            self.engine.update_stage("failed")
             return {}
         
         # 继续后续阶段
@@ -508,10 +657,14 @@ class AutoStoryWriter:
         # 4. 扩写为故事
         print("\n[阶段4] 扩写为完整故事")
         self.engine.update_stage("writing")
-        result = self.expand_to_story(frames, style)
-        self.engine.update_stage("complete")
-        
-        return result
+        try:
+            result = self.expand_to_story(frames, style)
+            self.engine.update_stage("complete")
+            return result
+        except Exception as e:
+            print(f"扩写阶段发生异常: {e}")
+            self.engine.update_stage("failed")
+            return {}
     
     def _load_outline(self) -> Optional[Dict[str, Any]]:
         """从文件加载大纲"""
@@ -604,7 +757,7 @@ def parse_arguments():
     parser.add_argument(
         "--project", 
         type=str, 
-        default="my_story_11"                    ,
+        default="uruom_story_1"                    ,
         help="项目名称（默认: my_story）"
     )
     
@@ -673,78 +826,88 @@ def load_config(config_file: str) -> Dict[str, Any]:
 
 def main():
     """主函数"""
-    args = parse_arguments()
-    
-    # 创建写作系统实例
-    writer = AutoStoryWriter(args.project)
-    
-    # 如果指定了状态查询
-    if args.status:
-        status = writer.get_status()
-        print("\n项目状态:")
-        print(json.dumps(status, indent=2, ensure_ascii=False))
-        return
-    
-    # 加载配置
-    config = {}
-    if args.config:
-        config = load_config(args.config)
-    
-    # 设置项目配置
-    if config:
-        writer.setup_project(config)
-    
-    # 检查故事概念
-    if not args.concept and args.mode != "status":
-        print("错误: 请提供故事概念（使用 --concept 参数）")
-        return
-    
-    # 根据模式运行
-    if args.mode == "full":
-        # 完整流水线 - 默认自动启用断点续传
-        resume = False  # 默认启用断点续传
-        if args.no_resume:
-            resume = False
-            print("已禁用断点续传功能")
-        elif args.resume:
-            resume = True
-            print("已启用断点续传功能")
-        else:
-            print("断点续传功能已自动启用")
+    try:
+        args = parse_arguments()
         
-        writer.run_full_pipeline(args.concept, args.style, resume)
+        # 创建写作系统实例
+        writer = AutoStoryWriter(args.project)
+        
+        # 如果指定了状态查询
+        if args.status:
+            status = writer.get_status()
+            print("\n项目状态:")
+            print(json.dumps(status, indent=2, ensure_ascii=False))
+            return
+        
+        # 加载配置
+        config = {}
+        if args.config:
+            config = load_config(args.config)
+        
+        # 设置项目配置
+        if config:
+            writer.setup_project(config)
+        
+        # 检查故事概念
+        if not args.concept and args.mode != "status":
+            print("错误: 请提供故事概念（使用 --concept 参数）")
+            return
+        
+        # 根据模式运行
+        if args.mode == "full":
+            # 完整流水线 - 默认自动启用断点续传
+            resume = False  # 默认启用断点续传
+            if args.no_resume:
+                resume = False
+                print("已禁用断点续传功能")
+            elif args.resume:
+                resume = True
+                print("已启用断点续传功能")
+            else:
+                print("断点续传功能已自动启用")
+            
+            writer.run_full_pipeline(args.concept, args.style, resume)
+        
+        elif args.mode == "outline":
+            # 仅生成大纲
+            outline = writer.generate_outline(args.concept)
+            if outline:
+                print("\n生成的大纲:")
+                print(json.dumps(outline, indent=2, ensure_ascii=False))
+        
+        elif args.mode == "detail":
+            # 需要先有大纲
+            print("详细模式需要先有大纲数据")
+            # 这里可以扩展为从文件加载大纲
+        
+        elif args.mode == "frame":
+            print("固定帧模式需要先有细纲数据")
+            # 这里可以扩展为从文件加载细纲
+        
+        elif args.mode == "write":
+            print("扩写模式需要先有固定帧数据")
+            # 这里可以扩展为从文件加载固定帧
+        
+        # 显示最终状态
+        status = writer.get_status()
+        print("\n最终项目状态:")
+        print(f"项目路径: {status['project_path']}")
+        print(f"故事标题: {status['config'].get('title', '未设置')}")
+        print(f"各阶段完成情况:")
+        for stage, completed in status["stages"].items():
+            print(f"  {stage}: {'✓' if completed else '✗'}")
+        print(f"数据统计:")
+        for data_type, count in status["stats"].items():
+            print(f"  {data_type}: {count}")
     
-    elif args.mode == "outline":
-        # 仅生成大纲
-        outline = writer.generate_outline(args.concept)
-        if outline:
-            print("\n生成的大纲:")
-            print(json.dumps(outline, indent=2, ensure_ascii=False))
-    
-    elif args.mode == "detail":
-        # 需要先有大纲
-        print("详细模式需要先有大纲数据")
-        # 这里可以扩展为从文件加载大纲
-    
-    elif args.mode == "frame":
-        print("固定帧模式需要先有细纲数据")
-        # 这里可以扩展为从文件加载细纲
-    
-    elif args.mode == "write":
-        print("扩写模式需要先有固定帧数据")
-        # 这里可以扩展为从文件加载固定帧
-    
-    # 显示最终状态
-    status = writer.get_status()
-    print("\n最终项目状态:")
-    print(f"项目路径: {status['project_path']}")
-    print(f"故事标题: {status['config'].get('title', '未设置')}")
-    print(f"各阶段完成情况:")
-    for stage, completed in status["stages"].items():
-        print(f"  {stage}: {'✓' if completed else '✗'}")
-    print(f"数据统计:")
-    for data_type, count in status["stats"].items():
-        print(f"  {data_type}: {count}")
+    except KeyboardInterrupt:
+        print("\n\n程序被用户中断")
+        print("当前进度已保存，下次运行时可使用 --resume 参数继续")
+    except Exception as e:
+        print(f"\n程序发生异常: {e}")
+        import traceback
+        traceback.print_exc()
+        print("\n请检查错误信息并重新运行程序")
 
 
 if __name__ == "__main__":

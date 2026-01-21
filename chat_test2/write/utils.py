@@ -160,36 +160,125 @@ class ModelManager:
             self.use_api = False
     
     def call_model(self, prompt: str, **kwargs) -> str:
-        """调用模型"""
+        """调用模型，支持重试机制"""
         logger.info(f"调用模型 {self.model_name}: {prompt[:50]}...")
         
-        if self.use_api and self.api_manager:
-            # 使用API管理器
-            system_prompt = kwargs.pop('system_prompt', '')
-            response = self.api_manager.call_model(prompt, system_prompt, **kwargs)
-            print(response)
-        else:
-            # 使用模拟模式
-            response = f"模型响应: {prompt[:100]}...（模拟模式）"
+        max_retries = kwargs.get('max_retries', 3)
+        last_exception = None
         
-        # 记录历史
+        for attempt in range(max_retries):
+            try:
+                if self.use_api and self.api_manager:
+                    # 使用API管理器
+                    system_prompt = kwargs.pop('system_prompt', '')
+                    response = self.api_manager.call_model(prompt, system_prompt, **kwargs)
+                    print(response)
+                else:
+                    # 使用模拟模式
+                    response = f"模型响应: {prompt[:100]}...（模拟模式）"
+                
+                # 记录历史
+                self.history.append({
+                    "prompt": prompt,
+                    "response": response,
+                    "kwargs": kwargs,
+                    "attempt": attempt + 1
+                })
+                
+                return response
+                
+            except Exception as e:
+                last_exception = e
+                logger.warning(f"模型调用失败 (尝试 {attempt + 1}/{max_retries}): {e}")
+                
+                # 如果不是最后一次尝试，等待一段时间后重试
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt  # 指数退避策略
+                    logger.info(f"等待 {wait_time} 秒后重试...")
+                    time.sleep(wait_time)
+        
+        # 所有重试都失败，返回错误信息
+        error_response = f"模型调用失败，经过 {max_retries} 次重试后仍然无法成功: {last_exception}"
+        logger.error(error_response)
+        
+        # 记录错误历史
         self.history.append({
             "prompt": prompt,
-            "response": response,
-            "kwargs": kwargs
+            "response": error_response,
+            "kwargs": kwargs,
+            "error": True,
+            "exception": str(last_exception)
         })
         
-        return response
+        return error_response
     
     def call_with_template(self, template_name: str, template_data: Dict[str, Any], **kwargs) -> str:
-        """使用模板调用模型"""
-        if self.use_api and self.api_manager and self.prompt_manager:
-            # 使用模板和API
-            return self.api_manager.call_with_template(template_name, template_data, **kwargs)
-        else:
-            # 模拟调用
-            logger.info(f"模拟模板调用: {template_name}")
-            return f"模板响应: {template_name} - {template_data}"
+        """使用模板调用模型，支持重试机制"""
+        max_retries = kwargs.get('max_retries', 3)
+        last_exception = None
+        
+        for attempt in range(max_retries):
+            try:
+                if self.use_api and self.api_manager and self.prompt_manager:
+                    # 使用模板和API
+                    response = self.api_manager.call_with_template(template_name, template_data, **kwargs)
+                    
+                    # 记录历史
+                    self.history.append({
+                        "template_name": template_name,
+                        "template_data": template_data,
+                        "response": response,
+                        "kwargs": kwargs,
+                        "attempt": attempt + 1
+                    })
+                    
+                    return response
+                else:
+                    # 模拟调用 - 返回有效的JSON格式而不是模板字符串
+                    logger.info(f"模拟模板调用: {template_name}")
+                    response = json.dumps({
+                        "error": "API调用失败，使用模拟响应",
+                        "template_name": template_name,
+                        "template_data": template_data,
+                        "type": "mock_template_response"
+                    }, ensure_ascii=False, indent=2)
+                    
+                    # 记录历史
+                    self.history.append({
+                        "template_name": template_name,
+                        "template_data": template_data,
+                        "response": response,
+                        "kwargs": kwargs,
+                        "attempt": attempt + 1
+                    })
+                    
+                    return response
+                    
+            except Exception as e:
+                last_exception = e
+                logger.warning(f"模板调用失败 (尝试 {attempt + 1}/{max_retries}): {e}")
+                
+                # 如果不是最后一次尝试，等待一段时间后重试
+                if attempt < max_retries - 1:
+                    wait_time = 2 ** attempt  # 指数退避策略
+                    logger.info(f"等待 {wait_time} 秒后重试...")
+                    time.sleep(wait_time)
+        
+        # 所有重试都失败，返回错误信息
+        error_response = f"模板调用失败，经过 {max_retries} 次重试后仍然无法成功: {last_exception}"
+        logger.error(error_response)
+        
+        # 记录错误历史
+        self.history.append({
+            "template_name": template_name,
+            "template_data": template_data,
+            "response": error_response,
+            "kwargs": kwargs,
+            "error": True,
+            "exception": str(last_exception)
+        })
+        
+        return error_response
     
     def extract_json(self, text: str) -> Optional[Dict[str, Any]]:
         """从文本中提取JSON，包含中文标点符号的后处理"""
