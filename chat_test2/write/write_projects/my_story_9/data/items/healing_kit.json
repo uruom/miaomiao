@@ -1,0 +1,7 @@
+{
+  "object_id": "healing_kit",
+  "name": "药箱与布巾",
+  "description": "一个半旧的藤编药箱，里面物品井然有序。旁边叠着素白的干净布巾，有些已染上血色。",
+  "position": "榻边地面",
+  "state": "正在使用中"
+}

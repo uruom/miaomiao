@@ -1,0 +1,7 @@
+{
+  "object_id": "lantern",
+  "name": "油灯",
+  "description": "一盏老旧的铜制油灯，灯焰跳动，光影摇曳。",
+  "position": "矮桌中央",
+  "state": "燃烧中"
+}

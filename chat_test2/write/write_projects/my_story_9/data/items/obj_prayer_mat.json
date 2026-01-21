@@ -1,0 +1,7 @@
+{
+  "object_id": "obj_prayer_mat",
+  "name": "蒲团",
+  "description": "三个旧而干净的蒲团，分别位于掌门座下和云澈、李长缨面前。",
+  "position": "地面相应位置",
+  "state": "静止"
+}

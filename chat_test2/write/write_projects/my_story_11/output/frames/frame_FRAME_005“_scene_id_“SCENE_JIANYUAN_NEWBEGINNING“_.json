@@ -1,0 +1,240 @@
+{
+  "frames": [
+    {
+      "frame_id": "FRAME_001",
+      "scene_id": "SCENE_JIANYUAN_NEWBEGINNING",
+      "timestamp": "休息半日后，沈砚主动回到剑园约一刻钟",
+      "characters_present": [
+        {
+          "character_id": "SY",
+          "name": "沈砚",
+          "position": "剑园中央，青石地面",
+          "action": "缓慢而专注地重复“剑冲阴阳”的起手式，汗水已浸湿鬓角",
+          "emotion": "坚定、专注、带着一丝疲惫的倔强",
+          "dialogue_line": ""
+        },
+        {
+          "character_id": "SYX",
+          "name": "苏映雪",
+          "position": "剑园边缘，一株老梅树下",
+          "action": "静立不动，目光落在沈砚身上，如同融入环境的影子",
+          "emotion": "平静、观察、极细微的审视",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "纯阳宫·剑园",
+        "description": "青石铺就的宽阔演武场，四周有古朴兵器架与耐寒植物。地面有未化尽的薄雪痕迹。",
+        "lighting": "午后偏斜的阳光，穿过稀薄的云层，光线柔和但清晰，将人影拉出长长的影子。",
+        "sounds": [
+          "沈砚衣袂破风声",
+          "偶尔的鸟鸣",
+          "远处山风呜咽"
+        ],
+        "smells": [
+          "清冷的空气",
+          "淡淡的雪后泥土气息"
+        ]
+      },
+      "environment": {
+        "weather": "晴朗，微寒",
+        "time_of_day": "午后",
+        "temperature": "低，呼气成白雾",
+        "atmosphere": "静谧、专注、带着修炼的肃穆"
+      },
+      "objects": [
+        {
+          "object_id": "SWORD_SHENYAN",
+          "name": "沈砚的木剑",
+          "description": "一把普通的练习木剑，剑身因反复挥动而略显光滑。",
+          "position": "沈砚手中",
+          "state": "被紧握，随着动作稳定移动"
+        }
+      ],
+      "current_action": "沈砚摒弃杂念，全身心投入基础剑式的重复练习，试图用身体记忆昨夜所见。苏映雪在远处无声守望。",
+      "dialogue": [],
+      "inner_thoughts": [
+        "沈砚：\"不对……昨夜师父那一剑，转折处不是这样……再来。\"",
+        "苏映雪：\"气息比昨日沉稳了些，但心神仍未完全沉入剑中。\"（极淡的思绪）"
+      ],
+      "sensory_details": {
+        "visual": "阳光在木剑钝刃上流动的光泽，沈砚额角滚落的汗珠，苏映雪素白衣衫在微风中几乎静止。",
+        "auditory": "木剑划破空气的“呜呜”声规律而执着。",
+        "olfactory": "汗水与冷空气混合的微咸气味。",
+        "tactile": "木剑柄被汗水浸湿的微粘感，冷风拂过发热皮肤的刺激感。"
+      }
+    },
+    {
+      "frame_id": "FRAME_002",
+      "scene_id": "SCENE_JIANYUAN_NEWBEGINNING",
+      "timestamp": "加练约一个时辰后，夕阳初现",
+      "characters_present": [
+        {
+          "character_id": "SY",
+          "name": "沈砚",
+          "position": "剑园中央，身形微晃但很快稳住",
+          "action": "刚刚完成一次“剑冲阴阳”的完整演练，在收势时气息略有紊乱，正急促喘息",
+          "emotion": "疲惫中夹杂着兴奋与自我怀疑（“这次似乎……顺了些？”）",
+          "dialogue_line": ""
+        },
+        {
+          "character_id": "SYX",
+          "name": "苏映雪",
+          "position": "仍在梅树下，但不知何时已盘膝坐下",
+          "action": "膝上横放着她的佩剑“雪寂”，双目微阖，似在调息，又似在聆听沈砚的剑风",
+          "emotion": "深潭般的平静，感知外放",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "纯阳宫·剑园",
+        "description": "夕阳为青石地面镀上温暖的橙红色，影子被拉得更长。兵器架的影子像栅栏。",
+        "lighting": "金色与红色交织的夕阳光芒，光线变得绵长而富有质感。",
+        "sounds": [
+          "沈砚粗重的呼吸声",
+          "远处归巢鸟雀的啁啾",
+          "更显静谧的背景"
+        ],
+        "smells": [
+          "夕阳晒暖的青石味道",
+          "空气中渐浓的寒意"
+        ]
+      },
+      "environment": {
+        "weather": "晴朗无风",
+        "time_of_day": "黄昏初临",
+        "temperature": "温度开始明显下降",
+        "atmosphere": "疲惫与坚持交织，时间流逝感增强"
+      },
+      "objects": [
+        {
+          "object_id": "SWORD_SHENYAN_2",
+          "name": "沈砚的木剑",
+          "description": "木剑剑身沾了些许尘土和汗渍。",
+          "position": "垂在沈砚身侧，剑尖轻触地面",
+          "state": "仿佛也带着使用者的疲惫"
+        },
+        {
+          "object_id": "SWORD_XUEJI",
+          "name": "\"雪寂\"剑",
+          "description": "苏映雪的佩剑，剑鞘素白，泛着清冷光泽。",
+          "position": "横于苏映雪膝上",
+          "state": "静止，如同它的主人"
+        }
+      ],
+      "current_action": "沈砚在一次完整演练后短暂休整，体力接近极限但精神亢奋。苏映雪以更“在场”又更“抽离”的方式陪伴。",
+      "dialogue": [],
+      "inner_thoughts": [
+        "沈砚：\"手臂快抬不起来了……但刚才那一下‘阴阳转换’，好像摸到了一点门道？不能停。\"",
+        "苏映雪：\"呼吸乱了三次，力竭之兆。但剑意未散……尚可。\"（近乎无波的评估）"
+      ],
+      "sensory_details": {
+        "visual": "沈砚被汗水浸透的后背衣衫，在夕阳下蒸腾起极淡的白气。苏映雪睫毛在脸颊投下的细小阴影。",
+        "auditory": "沈砚如风箱般的喘息声是此刻最响的声音。",
+        "olfactory": "\"雪寂\"剑鞘传来的极淡冷香，混合着沈砚身上的汗味。",
+        "tactile": "肌肉过度使用后的酸痛与灼热感，以及随之而来的轻微颤抖。"
+      }
+    },
+    {
+      "frame_id": "FRAME_003",
+      "scene_id": "SCENE_JIANYUAN_NEWBEGINNING",
+      "timestamp": "夕阳大半没入山脊时，沈砚最后一次调整呼吸起手",
+      "characters_present": [
+        {
+          "character_id": "SY",
+          "name": "沈砚",
+          "position": "剑园中央，面向西方残阳",
+          "action": "闭目凝神片刻，缓缓抬起木剑，起手式标准而沉凝，周身气息与之前截然不同",
+          "emotion": "空明、专注、将所有杂念与疲惫暂时压下",
+          "dialogue_line": ""
+        },
+        {
+          "character_id": "SYX",
+          "name": "苏映雪",
+          "position": "梅树下，已悄然睁开双眼",
+          "action": "目光如实质般落在沈砚身上，尤其是他握剑的手腕与肩颈线条",
+          "emotion": "专注、审视中带着一丝极难察觉的期待",
+          "dialogue_line": ""
+        }
+      ],
+      "location": {
+        "name": "纯阳宫·剑园",
+        "description": "天色半明半暗，西方的天空燃烧着最后的霞光，东边已见深蓝暮色。剑园笼罩在奇异的静谧中。",
+        "lighting": "天光渐暗，霞光为万物勾勒出金红色的轮廓，阴影浓重。",
+        "sounds": [
+          "万籁俱寂，只有极轻微的山风声",
+          "沈砚调整呼吸的悠长声音"
+        ],
+        "smells": [
+          "暮色降临时的清冽空气",
+          "远处隐约的炊烟气息"
+        ]
+      },
+      "environment": {
+        "weather": "晴朗，晚风初起",
+        "time_of_day": "黄昏将尽",
+        "temperature": "寒冷感加剧",
+        "atmosphere": "肃穆、凝聚、仿佛时间放缓，等待某个结果"
+      },
+      "objects": [
+        {
+          "object_id": "SWORD_SHENYAN_3",
+          "name": "沈砚的木剑",
+          "description": "在暮色中只是一个深色的剪影。",
+          "position": "被沈砚稳稳平举于胸前",
+          "state": "仿佛与持剑者融为一体"
+        }
+      ],
+      "current_action": "沈砚进入一种物我两忘的状态，开始可能是今日最后一次，也可能是第一次真正意义上的演练。苏映雪全神贯注地观察。",
+      "dialogue": [],
+      "inner_thoughts": [
+        "沈砚：\"忘记招式，忘记对错……只记得那一片雪，和雪中的光。\"",
+        "苏映雪：\"就是此刻……看你的心了。”\"],\n      “sensory_details",
+        {
+          "visual": "沈砚的身影在漫天霞光中成为一个坚定的黑色剪影，木剑尖端似乎凝聚着一点微光。",
+          "auditory": "世界仿佛被按下了静音键，只有心跳声（读者能感受到的节奏）。",
+          "olfactory": "寒冷干净的暮色气息。",
+          "tactile": "木剑柄传来的、属于自己体温的温暖与坚定。"
+        }
+      ]
+    },
+    {
+      "frame_id": "FRAME_004",
+      "scene_id": "SCENE_JIANYUAN_NEWBEGINNING",
+      "timestamp": "‘剑冲阴阳’演练至‘阴阳转换’的核心枢机瞬间",
+      "characters_present": [
+        {
+          "character_id": "SY",
+          "name": "沈砚",
+          "position": "招式流转至最关键处，身形将转未转",
+          "action": "手腕极其自然地一旋，腰身随之拧转，力量如流水般从右脚跟升起，经腰背贯注于左臂与剑尖",
+          "emotion": "沉浸在招式韵律中的纯粹，无喜无悲",
+          "dialogue_line": "无声）\n        },\n        {\n          “character_id”: “SYX”,\n          “name”: “苏映雪”，\n          “position”: “梅树下，身体几不可察地微微前倾”，\n          “action”: “目光紧紧锁定沈砚手腕和脚步的细微变化”，\n          “emotion”: “高度集中下的平静，眼底深处似有微光掠过”，\n          “dialogue_line”: （无声）\n        }\n      ],\n      “location”: {\n        “name”: “纯阳宫·剑园”，\n        “description”: “最后一缕霞光恰好扫过沈砚旋转的身形和递出的木剑。”，\n        “lighting”: “那道霞光如同舞台追光，精准地照亮了沈砚和木剑的轨迹。”，\n        “sounds”: [“木剑划破空气发出的一声圆融饱满的‘嗡’鸣”，而非之前的破风声"
+        }
+      ],
+      "smells": []
+    },
+    "environment",
+    {
+      "weather": "晴朗“，\n        time_of_day: “黄昏最后一刻“，\n        temperature: “寒“，\n        atmosphere: “时间凝固般的屏息瞬间“"
+    },
+    "objects",
+    [
+      {
+        "object_id": "SWORD_SHENYAN_4“，\n          name: “沈砚的木剑“，\n          description: “在霞光中仿佛不再是木头，而有了金属般的流畅光泽。“，\n          position: “随沈砚身形流畅地划出一道完美弧线“，\n          state: “仿佛拥有了生命与意志“"
+      }
+    ],
+    "current_action",
+    "沈砚完美地、自然而然地做出了那个曾让他受罚、又让他彻夜思索的关键衔接。这不是模仿，而是领悟后的重现。“，\n      dialogue",
+    "inner_thoughts",
+    [
+      "沈砚：（无具体想法，只有身体与剑招合一的流动感）“， “苏映雪：‘圆转如意……成了。’（极淡的肯定）“"
+    ],
+    "sensory_details",
+    {
+      "visual": "木剑轨迹在空中留下的那道短暂而完美的光弧残影。苏映雪眼中一闪而过的微光。“，\n        auditory: “那一声独特的、圆满的剑鸣是此刻唯一的、也是最响亮的声音。“，\n        olfactory: “无“，\n        tactile: “力量贯通全身、毫无滞涩的顺畅感。“"
+    }
+  ],
+  "frame_id": "FRAME_005“_scene_id_“SCENE_JIANYUAN_NEWBEGINNING“_",
+  "scene_id": "scene_6"
+}

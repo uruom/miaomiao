@@ -1,0 +1,7 @@
+{
+  "object_id": "OBJ_OIL_LAMP",
+  "name": "油灯",
+  "description": "一盏普通的铜制油灯，火苗稳定地燃烧着，是屋内最主要的光源",
+  "position": "桌上",
+  "state": "燃烧中"
+}

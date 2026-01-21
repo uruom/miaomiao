@@ -77,6 +77,10 @@ class APIModelManager:
             "presence_penalty": kwargs.get("presence_penalty", self.config.presence_penalty),
         }
         
+        # 如果指定了response_format参数，则添加到payload中
+        if "response_format" in kwargs:
+            payload["response_format"] = kwargs["response_format"]
+        
         headers = {
             "Authorization": f"Bearer {self.config.api_key}",
             "Content-Type": "application/json"

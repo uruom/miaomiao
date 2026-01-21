@@ -1,0 +1,54 @@
+{
+  "frame_id": "frame_04",
+  "scene_id": "4.2",
+  "timestamp": "记忆高潮：离别时刻",
+  "characters_present": [
+    {
+      "character_id": "char_shenyan_memory",
+      "name": "沈砚（记忆中）",
+      "position": "华山山门，风雪中，面向师父",
+      "action": "跪地叩首，起身时接过师父递来的玉佩",
+      "emotion": "激动、不舍、对前路的憧憬",
+      "dialogue_line": "师父保重！弟子去了！"
+    },
+    {
+      "character_id": "char_master_memory",
+      "name": "师父（记忆中）",
+      "position": "山门石阶上，比沈砚高几级",
+      "action": "负手而立，雪花落满肩头与发梢，身形在风雪中显得有些模糊。将玉佩放入沈砚手中后，手并未立刻收回。",
+      "emotion": "深沉的平静下暗涌着复杂情绪（期许、担忧、不舍）",
+      "dialogue_line": "砚儿……此去，剑在你手，路在你脚。勿忘本心。"
+    }
+  ],
+  "location": {
+    "name": "华山山门",
+    "description": "巍峨山门被漫天风雪笼罩，石阶覆雪，远处群山茫茫。",
+    "lighting": "黄昏时分的天光被雪幕遮蔽，一片灰白朦胧",
+    "sounds": [
+      "呼啸的风雪声",
+      "沈砚叩首时额头触碰积雪的闷响",
+      "师父低沉而清晰的话语穿透风雪"
+    ],
+    "smells": [
+      "冰冷纯净的雪的气息",
+      "远处松林传来的微涩松香"
+    ]
+  },
+  "environment": {
+    "weather": "大雪",
+    "time_of_day": "黄昏",
+    "temperature": "严寒",
+    "atmosphere": "庄严、孤寂、离别"
+  },
+  "objects": [
+    {
+      "object_id": "obj_jade_pendant_memory",
+      "name": "玉佩（记忆中）",
+      "description": "同前",
+      "position": "师父苍老的手与沈砚年轻的手交接处",
+      "state": "刚从师父怀中取出，带着师父微弱的体温和更深的寒意"
+    }
+  ],
+  "current_action": "记忆中最清晰的定格——师父将玉佩放入沈砚掌心，指尖冰凉。沈砚抬头，只看到师父立于风雪中逐渐模糊的背影（或侧影）。",
+  "dialogue”：[\n        {\n          ": "peaker“： ”师父（记忆中）“，\n          ”content“： ”砚儿……此去，剑在你手，路在你脚。勿忘本心。“，\n          ”tone“： ”低沉，缓慢，每个字都像刻在风雪里“"
+}

@@ -1,0 +1,7 @@
+{
+  "frame_id": "turning_point_care_06”,_scene_id_“healing_and_obse",
+  "dialogue_line": "（一边准备药物一边说）想报仇？先活下来。”（语气平淡得像在陈述天气）”\n   },\n   {\n     character_id: “lcj”,\n     name: “李长缨",
+  "position": "依然僵在床上",
+  "action": "目光追随着云澈的动作，眼中的怒火未消，但多了一丝警惕和疑惑。”,\n     emotion: “戒备中混杂着不解和一丝极淡的、连自己都未察觉的动摇（因为对方不再试图‘说服’或‘压制’，而是转向了最实际的‘处理伤口’）。”,\n     dialogue_line: “……",
+  "scene_id": "scene_3"
+}

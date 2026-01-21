@@ -1,0 +1,40 @@
+{
+  "frame_id": "frame_4",
+  "scene_id": "2.2",
+  "timestamp": "清晨教学暂停时",
+  "characters_present": [
+    {
+      "character_id": "yun_che",
+      "name": "云澈",
+      "position": "缓步走到论剑台中央，停在李长缨面前三步处",
+      "action": "目光平静但极具穿透力地看着李长缨的左肩位置",
+      "emotion": "严肃、关切被隐藏在严厉之下",
+      "dialogue_line": "\"停。你的左臂，怎么回事？\""
+    },
+    {
+      "character_id": "li_changying",
+      "name": "李长缨",
+      "position": "收剑而立，微微垂首面对云澈，闻言身体几不可察地僵了一下",
+      "action": "下意识地想将左臂往后藏一藏，又强行忍住",
+      "emotion": "慌乱、被看穿的窘迫、强作镇定",
+      "dialogue_line": "\"回师父……弟子无事，只是昨夜未曾睡好，有些乏力。\""
+    }
+  ],
+  "location": {
+    "name": "论剑台中央",
+    "description": "两人相对而立，晨光将他们的影子拉得很短。远处山峦清晰可见。",
+    "lighting": "明亮的晨光直射下来，一切细节暴露无遗",
+    "sounds": [
+      "风声",
+      "李长缨略显急促的呼吸声",
+      "远处隐约的瀑布声"
+    ],
+    "smells": [
+      "晨光的气息",
+      "石台的微尘味"
+    ]
+  },
+  "environment": {
+    "weather": "晴朗\",\n      time_of_day: \"清晨\",\n      temperature: \"温暖起来\",\n      atmosphere: \"瞬间紧绷的师徒对峙\"\n    },\n    objects: [\n      {\n        object_id: \"sword_at_side\",\n        name: \"李长缨的佩剑\",\n        description: \"被李长缨紧握在身侧，剑尖指地\",\n        position: \"李长缨右手\",\n        state: \"静止但握得很紧\"\n      }\n    ],\n    current_action: \"云澈直接点破李长缨的左臂异常，李长缨试图用‘没睡好’搪塞过去。这是旧伤问题第一次被摆到师徒对话的明面上。\",\n    dialogue: [\n      {\n        speaker: \"云澈\",\n        content: \"停。你的左臂，怎么回事？\",\n        tone: \"平静，但不容置疑\"\n      },\n      {\n        speaker: \"李长缨\",\n        content: \"回师父……弟子无事，只是昨夜未曾睡好，有些乏力。\",\n        tone: \"恭敬中带着一丝不易察觉的颤抖和心虚\"\n      }\n    ],\n    inner_thoughts: [\"云澈：'没睡好？乏力会让‘沧浪起’的发力点偏移得如此精准地指向旧伤位置？他在隐瞒。'\"，“李长缨：\"被发现了……不行，不能承认。承认了就意味着要停下练剑……我好不容易才追上来一点……\""
+  }
+}

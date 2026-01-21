@@ -1,0 +1,7 @@
+{
+  "object_id": "obj_copper_basin",
+  "name": "铜盆",
+  "description": "一个边缘略有磕碰的旧铜盆，盛着半盆微红的热水，水面漂浮着染血的布条。",
+  "position": "桌上",
+  "state": "水汽蒸腾"
+}

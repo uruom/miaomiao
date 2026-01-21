@@ -1,0 +1,7 @@
+{
+  "object_id": "obj_lantern",
+  "name": "石灯",
+  "description": "古朴的石制灯笼，内里烛火在寒风中摇曳",
+  "position": "山门两侧",
+  "state": "烛火摇曳"
+}

@@ -1,0 +1,51 @@
+{
+  "frame_id": "frame_02",
+  "scene_id": "4.2",
+  "timestamp": "独酌片刻后",
+  "characters_present": [
+    {
+      "character_id": "char_shenyan",
+      "name": "沈砚",
+      "position": "桌前，身体微微前倾",
+      "action": "手指无意识地探入怀中，指尖触碰到一物，动作顿住",
+      "emotion": "从漫不经心到瞬间的凝滞与触动",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "悦来客栈天字三号房",
+    "description": "",
+    "lighting": "月光与灯光交界处，沈砚的手没入怀中阴影",
+    "sounds": [
+      "风声似乎停了一瞬"
+    ],
+    "smells": []
+  },
+  "environment": {
+    "weather": "",
+    "time_of_day": "",
+    "temperature": "",
+    "atmosphere": ""
+  },
+  "objects": [
+    {
+      "object_id": "obj_jade_pendant_hidden",
+      "name": "玉佩（隐藏状态）",
+      "description": "师父所赠的羊脂玉佩，贴身携带",
+      "position": "沈砚怀中，紧贴心口",
+      "state": "被体温微微焐热，但内核仍沁着凉意"
+    }
+  ],
+  "current_action": "沈砚在孤寂感蔓延时，下意识去摸怀中之物，指尖传来意料之外的冰凉触感。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "\"……差点忘了，还有你陪着。\"",
+    "\"怎么还是这么凉？\""
+  ],
+  "sensory_details": {
+    "visual": "",
+    "auditory": "",
+    "olfactory": "",
+    "tactile": "指尖传来的触感极其鲜明——外层是衣料和自己体温带来的暖意，内里却是一块坚硬的、沁着寒意的玉。这股凉意顺着指尖，直窜心尖。"
+  }
+}

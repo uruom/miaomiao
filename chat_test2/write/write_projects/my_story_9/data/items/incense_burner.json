@@ -1,0 +1,7 @@
+{
+  "object_id": "incense_burner",
+  "name": "小香炉",
+  "description": "一个黄铜小香炉，炉内只有冰冷的香灰，炉身被摩挲得光滑。",
+  "position": "靠窗的木桌上",
+  "state": "闲置，冰冷"
+}

@@ -1,0 +1,68 @@
+{
+  "frame_id": "scene_1_frame_3",
+  "scene_id": "scene_3",
+  "timestamp": "开场后16分30秒",
+  "characters_present": [
+    {
+      "character_id": "yunche",
+      "name": "云澈",
+      "position": "已完成包扎，站在李长缨身侧，并未立刻离开",
+      "action": "目光从李长缨的伤处移开，望向墙上那柄蒙尘的剑，手指无意识地拂过自己腰间佩剑的剑柄",
+      "emotion": "被往事击中，疏离感出现裂痕",
+      "dialogue_line": "（低声）‘这伤，是两年前的腊月留下的？’"
+    },
+    {
+      "character_id": "lichangying",
+      "name": "李长缨",
+      "position": "身体猛地一震，愕然抬头，试图看向身后的云澈",
+      "action": "因突然被点破旧事而惊讶，下意识回答",
+      "emotion": "震惊、不解、被看穿的慌乱",
+      "dialogue_line": "‘你……你怎么知道？’"
+    }
+  ],
+  "location": {
+    "name": "纯阳宫·云澈临时居所",
+    "description": "",
+    "lighting": "油灯光晕晃动，将云澈侧脸映得半明半暗",
+    "sounds": [
+      "李长缨因惊讶而提高的声音在石室中回荡",
+      "风声呜咽"
+    ],
+    "smells": [
+      ""
+    ]
+  },
+  "environment": {
+    "weather": "",
+    "time_of_day": "",
+    "temperature": "",
+    "atmosphere": "沉默被打破，空气仿佛被注入一丝微弱的电流"
+  },
+  "objects": [
+    {
+      "object_id": "obj_yunche_sword",
+      "name": "云澈的佩剑",
+      "description": "他腰间所佩之剑，剑柄被摩挲得温润。",
+      "position": "云澈腰间",
+      "state": "被手指轻触"
+    }
+  ],
+  "current_action": "云澈并未直接回答李长缨的问题。他走到桌边，拿起一个粗瓷茶杯，倒了一杯早已凉透的茶水，却没有喝。他的目光似乎穿透了墙壁，看向了很远的地方。",
+  "dialogue": [
+    {
+      "speaker": "云澈",
+      "content": "‘因为我也在同样的年纪，受过几乎一样的伤。’",
+      "tone": "平淡，但字句间带着沉重的分量"
+    }
+  ],
+  "inner_thoughts": [
+    "云澈：（腊月……雪夜……也是这般不顾性命。）",
+    "李长缨：（一样的伤？他？什么意思？）"
+  ],
+  "sensory_details": {
+    "visual": "云澈端着茶杯的侧影显得孤寂而遥远。凉茶没有一丝热气。墙上那柄蒙尘的剑仿佛在灯光下活了过来。",
+    "auditory": "云澈平淡的语调与内容带来的冲击形成反差。",
+    "olfactory": "药香似乎淡去，陈旧空气的味道重新浮现。",
+    "tactile": "李长缨感到背上包扎好的伤口隐隐发烫，心跳莫名加快。"
+  }
+}

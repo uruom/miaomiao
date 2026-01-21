@@ -1,0 +1,61 @@
+{
+  "frame_id": "CH02_FRAME_03",
+  "scene_id": "2.6",
+  "timestamp": "深夜加练的高潮时刻",
+  "characters_present": [
+    {
+      "character_id": "LCY",
+      "name": "李长缨",
+      "position": "论剑台中央，身体前倾呈突刺终结姿态",
+      "action": "僵在原地，右手无力下垂，佩剑脱手坠地",
+      "emotion": "极致的痛苦、瞬间的茫然与巨大的挫败",
+      "dialogue_line": "呃啊——！"
+    }
+  ],
+  "location": {
+    "name": "纯阳宫论剑台（深夜）",
+    "description": "月光惨白，寂静无声，仿佛连虫鸣都被这突如其来的变故惊住",
+    "lighting": "月光冰冷地照亮他瞬间失去血色的脸和坠地的长剑",
+    "sounds": [
+      "长剑坠地发出的‘哐啷’脆响",
+      "李长缨压抑不住的一声短促痛呼",
+      "随后是粗重、痛苦的喘息声"
+    ],
+    "smells": [
+      "夜露的寒气",
+      "一丝极淡的、因剧痛而激发的冷汗气味"
+    ]
+  },
+  "environment": {
+    "weather": "晴朗",
+    "time_of_day": "深夜",
+    "temperature": "寒冷",
+    "atmosphere": "凝固的疼痛、失败与孤独"
+  },
+  "objects": [
+    {
+      "object_id": "SWORD_FALLEN",
+      "name": "李长缨的佩剑",
+      "description": "躺在冰冷的青石地上，微微震颤",
+      "position": "李长缨脚边",
+      "state": "脱手，象征着他的失控与失败"
+    }
+  ],
+  "current_action": "李长缨全力突刺的顶点，旧伤如山洪决堤般爆发，剧痛让他瞬间失去对剑的控制。",
+  "dialogue": [
+    {
+      "speaker": "李长缨",
+      "content": "呃啊——！",
+      "tone": "短促、尖锐、充满痛苦与难以置信"
+    }
+  ],
+  "inner_thoughts": [
+    "李长缨：\"完了……动不了……剑……\"\"],\n    “sensory_details",
+    {
+      "visual": "他左肩不自然地塌陷了一下，整个左臂肉眼可见地颤抖、无力。月光下，他额头上瞬间布满豆大的冷汗。",
+      "auditory": "剑坠地的声音在寂静中格外刺耳。他牙关紧咬的咯咯声。",
+      "olfactory": "",
+      "tactile": "左肩仿佛被烧红的铁钎贯穿、搅动般的剧痛，瞬间蔓延至整条左臂和半边身体，肌肉痉挛，右手五指因连带痛楚而发麻无力。"
+    }
+  ]
+}

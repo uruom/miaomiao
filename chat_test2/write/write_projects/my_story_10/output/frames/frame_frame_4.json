@@ -1,0 +1,61 @@
+{
+  "frame_id": "frame_4",
+  "scene_id": "1-2",
+  "timestamp": "开场后24分钟",
+  "characters_present": [
+    {
+      "character_id": "ye_zhiqiu",
+      "name": "叶知秋",
+      "position": "已将李承影小心地半扶起靠在自己臂弯中",
+      "action": "一手稳住少年身体，另一只手正用撕下的自己内袍相对干净的布条快速包扎其腰腹间最严重的伤口。动作熟练而迅捷。",
+      "emotion": "专注、凝重、隐含一丝不易察觉的悲悯",
+      "dialogue_line": "忍着点。"
+    },
+    {
+      "character_id": "li_chengying",
+      "name": "李承影",
+      "position": "半昏迷状态倚靠在叶知秋臂弯里",
+      "action": "身体因剧痛而本能地抽搐了一下，但被叶知秋稳稳按住。包扎过程中他无意识地松开了些许对怀中包裹的死守。",
+      "emotion": "痛苦、昏迷中的不安、对温暖的潜意识依赖",
+      "dialogue_line": "……冷……"
+    }
+  ],
+  "location": {
+    "name": "华山山道拐角",
+    "description": "叶知秋用剑气扫开一片较为干净平整的积雪地面进行操作。身边散落着从他衣袍撕下的布条和一些随身携带的金疮药粉小瓶。",
+    "lighting": "月光下，叶知秋低垂的面容轮廓分明，神情专注得近乎虔诚。他用来包扎的白布迅速被鲜血染红。",
+    "sounds": [
+      "布条撕裂的声音",
+      "药粉洒在伤口上细微的沙沙声",
+      "李承影压抑不住的痛苦闷哼",
+      "寒风掠过山岩的低啸"
+    ],
+    "smells": [
+      "金疮药粉清苦的气味暂时压过了血腥",
+      "冰雪寒气",
+      "两人身上沾染的血与尘的味道"
+    ]
+  },
+  "environment": {
+    "weather": "风似乎小了一些",
+    "time_of_day": "深夜",
+    "temperature": "依旧严寒，但两人接触的部分有微弱的暖意传递",
+    "atmosphere": "紧急救治中的专注与脆弱生命得以暂时维系的微光"
+  },
+  "objects": [
+    {
+      "object_id": "medicine_bottle",
+      "name": "青瓷小药瓶",
+      "description": "叶知秋随身携带的上好金疮药瓶，瓶身素雅。",
+      "position": "被打开放在一旁的雪地上",
+      "state": "已用去小半"
+    },
+    {
+      "object_id": "bloodstained_cloth\n         name: 染血的布条\n         description: 从叶知秋内袍撕下的白色细棉布条正在迅速被李承影伤口的鲜血浸透。\n         position: 缠绕在李承影腰腹间\n         state: 正在使用中迅速变红"
+    },
+    {
+      "object_id": "exposed_bundle\n         name: 略微松开的包裹\n         description: 因李承影手臂无力而露出一角的包裹物——看起来是一个陈旧的木制小匣子的一角匣子上似乎有焦痕和刀剑劈砍留下的痕迹。\n         position: 仍大部分被少年手臂虚拢着\n         state: 部分暴露"
+    }
+  ],
+  "current_action": "叶知秋进行紧急止血包扎的关键时刻他的动作专业而迅速显示出并非第一次处理如此严重的伤势同时他注意到少年怀中之物露出真容的一角那上面的痕迹让他心中疑窦更深。\n     dialogue: [\n       {\n         speaker: 叶知秋\n         content: 忍着点。\n         tone: 低沉平稳带着一种令人安心的力量"
+}

@@ -1,0 +1,7 @@
+{
+  "object_id": "obj_swept_area",
+  "name": "被清扫出的练剑区域",
+  "description": "广场中央一片圆形区域，积雪被扫至边缘堆起，露出湿润的深色青石板。",
+  "position": "广场中央",
+  "state": "无雪，湿滑，是全场焦点"
+}

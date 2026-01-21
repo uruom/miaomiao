@@ -1,0 +1,9 @@
+{
+  "object_id": "clean_gauze",
+  "name": "干净纱布",
+  "description": "折叠整齐的白纱布",
+  "position": "云澈膝上",
+  "state": "待使用",
+  "scene_id": "scene_3",
+  "frame_id": "frame_18"
+}

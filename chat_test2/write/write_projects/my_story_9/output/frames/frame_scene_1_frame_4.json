@@ -1,0 +1,67 @@
+{
+  "frame_id": "scene_1_frame_4",
+  "scene_id": "scene_3",
+  "timestamp": "开场后17分30秒",
+  "characters_present": [
+    {
+      "character_id": "yunche",
+      "name": "云澈",
+      "position": "背对李长缨，面朝墙壁上的剑",
+      "action": "抬手，指尖几乎要触到那蒙尘的剑鞘，却在最后一刻停住",
+      "emotion": "回忆的闸门打开，痛苦与温情交织",
+      "dialogue_line": "‘我那把剑……比你的沉。师父说，心不静，剑就重。’"
+    },
+    {
+      "character_id": "lichangying",
+      "name": "李长缨",
+      "position": "已转过身，胡乱披上外衣，紧紧盯着云澈的背影",
+      "action": "忘记了疼痛和羞愧，全神贯注地听着",
+      "emotion": "好奇、困惑、隐约感到即将触及某种核心",
+      "dialogue_line": "‘……师父？’"
+    }
+  ],
+  "location": {
+    "name": "纯阳宫·云澈临时居所",
+    "description": "",
+    "lighting": "灯光将云澈的身影投在墙上，与那柄剑的影子重叠",
+    "sounds": [
+      "云澈低沉平稳的叙述声",
+      "窗外风卷落叶的沙沙声"
+    ],
+    "smells": [
+      ""
+    ]
+  },
+  "environment": {
+    "weather": "",
+    "time_of_day": "夜晚正式降临",
+    "temperature": "室内温度似乎又低了一些",
+    "atmosphere": "从压抑转向一种沉静的叙事氛围，时空仿佛交错"
+  },
+  "objects": [
+    {
+      "object_id": "“",
+      "name“": "“",
+      "description“": "“",
+      "position“": "“",
+      "state“": "“"
+    }
+  ],
+  "current_action“": "云澈收回手，转过身，目光第一次真正平和地落在李长缨脸上，不再是审视或严厉，而是带着一种穿透时光的复杂神色。“",
+  "dialogue“": [
+    {
+      "speaker“": "云澈“",
+      "content“": "‘嗯。我的师父。他也曾在这里，像我今天对你这样，给我上药。’“",
+      "tone“": "怀念中带着深深的苍凉“"
+    }
+  ],
+  "inner_thoughts“": [
+    "云澈：（师父的手也很稳，药也是这个味道。）“， ”李长缨：（他……也有师父？也会受伤？也会被这样照顾？）“"
+  ],
+  "sensory_details“": {
+    "visual“": "云澈眼中映着跳动的灯火，仿佛有旧日影像闪过。李长缨脸上的倔强被一种懵懂的触动取代。“",
+    "auditory“": "“",
+    "olfactory“": "药香此刻仿佛成了连接过去与现在的纽带。“",
+    "tactile“": "李长缨攥着衣襟的手不知不觉松开了。“"
+  }
+}

@@ -1,0 +1,633 @@
+[
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-20T16:54:54.100271",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-20T16:56:02.412787",
+    "data": {
+      "outline_title": "如寄·风雪江湖录",
+      "parts_count": 2
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T16:56:02.414962",
+    "data": {
+      "chapter_id": "1-1",
+      "chapter_title": "扬州柳"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T16:57:40.090442",
+    "data": {
+      "chapter_id": "1-1",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T16:57:40.092948",
+    "data": {
+      "chapter_id": "1-2",
+      "chapter_title": "问道纯阳"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T16:59:11.187470",
+    "data": {
+      "chapter_id": "1-2",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T16:59:11.189471",
+    "data": {
+      "chapter_id": "1-3",
+      "chapter_title": "拜师茶"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T17:01:00.702685",
+    "data": {
+      "chapter_id": "1-3",
+      "scenes_count": 8
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T17:01:00.704682",
+    "data": {
+      "chapter_id": "1-4",
+      "chapter_title": "旧剑痕"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T17:02:44.022842",
+    "data": {
+      "chapter_id": "1-4",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T17:02:44.024839",
+    "data": {
+      "chapter_id": "1-5",
+      "chapter_title": "长安灯"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T17:04:19.530114",
+    "data": {
+      "chapter_id": "1-5",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T17:04:19.532616",
+    "data": {
+      "chapter_id": "1-6",
+      "chapter_title": "狼烟信"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T17:05:40.496980",
+    "data": {
+      "chapter_id": "1-6",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T17:05:40.499495",
+    "data": {
+      "chapter_id": "1-7",
+      "chapter_title": "别华山"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T17:07:02.361245",
+    "data": {
+      "chapter_id": "1-7",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T17:07:02.363760",
+    "data": {
+      "chapter_id": "1-8",
+      "chapter_title": "雪落无声"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T17:08:51.311897",
+    "data": {
+      "chapter_id": "1-8",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T17:08:51.313903",
+    "data": {
+      "chapter_id": "2-1",
+      "chapter_title": "府门血"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T17:10:18.780740",
+    "data": {
+      "chapter_id": "2-1",
+      "scenes_count": 5
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T17:10:18.782740",
+    "data": {
+      "chapter_id": "2-2",
+      "chapter_title": "北邙踪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T17:12:13.129429",
+    "data": {
+      "chapter_id": "2-2",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T17:12:13.132429",
+    "data": {
+      "chapter_id": "2-3",
+      "chapter_title": "烽火情"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T17:13:42.595221",
+    "data": {
+      "chapter_id": "2-3",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T17:13:42.597730",
+    "data": {
+      "chapter_id": "2-4",
+      "chapter_title": ""
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T17:14:59.832510",
+    "data": {
+      "chapter_id": "2-4",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T17:14:59.841035",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "风雪归途"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T17:19:26.968486",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T17:19:26.971001",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "宫门初入"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T17:22:47.155734",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 5
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T17:22:47.156909",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "疗伤与执念"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T17:26:58.593139",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 20
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T17:26:58.595138",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "雪舞论剑台·往事初现"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T17:32:05.993014",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 25
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T17:32:05.995013",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "剑与道"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T17:36:07.996865",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T17:36:07.997865",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "风雪夜话与无声的转变"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T17:42:07.136617",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 9
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T17:42:07.138618",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "风雪归途"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T17:47:36.734291",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 9
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T17:47:36.736290",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "清霜旧居"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T17:52:35.903539",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 5
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T17:52:35.906115",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "论剑台初言"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T17:56:32.481805",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 5
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T17:56:32.483805",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "坐忘峰夜话"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:01:16.124271",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 4
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:01:16.126272",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "掌门问道"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:06:22.264974",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 10
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:06:22.267976",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "雪舞明心"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:12:14.014809",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 5
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:12:14.017320",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "晨雾山道"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:15:13.220144",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 4
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:15:13.222477",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "旧伤复发"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:19:19.270037",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 15
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:19:19.272040",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "药香与往事"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:22:14.822754",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 5
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:22:14.825259",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "雪夜责罚"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:26:31.299249",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:26:31.302253",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "灯下疗伤"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:30:17.986551",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 13
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:30:17.988063",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "山道徘徊"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:34:07.073058",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 5
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:34:07.075561",
+    "data": {
+      "scene_id": "scene_7",
+      "scene_title": "三清殿前"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:38:11.793668",
+    "data": {
+      "scene_id": "scene_7",
+      "frames_count": 6
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:38:11.798182",
+    "data": {
+      "scene_id": "scene_8",
+      "scene_title": "茶温如昔"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:42:11.938068",
+    "data": {
+      "scene_id": "scene_8",
+      "frames_count": 5
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:42:11.940069",
+    "data": {
+      "scene_id": "2.1",
+      "scene_title": "晨光下的剑影"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:46:39.352621",
+    "data": {
+      "scene_id": "2.1",
+      "frames_count": 4
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:46:39.354623",
+    "data": {
+      "scene_id": "2.2",
+      "scene_title": "旧伤的预兆"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:50:14.096309",
+    "data": {
+      "scene_id": "2.2",
+      "frames_count": 13
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:50:14.098317",
+    "data": {
+      "scene_id": "2.3",
+      "scene_title": "崩溃与沉默"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:51:36.017206",
+    "data": {
+      "scene_id": "2.3",
+      "frames_count": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:51:36.019587",
+    "data": {
+      "scene_id": "2.4",
+      "scene_title": "药香与往事之门"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:53:51.389039",
+    "data": {
+      "scene_id": "2.4",
+      "frames_count": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:53:51.391039",
+    "data": {
+      "scene_id": "2.5",
+      "scene_title": "谢清霜的剑与药（回忆高潮）"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T18:57:40.483892",
+    "data": {
+      "scene_id": "2.5",
+      "frames_count": 6
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T18:57:40.488413",
+    "data": {
+      "scene_id": "2.6",
+      "scene_title": "剑痕的传承”,\n      \"description\": \"回忆结束。现实中的弟子房内寂静片刻，只有药香缭绕。李长缨怔怔听着，仿佛透过时光看到了另一对师徒。云澈为他绑好绷带，缓缓道：‘你肩上的伤，和我当年腕上的伤，都是急于求成的印记。师父当年的话，我今天才真正明白几分。’他看向李长缨，‘剑痕会淡，但道理不会。今日罚你静坐调息，感受气血运行，不许再碰剑。’这一次，李长缨心悦诚服地点头。\",\n      \"characters_involved\": [\"云澈\", \"李长缨\"],\n      \"location\": \"纯阳宫弟子房\",\n      \"key_events\": [\"回忆与现实交织，李长缨深受触动\", \"云澈点明‘旧剑痕’的寓意——不仅是伤疤，更是传承的教训\", \"云澈给出‘不练剑’的独特惩罚\", \"李长缨态度转变，从口服到心服\"],\n      \"emotional_tone\": \"领悟、传承的沉重与温暖、师徒间第一次真正的精神连接\"\n    },\n    {\n      \"scene_id\": “2.7"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T19:00:59.622854",
+    "data": {
+      "scene_id": "2.6",
+      "frames_count": 11
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T19:00:59.625132",
+    "data": {
+      "scene_id": null,
+      "scene_title": "静夜思"
+    }
+  }
+]

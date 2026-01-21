@@ -1,0 +1,7 @@
+{
+  "object_id": "obj_sword_on_wall",
+  "name": "墙上的剑",
+  "description": "一柄样式古朴的长剑，剑鞘积着薄灰，似乎很久未被使用，但在昏黄光线下仍泛着冷硬的光泽。",
+  "position": "墙壁上",
+  "state": "静止、蒙尘"
+}

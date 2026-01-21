@@ -1,0 +1,64 @@
+{
+  "frame_id": "frame_01",
+  "scene_id": "4.2",
+  "timestamp": "与方不平分别后，深夜",
+  "characters_present": [
+    {
+      "character_id": "char_shenyan",
+      "name": "沈砚",
+      "position": "客栈房间的窗边木桌前",
+      "action": "将杯中残酒一饮而尽，目光落在窗外孤月上",
+      "emotion": "意气风发后的短暂空茫，夹杂着新鲜感",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "悦来客栈天字三号房",
+    "description": "陈设简单的客房，一床一桌一椅，窗扉半开，夜风微凉。",
+    "lighting": "桌上油灯火苗跳跃，月光如霜铺满半间屋子",
+    "sounds": [
+      "远处隐约的打更声",
+      "风吹过窗棂的细微呜咽"
+    ],
+    "smells": [
+      "劣质灯油味",
+      "淡淡的尘土气息",
+      "窗外飘来的夜来花香"
+    ]
+  },
+  "environment": {
+    "weather": "晴朗，夜空无云",
+    "time_of_day": "子时（深夜）",
+    "temperature": "微凉",
+    "atmosphere": "寂静，空旷，带着一丝江湖夜宿特有的漂泊感"
+  },
+  "objects": [
+    {
+      "object_id": "obj_wine_bottle",
+      "name": "酒壶",
+      "description": "粗陶酒壶，壶身温热，内盛廉价烧刀子",
+      "position": "木桌中央",
+      "state": "半满"
+    },
+    {
+      "object_id": "obj_wine_cup",
+      "name": "酒杯",
+      "description": "白瓷酒杯，杯沿有一处细微缺口",
+      "position": "沈砚手边",
+      "state": "空置"
+    }
+  ],
+  "current_action": "沈砚独饮后望向窗外明月，感受着初离华山的新鲜与一丝难以言喻的落寞。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "\"这就是江湖……与想象中一般热闹，却也这般安静。\"",
+    "\"不知方兄此刻到了何处？\"",
+    "\"师父此刻，想必已睡下了吧。\""
+  ],
+  "sensory_details": {
+    "visual": "月光将沈砚的影子拉长，投在斑驳的墙面上，随灯火轻轻晃动。",
+    "auditory": "极致的安静中，自己的呼吸和心跳声变得清晰可闻。",
+    "olfactory": "酒气混着夜风的清冽。",
+    "tactile": "指尖触及冰凉的桌面，夜风拂过面颊带来凉意。"
+  }
+}

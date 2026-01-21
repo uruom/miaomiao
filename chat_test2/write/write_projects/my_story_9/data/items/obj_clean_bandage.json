@@ -1,0 +1,7 @@
+{
+  "object_id": "obj_clean_bandage",
+  "name": "新绷带",
+  "description": "一卷洁白的崭新绷带，尚未使用",
+  "position": "放在药钵旁边",
+  "state": "等待使用"
+}

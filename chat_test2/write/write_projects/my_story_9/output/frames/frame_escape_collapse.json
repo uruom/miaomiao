@@ -1,0 +1,71 @@
+{
+  "frame_id": "escape_collapse",
+  "scene_id": "scene_4",
+  "timestamp": "李长缨溜出房间后约半炷香",
+  "characters_present": [
+    {
+      "character_id": "li_changying",
+      "name": "李长缨",
+      "position": "清静台外院落的雪地中，面朝下倒伏",
+      "action": "试图爬起，手臂撑起又无力地滑落，身体因寒冷与虚弱微微颤抖",
+      "emotion": "挫败、不甘、夹杂着一丝对自己无能的愤怒",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "yun_che",
+      "name": "云澈",
+      "position": "站在院落月洞门下，刚刚发现倒地的李长缨",
+      "action": "脚步顿住，目光落在雪地中那抹挣扎的身影上，随即快步上前",
+      "emotion": "平静中带着一丝了然与无奈，并无责备",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "清静台外院落",
+    "description": "一处僻静的庭院，连接着清静台与外部道路。青石板路被新雪覆盖，角落里的几株老梅枝桠上积着雪。",
+    "lighting": "黄昏将尽的灰蓝色天光，雪地反射着微弱的光，院落角落的灯笼尚未点亮，光线昏暗",
+    "sounds": [
+      "呼啸而过的风声",
+      "积雪从枝头簌簌落下的轻响",
+      "李长缨粗重而艰难的喘息声"
+    ],
+    "smells": [
+      "冰冷干净的雪的气息",
+      "隐约从远处飘来的香火味"
+    ]
+  },
+  "environment": {
+    "weather": "大雪初停，零星雪花飘落",
+    "time_of_day": "黄昏",
+    "temperature": "严寒刺骨",
+    "atmosphere": "寂静、清冷、带着逃亡未遂的孤寂与狼狈"
+  },
+  "objects": [
+    {
+      "object_id": "snow_patch",
+      "name": "雪地压痕",
+      "description": "李长缨倒下时在平整雪地上压出的凌乱人形痕迹，以及他试图爬行时留下的断续拖痕",
+      "position": "院落中央",
+      "state": "新鲜、凌乱"
+    },
+    {
+      "object_id": "yun_che_cloak",
+      "name": "云澈的道袍下摆",
+      "description": "素色的道袍下摆，边缘已被融雪浸湿",
+      "position": "随着云澈走动",
+      "state": "微湿"
+    }
+  ],
+  "current_action": "云澈发现倒在雪地中的李长缨，沉默地走向他。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "李长缨：\"还是……不行吗……连这道门都出不去……\"",
+    "云澈：\"和当年的我，真像。连倒下时的姿势，都带着不甘心。\""
+  ],
+  "sensory_details": {
+    "visual": "灰蓝天空下，洁白雪地上，一个深色身影无助地倒伏着。云澈素色的身影在昏暗光线下走近，形成鲜明对比。",
+    "auditory": "风声是背景音，最清晰的是李长缨压抑不住的、带着痛楚的喘息。云澈踩在雪上的脚步声，轻而稳。",
+    "olfactory": "冰冷的空气吸入肺腑，带着雪的清冽。",
+    "tactile": "积雪的冰冷透过单薄的衣物侵蚀身体，融雪浸湿衣料的湿冷感。"
+  }
+}

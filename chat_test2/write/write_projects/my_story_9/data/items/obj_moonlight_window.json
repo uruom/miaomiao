@@ -1,0 +1,7 @@
+{
+  "object_id": "obj_moonlight_window",
+  "name": "窗棂与月光",
+  "description": "方格窗棂将皎洁的月光切割成几何形状,投映在室内地面和墙壁上",
+  "position": "窗边",
+  "state": "月光静静流淌"
+}

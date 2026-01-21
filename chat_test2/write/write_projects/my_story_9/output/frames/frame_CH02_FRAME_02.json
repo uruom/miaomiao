@@ -1,0 +1,55 @@
+{
+  "frame_id": "CH02_FRAME_02",
+  "scene_id": "2.6",
+  "timestamp": "深夜，第一日加练",
+  "characters_present": [
+    {
+      "character_id": "LCY",
+      "name": "李长缨",
+      "position": "论剑台角落，月光笼罩处",
+      "action": "独自反复练习“分光掠影”的起手式，动作标准但充满力度",
+      "emotion": "专注、不服输，带着一丝焦虑",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "纯阳宫论剑台（深夜）",
+    "description": "白日肃穆的论剑台浸在清冷月色中，空无一人，只有虫鸣与风声，巨大的影子投在青石上",
+    "lighting": "清冷的月光是唯一光源，勾勒出人与剑的轮廓",
+    "sounds": [
+      "断续的虫鸣",
+      "沉重的呼吸声",
+      "单调重复的剑刃破空声"
+    ],
+    "smells": [
+      "夜露的清寒气息",
+      "青石板的凉意"
+    ]
+  },
+  "environment": {
+    "weather": "晴朗，夜凉如水",
+    "time_of_day": "深夜",
+    "temperature": "寒冷",
+    "atmosphere": "孤独、坚持、暗藏危机的寂静"
+  },
+  "objects": [
+    {
+      "object_id": "SWORD_LI_NIGHT",
+      "name": "李长缨的佩剑",
+      "description": "剑身在月光下泛着幽蓝的光",
+      "position": "李长缨手中",
+      "state": "被汗水微微浸湿握柄，剑势沉重"
+    }
+  ],
+  "current_action": "李长缨赌气般深夜加练基础式，左肩旧伤处首次传来清晰的刺痛。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "李长缨：\"我就不信……只要练够一千遍、一万遍，总能突破！师尊说的心静……等我练成了，自然就静了！\""
+  ],
+  "sensory_details": {
+    "visual": "月光下，少年挥剑的身影被拉得细长而孤单，每一次挥动都带起微弱的流光。",
+    "auditory": "\"嗤——\"一声轻微的、不同于剑风的异响从李长缨左肩关节处传来，伴随他一声压抑的闷哼。",
+    "olfactory": "",
+    "tactile": "左肩胛骨下方，一道旧疤深处，传来针扎般的清晰刺痛，让李长缨的动作瞬间变形。"
+  }
+}

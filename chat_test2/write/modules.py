@@ -70,7 +70,7 @@ class OutlineModule:
         prompt = self._build_outline_prompt(story_concept, kwargs)
         
         # 调用模型
-        response = self.model_manager.call_model(prompt)
+        response = self.model_manager.call_model(prompt, response_format={"type": "json_object"})
         # 提取JSON
         try:
             outline_data = self._parse_outline_response(response)
@@ -207,7 +207,7 @@ class DetailOutlineModule:
         prompt = self._build_detail_prompt(chapter, outline_data, previous_chapters, next_chapters, existing_details)
         
         # 调用模型
-        response = self.model_manager.call_model(prompt)
+        response = self.model_manager.call_model(prompt, response_format={"type": "json_object"})
         
         # 解析响应
         try:
@@ -337,6 +337,14 @@ class DetailOutlineModule:
             if not data:
                 raise ValueError("JSON解析失败：无法从响应中提取有效数据")
             
+            # 处理列表类型响应（如果模型返回了数组）
+            if isinstance(data, list):
+                print(f"警告：模型返回了列表类型，尝试提取第一个元素")
+                if len(data) > 0:
+                    data = data[0]  # 取第一个元素作为字典
+                else:
+                    raise ValueError("JSON解析失败：列表为空")
+            
             if not isinstance(data, dict):
                 raise ValueError(f"JSON解析失败：期望字典类型，但得到 {type(data).__name__}")
             
@@ -357,6 +365,7 @@ class DetailOutlineModule:
             
         except Exception as e:
             print(f"解析细纲响应时出错: {e}")
+            print(f"原始响应内容: {response[:500]}...")
             raise ValueError(f"_parse_detail_response方法解析失败：{str(e)}")
 
 
@@ -396,7 +405,7 @@ class FrameModule:
             self.file_manager.write_json(frame_file, frame)
             
             # 提取并保存角色、地点等信息
-            self._extract_and_save_entities(frame)
+            # self._extract_and_save_entities(frame)
         
         print(f"已生成 {len(frames)} 个固定帧")
         return frames
@@ -418,7 +427,7 @@ class FrameModule:
         prompt = self._build_frame_prompt(scene, detail_data, previous_scenes, next_scenes, existing_frames, outline_data)
         
         # 调用模型
-        response = self.model_manager.call_model(prompt)
+        response = self.model_manager.call_model(prompt, response_format={"type": "json_object"})
         
         # 解析响应
         try:
@@ -611,27 +620,28 @@ class FrameModule:
             # 确保每个帧都有正确的数据结构
             valid_frames = []
             for i, frame in enumerate(frames_data):
+                # 处理嵌套列表的情况（如果frame是列表而不是字典）
+                if isinstance(frame, list):
+                    print(f"警告：第{i+1}个帧是列表类型，尝试提取其中的字典元素")
+                    for sub_frame in frame:
+                        if isinstance(sub_frame, dict):
+                            # 处理子帧
+                            processed_frame = self._process_frame(sub_frame, scene, len(valid_frames))
+                            valid_frames.append(processed_frame)
+                    continue
+                
+                # 处理字符串类型的情况（可能是无效数据或格式错误）
+                if isinstance(frame, str):
+                    print(f"警告：第{i+1}个帧是字符串类型，内容：'{frame[:100]}...'，跳过处理")
+                    continue
+                
                 if not isinstance(frame, dict):
-                    raise ValueError(f"JSON解析失败：第{i+1}个帧不是字典类型，而是 {type(frame).__name__}")
+                    print(f"警告：第{i+1}个帧是{type(frame).__name__}类型，跳过处理")
+                    continue
                 
-                # 确保每个帧都有scene_id
-                frame["scene_id"] = scene.get("scene_id", "unknown")
-                
-                # 验证和清理frame_id
-                if "frame_id" not in frame:
-                    frame["frame_id"] = f"frame_{len(valid_frames) + 1}"
-                else:
-                    # 清理frame_id中的非法字符
-                    frame_id = str(frame["frame_id"]).strip()
-                    # 移除换行符、制表符等空白字符
-                    frame_id = re.sub(r'\s+', '_', frame_id)
-                    # 移除文件名非法字符
-                    frame_id = re.sub(r'[<>:"/\\|?*，。！？]', '', frame_id)
-                    # 限制长度并确保不为空
-                    frame_id = frame_id[:50] if frame_id else f"frame_{len(valid_frames) + 1}"
-                    frame["frame_id"] = frame_id
-                
-                valid_frames.append(frame)
+                # 处理单个帧
+                processed_frame = self._process_frame(frame, scene, len(valid_frames))
+                valid_frames.append(processed_frame)
             
             if not valid_frames:
                 raise ValueError("JSON解析失败：没有有效的帧数据")
@@ -640,7 +650,29 @@ class FrameModule:
             
         except Exception as e:
             print(f"解析固定帧响应时出错: {e}")
+            print(f"原始响应内容: {response[:500]}...")
             raise ValueError(f"_parse_frames_response方法解析失败：{str(e)}")
+    
+    def _process_frame(self, frame: Dict[str, Any], scene: Dict[str, Any], frame_index: int) -> Dict[str, Any]:
+        """处理单个帧数据"""
+        # 确保每个帧都有scene_id
+        frame["scene_id"] = scene.get("scene_id", "unknown")
+        
+        # 验证和清理frame_id
+        if "frame_id" not in frame:
+            frame["frame_id"] = f"frame_{frame_index + 1}"
+        else:
+            # 清理frame_id中的非法字符
+            frame_id = str(frame["frame_id"]).strip()
+            # 移除换行符、制表符等空白字符
+            frame_id = re.sub(r'\s+', '_', frame_id)
+            # 移除文件名非法字符
+            frame_id = re.sub(r'[<>:"/\\|?*，。！？]', '', frame_id)
+            # 限制长度并确保不为空
+            frame_id = frame_id[:50] if frame_id else f"frame_{frame_index + 1}"
+            frame["frame_id"] = frame_id
+        
+        return frame
     
     def _create_default_frame(self, scene: Dict[str, Any]) -> Dict[str, Any]:
         """创建默认固定帧"""

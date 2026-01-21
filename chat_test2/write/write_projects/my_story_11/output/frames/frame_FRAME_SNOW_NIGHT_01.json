@@ -1,0 +1,55 @@
+{
+  "frame_id": "FRAME_SNOW_NIGHT_01",
+  "scene_id": "scene_3",
+  "timestamp": "深夜，沈砚蜷缩约一个时辰后",
+  "characters_present": [
+    {
+      "character_id": "CHAR_SHEN_YAN",
+      "name": "沈砚",
+      "position": "坐忘峰面壁处，一块凸出的巨岩阴影下，蜷缩着身体",
+      "action": "在寒冷和饥饿中半梦半醒，身体因寒冷而微微颤抖，耳朵却下意识地捕捉着风雪之外的声音",
+      "emotion": "麻木、绝望、濒临崩溃",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "纯阳宫·坐忘峰",
+    "description": "孤峰绝壁，乱石嶙峋，被厚厚的积雪覆盖。巨岩如沉默的巨人，投下浓重的阴影。",
+    "lighting": "仅有黯淡的月光透过稀薄的云层和漫天的飞雪洒下，能见度极低，世界一片灰白与深蓝交织的朦胧。",
+    "sounds": [
+      "呼啸的寒风声",
+      "雪粒打在岩石上的沙沙声",
+      "沈砚自己牙齿打颤的细微声响"
+    ],
+    "smells": [
+      "冰雪的凛冽清气",
+      "岩石的土腥味"
+    ]
+  },
+  "environment": {
+    "weather": "大雪，狂风",
+    "time_of_day": "深夜",
+    "temperature": "极寒，呵气成冰",
+    "atmosphere": "死寂、肃杀、令人窒息的孤独与严寒"
+  },
+  "objects": [
+    {
+      "object_id": "OBJ_PROTECTIVE_ROCK",
+      "name": "庇护巨岩",
+      "description": "一块巨大的山岩，略微向内凹陷，勉强能为沈砚遮挡部分风雪。岩石表面覆盖着冰凌。",
+      "position": "沈砚身后及上方",
+      "state": "冰冷、坚硬、布满霜雪"
+    }
+  ],
+  "current_action": "沈砚在极寒与孤独中意识模糊，试图用睡眠抵御痛苦，但生理上的寒冷让他无法真正入睡。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "沈砚：\"要死了吗……就这样冻死在这里……师父……真的不要我了吗……\""
+  ],
+  "sensory_details": {
+    "visual": "视野被飞舞的雪片和黑暗切割得支离破碎，远处山峰的轮廓模糊不清。",
+    "auditory": "风声是唯一的主宰，掩盖了一切，仿佛天地间只剩自己一人。",
+    "olfactory": "冰冷的空气吸入肺中，带着刺痛感。",
+    "tactile": "四肢百骸都冻得失去了知觉，只有心脏在冰冷胸腔里缓慢而沉重地跳动。"
+  }
+}

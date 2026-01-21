@@ -1,0 +1,38 @@
+{
+  "frame_id": "silent_lesson_05",
+  "scene_id": "scene_4",
+  "timestamp": "苏映雪完整拆解演示一遍后，收势静立片刻",
+  "characters_present": [
+    {
+      "character_id": "su_yinxue",
+      "name": "苏映雪",
+      "position": "空地中央",
+      "action": "缓缓收势，气息平复如初。她依旧没有看沈砚一眼，仿佛只是完成了一次独自的晨练。然后，她转身，朝着下山的方向走去。",
+      "emotion": "淡然、平静，仿佛刚才那番耗费心神的拆解演示微不足道",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "shen_yan",
+      "name": "沈砚",
+      "position": "站在原地，望着师父离去的背影",
+      "action": "嘴唇翕动，想说什么却发不出声音。双腿像灌了铅，无法移动。只有目光紧紧追随着那抹白色的背影。",
+      "emotion": "羞愧达到顶峰、混合着汹涌的感激、以及一种强烈的想要做点什么的冲动",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "纯阳宫·坐忘峰",
+    "description": "天已大亮，朝阳即将跃出山巅。",
+    "lighting": "金红色的朝霞开始浸染东方的天空，为苏映雪离去的背影镶上一道暖边",
+    "sounds": [
+      "苏映雪踩在积雪上逐渐远去的轻微脚步声"
+    ],
+    "smells": [
+      "清晨凛冽的空气"
+    ]
+  },
+  "environment": {
+    "weather": "晴",
+    "time_of_day”：": "出时分“，\n        ”temperature“：”依旧寒冷，但阳光带来了些许暖意“，\n        ”atmosphere“：”无声的告别、新生的决心在沉默中孕育“\n      }，\n      ”objects“： ["
+  }
+}

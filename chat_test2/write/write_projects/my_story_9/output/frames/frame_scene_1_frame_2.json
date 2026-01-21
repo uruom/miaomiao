@@ -1,0 +1,64 @@
+{
+  "frame_id": "scene_1_frame_2",
+  "scene_id": "scene_3",
+  "timestamp": "开场后16分钟",
+  "characters_present": [
+    {
+      "character_id": "yunche",
+      "name": "云澈",
+      "position": "已为伤口上好药，正拿起干净的绷带",
+      "action": "手指灵巧地开始缠绕绷带，目光落在李长缨紧握的拳头上",
+      "emotion": "回忆翻涌，平静的表面下暗流涌动",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "lichangying",
+      "name": "李长缨",
+      "position": "依旧坐着，头垂得更低",
+      "action": "盯着自己因为用力而指节发白的拳头，肩膀因压抑情绪而微微耸动",
+      "emotion": "挫败感达到顶点，混合着对自身无能的愤怒",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "纯阳宫·云澈临时居所",
+    "description": "",
+    "lighting": "",
+    "sounds": [
+      "绷带拉扯的细微声响",
+      "李长缨逐渐加重的呼吸声",
+      "风声似乎大了一些"
+    ],
+    "smells": [
+      "新鲜药味覆盖了部分血腥",
+      "不变的陈旧气味"
+    ]
+  },
+  "environment": {
+    "weather": "",
+    "time_of_day": "",
+    "temperature": "",
+    "atmosphere": ""
+  },
+  "objects": [
+    {
+      "object_id": "",
+      "name": "",
+      "description": "",
+      "position": "",
+      "state": ""
+    }
+  ],
+  "current_action": "云澈一圈圈缠绕绷带，动作稳定而富有韵律。李长缨的沉默和紧绷如同实质，充满了石室。就在这令人窒息的安静中，云澈包扎的动作几不可察地顿了一下。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "云澈：（他这副样子……和镜子里当年的自己重叠了。）",
+    "李长缨：（说点什么啊……骂我也好。别这样沉默……）"
+  ],
+  "sensory_details": {
+    "visual": "白色绷带在古铜色的皮肤上逐渐覆盖伤口，形成整齐的交叉图案。李长缨后颈的肌肉线条紧绷。云澈的手指在绷带间穿梭，稳定得没有一丝颤抖。",
+    "auditory": "",
+    "olfactory": "",
+    "tactile": ""
+  }
+}

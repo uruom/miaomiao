@@ -1,0 +1,53 @@
+{
+  "frame_id": "frame_03",
+  "scene_id": "4.2",
+  "timestamp": "触及玉佩的瞬间",
+  "characters_present": [
+    {
+      "character_id": "char_shenyan",
+      "name": "沈砚",
+      "position": "僵坐于桌前",
+      "action": "缓缓将玉佩从怀中取出，托在掌心，低头凝视",
+      "emotion": "恍惚，记忆被强行拉回的冲击感",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "悦来客栈天字三号房",
+    "description": "房间仿佛在瞬间褪色、扭曲",
+    "lighting": "油灯的光变得遥远而模糊，掌中玉佩在月光下泛着温润又清冷的光泽",
+    "sounds": [
+      "现实的声音（风声、更声）急速远去"
+    ],
+    "smells": [
+      "客栈的气味被记忆中的风雪气息覆盖"
+    ]
+  },
+  "environment": {
+    "weather": "（记忆覆盖）风雪交加",
+    "time_of_day": "（记忆覆盖）黄昏",
+    "temperature": "（记忆覆盖）刺骨严寒",
+    "atmosphere": "（记忆覆盖）离别与肃穆"
+  },
+  "objects": [
+    {
+      "object_id": "obj_jade_pendant_revealed",
+      "name": "玉佩",
+      "description": "圆形羊脂白玉佩，雕着简约的云纹，中央有一道天然淡青痕，像一道未愈合的伤口。此刻在月光下流转着柔和光晕。",
+      "position": "沈砚摊开的掌心",
+      "state": "静静躺着，凉意透骨"
+    }
+  ],
+  "current_action": "沈砚被玉佩的冰凉触感击中，瞬间坠入下山那日的回忆漩涡。眼前客栈景象被华山风雪取代。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "这凉意……和那天一模一样。",
+    "师父的手也是这么凉吗？当他将玉佩放入我掌心的时候……"
+  ],
+  "sensory_details": {
+    "visual": "玉佩的光泽在眼前放大、旋转，与记忆中漫天飞舞的雪片重叠。",
+    "auditory": "耳边呼啸而起的是华山之巅凛冽的风雪声，掩盖了一切。",
+    "olfactory": "清冷的、带着松针和雪沫味道的空气仿佛再次充满鼻腔。",
+    "tactile": "掌心玉佩的凉意，与记忆中师父指尖轻触他掌心时的温度，重合在一起。"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "object_id": "obj_stone_lantern",
+  "name": "石灯",
+  "description": "古朴的青石灯座，烛火在玻璃罩内挣扎",
+  "position": "论剑台四角",
+  "state": "烛火明灭不定"
+}

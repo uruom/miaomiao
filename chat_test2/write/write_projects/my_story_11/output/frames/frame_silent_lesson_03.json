@@ -1,0 +1,51 @@
+{
+  "frame_id": "silent_lesson_03",
+  "scene_id": "scene_4",
+  "timestamp": "苏映雪并指起手，缓慢演练“剑冲阴阳”起手式的瞬间",
+  "characters_present": [
+    {
+      "character_id": "su_yinxue",
+      "name": "苏映雪",
+      "position": "空地中央",
+      "action": "以指代剑，极其缓慢地做出“剑冲阴阳”的起手式——沉肩、坠肘、指尖遥指前方虚空。每一个细节都放大、定格。",
+      "emotion": "专注、凝练，仿佛手中真有一柄千钧之剑",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "shen_yan",
+      "name": "沈砚",
+      "position": "岩石后，几乎忘了隐藏",
+      "action": "眼睛瞪大，死死盯着师父的手指和身体的细微角度，下意识地模仿着调整自己的肩膀",
+      "emotion": "最初的震惊逐渐被一种强烈的吸引取代",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "纯阳宫·坐忘峰",
+    "description": "天色更亮了一些，雪地开始反射微弱的晨光。",
+    "lighting": "清冷的晨光勾勒出苏映雪动作的轮廓，指尖仿佛凝聚着微光",
+    "sounds": [
+      "衣物随着极致缓慢动作产生的细微摩擦声"
+    ],
+    "smells": []
+  },
+  "environment": {
+    "weather": "晴，酷寒",
+    "time_of_day": "黎明",
+    "temperature": "严寒",
+    "atmosphere": "庄重、神圣、如同某种仪式的开端"
+  },
+  "objects": [],
+  "current_action": "苏映雪以慢到极致的速度演示剑法基础，这不是表演，而是拆解。沈砚开始意识到这与昨夜疾如闪电的剑舞不同。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "沈砚：'太慢了……慢得我能看清每一寸肌肉的发力……这……这是在……",
+    "一个让他心脏骤停的想法浮现：'教我？'"
+  ],
+  "sensory_details": {
+    "visual": "苏映雪的指尖在空中划出近乎凝固的轨迹，晨光下能看到她呼出的极淡白气与动作同步。",
+    "auditory": "寂静中，只有一种无形的‘专注’在嗡嗡作响。",
+    "olfactory": "",
+    "tactile": "沈砚感到自己的脸颊因过于专注而发烫，与周遭寒冷形成鲜明对比。"
+  }
+}

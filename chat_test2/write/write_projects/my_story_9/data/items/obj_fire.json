@@ -1,0 +1,7 @@
+{
+  "object_id": "obj_fire",
+  "name": "微弱的火堆",
+  "description": "几根潮湿树枝勉强点燃的小火，光芒摇曳",
+  "position": "岩洞角落",
+  "state": "随时可能熄灭"
+}

@@ -1,0 +1,7 @@
+{
+  "object_id": "obj_stone_path",
+  "name": "湿滑的青石板",
+  "description": "山道中央铺就的古老石板，表面布满苔痕，因晨露而异常湿滑。",
+  "position": "李长缨脚下",
+  "state": "湿滑，构成潜在的危险"
+}

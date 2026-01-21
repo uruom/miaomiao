@@ -1,0 +1,7 @@
+{
+  "object_id": "OBJ_OIL_LAMP_MEMORY",
+  "name": "油灯（记忆）",
+  "description": "与现实中云澈屋内的油灯相似，光线昏黄",
+  "position": "桌上",
+  "state": "燃烧中"
+}

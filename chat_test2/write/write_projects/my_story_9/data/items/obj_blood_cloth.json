@@ -1,0 +1,7 @@
+{
+  "object_id": "obj_blood_cloth",
+  "name": "染血的布条",
+  "description": "粗略包扎在李长缨胸腹部的布条，血迹在低温下已凝成暗红冰晶",
+  "position": "李长缨身上",
+  "state": "冻结、僵硬"
+}

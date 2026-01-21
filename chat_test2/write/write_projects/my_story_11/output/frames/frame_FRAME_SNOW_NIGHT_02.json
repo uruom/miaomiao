@@ -1,0 +1,45 @@
+{
+  "frame_id": "FRAME_SNOW_NIGHT_02",
+  "scene_id": "scene_3",
+  "timestamp": "第一声剑鸣响起时",
+  "characters_present": [
+    {
+      "character_id": "CHAR_SHEN_YAN",
+      "name": "沈砚",
+      "position": "猛地从蜷缩状态抬起头，身体僵住，侧耳倾听",
+      "action": "被突如其来的清越声响惊醒，下意识地寻找声音来源",
+      "emotion": "惊疑、困惑、一丝本能的希望",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "纯阳宫·坐忘峰",
+    "description": "风雪依旧，但某种穿透性的声音打破了绝对的死寂。",
+    "lighting": "月光似乎亮了一些，云层裂开一道缝隙。",
+    "sounds": [
+      "风声中，一声清晰、悠长、如龙吟凤哕般的剑鸣破空而来，压过了风雪声",
+      "随后是第二声、第三声，连绵成一片清冷的韵律"
+    ],
+    "smells": [
+      "冰雪清气中，似乎混入了一丝极淡的、冷冽的金属气息"
+    ]
+  },
+  "environment": {
+    "weather": "大雪，风势稍缓",
+    "time_of_day": "深夜",
+    "temperature": "极寒",
+    "atmosphere": "死寂被打破，一种锐利而纯净的气息开始弥漫"
+  },
+  "objects": [],
+  "current_action": "沈砚被陌生的剑鸣声吸引，挣扎着从麻木中集中精神。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "沈砚：\"什么声音？……剑？这地方怎么会有……难道是……\""
+  ],
+  "sensory_details": {
+    "visual": "沈砚努力睁大眼睛，试图在风雪和黑暗中分辨方向。",
+    "auditory": "那剑鸣声并非狂暴，而是带着一种穿透人心的清澈与稳定，每一次响起都仿佛敲在心跳的间隙。",
+    "olfactory": "",
+    "tactile": "寒冷依旧，但注意力被转移，身体的痛苦感似乎短暂退却。"
+  }
+}

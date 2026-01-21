@@ -1,0 +1,24 @@
+{
+  "location": {
+    "name": "回忆·纯阳宫旧练功房”,\n      description: “同上。暮色更深了。”\n,\n      lighting: “最后一缕天光即将消失，室内几乎全暗，只有药架旁一盏豆大的油灯被谢清霜点亮，投出摇晃的光晕。”\n,\n      sounds: [“药瓶碰撞的轻微声响”, “小云澈极力压抑的抽泣声",
+    "窗外呼啸而起的晚风声": "",
+    "smells": [
+      "金创药粉特有的苦辛味开始弥漫",
+      "油灯燃烧的微弱焦味"
+    ]
+  },
+  "environment": {
+    "weather": "晚风大作（回忆滤镜）”\n,\n      time_of_day: “黄昏转入夜”\n,\n      temperature: “寒冷”\n,\n      atmosphere: “从极致的压抑转向一种沉重、悲伤但开始流动的缓和。严厉的表象下，深切的关怀开始显露。"
+  },
+  "objects": [
+    {
+      "object_id": "obj_medicine_box_old”,\n        name: “旧药箱”\n,\n        description: “一个古朴的檀木小药箱，边角已有磨损。”\n,\n        position: “墙边木架上”\n,\n        state: “已被打开"
+    },
+    {
+      "object_id": "obj_bruise”,\n        name: “指痕淤青”\n,\n        description: “小云澈手腕上新鲜伤口旁新增的、清晰的青紫色指痕。”\n,\n        position: “小云澈左手腕”\n,\n        state: “正在形成"
+    }
+  ],
+  "current_action": "谢清霜背身取药并说出关键训诫，小云澈无声落泪并真正听进了心里。”\n,\n    dialogue: [\n      {\n        speaker: “谢清霜”\n,\n        content: “剑是凶器，先伤己，后伤人。连自己的身体都掌控不了，谈何掌控剑？这道理，我今天只说最后一次。”\n,\n        tone: “冷硬、沉重，带着历经沧桑的疲惫与不容置疑的决绝",
+  "scene_id": "unknown",
+  "frame_id": "frame_3"
+}

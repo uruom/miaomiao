@@ -1,0 +1,55 @@
+{
+  "frame_id": "silent_lesson_02",
+  "scene_id": "scene_4",
+  "timestamp": "沈砚以为师父已离开，准备硬抗到天明时",
+  "characters_present": [
+    {
+      "character_id": "su_yinxue",
+      "name": "苏映雪",
+      "position": "昨夜练剑的空地中央，背对沈砚的方向",
+      "action": "静立如松，手中无剑，只是静静看着远山渐白的天空",
+      "emotion": "平静、深不可测，仿佛与周围冰雪融为一体",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "shen_yan",
+      "name": "沈砚",
+      "position": "岩石后，微微探出头，屏住呼吸",
+      "action": "猛地发现师父并未离去，惊愕地缩回身子，又忍不住偷看",
+      "emotion": "惊愕、不解、一丝被抓包的心虚",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "纯阳宫·坐忘峰",
+    "description": "同前。天际线泛起鱼肚白，黑暗与光明的交界处朦胧不清。",
+    "lighting": "天光微熹，月光淡去，世界处于一种青灰色的朦胧中",
+    "sounds": [
+      "极轻微的、衣袂拂过积雪的沙沙声（苏映雪转身）",
+      "沈砚骤然停止的呼吸声"
+    ],
+    "smells": [
+      "破晓前清冷的空气",
+      "冰雪将融未融的微腥"
+    ]
+  },
+  "environment": {
+    "weather": "严寒依旧，但风止",
+    "time_of_day": "黎明前最黑暗寒冷的时刻",
+    "temperature": "刺骨的冷",
+    "atmosphere": "静谧、肃穆、充满未知的期待"
+  },
+  "objects": [],
+  "current_action": "苏映雪无声地转身，目光似乎扫过沈砚藏身的方向，却未停留。她缓缓抬起右手，并指如剑。沈砚的心跳漏了一拍。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "沈砚：'她没走？！她发现我了？她要做什么？'",
+    "苏映雪：（内心无具体想法流露，但行动本身即是一种选择与宣告）"
+  ],
+  "sensory_details": {
+    "visual": "苏映雪白色的身影在青灰色天幕下宛如一抹剪影，抬手的动作缓慢而清晰。",
+    "auditory": "世界安静得能听到自己血液奔流的声音。",
+    "olfactory": "",
+    "tactile": "沈砚攥紧的拳头里，指甲掐进了掌心，却感觉不到疼，只有冰冷和紧张。"
+  }
+}

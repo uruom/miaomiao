@@ -1,0 +1,20 @@
+{
+  "frame_id": "heart_microsnow_scene6_frame4",
+  "scene_id": "scene_6",
+  "timestamp": "情绪沉淀后，思绪转向今夜观星台对话",
+  "characters_present": [
+    {
+      "character_id": "shen_yan",
+      "name": "沈砚",
+      "position": "身体缓缓放松，重新靠回门柱，但脊背挺得笔直",
+      "action": "仰头望向漆黑无星的夜空，目光深远，仿佛穿透云层看到了之前的星空与雪",
+      "emotion": "沉思、恍然、夹杂着深刻的心疼与理解",
+      "dialogue_line": "\n        }\n      ],\n      “location”: {\n        “name”: “纯阳宫·苏映雪居所外廊”,\n        “description”: “环境同前，但沈砚的视角从近处的门转向了浩瀚的夜空。”,\n        “lighting”: “室内微光映亮他仰起的侧脸轮廓，眼睛在黑暗中闪烁着微光。”,\n        “sounds”: [“风声似乎完全停止了”， “一种极致的、包容一切的寂静”],\n        “smells”: [“雪后干净的空气”]\n      },\n      “environment”: {\n        “weather”: “静”,\n        “time_of_day”: “夜最深时”,\n        “temperature”: “冷彻心扉”,\n        “atmosphere”: “思绪澄明，内心风暴逐渐平息，转化为一种更深沉坚定的认知”\n      },\n      “objects”: [],\n      “current_action”: “沈砚回忆起观星台上师父饮酒的侧影、眉间落雪时她眼中一闪而逝的遥远情绪、以及她对自己誓言那沉默而复杂的回应（饮酒动作）。这些片段串联起来，与他已知的‘袭击’‘回避’结合。”,\n      “dialogue”: [],\n      “inner_thoughts”: [“眉间雪……她说‘化了就好’。可有些东西，真的能像雪一样化掉吗？那些她不肯说的过去、那个她想见或许又不敢见的人、那些让她独自承受的风雨……我闻到的血腥与寒毒，恐怕只是冰山一角。她总是这样……把一切都藏在平静之下。”],\n      “sensory_details”: {\n        “visual”: “眼前仿佛再次浮现苏映雪眉间落雪的瞬间——那雪花并非冰冷，而是承载着难以言说的重量。漆黑的夜空如同她深不见底的过往。”,\n        “auditory”: “寂静中，回忆里师父那声几不可闻的叹息似乎又在耳边响起。”,\n        “olfactory”: “空气清冷纯净，却让他想起师父身上常有的、类似冰雪的气息。”,\n        “tactile”: “脸颊感受到夜的寒冷，但心中因理解而升起一股暖流和酸楚。”\n      }\n    },\n    {\n      “frame_id”: “heart_microsnow_scene6_frame5”,\n      “scene_id”: “heart_microsnow_scene6”,\n      “timestamp”: “理解与心疼达到顶点，决心开始凝聚”,\n      “characters_present”: [\n        {\n          “character_id”: “shen_yan”,\n          “name”: “沈砚”,\n          “position”: “低下头，目光重新落回膝上的长剑，眼神已截然不同”,\n          “action”: “缓缓地、极其郑重地将长剑平举至胸前，一手握鞘，一手轻按剑柄（并非拔出，而是类似立誓的姿态）”,\n          “emotion”: “前所未有的坚定、责任感如山压顶却又甘之如饴、豁然开朗的觉悟”,\n          “dialogue_line”: "
+    }
+  ],
+  "location”": {
+    "name”": "纯阳宫·苏映雪居所外廊”,\n        ”description”: ”这个狭窄的廊道仿佛成了他内心世界的全部舞台。”,\n        ”lighting”: ”室内微光将他持剑宣誓般的身影投在廊柱和地面上，拉得很长。”,\n        ”sounds”: [“长剑与剑鞘轻微摩擦的金属声”， ”沈砚平稳而深长的呼吸声”],\n        ”smells”: []\n      },\n      ”environment”: {\n        ”weather”: ”静”,\n        ”time_of_day”: ”破晓前最黑暗的时刻”,\n        ”temperature”: ”寒冷依旧，但内心炽热”,\n        ”atmosphere”: ”庄严、决绝、一个重大决定诞生的瞬间”\n      },\n      ”objects”: [\n        {\n          ”object_id”: ”shenyan_sword_pledge”,\n          ”name”: ”沈砚的佩剑（誓言媒介）”,\n          ”description”: ”这柄普通的剑此刻仿佛承载了千钧重量。”,\n          ”position”: ”被沈砚平举于胸前”，\n          ”state”: ”象征着他此刻立下的决心”\n        }\n      ],\n      ”current_action”: ”将之前所有的情绪——关切、困惑、挫败、无力、心疼、理解——全部熔炼、提纯，注入一个清晰无比的念头中。持剑的动作是这种内心仪式的外化。”,\n      ”dialogue”: [],\n      ”inner_thoughts”: [“纯阳宫的雪很美，很安静。在她身边练剑、读书的日子，是我此生最安稳的时光。可是……若我一直贪恋这份安稳，永远活在她的羽翼之下，那么下次风雪再来时，我依旧只能眼睁睁看着！不……我要变强。强到足以看清她背负的阴影，强到能站在她身前，而非身后。强到……让她的眉间雪，只因风月而落，再无烦忧。”],\n      ”sensory_details”: {\n        ”visual”: ”剑身与剑鞘在微光下勾勒出简洁冷硬的线条。他低垂的眼睫下目光灼灼。身影投在墙上，像一个即将出征的战士剪影。”,\n        ”auditory”: ”万籁俱寂中，只有自己坚定有力的心跳声与誓言在心中回荡的余音。”,\n        ”olfactory”: ”空气似乎都凝固了。”,\n        ”tactile”: ”掌心感受到剑柄熟悉的纹路与温度，但这一次握剑的感觉完全不同——它不再是练习的工具，而是即将陪伴他踏上征途的伙伴与见证。”\n      }\n    },\n    {\n      ”frame_id”: ”heart_microsnow_scene6_frame6”,\n      ”scene_id”: ”heart_microsnow_scene6”,\n      ”timestamp”: ”决心已定，看向未来与离别”,\n      ”characters_present”： [\n        {\n          ”character_id”： ”shen_yan”，\n          ”name”： ”沈砚”，\n          ”position”： ”缓缓放下长剑，将其轻轻置于身侧地面。然后站起身，走到廊边栏杆处”，\n          ”action”： ”双手扶着冰冷的栏杆，极目眺望纯阳宫外被黑暗笼罩的连绵山峦与隐约可见的江湖远道”，\n          ”emotion”： ”沉静、决然、带着对即将告别的不舍与对未来的毅然”，\n          ”dialogue_line”： "
+  },
+  "location”： {\n        ”name”： ”纯阳宫·苏映雪居所外廊”，\n        ”description”： ”他的视角从狭小的廊道转向了广阔的天地。”,\n        ”lighting”： ”东方天际线泛起一丝极淡、几乎不可察的鱼肚白（预示黎明将至）。室内烛光在他身后温暖地亮着。”,\n        ”sounds”： [“远处传来第一声极轻微的鸟鸣（预示着新的一天）”， ”山风重新开始低吟”": "",
+  "smells”： [“破晓前清冽的空气”， ”远方山林的气息似乎随风隐约飘来”": ""
+}

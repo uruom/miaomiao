@@ -1,0 +1,281 @@
+[
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-20T20:45:44.790338",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-20T20:55:44.243418",
+    "data": {
+      "outline_title": "如寄·雪覆眉山",
+      "parts_count": 2
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T20:55:44.247424",
+    "data": {
+      "chapter_id": "1-1",
+      "chapter_title": "空山新雪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T20:58:02.605724",
+    "data": {
+      "chapter_id": "1-1",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T20:58:02.607732",
+    "data": {
+      "chapter_id": "1-2",
+      "chapter_title": "一念师徒"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:00:53.031029",
+    "data": {
+      "chapter_id": "1-2",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:00:53.032365",
+    "data": {
+      "chapter_id": "1-3",
+      "chapter_title": "剑气初成"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:04:00.638437",
+    "data": {
+      "chapter_id": "1-3",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:04:00.641449",
+    "data": {
+      "chapter_id": "1-4",
+      "chapter_title": "旧物惊心"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:06:34.626583",
+    "data": {
+      "chapter_id": "1-4",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:06:34.628101",
+    "data": {
+      "chapter_id": "1-5",
+      "chapter_title": "长安夜雨"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:09:21.317677",
+    "data": {
+      "chapter_id": "1-5",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:09:21.320210",
+    "data": {
+      "chapter_id": "1-6",
+      "chapter_title": "烽烟乍起"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:11:43.980982",
+    "data": {
+      "chapter_id": "1-6",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:11:43.983487",
+    "data": {
+      "chapter_id": "1-7",
+      "chapter_title": "裂痕初现"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:14:30.159745",
+    "data": {
+      "chapter_id": "1-7",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:14:30.161746",
+    "data": {
+      "chapter_id": "1-8",
+      "chapter_title": "孤影西去"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:18:59.955277",
+    "data": {
+      "chapter_id": "1-8",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:18:59.956276",
+    "data": {
+      "chapter_id": "2-1",
+      "chapter_title": "残垣忆血"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:21:40.556802",
+    "data": {
+      "chapter_id": "2-1",
+      "scenes_count": 8
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:21:40.560330",
+    "data": {
+      "chapter_id": "2-2",
+      "chapter_title": "枪魂觉醒"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:24:16.274413",
+    "data": {
+      "chapter_id": "2-2",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:24:16.276928",
+    "data": {
+      "chapter_id": "2-3",
+      "chapter_title": "白骨哀歌"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:27:11.403675",
+    "data": {
+      "chapter_id": "2-3",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:27:11.406193",
+    "data": {
+      "chapter_id": "2-4",
+      "chapter_title": "暗流涌动"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:29:56.466226",
+    "data": {
+      "chapter_id": "2-4",
+      "scenes_count": 7
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:29:56.468225",
+    "data": {
+      "chapter_id": "2-5",
+      "chapter_title": "尺素传书"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:32:18.273691",
+    "data": {
+      "chapter_id": "2-5",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:32:18.276691",
+    "data": {
+      "chapter_id": "2-6",
+      "chapter_title": "风雪兼程"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:34:51.386359",
+    "data": {
+      "chapter_id": "2-6",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-20T21:34:51.389364",
+    "data": {
+      "chapter_id": "2-7",
+      "chapter_title": null
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-20T21:37:21.320872",
+    "data": {
+      "chapter_id": "2-7",
+      "scenes_count": 6
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T21:37:21.327386",
+    "data": {
+      "scene_id": "1-1",
+      "scene_title": "风雪夜归人"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-20T21:41:14.069932",
+    "data": {
+      "scene_id": "1-1",
+      "frames_count": 4
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-20T21:41:14.072436",
+    "data": {
+      "scene_id": "1-2",
+      "scene_title": "血染山道"
+    }
+  }
+]
