@@ -1,0 +1,70 @@
+{
+  "frame_id": "frame_silent_confrontation_08",
+  "scene_id": "5",
+  "timestamp": "闯入密道后41分40秒",
+  "characters_present": [
+    {
+      "character_id": "luo_yunshen",
+      "name": "洛云深",
+      "position": "猛地闭上眼，再睁开时已恢复冰冷",
+      "action": "抬手，厉声下令",
+      "emotion": "强行割裂情感的痛苦、决绝、以及一丝如释重负（终于不用再演了）",
+      "dialogue_line": "\"够了！任务优先，撤！\""
+    },
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "被李承锋半抱着",
+      "action": "无意识地看着洛云深转身离去的背影",
+      "emotion": "空洞、麻木、巨大的悲伤内化为一片荒芜",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "li_chengfeng",
+      "name": "李承锋",
+      "position": "紧搂着顾清尘，警惕地看着撤退的敌人",
+      "action": "抓住这千载难逢的机会",
+      "emotion": "劫后余生的庆幸、对洛云深复杂难言的恨与惑、对师父状态的极度担忧",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "密道深处石室",
+    "description": "忘川杀手训练有素地迅速后撤，通过暗门消失。",
+    "lighting": "随着敌人撤离，火光减少，石室重归昏暗。",
+    "sounds": [
+      "迅速远去的脚步声",
+      "暗门关闭的沉闷声响",
+      "李承锋粗重的喘息"
+    ],
+    "smells": [
+      "血腥味依旧浓烈"
+    ]
+  },
+  "environment": {
+    "weather": "无",
+    "time_of_day": "深夜",
+    "temperature": "敌人离去后，只剩下冰冷的空虚和浓稠的悲伤",
+    "atmosphere": "一场激烈的冲突以一方彻底崩溃、另一方“胜利”撤离告终，留下的只有更深的谜团和创伤。"
+  },
+  "objects": [],
+  "current_action": "洛云深强忍情绪下令撤退并转身离去；李承锋抓住机会带顾清尘突围。",
+  "dialogue": [
+    {
+      "speaker": "洛云深",
+      "content": "\"够了！任务优先，撤！\"",
+      "tone": "冰冷、急促、不容置疑"
+    }
+  ],
+  "inner_thoughts": [
+    "洛云深：\"走……快走……别再回头……清尘，忘了我。\"",
+    "顾清尘：\"……走了……也好。\"",
+    "李承锋：\"为什么……他明明可以杀了我们……为什么下令撤退？不管了，先带师父离开这里！\""
+  ],
+  "sensory_details": {
+    "visual": "洛云深黑色的背影决绝地没入暗门后的黑暗，最后一眼，他似乎微微侧头，但终究没有回头。暗门关闭，隔绝了两个世界。",
+    "auditory": "暗门关闭的“咔哒”声，像是给这场相遇画上了一个冰冷的句号。",
+    "olfactory": "尘土和血腥味依旧。",
+    "tactile": "李承锋感觉到怀中的师父轻微地颤抖了一下，然后归于死寂。"
+  }
+}

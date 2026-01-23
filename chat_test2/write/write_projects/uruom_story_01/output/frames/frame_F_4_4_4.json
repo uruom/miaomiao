@@ -1,0 +1,77 @@
+{
+  "frame_id": "F_4_4_4",
+  "scene_id": "4.5",
+  "timestamp": "李承锋使出决定胜负的一击",
+  "characters_present": [
+    {
+      "character_id": "LCF_001",
+      "name": "李承锋",
+      "position": "突进至匪首右翼，枪尖低垂",
+      "action": "脚下步伐陡然一变，由灵动的纯阳步法转为天策突进步“疾如风”，身形似箭，长枪由下而上猛地撩起，直刺匪首因挥刀而暴露的右肋甲胄连接处",
+      "emotion": "全神贯注，意志凝聚于枪尖一点",
+      "dialogue_line": "\"破！\""
+    },
+    {
+      "character_id": "BANDIT_LEADER_001",
+      "name": "神秘劫匪头领",
+      "position": "试图扭身回防，但已来不及",
+      "action": "瞳孔骤缩，只能勉强将刀身下压，试图磕开枪尖",
+      "emotion": "惊骇，难以置信",
+      "dialogue_line": "\"什……\""
+    }
+  ],
+  "location": {
+    "name": "城郊废弃街巷伏击点中心",
+    "description": "所有动作在火光中仿佛慢放。李承锋的枪尖划出一道冷冽的银线。",
+    "lighting": "火光照耀下，枪尖寒芒一点，格外刺目",
+    "sounds": [
+      "李承锋短促有力的喝声",
+      "枪尖撕裂空气的尖啸",
+      "匪首格挡刀锋与枪杆摩擦发出的刺耳刮擦声"
+    ],
+    "smells": [
+      "金属摩擦的焦味",
+      "更浓的血腥味开始弥漫"
+    ]
+  },
+  "environment": {
+    "weather": "无风",
+    "time_of_day": "深夜",
+    "temperature": "灼热",
+    "atmosphere": "时间仿佛凝固，所有人的呼吸都屏住了，等待着这一击的结果"
+  },
+  "objects": [
+    {
+      "object_id": "OBJ_LCF_SPEAR_TIP",
+      "name": "李承锋的枪尖",
+      "description": "一点寒星，精准无比地刺向甲胄缝隙",
+      "position": "即将命中匪首右肋",
+      "state": "高速突刺中，势不可挡"
+    },
+    {
+      "object_id": "OBJ_BANDIT_ARMOR_JOINT",
+      "name": "匪首右肋甲胄连接处",
+      "description": "皮革与金属片的连接部位，相对脆弱",
+      "position": "匪首右肋下",
+      "state": "暴露在致命攻击下"
+    }
+  ],
+  "current_action": "李承锋施展出融合天策枪术与纯阳身法精髓的致命一击。",
+  "dialogue": [
+    {
+      "speaker": "李承锋",
+      "content": "\"破！\"",
+      "tone": "低沉，充满穿透力，仿佛将全部力量与意志灌注于此字"
+    }
+  ],
+  "inner_thoughts": [
+    "李承锋：师父教的‘伺隙而进’，就是此刻！",
+    "神秘劫匪头领：怎么可能……这个角度……"
+  ],
+  "sensory_details": {
+    "visual": "枪尖刺入皮革与金属缝隙的瞬间特写；匪首因剧痛和震惊而睁大的双眼；李承锋紧抿的嘴唇和坚定无比的眼神。",
+    "auditory": "利器刺入肉体的沉闷声响，以及匪首喉咙里压抑不住的痛哼。",
+    "olfactory": "新鲜血液的铁锈味猛然扩散。",
+    "tactile": "枪尖传来的穿透阻力，以及命中目标后那切实的“命中感”。"
+  }
+}

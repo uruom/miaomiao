@@ -1,0 +1,68 @@
+{
+  "frame_id": "FRAME_03",
+  "scene_id": "scene_5",
+  "timestamp": "\"看好了\"说出之时",
+  "characters_present": [
+    {
+      "character_id": "CHAR_XIE",
+      "name": "谢云澜",
+      "position": "转身走向旁边一棵老松",
+      "action": "抬手，指尖轻拂过一根低垂的枯枝，“咔”一声轻响将其折下",
+      "emotion": "决意已定，褪去杂念，进入一种近乎‘传道’的专注状态",
+      "dialogue_line": "看好了。"
+    },
+    {
+      "character_id": "CHAR_LI",
+      "name": "李承影",
+      "position": "仍跪在原处，但身体微微转向谢云澜的方向",
+      "action": "目光紧紧追随着谢云澜的动作，带着不解和下意识的警惕",
+      "emotion": "疑惑，戒备，以及一丝被对方无视自己状态的恼怒",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "纯阳宫演武场附近雪地",
+    "description": "谢云澜折枝的动作打破了凝固的对峙气氛，将焦点引向了新的行为。",
+    "lighting": "天光渐明，为谢云澜执枝的手镀上一层淡淡的冷白色。",
+    "sounds": [
+      "枯枝折断的清脆声响",
+      "松涛声隐隐"
+    ],
+    "smells": [
+      "松枝断裂处散发出的、极其清淡的木质香气"
+    ]
+  },
+  "environment": {
+    "weather": "风止",
+    "time_of_day": "清晨",
+    "temperature": "依旧寒冷，但氛围开始变化",
+    "atmosphere": "从对峙转向一种即将开始的、庄严的演示前奏"
+  },
+  "objects": [
+    {
+      "object_id": "OBJ_BRANCH_02",
+      "name": "枯枝（谢云澜所用）",
+      "description": "一截笔直、粗糙的松枝，长约三尺，在谢云澜手中仿佛有了生命。",
+      "position": "谢云澜右手",
+      "state": "新鲜折断"
+    }
+  ],
+  "current_action": "谢云澜折枝为‘剑’，宣告演示开始。",
+  "dialogue": [
+    {
+      "speaker": "谢云澜",
+      "content": "看好了。",
+      "tone": "平淡，却不容置疑，如同钟磬初鸣"
+    }
+  ],
+  "inner_thoughts": [
+    "谢云澜：\"既然你求的是剑，我便给你看剑之始。能否看懂，在你。\"",
+    "李承影：\"他要做什么？教剑？在这种时候？用树枝？\"\"],\n      “sensory_details",
+    {
+      "visual": "谢云澜执枝的手稳定无比，枯枝在他手中仿佛有了重量和质感。",
+      "auditory": "看好了”三个字不高，却清晰地传入李承影耳中。",
+      "olfactory": "那缕松木清香飘散开来。",
+      "tactile": ""
+    }
+  ]
+}

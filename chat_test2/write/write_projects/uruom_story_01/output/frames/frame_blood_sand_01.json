@@ -1,0 +1,80 @@
+{
+  "frame_id": "blood_sand_01",
+  "scene_id": "scene_2",
+  "timestamp": "战斗爆发瞬间",
+  "characters_present": [
+    {
+      "character_id": "li_chengfeng",
+      "name": "李承锋",
+      "position": "残垣断壁的阴影中，距敌方头目十步之遥",
+      "action": "身体低伏，右手紧握长枪枪杆中段，左手虚按地面，肌肉紧绷如猎豹",
+      "emotion": "高度专注，杀意与使命感交织",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "enemy_leader",
+      "name": "敌方头目（黑沙帮三当家）",
+      "position": "遗迹中央空地，正从驼背上卸下一个镶铜边的木箱",
+      "action": "转身，手按在腰刀刀柄上，警觉地扫视四周",
+      "emotion": "狐疑，警惕",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "tiance_squad_member_01",
+      "name": "天策小队成员（伪装驼夫）",
+      "position": "李承锋左侧五步，蹲在破损的石柱后",
+      "action": "手指扣在弩机扳机上，瞄准敌方一名护卫",
+      "emotion": "紧张，等待信号",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "龙门荒漠古代遗迹",
+    "description": "一片被风沙侵蚀的残破石墙与倾倒的石柱群，地面覆盖着厚厚的黄沙与碎石。阳光将断壁的阴影拉得狭长锋利。",
+    "lighting": "正午烈日，光线刺眼，明暗对比强烈",
+    "sounds": [
+      "呼啸的风声",
+      "驼铃轻微的晃动声",
+      "砂砾被风吹动的沙沙声"
+    ],
+    "smells": [
+      "干燥的沙土味",
+      "一丝骆驼的膻味",
+      "古老石头的微腥"
+    ]
+  },
+  "environment": {
+    "weather": "晴朗无云，极度干燥",
+    "time_of_day": "正午",
+    "temperature": "酷热",
+    "atmosphere": "死寂中暗藏杀机，紧绷如拉满的弓弦"
+  },
+  "objects": [
+    {
+      "object_id": "target_chest",
+      "name": "镶铜边木箱",
+      "description": "约两尺见方，木质厚重，边角包着磨损的铜皮，锁扣处有奇异纹饰。",
+      "position": "敌方头目脚边",
+      "state": "刚被从驼背上卸下，箱盖上沾着沙尘"
+    },
+    {
+      "object_id": "li_spear",
+      "name": "李承锋的长枪（‘破军’）",
+      "description": "天策制式长枪，枪杆乌黑，枪尖雪亮，在阴影中泛着冷光。",
+      "position": "被李承锋紧握在手中",
+      "state": "蓄势待发"
+    }
+  ],
+  "current_action": "李承锋与小队成员屏息凝神，等待最佳突袭时机。敌方头目卸下箱子，警惕稍有松懈的刹那。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "李承锋：\"就是现在！师父说过，枪出如龙，首重其势。这一枪，必须中！\"",
+    "敌方头目：\"这风声...太静了...不对劲。\""
+  ],
+  "sensory_details": {
+    "visual": "烈日下空气微微扭曲，李承锋额角一滴汗珠滚落，砸在沙地上瞬间蒸发。枪尖反射的阳光刺目一闪。",
+    "auditory": "风声掩盖了几乎所有的呼吸声，只有自己剧烈的心跳在耳中轰鸣。",
+    "olfactory": "浓烈的沙土干燥气味，仿佛要吸走鼻腔里最后一丝水分。",
+    "tactile": "握枪的手心沁出汗水，与枪杆摩擦。地面滚烫的热度透过薄靴传来。"
+  }
+}

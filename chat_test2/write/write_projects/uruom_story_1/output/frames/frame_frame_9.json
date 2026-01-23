@@ -1,0 +1,11 @@
+{
+  "weather": "暴风雪,\n        time_of_day: 深夜,\n        temperature: 冷热气流在房间内局部交织，形成微妙温差,\n        atmosphere: 紧张、对抗、充满力量交锋的压迫感\n      },\n      objects: [],\n      current_action: 纯阳内力与蚀骨冰魄寒毒激烈对抗，同时谢云澜的神识触碰到李承影意识深处残留的强烈情感碎片,\n      dialogue: [],\n      inner_thoughts: [",
+  "sensory_details": {
+    "visual": "李承影紧闭的眼角，渗出了一滴泪，迅速变得冰凉。他紧握的拳头（即使昏迷也未完全松开）指节发白。",
+    "auditory": "对抗的气流声如同低啸。少年牙关紧咬的咯咯声隐约可闻。",
+    "olfactory": "对抗产生的气息复杂难明，仿佛硝烟、冰雪、热血与绝望混合在一起。",
+    "tactile": "谢云澜感到自己的内力仿佛撞上了一堵由寒冰和尖锐情绪构成的墙，反震之力让他经脉微颤。"
+  },
+  "scene_id": "scene_2",
+  "frame_id": "frame_9"
+}

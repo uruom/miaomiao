@@ -1,0 +1,71 @@
+{
+  "frame_id": "frame_1",
+  "scene_id": "scene_5",
+  "timestamp": "开场后45分钟",
+  "characters_present": [
+    {
+      "character_id": "char_gu",
+      "name": "顾清尘",
+      "position": "论剑峰顶，悬崖边缘",
+      "action": "静立，俯瞰下方云海与练剑坪",
+      "emotion": "沉静、疏离、带着审视",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "char_disciple_group",
+      "name": "纯阳弟子们",
+      "position": "下方练剑坪",
+      "action": "集体练习基础剑式，动作尚显稚嫩但整齐",
+      "emotion": "专注、努力",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "纯阳宫论剑峰顶",
+    "description": "纯阳宫最高处，云海在脚下翻涌，罡风凛冽。石坪开阔，边缘是万丈悬崖。",
+    "lighting": "午后偏斜的阳光，穿透稀薄的云层，形成道道光柱，将人影拉得很长。",
+    "sounds": [
+      "呼啸的山风声",
+      "隐约传来的、整齐划一的练剑呼喝声",
+      "衣袍被风吹动的猎猎声"
+    ],
+    "smells": [
+      "清冷的、带着冰雪气息的山风",
+      "极淡的、被风吹散的松木清香"
+    ]
+  },
+  "environment": {
+    "weather": "晴朗，有风",
+    "time_of_day": "午后",
+    "temperature": "寒冷",
+    "atmosphere": "孤高、苍茫、肃穆"
+  },
+  "objects": [
+    {
+      "object_id": "obj_sword_gu",
+      "name": "顾清尘的佩剑",
+      "description": "一柄古朴的长剑，剑鞘色泽深沉，在光下泛着幽光。",
+      "position": "悬于顾清尘腰间",
+      "state": "静止，随主人呼吸微微起伏"
+    },
+    {
+      "object_id": "obj_cloud_sea",
+      "name": "云海",
+      "description": "浩瀚无垠的白色云层，在峰下缓慢流动，吞没山腰。",
+      "position": "论剑峰下方及远方",
+      "state": "翻涌不息"
+    }
+  ],
+  "current_action": "顾清尘独自立于峰顶，以“长老”而非“弟子”的身份，第一次如此长久、如此静默地俯瞰这片山河与门人。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "顾清尘：\"当年，师父也是站在这里，看着这样的景色，看着……这样的我么？\"",
+    "顾清尘：\"山河未改，人已不同。我看到的，不再是需要征服的险峰，而是需要守护的……家园。\""
+  ],
+  "sensory_details": {
+    "visual": "顾清尘的背影在光中显得孤直，衣袂翻飞如鹤翼。下方，数十个青色身影在坪上移动，剑光点点，渺小却充满生机。",
+    "auditory": "风声是绝对的主导，下方的呼喝声被风撕扯得断断续续，更添遥远与虚幻感。",
+    "olfactory": "纯净到近乎虚无的冰冷空气。",
+    "tactile": "罡风如刀，刮过脸颊的刺痛感。脚下岩石传来亘古不变的坚实与冰凉。"
+  }
+}

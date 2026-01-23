@@ -1,0 +1,52 @@
+{
+  "frame_id": "wall_6",
+  "scene_id": "scene_7",
+  "timestamp": "下定决心后，准备离开城墙",
+  "characters_present": [
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "最后回望了一眼长安城全景，然后转身，走向下城墙的马道",
+      "action": "步伐稳定而决绝，不再有丝毫犹豫，衣摆与剑穗在行动中划出利落的轨迹",
+      "emotion": "坚定、沉稳、背负一切的觉悟",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "长安城墙马道",
+    "description": "通往城内的阶梯淹没在阴影中。",
+    "lighting": "他的身影逐渐从月光笼罩处步入城墙内部的阴影",
+    "sounds": [
+      "坚定而清晰的脚步声在空旷的马道上回荡，渐行渐远"
+    ],
+    "smells": [
+      "阴影中传来更浓的潮湿和陈旧气味"
+    ]
+  },
+  "environment": {
+    "weather": "晴朗",
+    "time_of_day": "夜晚",
+    "temperature": "冷",
+    "atmosphere": "启程、潜入黑暗、义无反顾"
+  },
+  "objects": [
+    {
+      "object_id": "sword_tassel",
+      "name": "旧剑穗",
+      "description": "随着他的步伐，在腰际规律地摆动。",
+      "position": "腰间",
+      "state": "成为他身影的一部分"
+    }
+  ],
+  "current_action": "顾清尘离开象征“观察与反思”的城墙高地，主动踏入下方“行动与危险”的城池街巷，标志着他从被动追寻到主动探寻的彻底转变。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "\"师父，我来了。这条路，无论通向的是真相，还是更深的迷雾，是生路，还是绝境，我都将走下去。直到……水落石出的那一天，或者，直到我去见你的那一天。\""
+  ],
+  "sensory_details": {
+    "visual": "他的背影最终完全融入城墙的阴影中，只有腰间那一点隐约的剑穗残影，随着步伐微微晃动，旋即消失不见。仿佛一滴水，汇入了长安深不见底的夜色洪流。",
+    "auditory": "脚步声最终消失在阶梯尽头，城墙重归寂静，只有风声依旧。",
+    "olfactory": "",
+    "tactile": "阶梯的冰凉透过鞋底传来，每一步都踏得实实在在。"
+  }
+}

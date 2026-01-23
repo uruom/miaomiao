@@ -1,0 +1,91 @@
+{
+  "frame_id": "frame_56_20",
+  "scene_id": "4.5",
+  "timestamp": "开场后56分20秒",
+  "characters_present": [
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "断崖最边缘，脚下碎石滚落深渊，无声无息",
+      "action": "拼尽最后内力与意志，将染血的佩剑掷出，剑化作一道决绝的流光，直射女头领面门！",
+      "emotion": "同归于尽的疯狂、释然、以及对未尽之事的遗憾",
+      "dialogue_line": "这一剑…为师父！"
+    },
+    {
+      "character_id": "red_cult_female_leader",
+      "name": "红衣教女头领",
+      "position": "正全力催动“腐心掌”扑来，毒雾缭绕",
+      "action": "猝不及防面对这舍命一击，瞳孔骤缩，不得不强行扭身闪避，掌力出现一丝紊乱",
+      "emotion": "惊骇、恼怒",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "red_cult_elite_03",
+      "name": "红衣教精英教众",
+      "position": "从侧翼抢攻，刀已砍至顾清尘颈侧",
+      "action": "挥刀猛砍",
+      "emotion": "狰狞",
+      "dialogue_line": "死！"
+    }
+  ],
+  "location": {
+    "name": "白骨谷断崖",
+    "description": "顾清尘已退无可退，身后是翻涌的云海深渊。",
+    "lighting": "飞剑的寒光与毒掌的紫光在空中交错，瞬间照亮了顾清尘决绝的脸和女头领惊愕的表情。",
+    "sounds": [
+      "长剑破空的凄厉尖啸",
+      "女头领惊怒的吸气声",
+      "教众的喊杀声",
+      "碎石持续坠落的簌簌声"
+    ],
+    "smells": [
+      "毒雾与血味混合的刺鼻气息"
+    ]
+  },
+  "environment": {
+    "weather": "劲风鼓荡，吹动雾气与衣袂",
+    "time_of_day": "深夜",
+    "temperature": "深渊传来的彻骨寒意",
+    "atmosphere": "最终时刻的绚烂与悲壮，生命如流星般最后一闪"
+  },
+  "objects": [
+    {
+      "object_id": "sword_gu_final",
+      "name": "顾清尘的佩剑（最后一掷）",
+      "description": "承载着主人全部力量、愤怒与觉悟的剑，仿佛燃烧起来，划破黑暗。",
+      "position": "脱手飞向女头领",
+      "state": "一往无前，舍身一击"
+    },
+    {
+      "object_id": "blade_elite",
+      "name": "教众的砍刀",
+      "description": "刀刃映着寒光，已触及顾清尘颈侧皮肤。",
+      "position": "顾清尘颈侧",
+      "state": "即将斩落"
+    }
+  ],
+  "current_action": "顾清尘在绝境中做出最后选择：放弃格挡致命一刀，将全部力量与生命意志灌注于最后一剑，掷向仇敌。这是武学的极致，也是意志的绝唱。",
+  "dialogue": [
+    {
+      "speaker": "顾清尘",
+      "content": "这一剑…为师父！",
+      "tone": "低沉、嘶哑，却带着斩断一切的决意"
+    },
+    {
+      "speaker": "红衣教精英教众",
+      "content": "死！",
+      "tone": "凶狠"
+    }
+  ],
+  "inner_thoughts": [
+    "顾清尘：师父，徒儿无能，只能到此为止了…但这一剑，请您见证！",
+    "女头领：疯子！他不要命了？！",
+    "精英教众：得手了！"
+  ],
+  "sensory_details": {
+    "visual": "飞剑的轨迹与砍刀的寒光，在慢镜头般的瞬间构成一个致命的十字。顾清尘嘴角似乎带着一丝解脱般的笑意。",
+    "auditory": "剑啸声压过了一切，仿佛龙吟最后的悲鸣。",
+    "olfactory": "死亡的气息浓稠如实质。",
+    "tactile": "颈侧皮肤感受到刀锋的冰冷刺痛；掷剑后，手臂传来的空虚与脱力感。"
+  }
+}

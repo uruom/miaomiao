@@ -1,0 +1,66 @@
+{
+  "frame_id": "evidence_01",
+  "scene_id": "4.6",
+  "timestamp": "清理战场开始后约十分钟",
+  "characters_present": [
+    {
+      "character_id": "li_chengfeng",
+      "name": "李承锋",
+      "position": "跪在重伤昏迷的匪首身旁，俯身搜查",
+      "action": "正从匪首贴身衣物内摸索",
+      "emotion": "专注、警惕，夹杂着一丝即将揭开谜底的兴奋",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "站在李承锋侧后方约三步远，手按剑柄",
+      "action": "警戒四周，目光不时落回徒弟身上",
+      "emotion": "平静中带着审视与一丝不易察觉的关切",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "伏击点巷道",
+    "description": "战斗刚结束的狭窄巷道，墙壁有刀枪划痕和零星血迹，地上散落着兵器和杂物。府兵正在远处收押其他俘虏。",
+    "lighting": "火把摇曳不定，光线昏暗，将人影拉得细长扭曲",
+    "sounds": [
+      "府兵低声呼喝声",
+      "伤者呻吟",
+      "远处更夫隐约的梆子声",
+      "火把燃烧的噼啪声"
+    ],
+    "smells": [
+      "浓重的血腥味",
+      "尘土味",
+      "火把的烟味"
+    ]
+  },
+  "environment": {
+    "weather": "无风，空气凝滞",
+    "time_of_day": "深夜",
+    "temperature": "微凉",
+    "atmosphere": "肃杀、紧绷，胜利后的松弛感尚未完全到来"
+  },
+  "objects": [
+    {
+      "object_id": "bandit_leader",
+      "name": "匪首",
+      "description": "一名中年男子，面有刀疤，此刻重伤昏迷，呼吸微弱",
+      "position": "躺在地上，被李承锋控制",
+      "state": "失去意识，衣襟被解开"
+    }
+  ],
+  "current_action": "李承锋从匪首怀中摸出关键物品",
+  "dialogue": [],
+  "inner_thoughts": [
+    "李承锋：“贴身收藏，必是紧要之物……希望是账册或名单。”",
+    "顾清尘：“锋儿手法越发沉稳了。只是……若真触及要害，怕是难得安宁了。”"
+  ],
+  "sensory_details": {
+    "visual": "李承锋的手指触碰到一块冰冷坚硬的金属边缘，火把光下，那物件隐约反着幽光。",
+    "auditory": "周遭的一切声音仿佛瞬间远去，只剩下李承锋自己略显急促的呼吸和心跳。",
+    "olfactory": "血腥味中，似乎混入了一丝极淡的、属于金属和旧羊皮纸的冰冷气息。",
+    "tactile": "令牌入手沉甸甸的，边缘雕刻精细，触感冰凉刺骨。"
+  }
+}

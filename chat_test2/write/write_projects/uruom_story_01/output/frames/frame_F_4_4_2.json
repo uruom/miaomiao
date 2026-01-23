@@ -1,0 +1,83 @@
+{
+  "frame_id": "F_4_4_2",
+  "scene_id": "4.5",
+  "timestamp": "李承锋掷出信号火折，战斗爆发瞬间",
+  "characters_present": [
+    {
+      "character_id": "LCF_001",
+      "name": "李承锋",
+      "position": "从屋顶跃下，凌空扑向匪首",
+      "action": "左手掷出点燃的信号火折，右手长枪如龙，枪尖直指匪首面门",
+      "emotion": "战意沸腾，一往无前",
+      "dialogue_line": "\"天策府李承锋在此，贼子受缚！\""
+    },
+    {
+      "character_id": "BANDIT_LEADER_001",
+      "name": "神秘劫匪头领",
+      "position": "街道中央，猛然抬头",
+      "action": "拔刀格挡，动作迅捷，刀身映出红色信号火光",
+      "emotion": "惊怒交加，但反应极快",
+      "dialogue_line": "\"小辈找死！\""
+    }
+  ],
+  "location": {
+    "name": "城郊废弃街巷伏击点",
+    "description": "红色信号光芒划破夜空，照亮了下方惊愕的劫匪和从两侧阴影、屋顶跃出的府兵。",
+    "lighting": "被信号火折的红色光芒剧烈扰动，光影交错",
+    "sounds": [
+      "信号火折尖锐的啸音",
+      "府兵爆发的喊杀声",
+      "刀剑出鞘的铿锵声",
+      "马蹄惊嘶"
+    ],
+    "smells": [
+      "信号火折燃烧的硫磺味",
+      "骤然扬起的尘土味"
+    ]
+  },
+  "environment": {
+    "weather": "无风",
+    "time_of_day": "深夜",
+    "temperature": "因战斗爆发仿佛瞬间升温",
+    "atmosphere": "从极静到极动的爆炸性转换，杀声震天"
+  },
+  "objects": [
+    {
+      "object_id": "OBJ_SIGNAL_FLARE_BURNING",
+      "name": "燃烧的信号火折",
+      "description": "拖着红色尾焰和刺耳啸音，在空中划出弧线",
+      "position": "半空中，即将落地",
+      "state": "剧烈燃烧中"
+    },
+    {
+      "object_id": "OBJ_LCF_SPEAR",
+      "name": "李承锋的长枪",
+      "description": "天策制式长枪，枪尖寒光凛冽",
+      "position": "凌空刺向匪首",
+      "state": "高速突刺中"
+    }
+  ],
+  "current_action": "李承锋发出攻击信号并率先突袭匪首，战斗全面爆发。",
+  "dialogue": [
+    {
+      "speaker": "李承锋",
+      "content": "\"天策府李承锋在此，贼子受缚！\"",
+      "tone": "清朗，充满力量与正气，压过现场的嘈杂"
+    },
+    {
+      "speaker": "神秘劫匪头领",
+      "content": "\"小辈找死！\"",
+      "tone": "凶狠，暴怒"
+    }
+  ],
+  "inner_thoughts": [
+    "李承锋：第一击，必须打出气势！",
+    "神秘劫匪头领：果然有埋伏，先宰了这领头的！"
+  ],
+  "sensory_details": {
+    "visual": "红色光芒下，李承锋跃下的身影与匪首格挡的刀光构成一幅极具冲击力的画面；四周人影憧憧，刀光剑影开始闪烁。",
+    "auditory": "李承锋的喝声与匪首的怒喝碰撞；兵器第一次交击的巨响；四面八方涌来的喊杀与脚步声。",
+    "olfactory": "硫磺味弥漫。",
+    "tactile": "枪杆传来的第一次猛烈撞击的反震力。"
+  }
+}

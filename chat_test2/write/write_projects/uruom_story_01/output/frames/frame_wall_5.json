@@ -1,0 +1,50 @@
+{
+  "frame_id": "wall_5",
+  "scene_id": "scene_7",
+  "timestamp": "系好剑穗后，目光锁定城内某处",
+  "characters_present": [
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "立于城墙边，身体微微前倾，目光如炬",
+      "action": "视线牢牢锁定西市方向，那里是黑市传闻的源头，也是“白骨哀”线索出现的地方",
+      "emotion": "专注、锐利、目标明确",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "长安城墙",
+    "description": "他的目光仿佛化为实质，穿透重重屋宇，直达目标。",
+    "lighting": "月光下，他的眼神亮得惊人",
+    "sounds": [
+      "远处传来一声夜枭的啼叫，凄厉而突兀"
+    ],
+    "smells": []
+  },
+  "environment": {
+    "weather": "晴朗",
+    "time_of_day": "夜晚",
+    "temperature": "冷",
+    "atmosphere": "聚焦、锁定、行动前最后的凝视"
+  },
+  "objects": [
+    {
+      "object_id": "sword_tassel",
+      "name": "旧剑穗",
+      "description": "在夜风中轻轻飘动，指向他目光所及的方向。",
+      "position": "腰间剑柄",
+      "state": "随风而动"
+    }
+  ],
+  "current_action": "顾清尘将散乱的情感与线索收束，明确了下一步行动的第一个具体目标——重返黑市，从“白骨哀”碎片传闻入手。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "\"黑市……情报贩子……‘白骨哀’碎片交易……那里是漩涡的边缘，也是入口。皇城司在明，神秘组织在暗，而我……将在他们之间，走师父走过的路。第一站，就从那里开始。\""
+  ],
+  "sensory_details": {
+    "visual": "他整个人的气质从苍凉孤寂变得凝练锋利，像一张缓缓拉开的弓，箭已搭在弦上，瞄准了黑暗中的某个点。",
+    "auditory": "夜枭的啼叫仿佛是一个信号，打破了凝滞的气氛。",
+    "olfactory": "",
+    "tactile": "夜风拂过面颊，带来凉意，却让他的头脑更加清醒。"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "frame_id": "evidence_03",
+  "scene_id": "4.6",
+  "timestamp": "发现令牌后片刻，继续搜查",
+  "characters_present": [
+    {
+      "character_id": "li_chengfeng",
+      "name": "李承锋",
+      "position": "快速但仔细地继续搜查匪首其他暗袋",
+      "action": "从匪首腰带夹层抽出一小片折叠的、边缘焦黑的纸张",
+      "emotion": "紧张、急迫，预感将有更大发现",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "已半蹲下来，几乎与李承锋并肩，目光紧盯着那张纸片",
+      "action": "伸手虚按，示意李承锋小心展开",
+      "emotion": "极度专注，警惕升至顶点",
+      "dialogue_line": "“慢些，可能有毒或机关。”"
+    }
+  ],
+  "location": {
+    "name": "伏击点巷道",
+    "description": "同前。",
+    "lighting": "火把光凑近纸片",
+    "sounds": [
+      "远处府兵的动静似乎被刻意压低了"
+    ],
+    "smells": [
+      "焦糊味混入血腥和烟味中"
+    ]
+  },
+  "environment": {
+    "weather": "同前",
+    "time_of_day": "深夜",
+    "temperature": "同前",
+    "atmosphere": "悬疑、一触即发"
+  },
+  "objects": [
+    {
+      "object_id": "burnt_letter_fragment",
+      "name": "烧焦的信件碎片",
+      "description": "一小片质地特殊的纸张，边缘有烧灼痕迹，字迹是用特殊药水书写，需在特定光线下或遇水才显。目前只能看到几个残缺的词语和古怪符号。",
+      "position": "被李承锋小心翼翼地捏在指尖",
+      "state": "脆弱、焦黑、字迹隐现"
+    }
+  ],
+  "current_action": "发现并初步检视神秘信件碎片",
+  "dialogue": [
+    {
+      "speaker": "顾清尘",
+      "content": "“隐墨书？……看这个符号。”",
+      "tone": "低沉、严肃，指向纸片一角一个扭曲如彼岸花又似火焰的印记"
+    }
+  ],
+  "inner_thoughts": [
+    "李承锋：“隐墨书？师父认得？这符号……从未见过，但给人一种不祥之感。”",
+    "顾清尘：“忘川引路，明焰焚身……难道是它们？若真与这些疯子有关，这潭水比想象的还要浑、还要深。”"
+  ],
+  "sensory_details": {
+    "visual": "纸片上的古怪符号在火光下似乎微微扭曲，那残缺的词语如“忘川”、“交割”、“朔日”等，令人浮想联翩。",
+    "auditory": "纸张极其脆弱，展开时发出轻微的、仿佛随时会碎裂的“簌簌”声。",
+    "olfactory": "焦糊味中，似乎还有一丝极淡的、类似檀香又似硝石的味道。",
+    "tactile": "纸片触感异常光滑，不似普通纸张，边缘焦黑处一碰即掉渣。"
+  }
+}

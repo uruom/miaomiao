@@ -1,0 +1,87 @@
+{
+  "frame_id": "frame_54_30",
+  "scene_id": "4.5",
+  "timestamp": "开场后54分40秒",
+  "characters_present": [
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "平台中央，身形微侧，左肩衣物被划破，渗出血迹",
+      "action": "刚以“流云回风”身法避开男头领的连环刺击，反手一剑刺向对方肋下空档",
+      "emotion": "专注、痛楚与冷静并存",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "red_cult_male_leader",
+      "name": "红衣教男头领",
+      "position": "顾清尘右侧，肋下衣袍被剑气割裂，皮肤见血",
+      "action": "惊怒后退，峨眉刺舞动护住要害",
+      "emotion": "震惊、羞怒",
+      "dialogue_line": "啧…小看你了！"
+    },
+    {
+      "character_id": "red_cult_elite_01",
+      "name": "红衣教精英教众",
+      "position": "试图从顾清尘背后偷袭",
+      "action": "挥刀砍下",
+      "emotion": "凶狠",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "白骨谷断崖",
+    "description": "战斗范围扩大，碎石飞溅。中央区域血迹增多。",
+    "lighting": "月光偶尔穿透雾隙，照亮飞溅的血珠和兵刃寒光。",
+    "sounds": [
+      "金属激烈碰撞的铿锵声",
+      "受伤者的闷哼",
+      "教众的呐喊助威",
+      "衣袂破风声"
+    ],
+    "smells": [
+      "更浓的血腥味",
+      "汗水与尘土混合的气味"
+    ]
+  },
+  "environment": {
+    "weather": "雾气被劲风搅动",
+    "time_of_day": "深夜",
+    "temperature": "因剧烈运动而感觉燥热，但伤口处冰凉",
+    "atmosphere": "混乱、激烈、生死一线"
+  },
+  "objects": [
+    {
+      "object_id": "sword_gu",
+      "name": "顾清尘的佩剑",
+      "description": "剑身上的血迹新旧叠加，缺口处因格挡而微微卷刃。",
+      "position": "在顾清尘手中疾刺",
+      "state": "高频震动，嗡鸣不止"
+    },
+    {
+      "object_id": "dagger_elite",
+      "name": "教众的短刀",
+      "description": "一柄制式短刀，刀身泛着暗蓝色，可能淬毒。",
+      "position": "正从顾清尘脑后劈下",
+      "state": "高速运动"
+    }
+  ],
+  "current_action": "顾清尘在正面交锋中首次伤及男头领，但自己也挂彩，并陷入前后夹击的危局。",
+  "dialogue": [
+    {
+      "speaker": "红衣教男头领",
+      "content": "啧…小看你了！",
+      "tone": "恼怒、咬牙切齿"
+    }
+  ],
+  "inner_thoughts": [
+    "顾清尘：肋下三寸…是破绽！伤其十指不如断其一指！",
+    "男头领：这剑法…有洛云深的影子，但更狠更毒！",
+    "精英教众：机会！"
+  ],
+  "sensory_details": {
+    "visual": "顾清尘剑尖的一点寒星精准刺向男头领肋下；背后刀光的阴影笼罩他的后颈。",
+    "auditory": "剑刺入肉体的轻微“噗嗤”声与背后刀锋破空的尖啸几乎同时响起。",
+    "olfactory": "新鲜血液的铁锈味瞬间浓郁。",
+    "tactile": "左肩伤口的灼痛，肌肉因极限闪避而绷紧到颤抖的感觉。"
+  }
+}

@@ -71,9 +71,7 @@ class APIModelManager:
             "messages": messages,
             "temperature": kwargs.get("temperature", self.config.temperature),
             "max_tokens": kwargs.get("max_tokens", self.config.max_tokens),
-            "top_p": kwargs.get("top_p", self.config.top_p),
-            "frequency_penalty": kwargs.get("frequency_penalty", self.config.frequency_penalty),
-            "presence_penalty": kwargs.get("presence_penalty", self.config.presence_penalty),
+            "top_p": kwargs.get("top_p", self.config.top_p)
         }
         
         # 如果指定了response_format参数，则添加到payload中

@@ -1,0 +1,92 @@
+{
+  "frame_id": "scene1_frame3",
+  "scene_id": "3-4-5",
+  "timestamp": "开场后10分钟",
+  "characters_present": [
+    {
+      "character_id": "gqc001",
+      "name": "顾清尘",
+      "position": "已闪至李承锋与偷袭者之间，剑身横亘",
+      "action": "手腕一震，剑脊精准无比地拍在偷袭者持刃的手腕上",
+      "emotion": "冷冽、不容置疑",
+      "dialogue_line": "稳住阵脚，看清全局！"
+    },
+    {
+      "character_id": "lc001",
+      "name": "李承锋",
+      "position": "因背后危机解除而惯性前冲半步，勉强站定，猛地回头",
+      "action": "回头，看到师父的背影和掉落在地的短刃，脸色煞白",
+      "emotion": "后怕、震惊、羞愧",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "bandit_sneak",
+      "name": "偷袭流匪",
+      "position": "手腕剧痛，短刃脱手飞出，踉跄后退",
+      "action": "捂着手腕惨叫，脸上满是惊骇",
+      "emotion": "痛苦、难以置信",
+      "dialogue_line": "啊！我的手！"
+    }
+  ],
+  "location": {
+    "name": "山下小镇主街",
+    "description": "危机暂时解除，但战斗未止。被拍飞的短刃“叮当”一声落在青石板上，滑出很远。",
+    "lighting": "阳光照亮了顾清尘持剑的侧影，也照亮了李承锋苍白的脸。",
+    "sounds": [
+      "短刃落地的清脆响声",
+      "偷袭匪徒的惨叫",
+      "顾清尘沉稳而极具穿透力的喝声",
+      "其他流匪惊疑不定的骚动声"
+    ],
+    "smells": [
+      "尘土味",
+      "淡淡的血腥味（可能来自匪徒被震伤的手腕）"
+    ]
+  },
+  "environment": {
+    "weather": "晴朗，微风",
+    "time_of_day": "清晨",
+    "temperature": "微凉",
+    "atmosphere": "危机暂缓，教训深刻，师徒关系转折点"
+  },
+  "objects": [
+    {
+      "object_id": "sword_gq",
+      "name": "顾清尘的剑",
+      "description": "古朴长剑，此刻剑身微颤，发出低鸣",
+      "position": "横在顾清尘身前，剑尖斜指地面",
+      "state": "刚完成一次精准拦截，剑鸣未息"
+    },
+    {
+      "object_id": "dagger_on_ground",
+      "name": "掉落的淬毒短刃",
+      "description": "躺在青石板上，刃上幽光依旧",
+      "position": "距离偷袭匪徒数步远",
+      "state": "静止，失去威胁"
+    }
+  ],
+  "current_action": "顾清尘化解致命偷袭，并厉声点醒李承锋。",
+  "dialogue": [
+    {
+      "speaker": "顾清尘",
+      "content": "稳住阵脚，看清全局！",
+      "tone": "严厉、清晰、不容置疑"
+    },
+    {
+      "speaker": "偷袭流匪",
+      "content": "啊！我的手！",
+      "tone": "痛苦、惊惧"
+    }
+  ],
+  "inner_thoughts": [
+    "李承锋：\"又是这样…我只顾着前面…差点…差点又害得…（赵铁衣的身影与眼前师父的背影重叠）\"",
+    "顾清尘：\"必须让他立刻明白！\"",
+    "百姓（群体情绪）：从绝望到看到希望的喘息。"
+  ],
+  "sensory_details": {
+    "visual": "顾清尘剑脊拍击手腕瞬间的细微震动。李承锋回头时瞳孔的剧烈收缩与额角瞬间渗出的冷汗。掉落的短刃在石板上反射的阳光。",
+    "auditory": "顾清尘的喝声如晨钟暮鼓，盖过了一切杂音，深深敲入李承锋耳中。",
+    "olfactory": "无特别变化。",
+    "tactile": "李承锋握剑的手微微颤抖。顾清尘持剑的手稳定如山。"
+  }
+}

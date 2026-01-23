@@ -757,7 +757,7 @@ def parse_arguments():
     parser.add_argument(
         "--project", 
         type=str, 
-        default="uruom_story_1"                    ,
+        default="uruom_story_01"                    ,
         help="项目名称（默认: my_story）"
     )
     

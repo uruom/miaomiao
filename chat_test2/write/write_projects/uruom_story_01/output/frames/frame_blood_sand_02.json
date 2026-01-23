@@ -1,0 +1,91 @@
+{
+  "frame_id": "blood_sand_02",
+  "scene_id": "scene_2",
+  "timestamp": "开场后12分钟",
+  "characters_present": [
+    {
+      "character_id": "li_chengfeng",
+      "name": "李承锋",
+      "position": "遗迹中央，与敌方头目贴身缠斗",
+      "action": "以枪杆格开对方劈来的弯刀，顺势拧腰，枪尖划出一道诡异的弧线，直刺对方左肋空门",
+      "emotion": "冷静中带着锐利的锋芒，全神贯注于枪招变化",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "enemy_leader",
+      "name": "敌方头目",
+      "position": "李承锋对面，左肋衣物已被枪风划破",
+      "action": "弯刀招式用老，正待回防，眼中闪过一丝惊骇",
+      "emotion": "震惊，难以置信",
+      "dialogue_line": "\"这是什么枪法？！\""
+    },
+    {
+      "character_id": "tiance_squad_member_02",
+      "name": "天策小队副队长",
+      "position": "不远处与两名护卫厮杀",
+      "action": "瞥见李承锋这一枪，眼神一亮",
+      "emotion": "惊喜，振奋",
+      "dialogue_line": "\"好！承锋，漂亮！\""
+    }
+  ],
+  "location": {
+    "name": "遗迹中央空地",
+    "description": "原本的交易空地已成修罗场。刀光剑影，人影交错，黄沙被踩踏扬起，混合着零星的血滴。",
+    "lighting": "烈日直射，兵器反射着刺目的光，血珠在光线下异常鲜红",
+    "sounds": [
+      "金属猛烈撞击的铿锵声",
+      "怒吼与惨叫声",
+      "脚步在沙地上快速移动的摩擦声"
+    ],
+    "smells": [
+      "浓重的血腥味开始弥漫",
+      "金属摩擦后的焦糊味",
+      "扬起的沙尘味"
+    ]
+  },
+  "environment": {
+    "weather": "晴朗，但空气中弥漫着杀伐之气",
+    "time_of_day": "正午",
+    "temperature": "灼热，但战斗的激烈让人暂时忘却",
+    "atmosphere": "混乱，激烈，生死搏杀"
+  },
+  "objects": [
+    {
+      "object_id": "target_chest",
+      "name": "镶铜边木箱",
+      "description": "箱子在混战中被踢倒，滚到一旁，箱盖上多了几道新鲜的刀痕。",
+      "position": "距离李承锋约七八步远，一处矮墙边",
+      "state": "翻倒，未上锁的箱盖微微掀开一条缝"
+    },
+    {
+      "object_id": "enemy_leader_sword",
+      "name": "敌方头目的弯刀",
+      "description": "一柄带有异域风格的弧形长刀，刀身染血。",
+      "position": "正被敌方头目挥舞格挡",
+      "state": "刀刃已有几处细小缺口"
+    }
+  ],
+  "current_action": "李承锋使出师父秘传的‘回风拂柳’枪招，枪尖以不可思议的角度绕过对方格挡，即将刺入敌方头目要害。",
+  "dialogue": [
+    {
+      "speaker": "敌方头目",
+      "content": "\"这是什么枪法？！\"",
+      "tone": "惊怒交加"
+    },
+    {
+      "speaker": "天策副队长",
+      "content": "\"好！承锋，漂亮！\"",
+      "tone": "激动振奋"
+    }
+  ],
+  "inner_thoughts": [
+    "李承锋：\"师父的枪意...便是料敌机先，以巧破力！这一枪，中了！\"",
+    "敌方头目：\"不可能...一个毛头小子...\""
+  ],
+  "sensory_details": {
+    "visual": "枪尖寒光一点，在烈日下几乎看不清轨迹，只留下残影。敌方头目瞳孔急剧收缩。",
+    "auditory": "弯刀破风声与长枪刺出的尖啸交织。副队长的喝彩声在喊杀声中格外清晰。",
+    "olfactory": "血腥味愈发浓烈，混合着汗水的咸腥。",
+    "tactile": "枪杆传来的反震力，肌肉精准控制发力时的微微颤抖。"
+  }
+}

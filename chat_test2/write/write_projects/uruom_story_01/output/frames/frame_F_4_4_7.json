@@ -1,0 +1,62 @@
+{
+  "frame_id": "F_4_4_7",
+  "scene_id": "4.5",
+  "timestamp": "顾清尘悄然离去，李承锋若有所感",
+  "characters_present": [
+    {
+      "character_id": "LCF_001",
+      "name": "李承锋",
+      "position": "仍站在原地，望着望楼",
+      "action": "忽然，他眨了眨眼，发现望楼顶层的那个模糊轮廓似乎微微晃动了一下，然后……消失了。仿佛从未存在过",
+      "emotion": "微微一怔，随即了然，心中涌起复杂的暖流与一丝空落",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "GQC_001",
+      "name": "顾清尘",
+      "position": "已离开望楼，融入更深的夜色",
+      "action": "无声无息地离去，没有道别，将舞台完全留给李承锋",
+      "emotion": "放心，释然，将感慨留于心底",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "城郊废弃街巷伏击点",
+    "description": "望楼重归寂静的黑暗。李承锋独立于光暗交界处。",
+    "lighting": "望楼彻底隐入黑暗，下方火光明亮",
+    "sounds": [
+      "背景的战场清理声持续",
+      "远处传来一声隐约的夜枭啼叫"
+    ],
+    "smells": [
+      "战场气味"
+    ]
+  },
+  "environment": {
+    "weather": "微风",
+    "time_of_day": "黎明前",
+    "temperature": "清冷",
+    "atmosphere": "一种传承与放手的完成，师父退场，徒弟正式站到台前，略带苍凉与无限可能"
+  },
+  "objects": [
+    {
+      "object_id": "OBJ_EMPTY_WATCHTOWER",
+      "name": "空无一人的望楼顶层",
+      "description": "只剩下黑暗和沉默",
+      "position": "远处",
+      "state": "空旷"
+    }
+  ],
+  "current_action": "顾清尘确认李承锋无虞且能掌控局面后，选择默默离开，完成他“见证者”和“压阵者”的角色。李承锋感知到师父的离去。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "李承锋：师父走了……他相信我能处理好后面的事。是的，我能。",
+    "顾清尘：雏鹰已振翅，剩下的天空，该你自己去闯了。"
+  ],
+  "sensory_details": {
+    "visual": "李承锋望着空荡荡的望楼顶层，片刻后，缓缓吐出一口气，肩膀似乎更加挺直了一些。他收回目光，重新投向眼前需要处理的战场。",
+    "auditory": "夜枭的啼叫仿佛一个句点。",
+    "olfactory": "",
+    "tactile": "手中的长枪，此刻感觉不再仅仅是武器，更是一种责任和传承的象征。"
+  }
+}

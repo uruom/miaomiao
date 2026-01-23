@@ -1,0 +1,74 @@
+{
+  "frame_id": "烽火来鸿_01",
+  "scene_id": "scene_06",
+  "timestamp": "开场后2分钟",
+  "characters_present": [
+    {
+      "character_id": "C001",
+      "name": "顾清尘",
+      "position": "临时住处桌边，刚站起身准备整理行装",
+      "action": "动作因敲门声而中断，转身看向门口",
+      "emotion": "急切、焦虑中带着一丝被打断的不耐",
+      "dialogue_line": "谁？"
+    }
+  ],
+  "location": {
+    "name": "临时住处",
+    "description": "一间简陋但整洁的客栈房间，桌上摊开着地图和几件零碎物品，行囊半开。",
+    "lighting": "午后的阳光透过木格窗，在地面投下斑驳的光影，空气中浮尘微扬。",
+    "sounds": [
+      "街道隐约的叫卖声",
+      "风吹过窗棂的轻响",
+      "急促的敲门声"
+    ],
+    "smells": [
+      "旧木头的味道",
+      "淡淡的墨香",
+      "窗外飘来的炊烟味"
+    ]
+  },
+  "environment": {
+    "weather": "晴朗",
+    "time_of_day": "午后",
+    "temperature": "微凉",
+    "atmosphere": "静谧中带着即将启程的躁动"
+  },
+  "objects": [
+    {
+      "object_id": "OBJ001",
+      "name": "半开的行囊",
+      "description": "一个青布包袱，露出几件换洗衣物和干粮。",
+      "position": "床榻边缘",
+      "state": "准备被打包"
+    },
+    {
+      "object_id": "OBJ002",
+      "name": "驿站信使递来的信",
+      "description": "一个略显磨损的牛皮纸信封，封口有火漆，表面沾染着风尘。",
+      "position": "正被顾清尘接在手中",
+      "state": "崭新、未开封"
+    }
+  ],
+  "current_action": "顾清尘被敲门声打断，从驿站信使手中接过一封来自边疆的紧急信件。",
+  "dialogue": [
+    {
+      "speaker": "驿站信使（门外）",
+      "content": "顾大侠！边疆加急，烽火家书！",
+      "tone": "急促、恭敬"
+    },
+    {
+      "speaker": "顾清尘",
+      "content": "烽火家书？承锋？",
+      "tone": "从疑惑转为震惊与担忧"
+    }
+  ],
+  "inner_thoughts": [
+    "云深的事已让我心乱如麻，边疆又出何事？承锋他……"
+  ],
+  "sensory_details": {
+    "visual": "信封上“烽火急递”的朱红印记在阳光下刺眼，信使额头的汗珠清晰可见。",
+    "auditory": "自己骤然加快的心跳声，几乎盖过了信使离去的脚步声。",
+    "olfactory": "信封上传来遥远的、混合着沙尘与铁锈的边疆气息。",
+    "tactile": "信封粗糙的触感，以及火漆微微凸起的坚硬。"
+  }
+}

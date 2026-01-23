@@ -1,0 +1,63 @@
+{
+  "frame_id": "CS_BieLi_001",
+  "scene_id": "5.6",
+  "timestamp": "晨雾初散，李承锋行大礼前",
+  "characters_present": [
+    {
+      "character_id": "GQC",
+      "name": "顾清尘",
+      "position": "长亭中央，面向官道",
+      "action": "静立，双手负于身后，目光落在徒弟身上",
+      "emotion": "平静中压抑着深沉的不舍与决断",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "LCF",
+      "name": "李承锋",
+      "position": "顾清尘身前三步处",
+      "action": "整理戎装，深吸一口气，眼神坚定地望向师父",
+      "emotion": "混杂着奔赴沙场的豪情、离别的不安与对师命的绝对服从",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "扬州城外长亭",
+    "description": "一座略显斑驳的石砌长亭，飞檐翘角上挂着露珠，亭外杨柳依依，官道向远方延伸，没入晨雾之中。",
+    "lighting": "晨光熹微，穿透稀薄的雾气，在石板地上投下朦胧的光影。",
+    "sounds": [
+      "远处偶尔的鸟鸣",
+      "风吹过柳叶的沙沙声"
+    ],
+    "smells": [
+      "潮湿的泥土与青草气息",
+      "清晨微凉的空气"
+    ]
+  },
+  "environment": {
+    "weather": "薄雾，微凉",
+    "time_of_day": "清晨",
+    "temperature": "微凉",
+    "atmosphere": "肃穆、宁静，离愁在静谧中弥漫"
+  },
+  "objects": [
+    {
+      "object_id": "OBJ_Horse",
+      "name": "战马",
+      "description": "一匹雄健的黑色战马，鞍鞯齐备，打着响鼻，不耐地刨着蹄下的泥土。",
+      "position": "长亭外的拴马桩旁",
+      "state": "装备齐全，等待出发"
+    }
+  ],
+  "current_action": "李承锋准备行拜别大礼，气氛凝重。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "顾清尘：此一去，山高水远，刀剑无眼。锋儿，你已非当年那个需要我时时看顾的少年了。",
+    "李承锋：师父……此礼之后，我便要独自面对真正的战场了。定不负师门，不负师父教诲！"
+  ],
+  "sensory_details": {
+    "visual": "顾清尘青衫磊落，李承锋甲胄寒光，一静一动，一旧一新，在朦胧晨光中形成鲜明对比。",
+    "auditory": "世界仿佛被按下了静音键，只有心跳声和呼吸声被放大。",
+    "olfactory": "空气中混合着青草、泥土和金属甲胄的微腥气味。",
+    "tactile": "晨雾带来的湿意附着在皮肤和衣物上，微凉。"
+  }
+}

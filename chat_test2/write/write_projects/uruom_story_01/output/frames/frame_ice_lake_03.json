@@ -1,0 +1,63 @@
+{
+  "frame_id": "ice_lake_03",
+  "scene_id": "scene_06",
+  "timestamp": "洛云深驻足片刻后",
+  "characters_present": [
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "仍背对洛云深",
+      "action": "没有回头，但肩膀微微放松，仿佛默许了身后的靠近",
+      "emotion": "等待，内心的坚冰因这份关怀而出现裂痕，但忧虑未减",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "luo_yunshen",
+      "name": "洛云深",
+      "position": "缓步上前，走到顾清尘身侧略后方",
+      "action": "极其轻柔地将外袍展开，披在顾清尘肩上，动作小心得像怕惊扰了什么",
+      "emotion": "专注，带着一种近乎仪式感的郑重，隐含着不安",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "纯阳宫后山冰湖",
+    "description": "同上。",
+    "lighting": "最后一缕夕阳恰好穿过山隘，将师徒二人笼罩在短暂而温暖的光晕中，冰湖反射着血色的光。",
+    "sounds": [
+      "衣袍摩擦的窸窣声",
+      "风声"
+    ],
+    "smells": [
+      "外袍的檀香更清晰了",
+      "冰雪气息"
+    ]
+  },
+  "environment": {
+    "weather": "同上",
+    "time_of_day": "日落时分",
+    "temperature": "寒意更甚，但披上外袍的瞬间带来暖意",
+    "atmosphere": "动作本身充满温情，但背景的苍凉让这温情显得脆弱而珍贵"
+  },
+  "objects": [
+    {
+      "object_id": "winter_robe_on_shoulder",
+      "name": "披上的外袍",
+      "description": "深青色外袍已披在顾清尘肩上，覆盖了他原本的道袍。",
+      "position": "顾清尘肩头",
+      "state": "正在将残余的温暖传递过去"
+    }
+  ],
+  "current_action": "洛云深为静坐的顾清尘披上外袍。这是一个无声的、充满依赖与关怀的肢体语言。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "顾清尘：\"这温度...是他自己的体温么？傻孩子...\"（瞬间的动容）",
+    "洛云深：\"师父，别冻着。我能为您做的，似乎只有这些微不足道的事了...\"（想法中带着无力与珍惜）"
+  ],
+  "sensory_details": {
+    "visual": "外袍落下时带起的细微气流，拂动了顾清尘鬓角的几缕发丝。洛云深的手指在触及师父肩膀前迅速收回，仿佛怕亵渎。",
+    "auditory": "披袍的声响轻柔，却在此刻寂静的环境中异常清晰。",
+    "olfactory": "檀香混合着顾清尘身上清冷的道门气息。",
+    "tactile": "外袍内衬柔软的绒毛触感，以及它带来的、迅速蔓延开的暖意，与肩头原本的冰冷形成对比。"
+  }
+}

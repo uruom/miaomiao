@@ -1,0 +1,76 @@
+{
+  "frame_id": "stack_path_04",
+  "scene_id": "scene_2",
+  "timestamp": "李承锋抛出绳套，顾清尘伸手去够却差之毫厘",
+  "characters_present": [
+    {
+      "character_id": "li_chengfeng",
+      "name": "李承锋",
+      "position": "破口边缘，身体尽可能前探，手臂挥出",
+      "action": "看准顾清尘摆动的节奏，奋力将绳套（钩锁已调整为套索形态）甩向其上半身。",
+      "emotion": "全神贯注，计算精准，带着孤注一掷的决断。",
+      "dialogue_line": "\"就是现在！\""
+    },
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "悬空，随着风力和洛云深的轻微晃动而摆动",
+      "action": "在李承锋喊出声的瞬间，用尽腰腹力量向上挺身，左手竭力抓向飞来的绳套。",
+      "emotion": "拼尽全力，眼中只有那个晃动的绳圈。",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "luo_yunshen",
+      "name": "洛云深",
+      "position": "紧抓铁桩，身体因承受重量和顾清尘的动作而更剧烈地晃动",
+      "action": "咬牙稳住核心，尽可能减少晃动幅度，为顾清尘创造机会。",
+      "emotion": "极度紧张，将所有希望寄托于这一次尝试。",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "栈道断裂边缘上方",
+    "description": "绳套在空中划出一道弧线，套索口张开，迎着风雪飞向顾清尘。",
+    "lighting": "天光映照出绳套飞行的轨迹和其上凝结的冰霜。",
+    "sounds": [
+      "绳套破风的“嗖”声",
+      "李承锋的喊声",
+      "铁桩不堪重负的呻吟加剧"
+    ],
+    "smells": []
+  },
+  "environment": {
+    "weather": "大雪，狂风",
+    "time_of_day": "上午",
+    "temperature": "极寒",
+    "atmosphere": "希望与绝望交织的临界点"
+  },
+  "objects": [
+    {
+      "object_id": "rope_noose",
+      "name": "绳套",
+      "description": "由钩锁绳索临时结成的套索，在李承锋巧劲下稳定飞行。",
+      "position": "空中，飞向顾清尘左手",
+      "state": "飞行中"
+    }
+  ],
+  "current_action": "李承锋抛出绳套，顾清尘奋力抓取。",
+  "dialogue": [
+    {
+      "speaker": "李承锋",
+      "content": "就是现在！",
+      "tone": "爆喝，充满力量感"
+    }
+  ],
+  "inner_thoughts": [
+    "李承锋：角度、风力、摆动……中！",
+    "顾清尘：抓住！一定要抓住！",
+    "洛云深：铁桩……快撑不住了……"
+  ],
+  "sensory_details": {
+    "visual": "绳套在空中完美的抛物线，套索口在风中微微变形。顾清尘指尖与绳套边缘几乎接触的瞬间特写。洛云深因用力而颤抖的手臂和额角滚落的汗珠。",
+    "auditory": "时间仿佛变慢，风声远去，只剩下绳套飞行的细微声响和心脏撞击胸腔的“咚咚”声。",
+    "olfactory": "",
+    "tactile": "顾清尘指尖感受到绳套边缘擦过的、冰冷而粗糙的一瞬触感。"
+  }
+}

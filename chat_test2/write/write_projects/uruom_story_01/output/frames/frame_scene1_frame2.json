@@ -1,0 +1,87 @@
+{
+  "frame_id": "scene1_frame2",
+  "scene_id": "3-4-5",
+  "timestamp": "开场后8分钟",
+  "characters_present": [
+    {
+      "character_id": "lc001",
+      "name": "李承锋",
+      "position": "几乎与最初目标匪徒贴身，剑尖即将触及对方",
+      "action": "全力前刺，所有注意力集中于一点",
+      "emotion": "专注、即将得手的兴奋",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "gqc001",
+      "name": "顾清尘",
+      "position": "原地未动，但身体已微微转向侧翼",
+      "action": "瞳孔骤然收缩，手腕一抖，剑已出鞘半寸",
+      "emotion": "瞬间的凛然与决断",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "bandit_sneak",
+      "name": "偷袭流匪",
+      "position": "从李承锋右后方矮墙阴影中猛然窜出，距李承锋后背仅三步",
+      "action": "狞笑着，高举淬毒短刃，狠狠扎向李承锋毫无防备的后心",
+      "emotion": "残忍、得意",
+      "dialogue_line": "去死吧！"
+    }
+  ],
+  "location": {
+    "name": "山下小镇主街",
+    "description": "同前，但紧张感飙升。李承锋扬起的尘土尚未落下。",
+    "lighting": "偷袭者恰好从阴影中扑出，进入阳光范围，短刃寒光刺眼。",
+    "sounds": [
+      "偷袭匪徒的狞笑与吼叫",
+      "短刃破空的尖锐风声",
+      "百姓中爆发的惊叫",
+      "顾清尘剑出鞘的轻微龙吟声"
+    ],
+    "smells": [
+      "尘土味",
+      "偷袭匪徒身上浓重的汗臭与劣质酒气"
+    ]
+  },
+  "environment": {
+    "weather": "晴朗，微风",
+    "time_of_day": "清晨",
+    "temperature": "微凉，但气氛灼热",
+    "atmosphere": "千钧一发，致命危机"
+  },
+  "objects": [
+    {
+      "object_id": "dagger_bandit",
+      "name": "淬毒短刃",
+      "description": "一柄乌黑的短刃，刃口泛着不祥的蓝绿色幽光",
+      "position": "被偷袭匪徒高举，正刺向李承锋后心",
+      "state": "急速运动，致命威胁"
+    },
+    {
+      "object_id": "shadow_wall",
+      "name": "矮墙阴影",
+      "description": "街边一道半人高土墙投下的阴影",
+      "position": "李承锋右后方",
+      "state": "作为偷袭的掩护，此刻已失去作用"
+    }
+  ],
+  "current_action": "偷袭发生，李承锋命悬一线。顾清尘瞬间反应，出手拦截。",
+  "dialogue": [
+    {
+      "speaker": "偷袭流匪",
+      "content": "去死吧！",
+      "tone": "狰狞、凶狠"
+    }
+  ],
+  "inner_thoughts": [
+    "李承锋：\"（听到背后风声，心中一凉）糟了！\"",
+    "顾清尘：\"（心念电转）承锋！\"",
+    "百姓（群体情绪）：绝望的惊呼。"
+  ],
+  "sensory_details": {
+    "visual": "短刃上淬毒的幽光特写。李承锋因惊觉而瞬间僵硬的背影。顾清尘如一道青烟般掠出的残影，以及他剑尖爆起的一点寒星，精准地指向短刃的轨迹。",
+    "auditory": "短刃破风声尖锐到刺耳。顾清尘衣袂带起的风声几乎轻不可闻，却快如闪电。",
+    "olfactory": "偷袭匪徒带来的浓重体臭瞬间逼近。",
+    "tactile": "李承锋后颈汗毛倒竖的冰冷触感。"
+  }
+}

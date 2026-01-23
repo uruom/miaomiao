@@ -1,0 +1,6053 @@
+[
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-21T16:22:14.177545",
+    "data": {
+      "concept": "一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-21T16:31:48.597452",
+    "data": {
+      "outline_title": "如寄",
+      "parts_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T16:31:48.601041",
+    "data": {
+      "chapter_id": "1-1",
+      "chapter_title": "稻香村的雪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T16:35:16.783201",
+    "data": {
+      "chapter_id": "1-1",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T16:35:16.785208",
+    "data": {
+      "chapter_id": "1-2",
+      "chapter_title": "纯阳宫·问道"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T16:37:49.126178",
+    "data": {
+      "chapter_id": "1-2",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T16:37:49.128197",
+    "data": {
+      "chapter_id": "1-3",
+      "chapter_title": "暗流涌动"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T16:41:03.444018",
+    "data": {
+      "chapter_id": "1-3",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T16:41:03.446020",
+    "data": {
+      "chapter_id": "1-4",
+      "chapter_title": "枫华谷之变"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T16:43:48.846139",
+    "data": {
+      "chapter_id": "1-4",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T16:43:48.848658",
+    "data": {
+      "chapter_id": "1-5",
+      "chapter_title": "师徒裂隙"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T16:46:28.172240",
+    "data": {
+      "chapter_id": "1-5",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T16:46:28.174245",
+    "data": {
+      "chapter_id": "1-6",
+      "chapter_title": "洛道尸潮"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T16:48:58.270111",
+    "data": {
+      "chapter_id": "1-6",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T16:48:58.271110",
+    "data": {
+      "chapter_id": "1-7",
+      "chapter_title": "心结暂解"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T16:51:47.411584",
+    "data": {
+      "chapter_id": "1-7",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T16:51:47.414293",
+    "data": {
+      "chapter_id": "1-8",
+      "chapter_title": "风雪不归人（第一卷高潮）"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T16:54:48.074651",
+    "data": {
+      "chapter_id": "1-8",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T16:54:48.077167",
+    "data": {
+      "chapter_id": "2-1",
+      "chapter_title": "五年·江湖独行"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T16:57:54.899198",
+    "data": {
+      "chapter_id": "2-1",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T16:57:54.901195",
+    "data": {
+      "chapter_id": "2-2",
+      "chapter_title": "长安乱"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:00:37.846550",
+    "data": {
+      "chapter_id": "2-2",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:00:37.848549",
+    "data": {
+      "chapter_id": "2-3",
+      "chapter_title": "巴陵夜雨"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:03:14.149155",
+    "data": {
+      "chapter_id": "2-3",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:03:14.152156",
+    "data": {
+      "chapter_id": "2-4",
+      "chapter_title": "马嵬驿的兵戈"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:05:54.440603",
+    "data": {
+      "chapter_id": "2-4",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:05:54.443603",
+    "data": {
+      "chapter_id": "2-5",
+      "chapter_title": "收徒"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:08:27.118634",
+    "data": {
+      "chapter_id": "2-5",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:08:27.121139",
+    "data": {
+      "chapter_id": "2-6",
+      "chapter_title": "重返纯阳"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:10:50.716084",
+    "data": {
+      "chapter_id": "2-6",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:10:50.721084",
+    "data": {
+      "chapter_id": "2-7",
+      "chapter_title": "洛阳疑云"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:14:24.482991",
+    "data": {
+      "chapter_id": "2-7",
+      "scenes_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:14:24.484991",
+    "data": {
+      "chapter_id": "2-8",
+      "chapter_title": "擦肩而过（第二卷高潮）"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:17:31.195352",
+    "data": {
+      "chapter_id": "2-8",
+      "scenes_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:17:31.198874",
+    "data": {
+      "chapter_id": "3-1",
+      "chapter_title": "师徒日常"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:20:13.417096",
+    "data": {
+      "chapter_id": "3-1",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:20:13.419095",
+    "data": {
+      "chapter_id": "3-2",
+      "chapter_title": "李承锋的往事"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:22:54.634820",
+    "data": {
+      "chapter_id": "3-2",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:22:54.637820",
+    "data": {
+      "chapter_id": "3-3",
+      "chapter_title": "七秀坊的请柬"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:25:29.406400",
+    "data": {
+      "chapter_id": "3-3",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:25:29.410495",
+    "data": {
+      "chapter_id": "3-4",
+      "chapter_title": "扬州劫镖案"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:28:21.034140",
+    "data": {
+      "chapter_id": "3-4",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:28:21.036116",
+    "data": {
+      "chapter_id": "3-5",
+      "chapter_title": "初露锋芒"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:30:48.997873",
+    "data": {
+      "chapter_id": "3-5",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:30:49.000876",
+    "data": {
+      "chapter_id": "3-6",
+      "chapter_title": "暗器·白骨"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:33:55.939868",
+    "data": {
+      "chapter_id": "3-6",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:33:55.943389",
+    "data": {
+      "chapter_id": "3-7",
+      "chapter_title": "抉择"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:36:52.036025",
+    "data": {
+      "chapter_id": "3-7",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:36:52.039024",
+    "data": {
+      "chapter_id": "3-8",
+      "chapter_title": "独自追索（第三卷高潮）"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:39:12.709037",
+    "data": {
+      "chapter_id": "3-8",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:39:12.712036",
+    "data": {
+      "chapter_id": "4-1",
+      "chapter_title": "李承锋的战场"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:41:58.945785",
+    "data": {
+      "chapter_id": "4-1",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:41:58.949783",
+    "data": {
+      "chapter_id": "4-2",
+      "chapter_title": "红衣教的阴影"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:45:25.586879",
+    "data": {
+      "chapter_id": "4-2",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:45:25.589879",
+    "data": {
+      "chapter_id": "4-3",
+      "chapter_title": "生死一线"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:48:01.183268",
+    "data": {
+      "chapter_id": "4-3",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:48:01.186263",
+    "data": {
+      "chapter_id": "4-4",
+      "chapter_title": "边城血战"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:50:34.404432",
+    "data": {
+      "chapter_id": "4-4",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:50:34.407970",
+    "data": {
+      "chapter_id": "4-5",
+      "chapter_title": "“白骨哀”的真相"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:52:57.174450",
+    "data": {
+      "chapter_id": "4-5",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:52:57.177450",
+    "data": {
+      "chapter_id": "4-6",
+      "chapter_title": "烽火家书"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:55:26.900202",
+    "data": {
+      "chapter_id": "4-6",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:55:26.903716",
+    "data": {
+      "chapter_id": "4-7",
+      "chapter_title": "昆仑雪岭"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T17:58:03.058883",
+    "data": {
+      "chapter_id": "4-7",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T17:58:03.062406",
+    "data": {
+      "chapter_id": "4-8",
+      "chapter_title": "冰封的过往（第四卷高潮）"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:00:35.762812",
+    "data": {
+      "chapter_id": "4-8",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:00:35.766811",
+    "data": {
+      "chapter_id": "5-1",
+      "chapter_title": "李承锋归营"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:03:12.767688",
+    "data": {
+      "chapter_id": "5-1",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:03:12.771191",
+    "data": {
+      "chapter_id": "5-2",
+      "chapter_title": "顾清尘的决意"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:05:54.035217",
+    "data": {
+      "chapter_id": "5-2",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:05:54.038732",
+    "data": {
+      "chapter_id": "5-3",
+      "chapter_title": "东海风波"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:08:51.426887",
+    "data": {
+      "chapter_id": "5-3",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:08:51.430406",
+    "data": {
+      "chapter_id": "5-4",
+      "chapter_title": "故人重逢？"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:11:22.619881",
+    "data": {
+      "chapter_id": "5-4",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:11:22.622876",
+    "data": {
+      "chapter_id": "5-5",
+      "chapter_title": "李承锋的试炼"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:13:47.186634",
+    "data": {
+      "chapter_id": "5-5",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:13:47.189634",
+    "data": {
+      "chapter_id": "5-6",
+      "chapter_title": "荒漠孤烟"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:16:13.248859",
+    "data": {
+      "chapter_id": "5-6",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:16:13.252865",
+    "data": {
+      "chapter_id": "5-7",
+      "chapter_title": "宿命的交点"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:19:27.938901",
+    "data": {
+      "chapter_id": "5-7",
+      "scenes_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:19:27.942285",
+    "data": {
+      "chapter_id": "5-8",
+      "chapter_title": "三方汇聚（第五卷高潮）"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:22:43.511201",
+    "data": {
+      "chapter_id": "5-8",
+      "scenes_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:22:43.515489",
+    "data": {
+      "chapter_id": "6-1",
+      "chapter_title": "往事的重量"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:25:53.533409",
+    "data": {
+      "chapter_id": "6-1",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:25:53.537415",
+    "data": {
+      "chapter_id": "6-2",
+      "chapter_title": "抉择与同行"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:28:32.722792",
+    "data": {
+      "chapter_id": "6-2",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:28:32.725787",
+    "data": {
+      "chapter_id": "6-3",
+      "chapter_title": "雁门风雪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:30:55.672685",
+    "data": {
+      "chapter_id": "6-3",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:30:55.675188",
+    "data": {
+      "chapter_id": "6-4",
+      "chapter_title": "龙脉之地"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:33:54.792165",
+    "data": {
+      "chapter_id": "6-4",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:33:54.795160",
+    "data": {
+      "chapter_id": "6-5",
+      "chapter_title": "仪式与背叛？"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:36:40.559830",
+    "data": {
+      "chapter_id": "6-5",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:36:40.563886",
+    "data": {
+      "chapter_id": "6-6",
+      "chapter_title": "以身为剑"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:39:17.459820",
+    "data": {
+      "chapter_id": "6-6",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:39:17.464942",
+    "data": {
+      "chapter_id": "6-7",
+      "chapter_title": "雪落无声（终卷高潮）"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:41:34.670742",
+    "data": {
+      "chapter_id": "6-7",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-21T18:41:34.675260",
+    "data": {
+      "chapter_id": "6-8",
+      "chapter_title": "如寄·余响"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-21T18:44:43.220493",
+    "data": {
+      "chapter_id": "6-8",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T18:44:43.237021",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "风雪归途"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T18:52:55.454936",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T18:52:55.457929",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "山门叩问"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T19:03:12.858624",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T19:03:12.863309",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "问道初礼"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T19:10:59.843497",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T19:10:59.849014",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "论剑峰晨课"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T19:29:43.805673",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 8,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T19:29:43.807685",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "孤影与窥探"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T19:37:35.438093",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T19:37:35.441214",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "夜谈与伤疤"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T19:46:46.964973",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T19:46:46.968964",
+    "data": {
+      "scene_id": "scene_7",
+      "scene_title": "雪夜剑鸣"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T19:52:39.096675",
+    "data": {
+      "scene_id": "scene_7",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T19:52:39.101197",
+    "data": {
+      "scene_id": "scene_01",
+      "scene_title": "雪霁初晴，拜师三清"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T20:00:12.919474",
+    "data": {
+      "scene_id": "scene_01",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T20:00:12.924013",
+    "data": {
+      "scene_id": "scene_02",
+      "scene_title": "论剑峰上，初露锋芒"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T20:10:51.986624",
+    "data": {
+      "scene_id": "scene_02",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T20:10:51.990150",
+    "data": {
+      "scene_id": "scene_03",
+      "scene_title": "夜话紫霄，心事重重"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T20:19:42.608326",
+    "data": {
+      "scene_id": "scene_03",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T20:19:42.611325",
+    "data": {
+      "scene_id": "scene_04",
+      "scene_title": "雪中问道，剑意之争"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T20:29:43.438343",
+    "data": {
+      "scene_id": "scene_04",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T20:29:43.440849",
+    "data": {
+      "scene_id": "scene_05",
+      "scene_title": "掌门召见，暗藏机锋"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T20:38:06.703815",
+    "data": {
+      "scene_id": "scene_05",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T20:38:06.707814",
+    "data": {
+      "scene_id": "scene_06",
+      "scene_title": "冰湖独处，无声守护"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T20:46:32.883876",
+    "data": {
+      "scene_id": "scene_06",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T20:46:32.886879",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "夜半惊变"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T20:54:09.876362",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T20:54:09.879371",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "无声的裂痕"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T21:01:35.440386",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T21:01:35.443387",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "暗室密谈"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T21:13:10.456767",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T21:13:10.460287",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "徒弟的梦魇"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T21:21:37.972116",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T21:21:37.975111",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "晨练试探"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T21:30:24.323176",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T21:30:24.327183",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "山雨欲来"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T21:36:42.361117",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T21:36:42.365642",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "归途风雪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T21:44:56.914354",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T21:44:56.917353",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "流言蜚语"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T21:50:54.120166",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T21:50:54.124165",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "深夜质问"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T21:57:09.288326",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T21:57:09.292817",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "刻意的疏远"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T22:04:02.992501",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 5,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T22:04:02.997509",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "长老的约谈"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T22:14:20.107620",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T22:14:20.110134",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "雪夜独酌与回忆"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T22:22:52.423632",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T22:22:52.427148",
+    "data": {
+      "scene_id": "scene_7",
+      "scene_title": "无声的守望"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T22:27:37.655581",
+    "data": {
+      "scene_id": "scene_7",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T22:27:37.660110",
+    "data": {
+      "scene_id": "2-1",
+      "scene_title": "风雪归途"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T22:34:35.774536",
+    "data": {
+      "scene_id": "2-1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T22:34:35.779535",
+    "data": {
+      "scene_id": "2-2",
+      "scene_title": "暗流涌动"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T22:45:37.909344",
+    "data": {
+      "scene_id": "2-2",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T22:45:37.913342",
+    "data": {
+      "scene_id": "2-3",
+      "scene_title": "闭门羹"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T22:52:05.085572",
+    "data": {
+      "scene_id": "2-3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T22:52:05.091086",
+    "data": {
+      "scene_id": "2-4",
+      "scene_title": "论剑峰上的独影"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T22:59:49.336597",
+    "data": {
+      "scene_id": "2-4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T22:59:49.341123",
+    "data": {
+      "scene_id": "2-5",
+      "scene_title": "长老的质询"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T23:08:05.361659",
+    "data": {
+      "scene_id": "2-5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T23:08:05.364659",
+    "data": {
+      "scene_id": "2-6",
+      "scene_title": "雪夜无声"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T23:15:24.906591",
+    "data": {
+      "scene_id": "2-6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T23:15:24.910591",
+    "data": {
+      "scene_id": "2-7",
+      "scene_title": "裂痕难愈"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T23:23:45.351017",
+    "data": {
+      "scene_id": "2-7",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T23:23:45.354015",
+    "data": {
+      "scene_id": "scene_05_01",
+      "scene_title": "阴霾启程"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T23:32:07.971069",
+    "data": {
+      "scene_id": "scene_05_01",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T23:32:07.976072",
+    "data": {
+      "scene_id": "scene_05_02",
+      "scene_title": "荒城遗恨"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T23:40:12.815010",
+    "data": {
+      "scene_id": "scene_05_02",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T23:40:12.820532",
+    "data": {
+      "scene_id": "scene_05_03",
+      "scene_title": "义庄迷雾"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T23:51:41.853076",
+    "data": {
+      "scene_id": "scene_05_03",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T23:51:41.857074",
+    "data": {
+      "scene_id": "scene_05_04",
+      "scene_title": "尸潮围城"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-21T23:58:53.749445",
+    "data": {
+      "scene_id": "scene_05_04",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-21T23:58:53.754472",
+    "data": {
+      "scene_id": "scene_05_05",
+      "scene_title": "绝境守护"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T00:18:11.590470",
+    "data": {
+      "scene_id": "scene_05_05",
+      "frames_count": 8,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T00:18:11.594476",
+    "data": {
+      "scene_id": "scene_05_06",
+      "scene_title": "风雪归途"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T00:27:34.248615",
+    "data": {
+      "scene_id": "scene_05_06",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T00:27:34.252615",
+    "data": {
+      "scene_id": "1",
+      "scene_title": "药炉烟暖，心绪纷乱"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T00:38:46.766321",
+    "data": {
+      "scene_id": "1",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T00:38:46.770836",
+    "data": {
+      "scene_id": "2",
+      "scene_title": "初醒试探，隔阂犹存"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T00:43:36.073517",
+    "data": {
+      "scene_id": "2",
+      "frames_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T00:43:36.077520",
+    "data": {
+      "scene_id": "3",
+      "scene_title": "雪竹漫步，旧忆忽现"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T00:51:27.663552",
+    "data": {
+      "scene_id": "3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T00:51:27.667551",
+    "data": {
+      "scene_id": "4",
+      "scene_title": "夜半梦魇，真情流露"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T00:58:21.708885",
+    "data": {
+      "scene_id": "4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T00:58:21.714391",
+    "data": {
+      "scene_id": "5",
+      "scene_title": "晨光剖白，半露真容"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T01:06:08.088614",
+    "data": {
+      "scene_id": "5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T01:06:08.092616",
+    "data": {
+      "scene_id": "6",
+      "scene_title": "誓言新立，风雪暂暖"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T01:14:05.238712",
+    "data": {
+      "scene_id": "6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T01:14:05.244240",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "空谷余音"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T01:17:29.785477",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T01:17:29.791993",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "剑试纯阳"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T01:21:17.884301",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T01:21:17.889821",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "擦肩的线索"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T01:28:05.162567",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T01:28:05.168076",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "雪夜独酌"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T01:28:59.460760",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 1,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T01:28:59.468308",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "授徒时刻"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T01:35:40.628595",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T01:35:40.635112",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "参商之距"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T01:41:08.995318",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T01:41:08.999828",
+    "data": {
+      "scene_id": "scene_7",
+      "scene_title": "清冷之巅"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T01:46:06.290831",
+    "data": {
+      "scene_id": "scene_7",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T01:46:06.296346",
+    "data": {
+      "scene_id": "2.1",
+      "scene_title": "雪夜问道"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T01:50:42.894688",
+    "data": {
+      "scene_id": "2.1",
+      "frames_count": 5,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T01:50:42.900685",
+    "data": {
+      "scene_id": "2.2",
+      "scene_title": "成都旧巷"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T01:58:45.215386",
+    "data": {
+      "scene_id": "2.2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T01:58:45.220386",
+    "data": {
+      "scene_id": "2.3",
+      "scene_title": "酒肆暗影"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T01:59:46.056238",
+    "data": {
+      "scene_id": "2.3",
+      "frames_count": 1,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T01:59:46.061092",
+    "data": {
+      "scene_id": "2.4",
+      "scene_title": "情报之价"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T02:07:10.534974",
+    "data": {
+      "scene_id": "2.4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T02:07:10.539985",
+    "data": {
+      "scene_id": "2.5",
+      "scene_title": "驿站孤灯"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T02:16:11.279797",
+    "data": {
+      "scene_id": "2.5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T02:16:11.284795",
+    "data": {
+      "scene_id": "2.6",
+      "scene_title": "渭水阻杀"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T02:17:07.518994",
+    "data": {
+      "scene_id": "2.6",
+      "frames_count": 1,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T02:17:07.524500",
+    "data": {
+      "scene_id": "2.7",
+      "scene_title": "远眺长安"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T02:18:34.220635",
+    "data": {
+      "scene_id": "2.7",
+      "frames_count": 1,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T02:18:34.226147",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "风起长安"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T02:26:44.910925",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T02:26:44.914924",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "朱雀大街的暗影"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T02:35:29.225645",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T02:35:29.231157",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "咫尺天涯的追逐"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T02:42:19.162806",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T02:42:19.166807",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "地下黑市的交易"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T02:49:43.271467",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T02:49:43.277744",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "皇城司的邀约与警告"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T02:57:42.251172",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T02:57:42.257685",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "迷雾中的再遇与抉择"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T03:12:14.073720",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 8,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T03:12:14.080233",
+    "data": {
+      "scene_id": "scene_7",
+      "scene_title": "乱局暂歇，前路未明"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T03:16:48.059173",
+    "data": {
+      "scene_id": "scene_7",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T03:16:48.064690",
+    "data": {
+      "scene_id": "scene_01",
+      "scene_title": "雨困巴陵"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T03:27:15.078354",
+    "data": {
+      "scene_id": "scene_01",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T03:27:15.086378",
+    "data": {
+      "scene_id": "scene_02",
+      "scene_title": "夜半琴声"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T03:45:46.050773",
+    "data": {
+      "scene_id": "scene_02",
+      "frames_count": 8,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T03:45:46.054773",
+    "data": {
+      "scene_id": "scene_03",
+      "scene_title": "风雨桥寻踪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T03:54:52.150356",
+    "data": {
+      "scene_id": "scene_03",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T03:54:52.155354",
+    "data": {
+      "scene_id": "scene_04",
+      "scene_title": "琴终语谶"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T04:03:43.562057",
+    "data": {
+      "scene_id": "scene_04",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T04:03:43.566059",
+    "data": {
+      "scene_id": "scene_05",
+      "scene_title": "雨中独悟"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T04:10:05.619240",
+    "data": {
+      "scene_id": "scene_05",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T04:10:05.623773",
+    "data": {
+      "scene_id": "scene_06",
+      "scene_title": "客栈晨光与新的线索"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T04:26:22.030637",
+    "data": {
+      "scene_id": "scene_06",
+      "frames_count": 8,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T04:26:22.035644",
+    "data": {
+      "scene_id": "3-1",
+      "scene_title": "烽火狼烟"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T04:32:36.893616",
+    "data": {
+      "scene_id": "3-1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T04:32:36.899623",
+    "data": {
+      "scene_id": "3-2",
+      "scene_title": "军营夜话"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T04:41:42.986512",
+    "data": {
+      "scene_id": "3-2",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T04:41:42.991024",
+    "data": {
+      "scene_id": "3-3",
+      "scene_title": "枪法的瓶颈"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T04:57:02.100242",
+    "data": {
+      "scene_id": "3-3",
+      "frames_count": 6,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T04:57:02.106239",
+    "data": {
+      "scene_id": "3-4",
+      "scene_title": "决意与叩首"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T05:03:58.235769",
+    "data": {
+      "scene_id": "3-4",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T05:03:58.240289",
+    "data": {
+      "scene_id": "3-5",
+      "scene_title": "简单的仪式"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T05:10:33.261954",
+    "data": {
+      "scene_id": "3-5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T05:10:33.268469",
+    "data": {
+      "scene_id": "3-6",
+      "scene_title": "第一课：守护之重"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T05:18:37.650582",
+    "data": {
+      "scene_id": "3-6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T05:18:37.655576",
+    "data": {
+      "scene_id": "2.1",
+      "scene_title": "篝火边的困惑"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T05:25:49.270239",
+    "data": {
+      "scene_id": "2.1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T05:25:49.276754",
+    "data": {
+      "scene_id": "2.2",
+      "scene_title": "山坡上的恳求"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T05:33:25.920939",
+    "data": {
+      "scene_id": "2.2",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T05:33:25.925445",
+    "data": {
+      "scene_id": "2.3",
+      "scene_title": "似曾相识的眼神"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T05:41:39.956905",
+    "data": {
+      "scene_id": "2.3",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T05:41:39.962185",
+    "data": {
+      "scene_id": "2.4",
+      "scene_title": "简单的仪式与沉重的承诺"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T05:48:30.230206",
+    "data": {
+      "scene_id": "2.4",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T05:48:30.235204",
+    "data": {
+      "scene_id": "2.5",
+      "scene_title": "第一课：静心"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T05:56:22.745507",
+    "data": {
+      "scene_id": "2.5",
+      "frames_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T05:56:22.750512",
+    "data": {
+      "scene_id": "2.6",
+      "scene_title": "暮色中的启程"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T06:03:25.736439",
+    "data": {
+      "scene_id": "2.6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T06:03:25.742450",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "山门旧影"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T06:10:29.232430",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T06:10:29.238428",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "天策之锋，纯阳之议"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T06:18:45.596173",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T06:18:45.602684",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "论剑峰初课"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T06:25:52.362939",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T06:25:52.368830",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "雪夜独酌与夜话"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T06:32:24.553259",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T06:32:24.561787",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "剑试同门"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T06:40:07.754266",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T06:40:07.760261",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "授剑与传承"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T06:51:35.748531",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T06:51:35.769558",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "风声鹤唳"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T07:00:42.972867",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T07:00:42.981016",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "暗夜追踪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T07:09:49.832807",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T07:09:49.841854",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "线索指向"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T07:23:14.744554",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T07:23:14.750551",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "邙山夜雨"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T07:29:15.811247",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T07:29:15.818276",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "剑锋相对"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T07:36:26.745565",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T07:36:26.752066",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "撕裂的衣袖"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T07:44:30.341407",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T07:44:30.347432",
+    "data": {
+      "scene_id": "scene_7",
+      "scene_title": "无声的答案"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T07:52:42.209632",
+    "data": {
+      "scene_id": "scene_7",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T07:52:42.216144",
+    "data": {
+      "scene_id": "scene_8",
+      "scene_title": "雪落纯阳"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T07:56:52.932329",
+    "data": {
+      "scene_id": "scene_8",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T07:56:52.937662",
+    "data": {
+      "scene_id": "1",
+      "scene_title": "风起洛阳"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T08:06:11.633103",
+    "data": {
+      "scene_id": "1",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T08:06:11.640608",
+    "data": {
+      "scene_id": "2",
+      "scene_title": "暗流涌动"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T08:14:11.196800",
+    "data": {
+      "scene_id": "2",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T08:14:11.202320",
+    "data": {
+      "scene_id": "3",
+      "scene_title": "地下迷踪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T08:21:08.342599",
+    "data": {
+      "scene_id": "3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T08:21:08.349122",
+    "data": {
+      "scene_id": "4",
+      "scene_title": "惊鸿一瞥"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T08:31:26.255592",
+    "data": {
+      "scene_id": "4",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T08:31:26.260589",
+    "data": {
+      "scene_id": "5",
+      "scene_title": "沉默的交锋"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T08:39:28.822246",
+    "data": {
+      "scene_id": "5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T08:39:28.828248",
+    "data": {
+      "scene_id": "6",
+      "scene_title": "半片衣袖"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T08:48:42.948576",
+    "data": {
+      "scene_id": "6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T08:48:42.954799",
+    "data": {
+      "scene_id": "7",
+      "scene_title": "余烬与寒夜"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T08:56:43.421120",
+    "data": {
+      "scene_id": "7",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T08:56:43.426633",
+    "data": {
+      "scene_id": "8",
+      "scene_title": "无声的答案与未竟的路"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T09:04:57.486990",
+    "data": {
+      "scene_id": "8",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T09:04:57.493397",
+    "data": {
+      "scene_id": "3-4-1",
+      "scene_title": "雪夜的沉默与试探"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T09:14:50.426506",
+    "data": {
+      "scene_id": "3-4-1",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T09:14:50.434022",
+    "data": {
+      "scene_id": "3-4-2",
+      "scene_title": "酒馆里的倾诉：天策府的旧伤"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T09:24:35.143172",
+    "data": {
+      "scene_id": "3-4-2",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T09:24:35.148169",
+    "data": {
+      "scene_id": "3-4-3",
+      "scene_title": "顾清尘的共鸣与沉默的守护"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T09:33:34.647378",
+    "data": {
+      "scene_id": "3-4-3",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T09:33:34.653384",
+    "data": {
+      "scene_id": "3-4-4",
+      "scene_title": "晨练的新课题：守护之剑"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T09:40:46.825570",
+    "data": {
+      "scene_id": "3-4-4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T09:40:46.832569",
+    "data": {
+      "scene_id": "3-4-5",
+      "scene_title": "实战磨合：小镇除匪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T09:47:29.503087",
+    "data": {
+      "scene_id": "3-4-5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T09:47:29.508605",
+    "data": {
+      "scene_id": "3-4-6",
+      "scene_title": "炉火旁的承诺与新的起点"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T10:09:57.533037",
+    "data": {
+      "scene_id": "3-4-6",
+      "frames_count": 6,
+      "attempt": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T10:09:57.540081",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "沉默的启程"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T10:18:45.853500",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T10:18:45.859500",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "篝火与开端"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T10:27:15.613418",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T10:27:15.618922",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "天策府的岁月"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T10:37:40.436389",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T10:37:40.442910",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "血色任务"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T10:54:58.198017",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 7,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T10:54:58.204015",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "心结与流浪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T11:05:13.091254",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T11:05:13.099274",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "无声的守护"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T11:13:20.526223",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T11:13:20.533235",
+    "data": {
+      "scene_id": "scene_7",
+      "scene_title": "晨曦与新生"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T11:29:09.418620",
+    "data": {
+      "scene_id": "scene_7",
+      "frames_count": 7,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T11:29:09.425139",
+    "data": {
+      "scene_id": "4.1",
+      "scene_title": "初入画舫"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T11:39:40.605844",
+    "data": {
+      "scene_id": "4.1",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T11:39:40.612353",
+    "data": {
+      "scene_id": "4.2",
+      "scene_title": "剑舞惊鸿"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T11:46:29.059323",
+    "data": {
+      "scene_id": "4.2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T11:46:29.066825",
+    "data": {
+      "scene_id": "4.3",
+      "scene_title": "故人夜话"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T11:53:03.081468",
+    "data": {
+      "scene_id": "4.3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T11:53:03.087982",
+    "data": {
+      "scene_id": "4.4",
+      "scene_title": "坊主之邀"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T12:01:29.334558",
+    "data": {
+      "scene_id": "4.4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T12:01:29.340720",
+    "data": {
+      "scene_id": "4.5",
+      "scene_title": "李承锋的领悟"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T12:02:51.246901",
+    "data": {
+      "scene_id": "4.5",
+      "frames_count": 1,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T12:02:51.254908",
+    "data": {
+      "scene_id": "4.6",
+      "scene_title": "暗流与离别"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T12:17:08.243108",
+    "data": {
+      "scene_id": "4.6",
+      "frames_count": 6,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T12:17:08.250627",
+    "data": {
+      "scene_id": "4.1",
+      "scene_title": "残局与决心"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T12:23:29.341469",
+    "data": {
+      "scene_id": "4.1",
+      "frames_count": 5,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T12:23:29.348984",
+    "data": {
+      "scene_id": "4.2",
+      "scene_title": "蛛丝马迹"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T12:28:23.817937",
+    "data": {
+      "scene_id": "4.2",
+      "frames_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T12:28:23.824457",
+    "data": {
+      "scene_id": "4.3",
+      "scene_title": "夜探疑踪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T12:35:05.154894",
+    "data": {
+      "scene_id": "4.3",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T12:35:05.160364",
+    "data": {
+      "scene_id": "4.4",
+      "scene_title": "将计就计"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T12:41:42.666775",
+    "data": {
+      "scene_id": "4.4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T12:41:42.674314",
+    "data": {
+      "scene_id": "4.5",
+      "scene_title": "伏击与交锋"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T12:49:50.307276",
+    "data": {
+      "scene_id": "4.5",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T12:49:50.313274",
+    "data": {
+      "scene_id": "4.6",
+      "scene_title": "证据与迷雾"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T12:57:45.946047",
+    "data": {
+      "scene_id": "4.6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T12:57:45.952569",
+    "data": {
+      "scene_id": "4.7",
+      "scene_title": "师父的思绪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T13:05:07.382025",
+    "data": {
+      "scene_id": "4.7",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T13:05:07.389076",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "证物惊魂"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T13:11:26.608284",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T13:11:26.614797",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "暗夜追思"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T13:16:00.476504",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T13:16:00.485284",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "师徒夜话"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T13:31:16.870515",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T13:31:16.878041",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "毒源追踪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T13:42:24.176421",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T13:42:24.183448",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "黑市暗影"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T13:51:19.152412",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T13:51:19.158928",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "抉择与启程"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T13:58:32.695958",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T13:58:32.703001",
+    "data": {
+      "scene_id": "5.1",
+      "scene_title": "证物疑云"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T14:05:41.848589",
+    "data": {
+      "scene_id": "5.1",
+      "frames_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T14:05:41.855092",
+    "data": {
+      "scene_id": "5.2",
+      "scene_title": "停尸房中的印证"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T14:15:00.448254",
+    "data": {
+      "scene_id": "5.2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T14:15:00.456778",
+    "data": {
+      "scene_id": "5.3",
+      "scene_title": "客房灯下的阴影"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T14:33:02.489889",
+    "data": {
+      "scene_id": "5.3",
+      "frames_count": 8,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T14:33:02.496403",
+    "data": {
+      "scene_id": "5.4",
+      "scene_title": "承锋的抉择前夜"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T14:40:36.951397",
+    "data": {
+      "scene_id": "5.4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T14:40:36.958909",
+    "data": {
+      "scene_id": "5.5",
+      "scene_title": "“其本质相通”"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T14:50:04.067392",
+    "data": {
+      "scene_id": "5.5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T14:50:04.074905",
+    "data": {
+      "scene_id": "5.6",
+      "scene_title": "长亭拜别"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T14:57:20.026010",
+    "data": {
+      "scene_id": "5.6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T14:57:20.033012",
+    "data": {
+      "scene_id": "3-8-1",
+      "scene_title": "空室独语"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T15:03:57.520698",
+    "data": {
+      "scene_id": "3-8-1",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T15:03:57.527699",
+    "data": {
+      "scene_id": "3-8-2",
+      "scene_title": "暗巷线索"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T15:16:05.431296",
+    "data": {
+      "scene_id": "3-8-2",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T15:16:05.442322",
+    "data": {
+      "scene_id": "3-8-3",
+      "scene_title": "追踪与伏击"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T15:24:22.487469",
+    "data": {
+      "scene_id": "3-8-3",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T15:24:22.496976",
+    "data": {
+      "scene_id": "3-8-4",
+      "scene_title": "雨夜独行"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T15:31:45.408543",
+    "data": {
+      "scene_id": "3-8-4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T15:31:45.416563",
+    "data": {
+      "scene_id": "3-8-5",
+      "scene_title": "枫华旧地"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T15:38:16.555104",
+    "data": {
+      "scene_id": "3-8-5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T15:38:16.563114",
+    "data": {
+      "scene_id": "3-8-6",
+      "scene_title": "洛阳暗流"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T15:49:19.574299",
+    "data": {
+      "scene_id": "3-8-6",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T15:49:19.581675",
+    "data": {
+      "scene_id": "3_7_1",
+      "scene_title": "空室独语"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T15:53:50.664178",
+    "data": {
+      "scene_id": "3_7_1",
+      "frames_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T15:53:50.672601",
+    "data": {
+      "scene_id": "3_7_2",
+      "scene_title": "扬州暗巷"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T16:02:21.435279",
+    "data": {
+      "scene_id": "3_7_2",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T16:02:21.442781",
+    "data": {
+      "scene_id": "3_7_3",
+      "scene_title": "渡口迷雾"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T16:17:36.794270",
+    "data": {
+      "scene_id": "3_7_3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T16:17:36.802307",
+    "data": {
+      "scene_id": "3_7_4",
+      "scene_title": "林中伏杀"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T16:25:00.844404",
+    "data": {
+      "scene_id": "3_7_4",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T16:25:00.852430",
+    "data": {
+      "scene_id": "3_7_5",
+      "scene_title": "破晓疗伤与审问"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T16:34:33.541080",
+    "data": {
+      "scene_id": "3_7_5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T16:34:33.548082",
+    "data": {
+      "scene_id": "3_7_6",
+      "scene_title": "孤身上路"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T16:55:00.768652",
+    "data": {
+      "scene_id": "3_7_6",
+      "frames_count": 6,
+      "attempt": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T16:55:00.776160",
+    "data": {
+      "scene_id": "4.1",
+      "scene_title": "南疆烟瘴"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T17:01:26.485560",
+    "data": {
+      "scene_id": "4.1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T17:01:26.493061",
+    "data": {
+      "scene_id": "4.2",
+      "scene_title": "潜入白骨谷"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T17:07:43.397206",
+    "data": {
+      "scene_id": "4.2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T17:07:43.405691",
+    "data": {
+      "scene_id": "4.3",
+      "scene_title": "暴露与初战"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T17:11:11.939536",
+    "data": {
+      "scene_id": "4.3",
+      "frames_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T17:11:11.950040",
+    "data": {
+      "scene_id": "4.4",
+      "scene_title": "绝境中的回忆"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T17:22:02.544727",
+    "data": {
+      "scene_id": "4.4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T17:22:02.551758",
+    "data": {
+      "scene_id": "4.5",
+      "scene_title": "血战断崖"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T17:30:17.100767",
+    "data": {
+      "scene_id": "4.5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T17:30:17.108272",
+    "data": {
+      "scene_id": "4.6",
+      "scene_title": "坠崖与转折"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T17:36:47.393794",
+    "data": {
+      "scene_id": "4.6",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T17:36:47.399790",
+    "data": {
+      "scene_id": "2.1",
+      "scene_title": "雾锁南疆"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T17:42:48.430938",
+    "data": {
+      "scene_id": "2.1",
+      "frames_count": 10,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T17:42:48.440994",
+    "data": {
+      "scene_id": "2.2",
+      "scene_title": "暗流与毒谷"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T17:52:15.140825",
+    "data": {
+      "scene_id": "2.2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T17:52:15.148715",
+    "data": {
+      "scene_id": "2.3",
+      "scene_title": "夜探分坛"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T18:01:14.820208",
+    "data": {
+      "scene_id": "2.3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T18:01:14.827896",
+    "data": {
+      "scene_id": "2.4",
+      "scene_title": "暴露与围杀"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T18:12:16.598559",
+    "data": {
+      "scene_id": "2.4",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T18:12:16.605845",
+    "data": {
+      "scene_id": "2.5",
+      "scene_title": "绝地逢生"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T18:22:13.330138",
+    "data": {
+      "scene_id": "2.5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T18:22:13.341652",
+    "data": {
+      "scene_id": "2.6",
+      "scene_title": "暗河疗伤与抉择"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T18:23:31.642614",
+    "data": {
+      "scene_id": "2.6",
+      "frames_count": 1,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T18:23:31.651811",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "绝境之谷"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T18:31:10.634672",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T18:31:10.642180",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "困兽犹斗"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T18:36:49.888119",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T18:36:49.900145",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "惊鸿一现"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T18:47:44.636155",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T18:47:44.644675",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "无声的离别"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T18:55:23.971464",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T18:55:23.978963",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "洞中疗伤与回忆"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T19:02:29.308530",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T19:02:29.317639",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "决意与启程"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T19:21:58.793671",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 6,
+      "attempt": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T19:21:58.802188",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "药香与谜团"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T19:33:53.406175",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T19:33:53.416267",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "毒经深处的记载"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T19:42:10.489700",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T19:42:10.497654",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "血蛊之秘"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T19:55:34.559008",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T19:55:34.566671",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "记忆的碎片与拼图"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T20:02:47.160242",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T20:02:47.168879",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "抉择与启程"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T20:10:42.850619",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T20:10:42.859435",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "风暴前的宁静"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T20:17:35.123994",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T20:17:35.131000",
+    "data": {
+      "scene_id": "scene_01",
+      "scene_title": "南疆迷雾"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T20:30:56.562286",
+    "data": {
+      "scene_id": "scene_01",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T20:30:56.568816",
+    "data": {
+      "scene_id": "scene_02",
+      "scene_title": "蛊师之言"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T20:41:08.981995",
+    "data": {
+      "scene_id": "scene_02",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T20:41:08.989930",
+    "data": {
+      "scene_id": "scene_03",
+      "scene_title": "古籍寻踪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T20:48:48.943712",
+    "data": {
+      "scene_id": "scene_03",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T20:48:48.951703",
+    "data": {
+      "scene_id": "scene_04",
+      "scene_title": "黑暗蛊室"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T20:55:57.018792",
+    "data": {
+      "scene_id": "scene_04",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T20:55:57.027296",
+    "data": {
+      "scene_id": "scene_05",
+      "scene_title": "拼图与抉择"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T21:02:26.140160",
+    "data": {
+      "scene_id": "scene_05",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T21:02:26.151178",
+    "data": {
+      "scene_id": "scene_06",
+      "scene_title": "烽火来鸿"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T21:13:32.438271",
+    "data": {
+      "scene_id": "scene_06",
+      "frames_count": 6,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T21:13:32.446290",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "血与信"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T21:21:06.433934",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T21:21:06.443446",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "笔下的烽烟与明悟"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T21:28:46.764399",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T21:28:46.772909",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "信使与远途"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T21:34:07.922246",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T21:34:07.932230",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "风雪夜，故人书"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T21:42:30.933927",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T21:42:30.941440",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "字句如刃，回忆如潮"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T21:49:32.973555",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T21:49:32.981059",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "无声的回答与前方的路"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T21:56:46.362173",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T21:56:46.370193",
+    "data": {
+      "scene_id": "4.3.1",
+      "scene_title": "雪岭迷踪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T22:04:03.397648",
+    "data": {
+      "scene_id": "4.3.1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T22:04:03.405161",
+    "data": {
+      "scene_id": "4.3.2",
+      "scene_title": "遗迹守卫"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T22:12:59.446678",
+    "data": {
+      "scene_id": "4.3.2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T22:12:59.455340",
+    "data": {
+      "scene_id": "4.3.3",
+      "scene_title": "冰室初现"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T22:23:04.028206",
+    "data": {
+      "scene_id": "4.3.3",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T22:23:04.035216",
+    "data": {
+      "scene_id": "4.3.4",
+      "scene_title": "潦草字迹"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T22:29:02.221919",
+    "data": {
+      "scene_id": "4.3.4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T22:29:02.232438",
+    "data": {
+      "scene_id": "4.3.5",
+      "scene_title": "破碎的拼图"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T22:36:36.599145",
+    "data": {
+      "scene_id": "4.3.5",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T22:36:36.607654",
+    "data": {
+      "scene_id": "4.3.6",
+      "scene_title": "无声的对话"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T22:44:38.170902",
+    "data": {
+      "scene_id": "4.3.6",
+      "frames_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T22:44:38.183955",
+    "data": {
+      "scene_id": "4_3_1",
+      "scene_title": "深入遗迹，初窥端倪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T22:51:52.207333",
+    "data": {
+      "scene_id": "4_3_1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T22:51:52.215852",
+    "data": {
+      "scene_id": "4_3_2",
+      "scene_title": "冰室惊现，时间胶囊"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T22:58:08.887756",
+    "data": {
+      "scene_id": "4_3_2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T22:58:08.895269",
+    "data": {
+      "scene_id": "4_3_3",
+      "scene_title": "冰壁日记，第一滴血"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T23:12:05.470804",
+    "data": {
+      "scene_id": "4_3_3",
+      "frames_count": 6,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T23:12:05.479421",
+    "data": {
+      "scene_id": "4_3_4",
+      "scene_title": "真相拼图，残酷抉择"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T23:18:08.424572",
+    "data": {
+      "scene_id": "4_3_4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T23:18:08.434096",
+    "data": {
+      "scene_id": "4_3_5",
+      "scene_title": "最后的留言与告别"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T23:21:15.676074",
+    "data": {
+      "scene_id": "4_3_5",
+      "frames_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T23:21:15.686594",
+    "data": {
+      "scene_id": "4_3_6",
+      "scene_title": "风雪中的誓言"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T23:31:07.131869",
+    "data": {
+      "scene_id": "4_3_6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T23:31:07.140903",
+    "data": {
+      "scene_id": "5.1",
+      "scene_title": "冰壁前的告别"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T23:41:05.318799",
+    "data": {
+      "scene_id": "5.1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T23:41:05.327315",
+    "data": {
+      "scene_id": "5.2",
+      "scene_title": "风雪归途与线索推演"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T23:44:54.035141",
+    "data": {
+      "scene_id": "5.2",
+      "frames_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T23:44:54.046001",
+    "data": {
+      "scene_id": "5.3",
+      "scene_title": "驿站传书与力量的重量"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T23:50:46.395580",
+    "data": {
+      "scene_id": "5.3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T23:50:46.404593",
+    "data": {
+      "scene_id": "5.4",
+      "scene_title": "东行的船与海上迷雾"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-22T23:59:35.860922",
+    "data": {
+      "scene_id": "5.4",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-22T23:59:35.870431",
+    "data": {
+      "scene_id": "5.5",
+      "scene_title": "初临寇岛，暗流涌动"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T00:07:46.815501",
+    "data": {
+      "scene_id": "5.5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T00:07:46.827473",
+    "data": {
+      "scene_id": "5.6",
+      "scene_title": "夜探与意外的遭遇"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T00:16:04.612530",
+    "data": {
+      "scene_id": "5.6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T00:16:04.620039",
+    "data": {
+      "scene_id": "3-1",
+      "scene_title": "昆仑别雪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T00:22:13.960790",
+    "data": {
+      "scene_id": "3-1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T00:22:13.968308",
+    "data": {
+      "scene_id": "3-2",
+      "scene_title": "驿站夜话"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T00:27:28.033983",
+    "data": {
+      "scene_id": "3-2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T00:27:28.042492",
+    "data": {
+      "scene_id": "3-3",
+      "scene_title": "渡口迷踪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T00:34:59.589967",
+    "data": {
+      "scene_id": "3-3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T00:34:59.599479",
+    "data": {
+      "scene_id": "3-4",
+      "scene_title": "海上初遇"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T00:46:37.557797",
+    "data": {
+      "scene_id": "3-4",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T00:46:37.565903",
+    "data": {
+      "scene_id": "3-5",
+      "scene_title": "雾锁寇岛"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T00:56:32.905896",
+    "data": {
+      "scene_id": "3-5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T00:56:32.914412",
+    "data": {
+      "scene_id": "3-6",
+      "scene_title": "孤身之重"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T01:01:01.779706",
+    "data": {
+      "scene_id": "3-6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T01:01:01.789750",
+    "data": {
+      "scene_id": "5.1",
+      "scene_title": "初抵寇岛"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T01:11:31.232499",
+    "data": {
+      "scene_id": "5.1",
+      "frames_count": 5,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T01:11:31.242556",
+    "data": {
+      "scene_id": "5.2",
+      "scene_title": "夜探鬼船"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T01:19:03.181726",
+    "data": {
+      "scene_id": "5.2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T01:19:03.191247",
+    "data": {
+      "scene_id": "5.3",
+      "scene_title": "海盗内斗"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T01:26:27.495633",
+    "data": {
+      "scene_id": "5.3",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T01:26:27.503430",
+    "data": {
+      "scene_id": "5.4",
+      "scene_title": "山洞谜踪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T01:36:02.121425",
+    "data": {
+      "scene_id": "5.4",
+      "frames_count": 5,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T01:36:02.135464",
+    "data": {
+      "scene_id": "5.5",
+      "scene_title": "面具初现"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T01:44:51.234721",
+    "data": {
+      "scene_id": "5.5",
+      "frames_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T01:44:51.244299",
+    "data": {
+      "scene_id": "5.6",
+      "scene_title": "水遁遗佩"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T02:12:32.105747",
+    "data": {
+      "scene_id": "5.6",
+      "frames_count": 8,
+      "attempt": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T02:12:32.113766",
+    "data": {
+      "scene_id": "5.7",
+      "scene_title": "潮声孤影"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T02:20:00.989446",
+    "data": {
+      "scene_id": "5.7",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T02:20:00.997966",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "悬崖追踪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T02:27:58.919096",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T02:27:58.927609",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "礁石初遇"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T02:36:35.493686",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T02:36:35.502697",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "名唤惊心"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T02:42:46.584473",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T02:42:46.593986",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "玉佩遗落"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T02:50:16.135553",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T02:50:16.144724",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "沉默的诀别"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T03:07:29.358030",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 8,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T03:07:29.368057",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "潮退余痕"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T03:15:53.764474",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T03:15:53.773501",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "暗流龙门"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T03:27:45.356710",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T03:27:45.365223",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "废墟交锋"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T03:45:29.534118",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 7,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T03:45:29.542652",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "血路突围"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T03:54:15.327836",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T03:54:15.336874",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "沙海绝境"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T04:00:17.391150",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T04:00:17.399663",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "孤烟与幻影"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T04:06:07.759402",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T04:06:07.768429",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "锋镝未冷"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T04:12:16.578282",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T04:12:16.587199",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "风起龙门"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T04:20:18.534889",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T04:20:18.543421",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "血染黄沙"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T04:28:48.529436",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T04:28:48.539953",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "断后"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T04:39:20.020030",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T04:39:20.029060",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "沙暴孤影"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T04:47:35.462959",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T04:47:35.472405",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "追猎之息"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T04:57:20.665958",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T04:57:20.675477",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "孤烟将尽"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T05:03:32.904882",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T05:03:32.914398",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "荒漠遗孤"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T05:11:19.354857",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T05:11:19.364372",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "星夜疗伤"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T05:18:07.378950",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T05:18:07.389463",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "无声的守护与回忆"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T05:26:07.918805",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T05:26:07.927807",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "风沙骤起"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T05:33:04.458646",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T05:33:04.484211",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "追兵至，绝境现"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T05:39:34.357106",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 5,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T05:39:34.371643",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "第三方降临"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T05:48:22.651461",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T05:48:22.659965",
+    "data": {
+      "scene_id": "scene_7",
+      "scene_title": "三方对峙，真相撕裂"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T06:01:34.130889",
+    "data": {
+      "scene_id": "scene_7",
+      "frames_count": 8,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T06:01:34.140404",
+    "data": {
+      "scene_id": "scene_8",
+      "scene_title": "摘下面具，殊途同归"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T06:17:55.926622",
+    "data": {
+      "scene_id": "scene_8",
+      "frames_count": 7,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T06:17:55.937146",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "三方汇聚，剑拔弩张"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T06:26:48.883443",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T06:26:48.894745",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "摘下面具，一声师父"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T06:44:20.914643",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 8,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T06:44:20.924153",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "废墟深处的喘息与沉默"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T06:52:51.772898",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T06:52:51.781407",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "血咒之始，坦白与隐瞒"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T06:58:57.412347",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T06:58:57.422732",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "徒孙的质问与师徒的争执"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T07:05:56.560585",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T07:05:56.571098",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "记忆闪回：当年的选择"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T07:15:11.705622",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T07:15:11.715713",
+    "data": {
+      "scene_id": "scene_7",
+      "scene_title": "地图合一，前路已明"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T07:24:19.516260",
+    "data": {
+      "scene_id": "scene_7",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T07:24:19.525773",
+    "data": {
+      "scene_id": "scene_8",
+      "scene_title": "黎明前的抉择与启程"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T07:36:02.023765",
+    "data": {
+      "scene_id": "scene_8",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T07:36:02.033292",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "废墟中的寂静对峙"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T07:43:25.932068",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T07:43:25.941616",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "篝火旁的初次剖白"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T07:59:43.945497",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 6,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T07:59:43.955023",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "李承锋的追问与洛云深的动摇"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T08:07:39.386577",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 5,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T08:07:39.396648",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "诅咒真相的碎片"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T08:14:18.739805",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 5,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T08:14:18.749811",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "仪式的代价与顾清尘的抉择"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T08:23:58.955048",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T08:23:58.964589",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "短暂的休憩与暗涌"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T08:30:59.205536",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T08:30:59.216074",
+    "data": {
+      "scene_id": "scene_7",
+      "scene_title": "黎明前的出发"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T08:40:21.279278",
+    "data": {
+      "scene_id": "scene_7",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T08:40:21.289298",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "关山难越"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T08:44:07.617993",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T08:44:07.632044",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "雪夜篝火"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T08:53:38.742695",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T08:53:38.758739",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "旧日回响"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T09:00:28.681354",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T09:00:28.694383",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "无声的守护"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T09:05:20.582738",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T09:05:20.594919",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "风雪中的刀光"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T09:18:01.526196",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T09:18:01.535218",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "断后"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T09:25:41.263589",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T09:25:41.275118",
+    "data": {
+      "scene_id": "scene_7",
+      "scene_title": "共同的抉择"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T09:36:26.007007",
+    "data": {
+      "scene_id": "scene_7",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T09:36:26.017521",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "风雪夜话"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T09:46:44.530444",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T09:46:44.540869",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "栈道惊魂"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T09:56:18.995909",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T09:56:19.005061",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "峡谷伏击"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T10:06:15.917840",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T10:06:15.927362",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "绝壁寻踪"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T10:18:03.462906",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T10:18:03.472937",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "入口之前"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T10:30:38.833378",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T10:30:38.842888",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "心结暂释"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T10:40:11.928668",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T10:40:11.938177",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "龙渊之门"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T10:41:41.581671",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 1,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T10:41:41.596226",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "阵中行"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T10:52:20.546229",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T10:52:20.557741",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "守渊之灵"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T11:02:33.745898",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T11:02:33.756414",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "祭坛真容"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T11:23:43.559183",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 6,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T11:23:43.569698",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "血引启阵"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T11:34:24.157612",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T11:34:24.170579",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "幕后现身"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T11:47:55.875828",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T11:47:55.886855",
+    "data": {
+      "scene_id": "5.1",
+      "scene_title": "祭坛真相"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T11:58:37.721629",
+    "data": {
+      "scene_id": "5.1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T11:58:37.732142",
+    "data": {
+      "scene_id": "5.2",
+      "scene_title": "困兽之斗"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T12:04:14.764792",
+    "data": {
+      "scene_id": "5.2",
+      "frames_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T12:04:14.776303",
+    "data": {
+      "scene_id": "5.3",
+      "scene_title": "邪念苏醒"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T12:12:54.685121",
+    "data": {
+      "scene_id": "5.3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T12:12:54.700865",
+    "data": {
+      "scene_id": "5.4",
+      "scene_title": "徒劳的牺牲"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T12:23:22.110437",
+    "data": {
+      "scene_id": "5.4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T12:23:22.121944",
+    "data": {
+      "scene_id": "5.5",
+      "scene_title": "最后的醒悟"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T12:30:32.307627",
+    "data": {
+      "scene_id": "5.5",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T12:30:32.317136",
+    "data": {
+      "scene_id": "5.6",
+      "scene_title": "以身为剑，封入龙渊"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T12:40:43.316758",
+    "data": {
+      "scene_id": "5.6",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T12:40:43.327269",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "绝境之择"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T12:52:29.237805",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T12:52:29.250028",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "剑出无悔"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T12:54:23.374438",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 1,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T12:54:23.383949",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "往昔回响"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T13:01:29.390703",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T13:01:29.400607",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "逆转心剑"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T13:11:39.831480",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T13:11:39.842513",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "湮灭与新生"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T13:22:12.533279",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T13:22:12.543796",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "如雪消散"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T13:29:46.150213",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T13:29:46.162231",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "无名碑前，风雪故人"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T13:37:09.025828",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T13:37:09.036338",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "回响·稻香村外初相逢"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T13:43:40.961933",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T13:43:40.971956",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "回响·纯阳宫中的日常"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T13:54:13.953473",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T13:54:13.966495",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "回响·师弟的到来与离别"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T14:03:48.698894",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T14:03:48.711410",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "回响·龙脉深处的诀别"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T14:05:11.708489",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 1,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T14:05:11.722528",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "风雪中的传承"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T14:10:15.715223",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T14:10:15.726279",
+    "data": {
+      "scene_id": "scene_1",
+      "scene_title": "雪落碑前"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T14:18:19.081892",
+    "data": {
+      "scene_id": "scene_1",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T14:18:19.093411",
+    "data": {
+      "scene_id": "scene_2",
+      "scene_title": "故人远来"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T14:27:31.552150",
+    "data": {
+      "scene_id": "scene_2",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T14:27:31.563678",
+    "data": {
+      "scene_id": "scene_3",
+      "scene_title": "营地新声"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T14:31:00.122843",
+    "data": {
+      "scene_id": "scene_3",
+      "frames_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T14:31:00.136982",
+    "data": {
+      "scene_id": "scene_4",
+      "scene_title": "薪火相传"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T14:40:13.602717",
+    "data": {
+      "scene_id": "scene_4",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T14:40:13.620246",
+    "data": {
+      "scene_id": "scene_5",
+      "scene_title": "独对山河"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T14:47:13.156705",
+    "data": {
+      "scene_id": "scene_5",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-23T14:47:13.168223",
+    "data": {
+      "scene_id": "scene_6",
+      "scene_title": "风雪如寄"
+    }
+  },
+  {
+    "step": "frame_generation_complete",
+    "timestamp": "2026-01-23T14:56:24.246225",
+    "data": {
+      "scene_id": "scene_6",
+      "frames_count": 6,
+      "attempt": 1
+    }
+  }
+]

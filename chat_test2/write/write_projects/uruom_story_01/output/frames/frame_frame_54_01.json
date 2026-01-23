@@ -1,0 +1,82 @@
+{
+  "frame_id": "frame_54_01",
+  "scene_id": "4.5",
+  "timestamp": "开场后54分10秒",
+  "characters_present": [
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "断崖边缘，背对深渊，面向红衣教众",
+      "action": "持剑摆出“云起”的起手式，剑尖微颤，血珠顺剑脊滑落",
+      "emotion": "决绝、燃烧的战意",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "red_cult_male_leader",
+      "name": "红衣教男头领",
+      "position": "顾清尘正前方五步，手持一对分水峨眉刺",
+      "action": "眼神阴鸷，缓缓移动脚步，寻找破绽",
+      "emotion": "恼怒、警惕",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "red_cult_female_leader",
+      "name": "红衣教女头领",
+      "position": "顾清尘左侧三丈，袖中暗扣毒针",
+      "action": "冷笑观察，伺机而动",
+      "emotion": "残忍、戏谑",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "白骨谷断崖",
+    "description": "一片突出的嶙峋岩石平台，三面环敌，背后是深不见底的雾气深渊。地面散落碎石与先前战斗留下的血迹。",
+    "lighting": "惨淡的月光被山谷雾气过滤，投下青灰色的光晕，人影被拉长扭曲。",
+    "sounds": [
+      "呼啸的山风",
+      "远处隐约的虫鸣",
+      "敌人粗重的呼吸声",
+      "剑锋划破空气的微鸣"
+    ],
+    "smells": [
+      "浓重的血腥味",
+      "崖底飘上的潮湿腐土气息",
+      "一丝若有若无的甜腥毒雾味"
+    ]
+  },
+  "environment": {
+    "weather": "无雨，但雾气弥漫",
+    "time_of_day": "深夜",
+    "temperature": "阴冷",
+    "atmosphere": "杀机四伏，绝境压迫"
+  },
+  "objects": [
+    {
+      "object_id": "sword_gu",
+      "name": "顾清尘的佩剑",
+      "description": "一柄制式长剑，剑身已有数处缺口，血迹斑驳，但剑柄缠绕的旧布条依然紧实。",
+      "position": "被顾清尘紧握手中",
+      "state": "染血，微光流转"
+    },
+    {
+      "object_id": "blood_stain_01",
+      "name": "血迹",
+      "description": "新鲜与半干涸的血迹混杂，在岩石上形成暗红色的斑块。",
+      "position": "平台中央及边缘",
+      "state": "粘稠"
+    }
+  ],
+  "current_action": "顾清尘在完成心理蜕变后，主动向实力最强的男头领发起第一剑，打破了被围困的僵局。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "顾清尘：师父，你看好了。这一次，我不再是那个需要你挡在身后的孩子。我的剑，为你而鸣。",
+    "男头领：这小子气势变了…竟敢主动攻来？",
+    "女头领：垂死挣扎罢了，看他能撑几招。"
+  ],
+  "sensory_details": {
+    "visual": "顾清尘眼中燃烧着冰冷的火焰，剑光划破雾气，留下一道凄美的轨迹。男头领峨眉刺的寒光与剑光即将碰撞。",
+    "auditory": "风声骤急，仿佛为这场死斗奏响序曲。",
+    "olfactory": "血腥气随着顾清尘的移动而弥散。",
+    "tactile": "剑柄旧布条的粗糙触感，是此刻唯一的温暖与支撑；崖边冷风如刀，切割着皮肤。"
+  }
+}

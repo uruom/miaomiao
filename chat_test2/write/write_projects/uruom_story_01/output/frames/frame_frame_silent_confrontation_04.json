@@ -1,0 +1,75 @@
+{
+  "frame_id": "frame_silent_confrontation_04",
+  "scene_id": "5",
+  "timestamp": "闯入密道后40分45秒",
+  "characters_present": [
+    {
+      "character_id": "luo_yunshen",
+      "name": "洛云深",
+      "position": "猛地抬手，决绝地挥下",
+      "action": "不再看顾清尘，转向手下和刚赶到的援兵",
+      "emotion": "狠戾、决断、将最后一丝软弱彻底斩断",
+      "dialogue_line": "\"拿下他们，生死不论。\""
+    },
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "如遭雷击，僵立原地",
+      "action": "难以置信地看着洛云深下令的背影",
+      "emotion": "彻底的心碎、茫然、世界崩塌",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "li_chengfeng",
+      "name": "李承锋",
+      "position": "奋力击退面前杀手，试图向顾清尘靠拢",
+      "action": "焦急大喊",
+      "emotion": "惊怒交加",
+      "dialogue_line": "\"师父！快醒醒！\""
+    }
+  ],
+  "location": {
+    "name": "密道深处石室",
+    "description": "石室内涌入更多黑衣杀手，气氛瞬间肃杀。",
+    "lighting": "更多火把被点亮，光线变得杂乱，人影幢幢。",
+    "sounds": [
+      "兵器出鞘的铿锵声",
+      "杀手的低吼与脚步声",
+      "李承锋的呼喊"
+    ],
+    "smells": [
+      "杀气带来的血腥味仿佛提前弥漫"
+    ]
+  },
+  "environment": {
+    "weather": "无",
+    "time_of_day": "深夜",
+    "temperature": "杀气带来的灼热与心底的冰冷交织",
+    "atmosphere": "温情与试探的假象被彻底撕碎，冰冷的杀意席卷而来。"
+  },
+  "objects": [],
+  "current_action": "洛云深下令捉拿顾清尘师徒，忘川成员合围，战斗一触即发。",
+  "dialogue": [
+    {
+      "speaker": "洛云深",
+      "content": "\"拿下他们，生死不论。\"",
+      "tone": "冰冷、威严、不容置疑"
+    },
+    {
+      "speaker": "李承锋",
+      "content": "\"师父！快醒醒！\"",
+      "tone": "嘶吼、焦急"
+    }
+  ],
+  "inner_thoughts": [
+    "洛云深：\"清尘，对不起……只有这样，你才能活下去，才能恨我，才能……忘了我。\"",
+    "顾清尘：\"生死不论……师父……你要杀我？\"",
+    "李承锋：\"混蛋！他对师父做了什么？！\""
+  ],
+  "sensory_details": {
+    "visual": "洛云深挥下的手决绝如刀。顾清尘失魂落魄的身影在包围圈中显得异常单薄。",
+    "auditory": "命令声落下，杀手的呼喝与脚步声瞬间充斥石室。",
+    "olfactory": "尘土被激烈动作扬起。",
+    "tactile": "顾清尘感到周围的空气变得粘稠而充满敌意。"
+  }
+}

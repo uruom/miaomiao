@@ -1,0 +1,60 @@
+{
+  "frame_id": "FRAME_06",
+  "scene_id": "4.1",
+  "timestamp": "开场后22分钟（清虚道长离去片刻后）",
+  "characters_present": [
+    {
+      "character_id": "CHAR_XIE",
+      "name": "谢云澜",
+      "position": "独自立于雪松下，面向苍茫群山与越来越密的飞雪",
+      "action": "一动不动，任由风雪侵袭",
+      "emotion": "外表的绝对平静下是翻江倒海的思绪与凝聚成铁的决意",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "纯阳宫·雪松下",
+    "description": "风雪渐疾，石桌石凳很快覆上薄薄一层白。天地苍茫。",
+    "lighting": "灰白一片的天光，能见度降低。",
+    "sounds": [
+      "呼啸的风雪声",
+      "世界仿佛被隔绝的寂静"
+    ],
+    "smells": [
+      "纯净凛冽的雪气"
+    ]
+  },
+  "environment": {
+    "weather": "大雪纷飞",
+    "time_of_day": "午后（天色昏暗如夜）",
+    "temperature": "滴水成冰",
+    "atmosphere": "极致的孤独、凝重与内在决心的最终成型"
+  },
+  "objects": [
+    {
+      "object_id": "OBJ_SWORD_HILT",
+      "name": "腰间佩剑剑柄",
+      "description": "被他无意识握住的剑柄。",
+      "position": "谢云澜右手按在剑柄上",
+      "state": "被握得温热"
+    },
+    {
+      "object_id": "OBJ_FROZEN_TEA",
+      "name": "冷却的茶水",
+      "description": "石桌上两杯未动的茶已彻底冰凉。",
+      "position": "石桌上",
+      "state": "表面开始凝结薄冰"
+    }
+  ],
+  "current_action": "谢云澜雪中独思，将纷乱线索、旧日伤痛与当下责任整合为清晰行动目标。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "谢云澜：天策府遗孤……寒衣失踪……华山附近的不明人士……所有线索都指向现在，指向我身边。承影的身世、他练剑时的异常……不能再等了。必须弄清楚他是否知情，是否身处险境而不自知。今夜之后，‘北冥剑气’的考校……将不止是考校。"
+  ],
+  "sensory_details": {
+    "visual": "他的背影在漫天大雪中挺拔如松，却又仿佛承载着千钧重担。雪花落满肩头也浑然不觉。",
+    "auditory": "只有风雪的咆哮和他自己沉稳却沉重的心跳声。",
+    "olfactory": "冰冷纯净的雪气灌满胸腔。",
+    "tactile": "按在剑柄上的手坚定而有力，那是即将行动的信号。"
+  }
+}

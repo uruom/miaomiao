@@ -1,0 +1,75 @@
+{
+  "frame_id": "frame_silent_confrontation_05",
+  "scene_id": "5",
+  "timestamp": "闯入密道后41分钟",
+  "characters_present": [
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "在数名杀手围攻下左支右绌，手臂被划伤，单膝跪地",
+      "action": "仍执拗地抬头，望向不远处冷眼旁观的洛云深",
+      "emotion": "痛苦、不甘、愤怒、仍在寻求一个答案",
+      "dialogue_line": "\"为什么？！告诉我为什么？！（咳血）\""
+    },
+    {
+      "character_id": "luo_yunshen",
+      "name": "洛云深",
+      "position": "站在战圈外，阴影中",
+      "action": "双手负后，紧紧交握，指节发白",
+      "emotion": "表面冷漠，内心正承受凌迟般的痛苦",
+      "dialogue_line": "沉默"
+    },
+    {
+      "character_id": "li_chengfeng",
+      "name": "李承锋",
+      "position": "拼命向顾清尘靠近，身上已多处挂彩",
+      "action": "奋力格挡攻击",
+      "emotion": "愤怒、心疼、对洛云深产生强烈恨意",
+      "dialogue_line": "\"师父！别管他了！我们先杀出去！\""
+    }
+  ],
+  "location": {
+    "name": "密道深处石室",
+    "description": "战斗激烈，石壁上溅上血迹，卷宗被踩踏得更加凌乱。",
+    "lighting": "晃动的火光中，剑光与血光交织。",
+    "sounds": [
+      "兵器交击的锐响",
+      "呼喝与闷哼",
+      "顾清尘咳血的声音"
+    ],
+    "smells": [
+      "新鲜血液的甜腥味开始弥漫"
+    ]
+  },
+  "environment": {
+    "weather": "无",
+    "time_of_day": "深夜",
+    "temperature": "灼热（战斗）与冰冷（旁观）并存",
+    "atmosphere": "一场绝望的、寻求答案的战斗，与一场冷酷的、自我惩罚的旁观。"
+  },
+  "objects": [],
+  "current_action": "顾清尘在战斗中仍试图向洛云深寻求答案，师徒二人陷入被动。",
+  "dialogue": [
+    {
+      "speaker": "顾清尘",
+      "content": "\"为什么？！告诉我为什么？！（咳血）\"",
+      "tone": "嘶哑、破碎、混合着血沫"
+    },
+    {
+      "speaker": "李承锋",
+      "content": "\"师父！别管他了！我们先杀出去！\"",
+      "tone": "急切、带着哭腔"
+    }
+  ],
+  "inner_thoughts": [
+    "顾清尘：\"哪怕你要我死，也给我一个理由……\"",
+    "洛云深：\"……清尘，站起来……像以前一样，打败他们，然后离开……别看我……\"",
+    "李承锋：\"我一定要带师父出去！那个黑衣人……我绝不会放过你！\""
+  ],
+  "sensory_details": {
+    "visual": "顾清尘跪地的身影与洛云深挺立在阴影中的身影形成残酷对比。血从顾清尘手臂滴落，在尘土中绽开暗红的花。",
+    "auditory": "顾清尘的质问被淹没在刀剑声中，显得微弱而凄凉。",
+    "olfactory": "血腥味越来越浓。",
+    "tactile": "顾清尘伤口火辣辣地疼，但远不及心中的万分之一。"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "frame_id": "stack_path_02",
+  "scene_id": "scene_2",
+  "timestamp": "顾清尘踩上腐朽木板的瞬间",
+  "characters_present": [
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "栈道中段，左脚刚踏上洛云深提醒过的那块“颜色有异”的木板",
+      "action": "身体重心前移，左脚踩实",
+      "emotion": "瞬间的错愕与惊骇",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "luo_yunshen",
+      "name": "洛云深",
+      "position": "顾清尘身后两步，视线紧锁其脚下",
+      "action": "瞳孔骤缩，身体已如离弦之箭般前扑",
+      "emotion": "极致的震惊与不顾一切",
+      "dialogue_line": "\"清尘！\""
+    },
+    {
+      "character_id": "li_chengfeng",
+      "name": "李承锋",
+      "position": "前方约一丈半处，闻声猛然回头",
+      "action": "转身，手已探向腰间钩锁",
+      "emotion": "骇然，反应迅捷",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "古老栈道断裂处",
+    "description": "那块腐朽木板在顾清尘脚下无声地碎裂、塌陷，连带周围数块木板一起崩落，露出下方黑洞洞的深渊和几根扭曲的铁条。",
+    "lighting": "天光从破口上方投下，照亮翻飞的木屑和雪花，深渊则吞噬了一切光线。",
+    "sounds": [
+      "木板断裂的刺耳“咔嚓”声",
+      "积雪和碎木坠落的空洞回响",
+      "洛云深那声短促而撕裂的呼喊“清尘！”",
+      "狂风瞬间灌入破口的呼啸"
+    ],
+    "smells": [
+      "断裂处涌出的更浓烈的朽木与尘土气息"
+    ]
+  },
+  "environment": {
+    "weather": "大雪，狂风",
+    "time_of_day": "上午",
+    "temperature": "极寒",
+    "atmosphere": "时间凝固般的致命危机"
+  },
+  "objects": [
+    {
+      "object_id": "collapsing_planks",
+      "name": "崩塌的栈道木板",
+      "description": "数块相连的木板彻底断裂，碎木与积雪正向下坠落。",
+      "position": "顾清尘脚下及前方",
+      "state": "彻底崩溃，坠落中"
+    }
+  ],
+  "current_action": "顾清尘随着崩塌的木板向下坠落。洛云深飞扑向前，伸手抓向顾清尘。李承锋甩出钩锁。",
+  "dialogue": [
+    {
+      "speaker": "洛云深",
+      "content": "清尘！",
+      "tone": "嘶哑，惊恐，用尽全力"
+    }
+  ],
+  "inner_thoughts": [
+    "顾清尘：完了！……师父的声音？",
+    "洛云深：抓住他！必须抓住！",
+    "李承锋：钩锁！快！"
+  ],
+  "sensory_details": {
+    "visual": "顾清尘身体失衡下坠的慢镜头，衣袂翻飞。洛云深前扑的身影几乎与坠落同步，手臂竭力前伸。李承锋手中钩锁化为一道模糊的黑影。崩落的木屑在光线中如金色尘埃。",
+    "auditory": "世界仿佛失声，只剩下自己心脏的狂跳和那声“清尘！”在脑中轰鸣，随后才是坠落物撞击崖壁的闷响。",
+    "olfactory": "下坠带来的失重感仿佛冲散了所有气味。",
+    "tactile": "脚下骤然一空，冰冷的失重感攫住全身。狂风从破口向上倒灌，冰冷刺骨。"
+  }
+}

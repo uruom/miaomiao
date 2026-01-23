@@ -1,0 +1,6 @@
+{
+  "weather": "暴风雪（感觉上减弱了）,\n        time_of_day: 深夜将尽？,\n        temperature: 稳定在微暖,\n        atmosphere: 震撼后的寂静，情感共鸣弥漫开来\n      },\n      objects: [],\n      current_action：谢云澜通过内力连接，“看”到了（感知到）李承影意识深处某个破碎的画面：可能是燃烧的军营、坠落的旗帜、同袍最后的呼喊、以及无边无际的寒冷与绝望。这画面与他内心深处某个尘封的场景产生了致命的共鸣。\n      dialogue：[\n        {\n          speaker：李承影（梦呓）,\n          content：",
+  "...走...快走...\"": "tone：痛苦、焦急、绝望\n        }\n      ],\n      inner_thoughts：[",
+  "scene_id": "scene_2",
+  "frame_id": "frame_13"
+}

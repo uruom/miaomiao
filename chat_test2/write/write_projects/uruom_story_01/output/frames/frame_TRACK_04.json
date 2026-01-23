@@ -1,0 +1,70 @@
+{
+  "frame_id": "TRACK_04",
+  "scene_id": "3-8-3",
+  "timestamp": "顾清尘故意卖破绽，杀手乙近身突刺的瞬间",
+  "characters_present": [
+    {
+      "character_id": "GU_QINGCHEN",
+      "name": "顾清尘",
+      "position": "背靠正堂门柱，看似被杀手甲掌风逼得步伐微乱",
+      "action": "在杀手乙短刃刺向后心的刹那，身形以不可思议的角度扭转，左手并指如剑，精准点向杀手乙持刃手腕，右手长剑划出一道凄冷弧光，反撩向对方脖颈",
+      "emotion": "冷静算计得手后的凌厉杀机",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "RED_ASSASSIN_02",
+      "name": "红衣杀手乙",
+      "position": "顾清尘身后半步，短刃已触及顾清尘衣衫",
+      "action": "眼中闪过得意与狠辣，全力前刺",
+      "emotion": "自以为得手的兴奋，瞬间转为惊骇",
+      "dialogue_line": "\"什……\""
+    }
+  ],
+  "location": {
+    "name": "义庄正堂门口",
+    "description": "门柱腐朽，挂着残破的白色布幔。地上散落着纸钱和瓦砾。",
+    "lighting": "月光被门廊遮挡，此处尤为黑暗，只有兵刃的寒光一闪而逝",
+    "sounds": [
+      "短刃刺破衣衫的轻微撕裂声",
+      "顾清尘转身带起的风声",
+      "杀手乙惊骇的短促气音"
+    ],
+    "smells": [
+      "灰尘，陈腐的布幔味",
+      "浓烈的甜腥气从杀手乙身上散发"
+    ]
+  },
+  "environment": {
+    "weather": "同上",
+    "time_of_day": "深夜",
+    "temperature": "阴冷",
+    "atmosphere": "生死一瞬的极致紧张"
+  },
+  "objects": [
+    {
+      "object_id": "SHORT_BLADE",
+      "name": "淬毒短刃",
+      "description": "刃身狭长，泛着蓝汪汪的光，显然剧毒无比",
+      "position": "杀手乙手中，即将刺中顾清尘后心",
+      "state": "致命一击即将完成"
+    }
+  ],
+  "current_action": "顾清尘设下陷阱，诱使急躁的杀手乙近身，实施凌厉反击。",
+  "dialogue": [
+    {
+      "speaker": "红衣杀手乙",
+      "content": "\"什……\"",
+      "tone": "惊骇，难以置信"
+    }
+  ],
+  "inner_thoughts": [
+    "顾清尘：\"就是现在！\"",
+    "红衣杀手乙：\"不好！中计了！\""
+  ],
+  "sensory_details": {
+    "visual": "黑暗中，顾清尘扭转的身形如同没有骨头的鬼影，剑光后发先至，比月光更冷。",
+    "auditory": "衣衫撕裂声与惊骇气音几乎同时响起，紧接着是剑锋划破空气的锐鸣。",
+    "olfactory": "甜腥气在极近的距离爆发。",
+    "tactile": "短刃擦过肋下衣衫的冰凉触感，以及指尖即将点中对方手腕的劲风。"
+  }
+}

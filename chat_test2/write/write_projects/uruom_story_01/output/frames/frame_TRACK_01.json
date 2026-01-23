@@ -1,0 +1,63 @@
+{
+  "frame_id": "TRACK_01",
+  "scene_id": "3-8-3",
+  "timestamp": "离开暗巷后一炷香",
+  "characters_present": [
+    {
+      "character_id": "GU_QINGCHEN",
+      "name": "顾清尘",
+      "position": "扬州城郊，通往义庄的荒僻小径",
+      "action": "牵着马缓步前行，左手看似随意地搭在剑柄上，右手轻抚马颈",
+      "emotion": "高度警觉，冷静中带着一丝刻意制造的松懈",
+      "dialogue_line": ""
+    },
+    {
+      "character_id": "RED_ASSASSIN_01",
+      "name": "红衣杀手甲",
+      "position": "后方约三十步，屋顶阴影处",
+      "action": "无声伏低，透过破损的瓦片缝隙观察",
+      "emotion": "冷酷，专注",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "城郊荒径",
+    "description": "道路两旁荒草萋萋，远处可见零星坟茔与歪斜的枯树。月光被薄云遮掩，地面投下模糊的阴影。",
+    "lighting": "惨淡的月光，能见度低",
+    "sounds": [
+      "夜风吹过荒草的沙沙声",
+      "远处隐约的犬吠",
+      "顾清尘与马匹轻微的脚步声"
+    ],
+    "smells": [
+      "潮湿的泥土味",
+      "淡淡的腐殖质气息"
+    ]
+  },
+  "environment": {
+    "weather": "多云，无雨，但空气湿冷",
+    "time_of_day": "深夜",
+    "temperature": "寒冷",
+    "atmosphere": "死寂，潜伏着杀机"
+  },
+  "objects": [
+    {
+      "object_id": "SWORD_HILT",
+      "name": "洛云深的旧剑剑柄",
+      "description": "被顾清尘左手虚握，皮革缠柄上已有磨损的痕迹",
+      "position": "顾清尘左手",
+      "state": "随时可以出鞘"
+    }
+  ],
+  "current_action": "顾清尘察觉跟踪，故意放慢脚步，将跟踪者引向预设的战场——废弃义庄。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "顾清尘：\"来了……比预想的快。气息阴冷，步伐轻得像鬼，不是寻常江湖客。正好，这义庄的棺材，或许今晚能派上用场。\""
+  ],
+  "sensory_details": {
+    "visual": "月光在荒草尖上泛起冰冷的微光，顾清尘的背影在夜色中显得孤单而笔直。",
+    "auditory": "除了自然风声，一种极细微、几乎与环境融为一体的衣袂破空声，时断时续。",
+    "olfactory": "荒草与泥土的腥气中，似乎混入了一丝极淡的、类似陈旧香灰的味道。",
+    "tactile": "夜风带着刺骨的寒意，吹在脸上如同细针轻刺。剑柄的皮革触感冰凉而熟悉。"
+  }
+}

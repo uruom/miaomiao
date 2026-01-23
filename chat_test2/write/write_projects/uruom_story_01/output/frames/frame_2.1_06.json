@@ -1,0 +1,55 @@
+{
+  "frame_id": "2.1_06",
+  "scene_id": "2.1",
+  "timestamp": "开场后55分钟",
+  "characters_present": [
+    {
+      "character_id": "gu_qingchen",
+      "name": "顾清尘",
+      "position": "苗寨外通往西南方向的小路起点",
+      "action": "背对苗寨的零星灯火，检查行囊中的物品（解毒丹、火折、干粮等），最后将手按在剑柄上",
+      "emotion": "孤独、决绝、肩负重任的沉重",
+      "dialogue_line": ""
+    }
+  ],
+  "location": {
+    "name": "苗寨外岔路口",
+    "description": "一条小路蜿蜒伸向西南方向的黑暗山林，与通往寨子的主路在此分岔。",
+    "lighting": "只有背后苗寨的微弱灯火提供些许照明，面前的道路漆黑一片",
+    "sounds": [
+      "寨子里隐约的人声和狗吠（温暖但遥远）",
+      "面前山林夜间的各种窸窣声响（未知而危险）"
+    ],
+    "smells": [
+      "身后寨子传来的烟火气",
+      "面前山林飘来的、混合着草木与淡淡腐殖质的气息"
+    ]
+  },
+  "environment": {
+    "weather": "晴朗夜空，星月无光",
+    "time_of_day": "子夜前后",
+    "temperature": "清冷",
+    "atmosphere": "孤身上路的悲壮，前路未卜的迷茫与坚定交织"
+  },
+  "objects": [
+    {
+      "object_id": "backpack_checked",
+      "name": "检查过的行囊",
+      "description": "行囊重新捆扎好，显得紧凑",
+      "position": "顾清尘背上",
+      "state": "准备就绪"
+    },
+    {
+      "object_id": "sword_at_waist",
+      "name": "腰间佩剑",
+      "description": "古朴长剑",
+      "position": "顾清尘腰间",
+      "state": "剑柄被他右手紧紧握着"
+    }
+  ],
+  "current_action": "顾清尘在岔路口做最后准备，毅然选择孤身踏入通往“落魂谷”的黑暗山路。",
+  "dialogue": [],
+  "inner_thoughts": [
+    "别了，短暂的安宁。落魂谷...无论里面是腐骨花，还是红衣教的陷阱，亦或是...师父留下的痕迹，我都要亲自去看一看。这条命，早在村子被毁的那天就不完全属于自己了。"
+  ]
+}
