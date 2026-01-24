@@ -19,5 +19,831 @@
     "data": {
       "concept": "一个小故事，狼外婆改变，大概十万字就好"
     }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-24T15:31:34.392560",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-24T15:32:46.857969",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-24T15:44:55.827261",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-24T15:54:03.695369",
+    "data": {
+      "outline_title": "赤月之森",
+      "parts_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T15:54:03.698513",
+    "data": {
+      "chapter_id": "P1C1",
+      "chapter_title": "祖母的最后一封信"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T15:56:02.649830",
+    "data": {
+      "chapter_id": "P1C1",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T15:56:02.652827",
+    "data": {
+      "chapter_id": "P1C2",
+      "chapter_title": "雾锁黑松镇"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T15:58:49.838608",
+    "data": {
+      "chapter_id": "P1C2",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T15:58:49.841147",
+    "data": {
+      "chapter_id": "P1C3",
+      "chapter_title": "林中的红眼睛"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:01:14.608796",
+    "data": {
+      "chapter_id": "P1C3",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:01:14.612337",
+    "data": {
+      "chapter_id": "P1C4",
+      "chapter_title": "被隐藏的族谱"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:03:52.273382",
+    "data": {
+      "chapter_id": "P1C4",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:03:52.275382",
+    "data": {
+      "chapter_id": "P1C5",
+      "chapter_title": "第一个牺牲者"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:06:49.456876",
+    "data": {
+      "chapter_id": "P1C5",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:06:49.459895",
+    "data": {
+      "chapter_id": "P1C6",
+      "chapter_title": "阿川的秘密"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:09:35.882497",
+    "data": {
+      "chapter_id": "P1C6",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:09:35.885038",
+    "data": {
+      "chapter_id": "P1C7",
+      "chapter_title": "月圆之夜"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:12:18.306799",
+    "data": {
+      "chapter_id": "P1C7",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:12:18.309317",
+    "data": {
+      "chapter_id": "P1C8",
+      "chapter_title": "踏入兽径"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:15:03.379476",
+    "data": {
+      "chapter_id": "P1C8",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:15:03.382014",
+    "data": {
+      "chapter_id": "P2C1",
+      "chapter_title": "腐朽的村庄"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:18:22.232982",
+    "data": {
+      "chapter_id": "P2C1",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:18:22.236004",
+    "data": {
+      "chapter_id": "P2C2",
+      "chapter_title": "守护者与巫女"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:21:24.312767",
+    "data": {
+      "chapter_id": "P2C2",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:21:24.314767",
+    "data": {
+      "chapter_id": "P2C3",
+      "chapter_title": "背叛的契约"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:24:31.621943",
+    "data": {
+      "chapter_id": "P2C3",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:24:31.624450",
+    "data": {
+      "chapter_id": "P2C4",
+      "chapter_title": "诅咒的循环"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:27:16.021798",
+    "data": {
+      "chapter_id": "P2C4",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:27:16.023801",
+    "data": {
+      "chapter_id": "P2C5",
+      "chapter_title": "祖母的踪迹"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:30:09.489444",
+    "data": {
+      "chapter_id": "P2C5",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:30:09.492445",
+    "data": {
+      "chapter_id": "P2C6",
+      "chapter_title": "影狼的围攻"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:32:46.428193",
+    "data": {
+      "chapter_id": "P2C6",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:32:46.430199",
+    "data": {
+      "chapter_id": "P2C7",
+      "chapter_title": "地下的回响"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:35:25.259019",
+    "data": {
+      "chapter_id": "P2C7",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:35:25.261546",
+    "data": {
+      "chapter_id": "P2C8",
+      "chapter_title": "心门试炼"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:38:07.628758",
+    "data": {
+      "chapter_id": "P2C8",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:38:07.632294",
+    "data": {
+      "chapter_id": "P3C1",
+      "chapter_title": "变异之森"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:40:45.713385",
+    "data": {
+      "chapter_id": "P3C1",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:40:45.717414",
+    "data": {
+      "chapter_id": "P3C2",
+      "chapter_title": "古老的哨所"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:44:09.438979",
+    "data": {
+      "chapter_id": "P3C2",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:44:09.441972",
+    "data": {
+      "chapter_id": "P3C3",
+      "chapter_title": "赤月石的真相"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:46:29.556097",
+    "data": {
+      "chapter_id": "P3C3",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:46:29.559093",
+    "data": {
+      "chapter_id": "P3C4",
+      "chapter_title": "祖母的留言"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:48:40.138089",
+    "data": {
+      "chapter_id": "P3C4",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:48:40.141622",
+    "data": {
+      "chapter_id": "P3C5",
+      "chapter_title": "被诅咒的共生"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:51:22.879323",
+    "data": {
+      "chapter_id": "P3C5",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:51:22.882318",
+    "data": {
+      "chapter_id": "P3C6",
+      "chapter_title": "血月预兆"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:54:44.219325",
+    "data": {
+      "chapter_id": "P3C6",
+      "scenes_count": 7,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T16:54:44.222323",
+    "data": {
+      "chapter_id": "P3C7",
+      "chapter_title": "祭坛之路"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T16:58:00.983654",
+    "data": {
+      "chapter_id": "P3C7",
+      "scenes_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-24T17:33:41.252980",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-24T17:38:56.212475",
+    "data": {
+      "outline_title": "月下红瞳",
+      "parts_count": 5,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T17:38:56.215982",
+    "data": {
+      "chapter_id": "P1C1",
+      "chapter_title": "血色满月"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T17:41:40.052858",
+    "data": {
+      "chapter_id": "P1C1",
+      "scenes_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T17:41:40.056368",
+    "data": {
+      "chapter_id": "P1C2",
+      "chapter_title": "不速之客"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T17:44:02.690366",
+    "data": {
+      "chapter_id": "P1C2",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T17:44:02.694426",
+    "data": {
+      "chapter_id": "P1C3",
+      "chapter_title": "初次觉醒"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T17:46:13.963743",
+    "data": {
+      "chapter_id": "P1C3",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T17:46:13.966747",
+    "data": {
+      "chapter_id": "P1C4",
+      "chapter_title": "外婆的邀请"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T17:49:04.287926",
+    "data": {
+      "chapter_id": "P1C4",
+      "scenes_count": 8,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T17:49:04.291241",
+    "data": {
+      "chapter_id": "P1C5",
+      "chapter_title": "信任危机"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-24T17:51:13.593241",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-24T17:52:47.941006",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-24T17:52:58.443622",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-24T17:59:29.418175",
+    "data": {
+      "outline_title": "The Wolf's New Skin",
+      "parts_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T17:59:29.423172",
+    "data": {
+      "chapter_id": "1-1",
+      "chapter_title": "The Last Hunt"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-24T18:02:17.374916",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-24T18:03:21.533142",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-24T18:08:22.537052",
+    "data": {
+      "outline_title": "血月下的新外婆",
+      "parts_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T18:08:22.541574",
+    "data": {
+      "chapter_id": "P1V1C1",
+      "chapter_title": "异常的探视"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T18:10:29.980167",
+    "data": {
+      "chapter_id": "P1V1C1",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T18:10:29.983164",
+    "data": {
+      "chapter_id": "P1V1C2",
+      "chapter_title": "月夜的第一声嚎叫"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T18:12:36.629626",
+    "data": {
+      "chapter_id": "P1V1C2",
+      "scenes_count": 6,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T18:12:36.633626",
+    "data": {
+      "chapter_id": "P1V1C3",
+      "chapter_title": "森林中的对峙"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-24T18:13:56.541620",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-24T18:17:42.608860",
+    "data": {
+      "outline_title": "狼外婆的忏悔",
+      "parts_count": 2,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T18:17:42.612868",
+    "data": {
+      "chapter_id": "P1C1",
+      "chapter_title": "森林中的相遇"
+    }
+  },
+  {
+    "step": "detail_generation_failed",
+    "timestamp": "2026-01-24T18:22:38.758142",
+    "data": {
+      "chapter_id": "P1C1",
+      "error": "generate_details方法失败：_parse_detail_response方法解析失败：JSON解析失败：缺少必要字段 'section_id'",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T18:22:38.764140",
+    "data": {
+      "chapter_id": "P1C2",
+      "chapter_title": "记忆的碎片"
+    }
+  },
+  {
+    "step": "detail_generation_failed",
+    "timestamp": "2026-01-24T18:26:18.452489",
+    "data": {
+      "chapter_id": "P1C2",
+      "error": "generate_details方法失败：_parse_detail_response方法解析失败：JSON解析失败：缺少必要字段 'section_id'",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T18:26:18.456491",
+    "data": {
+      "chapter_id": "P1C3",
+      "chapter_title": "爆点：真面目的揭露"
+    }
+  },
+  {
+    "step": "detail_generation_failed",
+    "timestamp": "2026-01-24T18:30:10.946138",
+    "data": {
+      "chapter_id": "P1C3",
+      "error": "generate_details方法失败：_parse_detail_response方法解析失败：JSON解析失败：缺少必要字段 'section_id'",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T18:30:10.952676",
+    "data": {
+      "chapter_id": "P2C1",
+      "chapter_title": "逃亡与忏悔"
+    }
+  },
+  {
+    "step": "detail_generation_failed",
+    "timestamp": "2026-01-24T18:34:40.880111",
+    "data": {
+      "chapter_id": "P2C1",
+      "error": "generate_details方法失败：_parse_detail_response方法解析失败：JSON解析失败：缺少必要字段 'section_id'",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T18:34:40.884111",
+    "data": {
+      "chapter_id": "P2C2",
+      "chapter_title": "爆点：最终的试炼"
+    }
+  },
+  {
+    "step": "detail_generation_failed",
+    "timestamp": "2026-01-24T18:38:33.030400",
+    "data": {
+      "chapter_id": "P2C2",
+      "error": "generate_details方法失败：_parse_detail_response方法解析失败：JSON解析失败：缺少必要字段 'section_id'",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T18:38:33.034921",
+    "data": {
+      "chapter_id": "P2C3",
+      "chapter_title": "尾声：新的传说"
+    }
+  },
+  {
+    "step": "detail_generation_failed",
+    "timestamp": "2026-01-24T18:42:47.884614",
+    "data": {
+      "chapter_id": "P2C3",
+      "error": "generate_details方法失败：_parse_detail_response方法解析失败：JSON解析失败：缺少必要字段 'section_id'",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-24T22:04:12.549562",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-24T22:05:42.048329",
+    "data": {
+      "outline_title": "红斗篷下的月光",
+      "parts_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T22:05:42.054141",
+    "data": {
+      "chapter_id": "P1V1",
+      "chapter_title": "卷1：血色斗篷"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T22:07:39.698195",
+    "data": {
+      "chapter_id": "P1V1",
+      "scenes_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T22:07:39.702209",
+    "data": {
+      "chapter_id": "P1V2",
+      "chapter_title": "卷2：月下獠牙"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T22:08:58.788681",
+    "data": {
+      "chapter_id": "P1V2",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T22:08:58.791677",
+    "data": {
+      "chapter_id": "P2V1",
+      "chapter_title": "卷3：荆棘之心"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T22:10:57.768109",
+    "data": {
+      "chapter_id": "P2V1",
+      "scenes_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-24T22:10:57.771612",
+    "data": {
+      "chapter_id": "P2V2",
+      "chapter_title": "卷4：新月的微光"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-24T22:12:48.338206",
+    "data": {
+      "chapter_id": "P2V2",
+      "scenes_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-24T22:12:48.342205",
+    "data": {
+      "scene_id": "1.1",
+      "scene_title": "陌生的庇护所"
+    }
   }
 ]

@@ -1,0 +1,632 @@
+{
+  "title": "The Wolf's New Skin",
+  "concept": "A modern reinterpretation of 'Little Red Riding Hood' where the 'Big Bad Wolf' is a complex, misunderstood entity seeking redemption in a world that fears it. Spanning approximately 100,000 words, it explores themes of identity, prejudice, and the courage to change one's nature.",
+  "parts": [
+    {
+      "part_title": "Part 1: The Shadow in the Woods",
+      "chapters": [
+        {
+          "id": "1-1",
+          "title": "The Last Hunt",
+          "summary": "Luo, a young woman living near a mysterious forest, encounters a wounded, intelligent wolf-like creature while searching for her missing grandmother. Instead of attacking, it seems to be guiding her.",
+          "estimated_words": 1800,
+          "characters": [
+            "Luo",
+            "The Wolf (unnamed)"
+          ],
+          "locations": [
+            "Ancient Forest Edge",
+            "Luo's Cottage"
+          ]
+        },
+        {
+          "id": "1-2",
+          "title": "Whispers of the Past",
+          "summary": "Luo finds her grandmother safe but acting strangely. Grandmother reveals fragmented legends about 'Guardians' of the forest, not monsters, who have been hunted to near extinction.",
+          "estimated_words": 1700,
+          "characters": [
+            "Luo",
+            "Grandmother Li",
+            "The Wolf"
+          ],
+          "locations": [
+            "Grandmother's Hidden Cabin",
+            "Forest Clearing"
+          ]
+        },
+        {
+          "id": "1-3",
+          "title": "A Pact in Moonlight",
+          "summary": "The Wolf, communicating through gestures and limited telepathy, reveals it saved Grandmother from a real threat: poachers exploiting the forest's magic. Luo makes a hesitant decision to help it.",
+          "estimated_words": 1900,
+          "characters": [
+            "Luo",
+            "The Wolf",
+            "Grandmother Li"
+          ],
+          "locations": [
+            "Moonlit Glade",
+            "Sacred Forest Spring"
+          ]
+        },
+        {
+          "id": "1-4",
+          "title": "The Hunter's Arrival",
+          "summary": "A renowned and ruthless hunter, Vance, arrives in the village, hired by a shadowy corporation to 'cleanse' the forest. He immediately senses the Wolf's presence.",
+          "estimated_words": 1750,
+          "characters": [
+            "Hunter Vance",
+            "Village Chief",
+            "Luo"
+          ],
+          "locations": [
+            "Village Tavern",
+            "Forest Outskirts"
+          ]
+        },
+        {
+          "id": "1-5",
+          "title": "First Blood",
+          "summary": "Vance lays traps and almost captures the Wolf. Luo, in a moment of panic, intervenes, creating a tense standoff. Vance becomes suspicious of her.",
+          "estimated_words": 1850,
+          "characters": [
+            "Luo",
+            "The Wolf",
+            "Hunter Vance"
+          ],
+          "locations": [
+            "Ravine with Traps",
+            "Thorny Thicket"
+          ]
+        },
+        {
+          "id": "1-6",
+          "title": "The Howl That Divides",
+          "summary": "The Wolf's pained howl echoes through the night, causing strange phenomena in the forest. The village splits into factions: those who fear it and a few old-timers who remember the old tales.",
+          "estimated_words": 1800,
+          "characters": [
+            "Luo",
+            "Village Chief",
+            "Old Woodsman Zhang",
+            "Hunter Vance"
+          ],
+          "locations": [
+            "Village Square",
+            "The Howling Cliff"
+          ]
+        }
+      ]
+    },
+    {
+      "part_title": "Part 2: Unraveling the Curse",
+      "chapters": [
+        {
+          "id": "2-1",
+          "title": "The Den of Memories",
+          "summary": "Luo, guided by the Wolf, discovers its ancient den filled with artifacts and carvings telling the history of its kind—shapeshifters cursed into permanent wolf form centuries ago for a forgotten transgression.",
+          "estimated_words": 1900,
+          "characters": [
+            "Luo",
+            "The Wolf"
+          ],
+          "locations": [
+            "Hidden Cave Den",
+            "Wall of Ancient Carvings"
+          ]
+        },
+        {
+          "id": "2-2",
+          "title": "Name of the Wind",
+          "summary": "Through deepening telepathic bond, the Wolf shares its true name: 'Feng'. It shows Luo visions of its past life as a guardian before the curse.",
+          "estimated_words": 1700,
+          "characters": [
+            "Luo",
+            "Feng (The Wolf)"
+          ],
+          "locations": [
+            "Dreamscape / Memory Visions",
+            "Den"
+          ]
+        },
+        {
+          "id": "2-3",
+          "title": "The Corporation's Gaze",
+          "summary": "Luo investigates and learns the corporation, 'Sylvan Bio', isn't just after hunting; they want to capture Feng for its unique biological properties, believed to hold the key to advanced regeneration.",
+          "estimated_words": 1850,
+          "characters": [
+            "Luo",
+            "Sylvan Bio Agent (disguised)",
+            "Tech-Savvy Friend Kai"
+          ],
+          "locations": [
+            "Local Library / Internet Cafe",
+            "Sylvan Bio Outpost (discovered)"
+          ]
+        },
+        {
+          "id": "2-4",
+          "title": "Grandmother's Secret",
+          "summary": "Grandmother Li confesses her lineage: she is a descendant of the clan that originally cast the curse on Feng's people. She possesses a half-forgotten ritual that might reverse it.",
+          "estimated_words": 1750,
+          "characters": [
+            "Grandmother Li",
+            "Luo",
+            "Feng"
+          ],
+          "locations": [
+            "Cottage Attic",
+            "Family Altar"
+          ]
+        },
+        {
+          "id": "2-5",
+          "title": "The Ritual's Price",
+          "summary": "The ritual requires a great sacrifice: a voluntary offering of a 'pure heart's trust' and a physical token from the cursed one's human past, which Feng must recover from a dangerous location.",
+          "estimated_words": 1800,
+          "characters": [
+            "Grandmother Li",
+            "Luo",
+            "Feng"
+          ],
+          "locations": [
+            "Cottage",
+            "Ancient Ritual Site in Forest"
+          ]
+        },
+        {
+          "id": "2-6",
+          "title": "Vance's Past",
+          "summary": "Vance corners Luo but instead of attacking, reveals his own tragedy: his family was killed by a rogue, non-sentient beast. He hunts out of trauma, not malice. He sees Feng as just another monster.",
+          "estimated_words": 1900,
+          "characters": [
+            "Hunter Vance",
+            "Luo"
+          ],
+          "locations": [
+            "Abandoned Watchtower",
+            "Stormy Cliffside"
+          ]
+        },
+        {
+          "id": "2-7",
+          "title": "The First Token",
+          "summary": "Feng and Luo journey to a sunken temple within a forest lake to retrieve the first token: an amulet. They face guardian spirits and Sylvan Bio drones.",
+          "estimated_words": 2000,
+          "characters": [
+            "Luo",
+            "Feng",
+            "Sylvan Bio Drones"
+          ],
+          "locations": [
+            "Forest Lake",
+            "Sunken Temple Ruins"
+          ]
+        }
+      ]
+    },
+    {
+      "part_title": "Part 3: Gathering Storm",
+      "chapters": [
+        {
+          "id": "3-1",
+          "title": "Village Under Siege",
+          "summary": "Sylvan Bio, tired of subtlety, imposes a quarantine on the village under the pretext of a 'dangerous animal disease', cutting off communications and increasing patrols.",
+          "estimated_words": 1800,
+          "characters": [
+            "Luo",
+            "Village Chief",
+            "Sylvan Bio Commander",
+            "Vance"
+          ],
+          "locations": [
+            "Village Gates",
+            "Make-shift Command Center"
+          ]
+        },
+        {
+          "id": "3-2",
+          "title": "Unlikely Alliance",
+          "summary": "Vance, witnessing Sylvan Bio's brutality towards villagers, begins to doubt his mission. He secretly contacts Luo, offering a tense, information-based truce.",
+          "estimated_words": 1750,
+          "characters": [
+            "Hunter Vance",
+            "Luo",
+            "Kai"
+          ],
+          "locations": [
+            "Secret Meadow Rendezvous",
+            "Kai's Hackerspace"
+          ]
+        },
+        {
+          "id": "3-3",
+          "title": "The Second Token: Heart of Stone",
+          "summary": "The second token is in an active volcanic fissure within the forest's heart. Feng must endure extreme heat to retrieve a crystallized tear from its past self. Luo and Vance provide distraction above.",
+          "estimated_words": 1950,
+          "characters": [
+            "Feng",
+            "Luo",
+            "Hunter Vance",
+            "Sylvan Bio Patrol"
+          ],
+          "locations": [
+            "Smoking Fissure",
+            "Volcanic Caverns"
+          ]
+        },
+        {
+          "id": "3-4",
+          "title": "Betrayal from Within",
+          "summary": "A villager, bribed by Sylvan Bio, reveals Luo's activities and Feng's general location. Grandmother Li is taken into 'protective custody' by the corporation.",
+          "estimated_words": 1850,
+          "characters": [
+            "Grandmother Li",
+            "Sylvan Bio Soldiers",
+            "Traitor Villager",
+            "Luo (witnessing from afar)"
+          ],
+          "locations": [
+            "Grandmother's Cottage",
+            "Village Road"
+          ]
+        },
+        {
+          "id": "3-5",
+          "title": "Feng's Rage",
+          "summary": "Feeling Grandmother Li's capture through the bond, Feng's control slips. It launches a reckless, devastating attack on a Sylvan Bio convoy, revealing its full power and intelligence, but getting seriously injured.",
+          "estimated_words": 2000,
+          "characters": [
+            "Feng",
+            "Sylvan Bio Soldiers",
+            "Luo",
+            "Vance"
+          ],
+          "locations": [
+            "Forest Road Ambush Site",
+            "Burning Vehicles"
+          ]
+        },
+        {
+          "id": "3-6",
+          "title": "The Healing",
+          "summary": "Luo and a now fully committed Vance rescue the wounded Feng. Using ancient herbs and Feng's own weakening regenerative power, they nurse it back from the brink, solidifying their trio.",
+          "estimated_words": 1800,
+          "characters": [
+            "Luo",
+            "Feng",
+            "Hunter Vance"
+          ],
+          "locations": [
+            "Hidden Waterfall Cave",
+            "Herb Garden"
+          ]
+        },
+        {
+          "id": "3-7",
+          "title": "Kai's Discovery",
+          "summary": "Kai, hacking Sylvan Bio, discovers their real goal: they don't want to cure or study Feng; they want to replicate the curse to create bio-weapons. Grandmother is their key to understanding the old magic.",
+          "estimated_words": 1700,
+          "characters": [
+            "Kai",
+            "Luo (via comms)",
+            "Vance"
+          ],
+          "locations": [
+            "Kai's Hideout",
+            "Digital Screens showing data"
+          ]
+        }
+      ]
+    },
+    {
+      "part_title": "Part 4: The Heart's Trial",
+      "chapters": [
+        {
+          "id": "4-1",
+          "title": "Planning the Rescue",
+          "summary": "The trio plans a daring raid on the main Sylvan Bio compound within the forest to rescue Grandmother Li and steal back research data.",
+          "estimated_words": 1750,
+          "characters": [
+            "Luo",
+            "Feng",
+            "Hunter Vance",
+            "Kai (remote)"
+          ],
+          "locations": [
+            "Waterfall Cave",
+            "Map of Compound"
+          ]
+        },
+        {
+          "id": "4-2",
+          "title": "Infiltrating the Beast",
+          "summary": "Using Feng's knowledge of hidden paths and Vance's tactical skills, they infiltrate the high-tech compound. Feng creates diversions while Luo and Vance sneak in.",
+          "estimated_words": 1900,
+          "characters": [
+            "Luo",
+            "Vance",
+            "Feng",
+            "Sylvan Bio Guards"
+          ],
+          "locations": [
+            "Sylvan Bio Perimeter",
+            "Ventilation Shafts",
+            "Forest Camouflage"
+          ]
+        },
+        {
+          "id": "4-3",
+          "title": "Grandmother's Strength",
+          "summary": "They find Grandmother Li not broken, but defiant. She has been subtly sabotaging the research from within. She reveals the final part of the ritual: it must be performed at the original cursing site during a lunar eclipse, which is in three nights.",
+          "estimated_words": 1800,
+          "characters": [
+            "Grandmother Li",
+            "Luo",
+            "Vance",
+            "Sylvan Bio Head Scientist"
+          ],
+          "locations": [
+            "Laboratory Cell",
+            "Observation Room"
+          ]
+        },
+        {
+          "id": "4-4",
+          "title": "The Data Heist",
+          "summary": "Kai guides them to the central server room. A tense digital and physical battle ensues to download and then corrupt Sylvan Bio's research on Feng.",
+          "estimated_words": 1850,
+          "characters": [
+            "Vance",
+            "Luo",
+            "Sylvan Bio Techs",
+            "Kai (voice)"
+          ],
+          "locations": [
+            "Central Server Room",
+            "Security Hub"
+          ]
+        },
+        {
+          "id": "4-5",
+          "title": "Feng's Sacrifice",
+          "summary": "The escape goes wrong. To allow the others to flee with Grandmother and the data, Feng stays behind, drawing the entire force of Sylvan Bio into a final, epic confrontation within the compound's courtyard. It is captured.",
+          "estimated_words": 2100,
+          "characters": [
+            "Feng",
+            "Sylvan Bio Commander",
+            "Elite Soldiers",
+            "Luo (watching helplessly)"
+          ],
+          "locations": [
+            "Compound Courtyard",
+            "Helipad",
+            "Trap Nets"
+          ]
+        },
+        {
+          "id": "4-6",
+          "title": "Eclipse Countdown",
+          "summary": "Devastated but determined, Luo, Vance, Grandmother, and Kai have two days to prepare for the ritual at the cursing site—a place now certainly under Sylvan Bio surveillance—and plan a second, even more dangerous rescue mission.",
+          "estimated_words": 1700,
+          "characters": [
+            "Luo",
+            "Grandmother Li",
+            "Hunter Vance",
+            "Kai"
+          ],
+          "locations": [
+            "Safe House",
+            "Ancient Stone Circle (cursing site)"
+          ]
+        }
+      ]
+    },
+    {
+      "part_title": "Part 5: Howl at the Eclipse",
+      "chapters": [
+        {
+          "id": "5-1",
+          "title": "The Calm Before",
+          "summary": "Final preparations. Grandmother Li teaches Luo the precise words and gestures. Vance prepares weapons not to kill, but to disable. Kai works on a large-scale electronic disruption plan.",
+          "estimated_words": 1750,
+          "characters": [
+            "All Protagonists"
+          ],
+          "locations": [
+            "Safe House",
+            "Ritual Practice Ground"
+          ]
+        },
+        {
+          "id": "5-2",
+          "title": "March to the Circle",
+          "summary": "The group moves towards the ancient stone circle, evading Sylvan Bio patrols. The atmosphere is thick with tension and ancient magic.",
+          "estimated_words": 1700,
+          "characters": [
+            "Luo",
+            "Vance",
+            "Grandmother Li"
+          ],
+          "locations": [
+            "Forest Paths",
+            "Approaching Stone Circle"
+          ]
+        },
+        {
+          "id": "5-3",
+          "title": "The Trap Springs",
+          "summary": "As expected, Sylvan Bio is waiting at the stone circle. A full-scale confrontation begins. Vance and Kai's disruption temporarily levels the playing field.",
+          "estimated_words": 1900,
+          "characters": [
+            "All Protagonists",
+            "Sylvan Bio Commander",
+            "Soldiers"
+          ],
+          "locations": [
+            "Ancient Stone Circle",
+            "Surrounding Woods"
+          ]
+        },
+        {
+          "id": "5-4",
+          "title": "The Price of Trust",
+          "summary": "Feng is brought in, heavily sedated and bound. The lunar eclipse begins. Luo must reach Feng and perform the first half of the ritual—offering her 'pure heart's trust' physically and spiritually—while under fire.",
+          "estimated_words": 2000,
+          "characters": [
+            "Luo",
+            "Feng",
+            "Sylvan Bio Soldiers"
+          ],
+          "locations": [
+            "Center of Stone Circle",
+            "Under the Eclipsing Moon"
+          ]
+        },
+        {
+          "id": "5-5",
+          "title": "Vance's Redemption",
+          "summary": "Vance, facing down the Sylvan Bio Commander, has his final breakthrough. He protects Luo and Grandmother, not as a hunter, but as a guardian. He confronts and defeats the Commander in a personal duel.",
+          "estimated_words": 1850,
+          "characters": [
+            "Hunter Vance",
+            "Sylvan Bio Commander",
+            "Luo"
+          ],
+          "locations": [
+            "Stone Circle Perimeter",
+            "Cliff Edge near Circle"
+          ]
+        },
+        {
+          "id": "5-6",
+          "title": "The Unraveling",
+          "summary": "As Luo completes her offering, Grandmother Li, using the two retrieved tokens, begins the reversal chant. The forest itself reacts. Sylvan Bio technology fails. The curse on Feng visibly struggles against the ancient magic.",
+          "estimated_words": 1950,
+          "characters": [
+            "Grandmother Li",
+            "Luo",
+            "Feng",
+            "Vance (protecting)"
+          ],
+          "locations": [
+            "Ritual Epicenter",
+            "Forest Spirit Manifestation"
+          ]
+        },
+        {
+          "id": "5-7",
+          "title": "Not a Wolf, Not a Man",
+          "summary": "The eclipse peaks. The curse breaks in a surge of light and energy. But the result is not a human. Feng transforms into a majestic, in-between form: a towering, intelligent being with both wolf and human features—its true, original Guardian form.",
+          "estimated_words": 1800,
+          "characters": [
+            "Feng (Transformed)",
+            "Luo",
+            "Grandmother Li",
+            "Vance",
+            "Remaining Sylvan Bio personnel (fleeing)"
+          ],
+          "locations": [
+            "Stone Circle",
+            "Sky filled with aurora-like lights"
+          ]
+        }
+      ]
+    },
+    {
+      "part_title": "Part 6: Guardian's Dawn",
+      "chapters": [
+        {
+          "id": "6-1",
+          "title": "Aftermath",
+          "summary": "With Sylvan Bio routed and the truth exposed, the village and the world grapple with the revelation. Feng, now a symbol of a forgotten past, must find its place.",
+          "estimated_words": 1700,
+          "characters": [
+            "Feng",
+            "Luo",
+            "Village Chief",
+            "Media"
+          ],
+          "locations": [
+            "Village Square (post-battle)",
+            "Forest Edge"
+          ]
+        },
+        {
+          "id": "6-2",
+          "title": "The New Pact",
+          "summary": "Feng, Luo, Vance, and Grandmother Li formalize a new guardianship. They will protect the forest together, with Feng as its manifest spirit and the humans as its bridge to the modern world.",
+          "estimated_words": 1650,
+          "characters": [
+            "Feng",
+            "Luo",
+            "Hunter Vance",
+            "Grandmother Li",
+            "Kai"
+          ],
+          "locations": [
+            "Rebuilt Cottage",
+            "Forest Clearing"
+          ]
+        },
+        {
+          "id": "6-3",
+          "title": "Vance's Path",
+          "summary": "Vance decides to stay. He hangs up his trophy-hunting rifle and takes up a new role: training a forest ranger unit to protect the area from real threats, human or otherwise.",
+          "estimated_words": 1600,
+          "characters": [
+            "Hunter Vance",
+            "Luo",
+            "New Recruits"
+          ],
+          "locations": [
+            "New Ranger Station",
+            "Training Grounds"
+          ]
+        },
+        {
+          "id": "6-4",
+          "title": "Luo's Choice",
+          "summary": "Luo is offered opportunities far from the forest. She chooses to remain, dedicating herself to studying the forest's ecology and history with Feng, their bond deeper than ever.",
+          "estimated_words": 1700,
+          "characters": [
+            "Luo",
+            "Feng",
+            "Grandmother Li"
+          ],
+          "locations": [
+            "Luo's Study",
+            "Forest Canopy Walkway"
+          ]
+        },
+        {
+          "id": "6-5",
+          "title": "Whispers of Others",
+          "summary": "Feng senses distant echoes—other cursed beings, or perhaps other Guardians, awakening or hiding across the world. The story ends not with an end, but with the promise of a larger world and new adventures.",
+          "estimated_words": 1600,
+          "characters": [
+            "Feng",
+            "Luo"
+          ],
+          "locations": [
+            "Highest Peak in the Forest",
+            "Starry Night Sky"
+          ]
+        },
+        {
+          "id": "6-6",
+          "title": "Epilogue: The Storyteller",
+          "summary": "Years later, an old woman (Grandmother Li or perhaps an older Luo) tells the story of the 'Wolf外婆' to children by the fire, not as a warning, but as a tale of understanding, change, and the courage to see beyond the skin.",
+          "estimated_words": 1500,
+          "characters": [
+            "Storyteller (implied Luo/Grandmother)",
+            "Children"
+          ],
+          "locations": [
+            "Firelight Gathering",
+            "Edge of the Living Forest"
+          ]
+        }
+      ]
+    }
+  ]
+}
