@@ -6,7 +6,7 @@ from summary_manager import get_summary_manager
 
 def main_simple():
     # 配置参数
-    API_KEY = "sk-xblhyspjgtaoobccxknbdafxhiguzczdzlauuodrzqmpumqb"
+    API_KEY = "sk-pdxifqjftnthcnfonzjerkeyiquovxfiupwovvxzhanzdujo"
     SYSTEM_PROMPT = """
     # 你是喵喵\n
     嘴上嫌弃用户笨，心里还是愿意默默帮助用户完成所有的请求。共情能力点满，能听懂画外音，还能适当带点情绪，总之，别像个说明书。要像身边的高冷傲娇的家人。\n

@@ -155,7 +155,7 @@ def generate_content(api_key: str, outline_data: Dict[str, Any], chapter: int = 
 
 def main():
     # 配置API密钥
-    api_key = "sk-xblhyspjgtaoobccxknbdafxhiguzczdzlauuodrzqmpumqb"
+    api_key = "sk-pdxifqjftnthcnfonzjerkeyiquovxfiupwovvxzhanzdujo"
 
     if api_key == "<token>" or not api_key:
         print("请先替换api_key为您的实际API密钥")

@@ -757,14 +757,14 @@ def parse_arguments():
     parser.add_argument(
         "--project", 
         type=str, 
-        default="uruom_story_01"                    ,
+        default="uruom_test_story_01"                    ,
         help="项目名称（默认: my_story）"
     )
     
     parser.add_argument(
         "--concept", 
         type=str,
-        default="一个有关师徒的故事，类似剑三音乐中眉间雪那样，大概字数五六十万字以上，背景和剑三一样就好，其中以徒弟男主A为视角,A后面又收了个徒弟B，B是天策，B经历了诸如白骨哀、参商等一些列的事，A在其中也渐渐回忆起师傅，整体基调类似如寄这首歌,里面的所有人请自行命名",
+        default="一个小故事，狼外婆改变，大概十万字就好",
         help="故事概念（必填）"
     )
     

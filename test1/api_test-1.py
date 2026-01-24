@@ -41,7 +41,7 @@ def call_siliconflow_api(api_key, question):
 
 def main():
     # 请在此处替换您的实际API密钥
-    api_key = "sk-xblhyspjgtaoobccxknbdafxhiguzczdzlauuodrzqmpumqb"
+    api_key = "sk-pdxifqjftnthcnfonzjerkeyiquovxfiupwovvxzhanzdujo"
 
     if api_key == "<token>":
         print("请先替换api_key为您的实际API密钥")

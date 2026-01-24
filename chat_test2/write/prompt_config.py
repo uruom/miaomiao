@@ -1,4 +1,4 @@
-"""提示词配置管理"""
+"""提示词配置管理 - 统一管理所有模块的prompt模板"""
 
 import json
 import os
@@ -66,36 +66,37 @@ class PromptManager:
         default_templates = {
             "outline_generation": PromptTemplate(
                 name="outline_generation",
-                description="故事大纲生成",
-                template="""请为以下故事概念生成一个详细的故事大纲：
+                description="故事大纲生成（江南风格）",
+                template="""你是江南，《龙族》作者，擅长写作与构思
+请为以下小说思路生成一个详细的小说大纲：
 
-故事概念：{concept}
+小说思路：{concept}
 
 要求：
-1. 将故事分为{parts_count}个主要部分（起承转合）
-2. 每个部分包含{chapters_per_part}个章节
-3. 为每个章节提供标题和简要描述
-4. 估计每个章节的字数
-5. 列出每个章节涉及的主要角色和场景
-6. 风格要求：{style}
-
+1. 将故事分为6-8个主要部分，每个部分都应有一个或多个大的爆点与高潮，能够留住读者。
+2. 每个部分包含6-8卷，同理，每个卷也应有一个或多个大的爆点与高潮，能够留住读者。
+3. 为每个卷提供标题和简要描述
+4. 估计每个卷的章节数
+5. 列出每个卷涉及的主要角色和场景
+6. 返回STRICT JSON格式，必须使用：
+- 英文引号 ",不要使用中文双引号
+- 英文冒号: ,不要使用中文冒号，
+- 任何字符串内容中可以包含中文符号，若为json特殊字符请转移，json结构必须是英文标点，不要在Json格式中加入任何不能被解析的字符
 请以JSON格式返回，结构如下：
 {{
   "title": "故事标题",
   "concept": "故事概念",
-  "genre": "{genre}",
   "parts": [
     {{
       "part_title": "部分标题",
       "chapters": [
         {{
-          "id": "章节ID（如ch_1）",
+          "id": "章节ID",
           "title": "章节标题",
-          "summary": "章节概要（100-200字）",
+          "summary": "章节概要",
           "estimated_words": 字数,
           "characters": ["角色1", "角色2"],
-          "locations": ["场景1", "场景2"],
-          "key_themes": ["主题1", "主题2"]
+          "locations": ["场景1", "场景2"]
         }}
       ]
     }}
@@ -103,60 +104,66 @@ class PromptManager:
 }}
 
 附加要求：{additional_requirements}""",
-                system_prompt="你是一个专业的小说家，擅长创作各种类型的小说。请根据用户提供的故事概念，创作一个结构完整、情节丰富的大纲。确保大纲逻辑清晰，章节划分合理，并充分考虑角色的发展和情节的推进。"
+                system_prompt=""
             ),
             
             "detail_generation": PromptTemplate(
                 name="detail_generation",
-                description="详细细纲生成",
-                template="""请为以下章节生成详细的细纲：
+                description="详细细纲生成（江南风格）",
+                template="""你是江南，《龙族》作者，擅长写作与构思
+请为以下章节生成详细的细纲：
 
-章节信息：
-标题：{title}
+{context_info}
+
+卷信息：
+卷题：{title}
 概要：{summary}
 涉及角色：{characters}
 场景：{locations}
 预估字数：{words}
-故事风格：{style}
 
 请生成包含以下内容的详细细纲：
-1. {scenes_count}个具体场景
-2. 每个场景的主要事件
-3. 场景之间的过渡
-4. 关键转折点
-5. 情感发展弧线
-6. 节奏控制
+1. 6-8个具体事件/场景（每个场景大约有3-4个章节），每个场景包含有高潮点，让读者情绪起伏，能让读者产生共鸣。
+2. 场景之间的过渡，如何衔接，人物的转变
+3. 关键转折点，如何让读者产生共鸣
+4. 情感发展弧线
+5. 节奏控制
+6. 返回STRICT JSON格式，必须使用：
+- 英文引号 ",不要使用中文双引号
+- 英文冒号: ,不要使用中文冒号，
+- 任何字符串内容中可以包含中文符号，若为json特殊字符请转移，json结构必须是英文标点，不要在Json格式中加入任何不能被解析的字符
+请以JSON格式返回，结构如下：
 
 以JSON格式返回，结构如下：
 {{
-  "section_id": "{section_id}",
+  "section_id": "章节ID",
   "title": "章节标题",
   "scenes": [
     {{
-      "scene_id": "场景ID（如scene_1）",
+      "scene_id": "场景ID",
       "scene_title": "场景标题",
-      "description": "场景描述（150-300字）",
+      "description": "场景描述",
       "characters_involved": ["角色"],
       "location": "地点",
       "key_events": ["事件1", "事件2"],
-      "emotional_tone": "情感基调",
-      "duration": "持续时间（如：30分钟）",
-      "sensory_details": ["视觉细节", "听觉细节"]
+      "emotional_tone": "情感基调"
     }}
   ],
   "transitions": ["过渡描述1", "过渡描述2"],
   "key_events": ["关键事件1", "关键事件2"],
   "emotional_arc": "情感发展描述",
-  "pace": "节奏描述（快/慢/中等）",
-  "conflicts": ["冲突1", "冲突2"]
+  "pace": "节奏描述（快/慢/中等）"
 }}""",
-                system_prompt="你是一个经验丰富的小说编辑，擅长将大纲细化为具体的场景和情节。请根据章节信息，创作详细的细纲，确保每个场景都有明确的目标、冲突和解决，场景之间的过渡自然流畅。"
+                system_prompt=""
             ),
             
             "frame_generation": PromptTemplate(
                 name="frame_generation",
-                description="固定帧生成",
-                template="""请为以下场景生成{frames_count}个"固定帧"，每个固定帧代表故事中的一个瞬间快照：
+                description="固定帧生成（江南风格）",
+                template="""你是江南，《龙族》作者，擅长写作与构思
+请为以下场景生成6-8个"章节帧段"，每个帧代表这章中最为高潮，最吸引读者的瞬间：
+
+{context_info}
 
 场景信息：
 标题：{scene_title}
@@ -165,22 +172,25 @@ class PromptManager:
 地点：{location}
 关键事件：{events}
 情感基调：{tone}
-故事风格：{style}
 
-固定帧要求：
-1. 每个固定帧包含该瞬间的完整状态
-2. 包括在场角色及其状态（位置、动作、情绪）
-3. 环境描述（光线、声音、气味等）
-4. 物品状态
-5. 当前进行的对话或动作
-6. 角色的内心想法
-7. 感官细节（视觉、听觉、嗅觉、触觉）
+章节帧要求：
+1. 每个章节帧包含该瞬间的完整状态
+2. 包括在场角色及其状态（位置、动作、情绪）、环境描述（光线、声音、气味等）、物品状态
+3. 当前进行的对话或动作
+4. 角色的内心想法，
+5. 如何过度到这个高潮帧，该帧前后是如何设计，以及后续描写的指导，如何让读者产生共鸣，如何让这个高潮帧成为下一个高潮的铺垫
+6. 返回STRICT JSON格式，必须使用：
+- 英文引号 ",不要使用中文双引号
+- 英文冒号: ,不要使用中文冒号，
+- 任何字符串内容中可以包含中文符号，若为json特殊字符请转移，json结构必须是英文标点，不要在Json格式中加入任何不能被解析的字符
+请以JSON格式返回，结构如下：
+
 
 以JSON数组格式返回，每个固定帧结构如下：
 [
   {{
-    "frame_id": "帧ID（如frame_1）",
-    "scene_id": "{scene_id}",
+    "frame_id": "帧ID",
+    "scene_id": "场景ID",
     "timestamp": "时间描述（如：开场后5分钟）",
     "characters_present": [
       {{
@@ -189,8 +199,7 @@ class PromptManager:
         "position": "位置描述",
         "action": "当前动作",
         "emotion": "情绪状态",
-        "dialogue_line": "当前对话（如有）",
-        "physical_state": "身体状态（如：呼吸急促）"
+        "dialogue_line": "当前对话（如有）"
       }}
     ],
     "location": {{
@@ -198,15 +207,13 @@ class PromptManager:
       "description": "地点描述",
       "lighting": "光线",
       "sounds": ["声音1", "声音2"],
-      "smells": ["气味1", "气味2"],
-      "temperature": "温度",
-      "weather_effects": "天气影响"
+      "smells": ["气味1", "气味2"]
     }},
     "environment": {{
       "weather": "天气",
       "time_of_day": "时间",
-      "atmosphere": "氛围",
-      "season": "季节"
+      "temperature": "温度",
+      "atmosphere": "氛围"
     }},
     "objects": [
       {{
@@ -214,8 +221,7 @@ class PromptManager:
         "name": "物品名",
         "description": "物品描述",
         "position": "位置",
-        "state": "状态",
-        "significance": "重要性"
+        "state": "状态"
       }}
     ],
     "current_action": "当前主要动作描述",
@@ -223,8 +229,7 @@ class PromptManager:
       {{
         "speaker": "说话者",
         "content": "对话内容",
-        "tone": "语气",
-        "subtext": "潜台词"
+        "tone": "语气"
       }}
     ],
     "inner_thoughts": ["角色1的内心想法", "角色2的内心想法"],
@@ -232,26 +237,25 @@ class PromptManager:
       "visual": "视觉细节",
       "auditory": "听觉细节",
       "olfactory": "嗅觉细节",
-      "tactile": "触觉细节",
-      "gustatory": "味觉细节（如有）"
-    }},
-    "tension_level": "紧张程度（1-10）"
+      "tactile": "触觉细节"
+    }}
   }}
 ]
 
-请确保每个固定帧都是独立的、完整的瞬间描述，能够为后续的扩写提供充分的细节。"""
+请确保每个固定帧都是独立的、完整的瞬间描述。"""
             ),
             
             "writing_expansion": PromptTemplate(
                 name="writing_expansion",
-                description="固定帧扩写",
+                description="固定帧扩写（江南风格）",
                 template="""请将以下"固定帧"扩写为一个完整的文学段落：
+
+{context_info}
 
 固定帧信息：
 时间：{timestamp}
 场景：{scene_id}
 当前动作：{current_action}
-紧张程度：{tension_level}
 
 在场角色：
 {characters}
@@ -279,10 +283,9 @@ class PromptManager:
 2. 将固定帧中的所有元素自然地融入叙述
 3. 保持连贯性和流畅性
 4. 适当添加过渡和细节描述
-5. 字数控制在{word_count}字左右
+5. 字数控制在300-800字
 6. 使用生动的语言和恰当的修辞
-7. 注意节奏和韵律
-8. 体现{emotional_tone}的情感基调
+7. 注意与前文和后文的衔接，保持故事连贯性
 
 请直接输出扩写后的段落，不需要额外的说明或标记。"""
             ),

@@ -6,7 +6,7 @@ from summary_manager import get_summary_manager
 
 def main_simple():
     # 配置参数
-    API_KEY = "sk-xblhyspjgtaoobccxknbdafxhiguzczdzlauuodrzqmpumqb"
+    API_KEY = "sk-pdxifqjftnthcnfonzjerkeyiquovxfiupwovvxzhanzdujo"
     SYSTEM_PROMPT = """
     # 你是喵喵
 

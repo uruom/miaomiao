@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 @dataclass
 class ModelConfig:
     """模型配置"""
-    api_key: str = "sk-xblhyspjgtaoobccxknbdafxhiguzczdzlauuodrzqmpumqb"
+    api_key: str = "sk-pdxifqjftnthcnfonzjerkeyiquovxfiupwovvxzhanzdujo"
     model_name: str = "deepseek-ai/DeepSeek-V3.2"
     api_url: str = "https://api.siliconflow.cn/v1/chat/completions"
     temperature: float = 0.7
@@ -64,6 +64,8 @@ class APIModelManager:
             "role": "user",
             "content": prompt
         })
+
+
         
         # 构建请求参数
         payload = {
@@ -73,6 +75,7 @@ class APIModelManager:
             "max_tokens": kwargs.get("max_tokens", self.config.max_tokens),
             "top_p": kwargs.get("top_p", self.config.top_p)
         }
+
         
         # 如果指定了response_format参数，则添加到payload中
         if "response_format" in kwargs:
@@ -91,7 +94,7 @@ class APIModelManager:
             try:
                 logger.info(f"调用模型: {self.config.model_name} (尝试 {attempt + 1}/{max_retries})")
                 logger.debug(f"请求参数: {json.dumps(payload, ensure_ascii=False, indent=2)}")
-                
+                print(json.dumps(payload, ensure_ascii=False, indent=2))
                 response = requests.post(
                     self.config.api_url,
                     headers=headers,
