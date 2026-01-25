@@ -1189,5 +1189,274 @@
       "scene_id": "scene_01",
       "scene_title": "荒宅内的共鸣"
     }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-25T15:47:12.330769",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-25T17:00:35.121456",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-25T17:03:20.885892",
+    "data": {
+      "outline_title": "月下红妆",
+      "parts_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:03:20.892888",
+    "data": {
+      "chapter_id": "P1-C1",
+      "chapter_title": "夜访"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:04:48.951052",
+    "data": {
+      "chapter_id": "P1-C1",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:04:48.956053",
+    "data": {
+      "chapter_id": "P1-C2",
+      "chapter_title": "旧事如烟"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:06:39.265622",
+    "data": {
+      "chapter_id": "P1-C2",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:06:39.271159",
+    "data": {
+      "chapter_id": "P1-C3",
+      "chapter_title": "山中小屋"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:08:40.298387",
+    "data": {
+      "chapter_id": "P1-C3",
+      "scenes_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:08:40.303391",
+    "data": {
+      "chapter_id": "P1-C4",
+      "chapter_title": "无声的交流"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:10:28.142002",
+    "data": {
+      "chapter_id": "P1-C4",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:10:28.146001",
+    "data": {
+      "chapter_id": "P1-C5",
+      "chapter_title": "山洪"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:12:58.769193",
+    "data": {
+      "chapter_id": "P1-C5",
+      "scenes_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:12:58.774183",
+    "data": {
+      "chapter_id": "P1-C6",
+      "chapter_title": "围猎"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:15:09.034972",
+    "data": {
+      "chapter_id": "P1-C6",
+      "scenes_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:15:09.039982",
+    "data": {
+      "chapter_id": "P1-C7",
+      "chapter_title": "月下真容"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:17:34.775229",
+    "data": {
+      "chapter_id": "P1-C7",
+      "scenes_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:17:34.780759",
+    "data": {
+      "chapter_id": "P2-C1",
+      "chapter_title": "诅咒之源"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:19:57.779890",
+    "data": {
+      "chapter_id": "P2-C1",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:19:57.784892",
+    "data": {
+      "chapter_id": "P2-C2",
+      "chapter_title": "瘟疫暗影"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:22:03.018002",
+    "data": {
+      "chapter_id": "P2-C2",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:22:03.024002",
+    "data": {
+      "chapter_id": "P2-C3",
+      "chapter_title": "以德报怨"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:24:01.699331",
+    "data": {
+      "chapter_id": "P2-C3",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:24:01.704336",
+    "data": {
+      "chapter_id": "P2-C4",
+      "chapter_title": "生死药方"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:25:38.311005",
+    "data": {
+      "chapter_id": "P2-C4",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:25:38.317634",
+    "data": {
+      "chapter_id": "P2-C5",
+      "chapter_title": "最后的阴谋"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:27:19.703683",
+    "data": {
+      "chapter_id": "P2-C5",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:27:19.709203",
+    "data": {
+      "chapter_id": "P2-C6",
+      "chapter_title": "火中涅槃"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:29:38.788050",
+    "data": {
+      "chapter_id": "P2-C6",
+      "scenes_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T17:29:38.793572",
+    "data": {
+      "chapter_id": "P2-C7",
+      "chapter_title": "红妆"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T17:32:02.596763",
+    "data": {
+      "chapter_id": "P2-C7",
+      "scenes_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-25T17:32:02.607546",
+    "data": {
+      "scene_id": "scene_2_1",
+      "scene_title": "病榻夜话"
+    }
   }
 ]
