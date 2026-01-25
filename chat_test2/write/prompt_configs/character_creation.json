@@ -1,0 +1,8 @@
+{
+  "name": "character_creation",
+  "description": "角色创建",
+  "template": "请创建一个详细的角色：\n\n角色基本信息：\n姓名：{name}\n年龄：{age}\n性别：{gender}\n职业：{occupation}\n\n角色要求：\n1. 外貌特征\n2. 性格特点\n3. 背景故事\n4. 动机和目标\n5. 弱点和缺陷\n6. 人际关系\n7. 技能和能力\n\n请以JSON格式返回，结构如下：\n{{\n  \"character_id\": \"角色ID\",\n  \"name\": \"姓名\",\n  \"age\": 年龄,\n  \"gender\": \"性别\",\n  \"occupation\": \"职业\",\n  \"appearance\": {{\n    \"height\": \"身高\",\n    \"build\": \"体型\",\n    \"hair\": \"头发\",\n    \"eyes\": \"眼睛\",\n    \"distinctive_features\": [\"特征1\", \"特征2\"]\n  }},\n  \"personality\": {{\n    \"traits\": [\"特质1\", \"特质2\"],\n    \"values\": [\"价值观1\", \"价值观2\"],\n    \"fears\": [\"恐惧1\", \"恐惧2\"],\n    \"desires\": [\"欲望1\", \"欲望2\"]\n  }},\n  \"background\": {{\n    \"origin\": \"出身\",\n    \"family\": \"家庭\",\n    \"education\": \"教育\",\n    \"key_events\": [\"关键事件1\", \"关键事件2\"]\n  }},\n  \"skills\": [\"技能1\", \"技能2\"],\n  \"weaknesses\": [\"弱点1\", \"弱点2\"],\n  \"relationships\": [\n    {{\n      \"character\": \"相关角色\",\n      \"relationship\": \"关系\",\n      \"description\": \"关系描述\"\n    }}\n  ],\n  \"current_status\": {{\n    \"health\": \"健康状况\",\n    \"mood\": \"当前情绪\",\n    \"goal\": \"当前目标\"\n  }}\n}}",
+  "version": "1.0",
+  "variables": ["name", "age", "gender", "occupation"],
+  "system_prompt": "你是一个专业的小说作家，擅长创作生动、立体的角色。请根据提供的角色基本信息，创建包含外貌、性格、背景、技能、弱点和人际关系的完整角色档案。"
+}

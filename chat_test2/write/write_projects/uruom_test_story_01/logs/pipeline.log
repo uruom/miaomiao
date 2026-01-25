@@ -845,5 +845,349 @@
       "scene_id": "1.1",
       "scene_title": "陌生的庇护所"
     }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-24T22:16:23.829553",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-25T09:03:50.258030",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-25T09:10:39.027494",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-01-25T09:13:12.602854",
+    "data": {
+      "outline_title": "红斗篷的约定",
+      "parts_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T09:13:12.613069",
+    "data": {
+      "chapter_id": "1-1",
+      "chapter_title": "雨巷初遇"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T09:15:08.594035",
+    "data": {
+      "chapter_id": "1-1",
+      "scenes_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T09:15:08.599040",
+    "data": {
+      "chapter_id": "1-2",
+      "chapter_title": "被诅咒的守护者"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T09:17:08.289275",
+    "data": {
+      "chapter_id": "1-2",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T09:17:08.294291",
+    "data": {
+      "chapter_id": "1-3",
+      "chapter_title": "百年前的契约"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T09:19:30.151313",
+    "data": {
+      "chapter_id": "1-3",
+      "scenes_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T09:19:30.155818",
+    "data": {
+      "chapter_id": "1-4",
+      "chapter_title": "镇民的围猎"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T09:21:02.721932",
+    "data": {
+      "chapter_id": "1-4",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T09:21:02.727465",
+    "data": {
+      "chapter_id": "1-5",
+      "chapter_title": "银铃的共鸣"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T09:23:36.566093",
+    "data": {
+      "chapter_id": "1-5",
+      "scenes_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T09:23:36.570087",
+    "data": {
+      "chapter_id": "1-6",
+      "chapter_title": "第一卷完：迷雾中的抉择"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T09:25:14.562981",
+    "data": {
+      "chapter_id": "1-6",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T09:25:14.567497",
+    "data": {
+      "chapter_id": "2-1",
+      "chapter_title": "故居寻绣"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T09:27:05.368799",
+    "data": {
+      "chapter_id": "2-1",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T09:27:05.372333",
+    "data": {
+      "chapter_id": "2-2",
+      "chapter_title": "疯狂山灵"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T09:29:18.340294",
+    "data": {
+      "chapter_id": "2-2",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T09:29:18.343821",
+    "data": {
+      "chapter_id": "2-3",
+      "chapter_title": "第三选择"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T09:31:18.888892",
+    "data": {
+      "chapter_id": "2-3",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T09:31:18.892916",
+    "data": {
+      "chapter_id": "2-4",
+      "chapter_title": "狼影镇山河"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T09:33:18.589291",
+    "data": {
+      "chapter_id": "2-4",
+      "scenes_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T09:33:18.593806",
+    "data": {
+      "chapter_id": "2-5",
+      "chapter_title": "新约"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T09:35:46.405625",
+    "data": {
+      "chapter_id": "2-5",
+      "scenes_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-01-25T09:35:46.410175",
+    "data": {
+      "chapter_id": "2-6",
+      "chapter_title": "尾声：红斗篷的约定"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-01-25T09:37:33.197691",
+    "data": {
+      "chapter_id": "2-6",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-25T09:37:33.206163",
+    "data": {
+      "scene_id": "01-01",
+      "scene_title": "银铃引路·异世降临"
+    }
+  },
+  {
+    "step": "frame_generation_failed",
+    "timestamp": "2026-01-25T09:46:57.635846",
+    "data": {
+      "scene_id": "01-01",
+      "error": "generate_frames方法失败：响应解析失败: 帧 0 缺少字段: frame_id",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-25T09:46:57.640850",
+    "data": {
+      "scene_id": "01-02",
+      "scene_title": "恐惧的声浪与雨中的身影"
+    }
+  },
+  {
+    "step": "frame_generation_failed",
+    "timestamp": "2026-01-25T09:56:13.532291",
+    "data": {
+      "scene_id": "01-02",
+      "error": "generate_frames方法失败：响应解析失败: 帧 0 缺少字段: frame_id",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-25T09:56:13.537304",
+    "data": {
+      "scene_id": "01-03",
+      "scene_title": "追捕与尾随"
+    }
+  },
+  {
+    "step": "frame_generation_failed",
+    "timestamp": "2026-01-25T10:06:08.024519",
+    "data": {
+      "scene_id": "01-03",
+      "error": "generate_frames方法失败：响应解析失败: 帧 0 缺少字段: frame_id",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-25T10:06:08.029519",
+    "data": {
+      "scene_id": "01-04",
+      "scene_title": "荒宅外的真相"
+    }
+  },
+  {
+    "step": "frame_generation_failed",
+    "timestamp": "2026-01-25T10:14:38.429461",
+    "data": {
+      "scene_id": "01-04",
+      "error": "generate_frames方法失败：响应解析失败: 帧 0 缺少字段: frame_id",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-25T10:14:38.434461",
+    "data": {
+      "scene_id": "SC_02_01",
+      "scene_title": "暗巷尾随与初次警示"
+    }
+  },
+  {
+    "step": "frame_generation_failed",
+    "timestamp": "2026-01-25T10:24:55.582372",
+    "data": {
+      "scene_id": "SC_02_01",
+      "error": "generate_frames方法失败：响应解析失败: 帧 0 缺少字段: frame_id",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-25T10:24:55.587782",
+    "data": {
+      "scene_id": "SC_02_02",
+      "scene_title": "荒宅对峙与影魅初现"
+    }
+  },
+  {
+    "step": "frame_generation_failed",
+    "timestamp": "2026-01-25T10:34:25.089968",
+    "data": {
+      "scene_id": "SC_02_02",
+      "error": "generate_frames方法失败：响应解析失败: 帧 0 缺少字段: frame_id",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-01-25T10:34:25.095487",
+    "data": {
+      "scene_id": "scene_01",
+      "scene_title": "荒宅内的共鸣"
+    }
   }
 ]

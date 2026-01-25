@@ -1,0 +1,8 @@
+{
+  "name": "frame_generation",
+  "description": "固定帧生成（江南风格）",
+  "template": "\n\n{context_info}\n\n场景信息：\n场景标题：{scene_title}\n场景描述：{scene_description}\n角色：{characters}\n地点：{location}\n关键事件：{events}\n情感基调：{tone}\n\n请生成6-8个章节的固定帧，每个固定帧代表一个高潮时刻，包含完整的状态描述。\n\n每个固定帧应包含以下信息：\n1. 时间戳（精确到分钟）\n2. 场景ID\n3. 当前动作\n4. 在场角色\n5. 地点描述\n6. 环境条件\n7. 物品状态\n8. 对话内容\n9. 内心想法\n10. 感官细节\n\n以JSON格式返回，结构如下：\n{{\n  \"frames\": [\n    {{\n      \"timestamp\": \"时间戳（YYYY-MM-DD HH:MM）\",\n      \"scene_id\": \"场景ID\",\n      \"current_action\": \"当前动作\",\n      \"characters\": [\"角色1\", \"角色2\"],\n      \"location\": \"地点描述\",\n      \"environment\": \"环境条件\",\n      \"objects\": [\"物品1\", \"物品2\"],\n      \"dialogue\": [\"对话内容1\", \"对话内容2\"],\n      \"thoughts\": [\"内心想法1\", \"内心想法2\"],\n      \"sensory_details\": [\"感官细节1\", \"感官细节2\"]\n    }}\n  ]\n}}",
+  "version": "1.0",
+  "variables": ["context_info", "scene_title", "scene_description", "characters", "location", "events", "tone"],
+  "system_prompt": "你是一个专业的小说作家，擅长创作具有江南文学风格的固定帧。请根据提供的场景信息，生成包含完整状态描述的固定帧，每个固定帧代表一个高潮时刻。"
+}

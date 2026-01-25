@@ -1,0 +1,8 @@
+{
+  "name": "outline_generation",
+  "description": "故事大纲生成（江南风格）",
+  "template": "\n\n小说思路：{concept}\n\n要求：\n1. 将故事分为1-2个主要部分，每个部分都应有一个或多个大的爆点与高潮，能够留住读者。\n2. 每个部分包含1-2卷，同理，每个卷也应有一个或多个大的爆点与高潮，能够留住读者。\n3. 为每个卷提供标题和简要描述\n4. 估计每个卷的章节数\n5. 列出每个卷涉及的主要角色和场景\n\n请以JSON格式返回，结构如下：\n{{\n  \"title\": \"故事标题\",\n  \"concept\": \"故事概念\",\n  \"parts\": [\n    {{\n      \"part_title\": \"部分标题\",\n      \"chapters\": [\n        {{\n          \"id\": \"章节ID\",\n          \"title\": \"章节标题\",\n          \"summary\": \"章节概要\",\n          \"estimated_words\": 字数,\n          \"characters\": [\"角色1\", \"角色2\"],\n          \"locations\": [\"场景1\", \"场景2\"]\n        }}\n      ]\n    }}\n  ]\n}}\n\n附加要求：{additional_requirements}\n",
+  "version": "1.0",
+  "variables": ["concept", "additional_requirements"],
+  "system_prompt": "你是一个专业的小说作家，擅长创作具有江南文学风格的作品。请根据用户提供的故事概念，生成一个结构完整、情节丰富的小说大纲。大纲应该具有清晰的层次结构，包含主要部分、卷、章节的划分，并确保每个部分都有吸引读者的爆点和高潮。"
+}
