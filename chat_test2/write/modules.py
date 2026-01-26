@@ -7,6 +7,7 @@ from dataclasses import dataclass, asdict, field
 import re
 from datetime import datetime
 
+from tool_enabled_model_manager import ToolEnabledModelManager
 from utils import FileManager, ModelManager, JsonStorage
 from prompt_config import PromptManager
 
@@ -58,7 +59,7 @@ class OutlineModule:
     def __init__(self, project_path: str):
         self.project_path = project_path
         self.output_dir = os.path.join(project_path, "output", "outlines")
-        self.model_manager = ModelManager("outline_generator")
+        self.model_manager = ToolEnabledModelManager("outline_generator")
         self.file_manager = FileManager()
         self.prompt_manager = PromptManager()
         
@@ -82,7 +83,7 @@ class OutlineModule:
             raise ValueError("无法获取大纲生成提示词")
         
         # 调用模型
-        response = self.model_manager.call_model(prompt, system_prompt=system_prompt, response_format={"type": "json_object"})
+        response = self.model_manager.call_model_with_tools(prompt, system_prompt=system_prompt, response_format={"type": "json_object"})
         # 提取JSON
         try:
             outline_data = self._parse_outline_response(response)
@@ -155,7 +156,7 @@ class DetailOutlineModule:
     def __init__(self, project_path: str):
         self.project_path = project_path
         self.output_dir = os.path.join(project_path, "output", "details")
-        self.model_manager = ModelManager("detail_generator")
+        self.model_manager = ToolEnabledModelManager("detail_generator")
         self.file_manager = FileManager()
         self.prompt_manager = PromptManager()
         
@@ -195,7 +196,7 @@ class DetailOutlineModule:
             raise ValueError("无法获取细纲生成提示词")
         
         # 调用模型
-        response = self.model_manager.call_model(prompt, system_prompt=system_prompt, response_format={"type": "json_object"})
+        response = self.model_manager.call_model_with_tools(prompt, system_prompt=system_prompt, response_format={"type": "json_object"})
         
         # 解析响应
         try:
@@ -310,7 +311,7 @@ class FrameModule:
         self.project_path = project_path
         self.output_dir = os.path.join(project_path, "output", "frames")
         self.data_dir = os.path.join(project_path, "data")
-        self.model_manager = ModelManager("frame_generator")
+        self.model_manager = ToolEnabledModelManager("frame_generator")
         self.file_manager = FileManager()
         self.storage = JsonStorage(self.data_dir)
         self.prompt_manager = PromptManager()
@@ -353,7 +354,7 @@ class FrameModule:
             raise ValueError("无法获取固定帧生成提示词")
         
         # 调用模型
-        response = self.model_manager.call_model(prompt, system_prompt=system_prompt, response_format={"type": "json_object"})
+        response = self.model_manager.call_model_with_tools(prompt, system_prompt=system_prompt, response_format={"type": "json_object"})
         
         # 解析响应
         try:
@@ -442,7 +443,7 @@ class FrameModule:
             raise ValueError("无法获取固定帧生成提示词")
         
         # 调用模型
-        response = self.model_manager.call_model(prompt, system_prompt=system_prompt, response_format={"type": "json_object"})
+        response = self.model_manager.call_model_with_tools(prompt, system_prompt=system_prompt, response_format={"type": "json_object"})
         
         # 解析响应
         frames_data = self._parse_frames_response(response, scene)
@@ -619,7 +620,7 @@ class WritingModule:
     def __init__(self, project_path: str):
         self.project_path = project_path
         self.output_dir = os.path.join(project_path, "output", "chapters")
-        self.model_manager = ModelManager("writing_generator")
+        self.model_manager = ToolEnabledModelManager("writing_generator")
         self.file_manager = FileManager()
         self.prompt_manager = PromptManager()
         
@@ -661,7 +662,7 @@ class WritingModule:
             raise ValueError("无法获取扩写提示词")
         
         # 调用模型
-        response = self.model_manager.call_model(prompt, system_prompt=system_prompt, response_format={"type": "text"})
+        response = self.model_manager.call_model_with_tools(prompt, system_prompt=system_prompt, response_format={"type": "text"})
         
         # 清理和格式化文本
         expanded_text = self._clean_writing_response(response)

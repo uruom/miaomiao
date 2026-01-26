@@ -240,7 +240,8 @@ class ToolManager:
 class ToolEnabledModelManager:
     """支持工具调用的模型管理器"""
     
-    def __init__(self, config: Optional[ModelConfig] = None, tool_manager: Optional[ToolManager] = None):
+    def __init__(self,  model_name: str = "default",config: Optional[ModelConfig] = None, tool_manager: Optional[ToolManager] = None):
+        self.model_name = model_name
         self.config = config or ModelConfig()
         self.tool_manager = tool_manager or ToolManager()
         self.history: List[Dict[str, Any]] = []
@@ -249,7 +250,12 @@ class ToolEnabledModelManager:
         # 验证配置
         if not self.config.api_key:
             logger.warning("未设置API Key，模型调用将使用模拟模式")
-    
+
+    def extract_json(self, text: str) -> Optional[Dict[str, Any]]:
+        """从文本中提取JSON，包含中文标点符号的后处理"""
+        fixed_text = repair_json(text, ensure_ascii=False)
+        return json.loads(fixed_text)
+
     def set_config(self, **kwargs):
         """更新模型配置"""
         for key, value in kwargs.items():
@@ -385,7 +391,8 @@ class ToolEnabledModelManager:
         for attempt in range(max_retries):
             try:
                 logger.info(f"调用模型: {self.config.model_name} (尝试 {attempt + 1}/{max_retries})")
-                
+                print(json.dumps(payload, ensure_ascii=False, indent=2))
+
                 response = requests.post(
                     self.config.api_url,
                     headers=headers,

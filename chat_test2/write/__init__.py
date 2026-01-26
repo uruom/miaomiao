@@ -9,7 +9,7 @@
 from .core import StoryEngine
 from .modules import OutlineModule, DetailOutlineModule, FrameModule, WritingModule
 from .utils import FileManager, ModelManager, JsonStorage, TextProcessor
-from .model_manager import APIModelManager, ModelConfig
+from .tool_enabled_model_manager import  ModelConfig
 from .prompt_config import PromptManager, PromptTemplate
 from .main import AutoStoryWriter
 
@@ -23,7 +23,6 @@ __all__ = [
     'ModelManager',
     'JsonStorage',
     'TextProcessor',
-    'APIModelManager',
     'ModelConfig',
     'PromptManager',
     'PromptTemplate',

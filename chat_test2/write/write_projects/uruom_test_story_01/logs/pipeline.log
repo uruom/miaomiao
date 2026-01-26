@@ -1458,5 +1458,55 @@
       "scene_id": "scene_2_1",
       "scene_title": "病榻夜话"
     }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-26T12:58:15.215442",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-26T13:47:10.466380",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-26T22:40:31.012470",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_failed",
+    "timestamp": "2026-01-26T22:40:34.018716",
+    "data": {
+      "error": "'ToolEnabledModelManager' object has no attribute 'call_model'",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-26T22:41:42.053155",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-26T22:43:07.621458",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-01-26T22:44:02.450692",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
   }
 ]
