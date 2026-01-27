@@ -1,0 +1,39 @@
+{
+  "tools": {
+    "character": {
+      "enabled": true,
+      "data_dir": "world_data/characters",
+      "auto_save": true,
+      "backup_enabled": true
+    },
+    "sect": {
+      "enabled": true,
+      "data_dir": "world_data/sects",
+      "auto_save": true,
+      "backup_enabled": true
+    },
+    "map": {
+      "enabled": true,
+      "data_dir": "world_data/maps",
+      "auto_save": true,
+      "backup_enabled": true
+    },
+    "ability": {
+      "enabled": true,
+      "data_dir": "world_data/abilities",
+      "auto_save": true,
+      "backup_enabled": true
+    },
+    "creature": {
+      "enabled": true,
+      "data_dir": "world_data/creatures",
+      "auto_save": true,
+      "backup_enabled": true
+    }
+  },
+  "default_data_dir": "world_data",
+  "max_items_per_type": 1000,
+  "auto_backup": true,
+  "backup_interval": 3600,
+  "log_level": "INFO"
+}
