@@ -44,6 +44,67 @@ class ModelConfig:
     timeout: int = 30000
 
 
+class SimpleModelCaller:
+    """简单的模型调用器，避免循环依赖"""
+    
+    def __init__(self, config: Optional[ModelConfig] = None):
+        self.config = config or ModelConfig()
+    
+    def call_with_template(self, template_name: str, template_data: Dict[str, Any], 
+                          **kwargs) -> str:
+        """调用模型处理模板"""
+        
+        # 导入prompt_manager（延迟导入避免循环依赖）
+        from .prompt_manager import PromptManager
+        
+        # 获取模板
+        prompt_manager = PromptManager()
+        prompt = prompt_manager.get_prompt(template_name, template_data)
+        
+        if not prompt:
+            logger.error(f"未找到模板: {template_name}")
+            return f"错误：未找到模板 {template_name}"
+        
+        # 获取系统提示词
+        system_prompt = prompt_manager.get_system_prompt(template_name)
+        
+        # 构建请求
+        messages = []
+        if system_prompt:
+            messages.append({"role": "system", "content": system_prompt})
+        messages.append({"role": "user", "content": prompt})
+        
+        # 调用模型API
+        payload = {
+            "model": self.config.model_name,
+            "messages": messages,
+            "temperature": kwargs.get("temperature", self.config.temperature),
+            "max_tokens": kwargs.get("max_tokens", self.config.max_tokens),
+            "top_p": kwargs.get("top_p", self.config.top_p)
+        }
+        
+        headers = {
+            "Authorization": f"Bearer {self.config.api_key}",
+            "Content-Type": "application/json"
+        }
+        
+        try:
+            response = requests.post(
+                self.config.api_url,
+                headers=headers,
+                json=payload,
+                timeout=self.config.timeout
+            )
+            response.raise_for_status()
+            
+            response_data = response.json()
+            return response_data["choices"][0]["message"]["content"]
+            
+        except Exception as e:
+            logger.error(f"模型调用失败: {e}")
+            return f"模型调用失败: {str(e)}"
+
+
 class Tool:
     """工具基类"""
     
@@ -71,7 +132,7 @@ class Tool:
 class CreateCharacterTool(Tool):
     """创建人物工具"""
     
-    def __init__(self):
+    def __init__(self, character_model_manager=None):
         super().__init__(
             name="create_character",
             description="创建新的人物角色，包括基本信息、性格特征、背景故事等",
@@ -90,6 +151,9 @@ class CreateCharacterTool(Tool):
         )
         self.character_dir = "characters"
         os.makedirs(self.character_dir, exist_ok=True)
+        
+        # 使用传入的模型管理器或创建简单的模型调用器
+        self.character_model_manager = character_model_manager or SimpleModelCaller()
     
     def execute(self, arguments: Dict[str, Any]) -> str:
         try:
@@ -100,37 +164,124 @@ class CreateCharacterTool(Tool):
             background = arguments.get("background", "")
             story_requirements = arguments.get("story_requirements", "")
             
-            # 创建人物数据
-            character_data = {
+            # 构建人物创建模板数据
+            template_data = {
                 "name": name,
                 "role": role,
                 "basic_info": basic_info,
                 "personality": personality,
                 "background": background,
-                "story_requirements": story_requirements,
-                "created_at": time.time(),
-                "relationships": {},
-                "character_arc": "待补充的人物成长弧线",
-                "strengths": [],
-                "weaknesses": [],
-                "motivations": [],
-                "quirks": []
+                "story_requirements": story_requirements
             }
+            
+            # 调用专门的人物创建模型
+            logger.info(f"调用专门的人物创建模型来创建角色: {name}")
+            
+            # 使用character_creation模板调用模型
+            character_result = self.character_model_manager.call_with_template(
+                template_name="character_creation",
+                template_data=template_data,
+                temperature=0.8,
+                max_tokens=4000
+            )
+            
+            # 解析模型返回的人物数据
+            try:
+                # 尝试从模型回复中提取JSON格式的人物数据
+                character_data = self._extract_character_data(character_result, name, role)
+            except Exception as e:
+                logger.warning(f"人物数据解析失败，使用基础信息: {e}")
+                # 如果解析失败，使用基础信息创建人物
+                character_data = self._create_basic_character_data(name, role, basic_info, personality, background, story_requirements)
             
             # 保存人物数据
             character_file = os.path.join(self.character_dir, f"{name}.json")
             with open(character_file, 'w', encoding='utf-8') as f:
                 json.dump(character_data, f, ensure_ascii=False, indent=2)
             
+            logger.info(f"人物创建成功: {name}, 文件路径: {character_file}")
+            
             return json.dumps({
                 "success": True,
                 "character_name": name,
                 "file_path": character_file,
-                "character_data": character_data
+                "character_data": character_data,
+                "model_response": character_result
             })
             
         except Exception as e:
+            logger.error(f"创建人物失败: {str(e)}")
             return json.dumps({"error": f"创建人物失败: {str(e)}"})
+    
+    def _extract_character_data(self, model_response: str, name: str, role: str) -> Dict[str, Any]:
+        """从模型回复中提取人物数据"""
+        try:
+            # 尝试直接解析JSON
+            if "{" in model_response and "}" in model_response:
+                # 提取JSON部分
+                json_start = model_response.find("{")
+                json_end = model_response.rfind("}") + 1
+                json_str = model_response[json_start:json_end]
+                
+                character_data = json.loads(json_str)
+                
+                # 确保包含必要字段
+                character_data.setdefault("name", name)
+                character_data.setdefault("role", role)
+                character_data.setdefault("created_at", time.time())
+                
+                return character_data
+            else:
+                # 如果无法提取JSON，使用基础数据
+                raise ValueError("模型回复中未找到有效的JSON数据")
+                
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON解析失败: {e}")
+            # 尝试修复JSON
+            try:
+                from json_repair import repair_json
+                fixed_json = repair_json(model_response, ensure_ascii=False)
+                character_data = json.loads(fixed_json)
+                
+                character_data.setdefault("name", name)
+                character_data.setdefault("role", role)
+                character_data.setdefault("created_at", time.time())
+                
+                return character_data
+            except:
+                raise ValueError("JSON修复失败")
+    
+    def _create_basic_character_data(self, name: str, role: str, basic_info: Dict[str, Any], 
+                                   personality: Dict[str, Any], background: str, story_requirements: str) -> Dict[str, Any]:
+        """创建基础人物数据"""
+        return {
+            "name": name,
+            "role": role,
+            "basic_info": basic_info,
+            "personality": personality,
+            "background": background,
+            "story_requirements": story_requirements,
+            "created_at": time.time(),
+            "relationships": {},
+            "character_arc": "待补充的人物成长弧线",
+            "strengths": [],
+            "weaknesses": [],
+            "motivations": [],
+            "quirks": [],
+            "appearance": {
+                "height": "待补充",
+                "build": "待补充",
+                "hair": "待补充",
+                "eyes": "待补充",
+                "distinctive_features": []
+            },
+            "skills": [],
+            "current_status": {
+                "health": "良好",
+                "mood": "平静",
+                "goal": "待补充"
+            }
+        }
 
 
 class ReadCharacterTool(Tool):
