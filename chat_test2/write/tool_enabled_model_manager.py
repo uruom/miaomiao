@@ -90,6 +90,8 @@ class SimpleModelCaller:
         }
         
         try:
+            print("create_char_uruom")
+            print(json.dumps(payload, ensure_ascii=False, indent=2))
             response = requests.post(
                 self.config.api_url,
                 headers=headers,
