@@ -138,18 +138,21 @@ class CreateCharacterTool(Tool):
     def __init__(self, character_model_manager=None):
         super().__init__(
             name="create_character",
-            description="创建新的人物角色，包括基本信息、性格特征、背景故事等",
+            description='''
+            根据小说创作需求，生成人物角色的设定草稿。该函数将根据提供的剧情要求，背景和特征，调用外置模型补齐细节并生成完整角色卡。
+            ''',
             parameters={
                 "type": "object",
                 "properties": {
-                    "name": {"type": "string", "description": "人物姓名"},
-                    "role": {"type": "string", "description": "人物角色（主角/配角/反派等）"},
-                    "basic_info": {"type": "object", "description": "基本信息（年龄、性别、外貌等）"},
-                    "personality": {"type": "object", "description": "性格特征"},
-                    "background": {"type": "string", "description": "背景故事"},
-                    "story_requirements": {"type": "string", "description": "故事需求"}
+                    "plot_role": {"type": "string", "description": "[核心功能]人物在小说中的具体作用。例如:主角的启蒙导师.特定副本的引路人.反派小队的突击手等。请明确其叙事功能。"},
+                    "background": {"type": "object", "description": "[背景设定]人物的身世背景。如果是贯穿全文的重要角色，请务必详细描述；如果是配角或过场人物，提供简略背景或标明无即可。"},
+                    "naming_requirement": {"type": "object", "description": "[命名约束]对名字的具体要求。例如:必须有特殊姓氏（宗族门派）、带有寓意的小名/化名.或者是因为宗族子弟而遵循特定辈分命名规则。"},
+                    "relationships": {"type": "string", "description": "[人物关系]与其他关键人物的关系网。例如:与主角是杀父仇人的关系，或者是某位长老的私生子等。"},
+                    "life_cycle_status": {"type": "string", "description": "[出场与退场]描述角色的状态变化对比。包括:1.刚出场时的能力.样貌.性格；2.死亡或退场时的最终状态（性格是否黑化.能力丧失/提升、死因等）"},
+                    "ability_profile": {"type": "string", "description": "[能力体系]角色的能力偏向。详细说明其核心能力是什么，以及拥有的辅助能力或特殊技能。"},
+                    "personality_requirements": {"type": "string", "description": "[性格特征]期望的性格偏向。需包含鲜明的记忆点或反差萌特质，例如:表面儒雅内心残忍、或是看似呆实则聪明"}
                 },
-                "required": ["name", "role"]
+                "required": ["plot_role", "life_cycle_status","background"]
             }
         )
         self.character_dir = "characters"
