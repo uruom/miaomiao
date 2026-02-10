@@ -1602,5 +1602,114 @@
       "chapter_id": "P1C1",
       "chapter_title": "被欺凌的羔羊"
     }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-02-10T18:25:27.763457",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-02-10T18:37:32.280770",
+    "data": {
+      "outline_title": "狼外婆的糖果屋：从猎手到守护者",
+      "parts_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-02-10T18:37:32.287111",
+    "data": {
+      "chapter_id": "P1C1",
+      "chapter_title": "狼外婆的救赎之路"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-02-10T18:54:51.151179",
+    "data": {
+      "chapter_id": "P1C1",
+      "scenes_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-02-10T18:54:51.157357",
+    "data": {
+      "chapter_id": "P1C2",
+      "chapter_title": "糖果屋的秘密守护者"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-02-10T19:13:39.509114",
+    "data": {
+      "chapter_id": "P1C2",
+      "scenes_count": 4,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-02-10T19:13:39.515606",
+    "data": {
+      "chapter_id": "P2C1",
+      "chapter_title": "狼族的审判与村庄的信任危机"
+    }
+  },
+  {
+    "step": "detail_generation_failed",
+    "timestamp": "2026-02-10T19:55:44.695869",
+    "data": {
+      "chapter_id": "P2C1",
+      "error": "generate_details方法失败：_parse_detail_response方法解析失败：Expecting value: line 1 column 1 (char 0)",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-02-10T19:55:44.702276",
+    "data": {
+      "chapter_id": "P2C2",
+      "chapter_title": "最后的守护与永恒传说"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-02-10T20:02:15.291165",
+    "data": {
+      "chapter_id": "P2C2",
+      "scenes_count": 4,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-02-10T20:02:15.300117",
+    "data": {
+      "scene_id": "scene_01",
+      "scene_title": "糖果屋的孤独守望者"
+    }
+  },
+  {
+    "step": "frame_generation_failed",
+    "timestamp": "2026-02-10T20:03:05.198745",
+    "data": {
+      "scene_id": "scene_01",
+      "error": "generate_frames方法失败：JSON解析失败: Expecting value: line 1 column 1 (char 0)",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-02-10T20:03:05.205567",
+    "data": {
+      "scene_id": "scene_02",
+      "scene_title": "玛莎太太的友谊与危机"
+    }
   }
 ]

@@ -1,8 +1,8 @@
 {
   "name": "writing_expansion",
   "description": "固定帧扩写（江南风格）",
-  "template": "\"请将以下\"固定帧\"扩写为一个完整的文学段落：\n\n{context_info}\n\n固定帧信息：\n时间：{timestamp}\n场景：{scene_id}\n当前动作：{current_action}\n\n在场角色：\n{characters}\n\n地点描述：\n{location}\n\n环境条件：\n{environment}\n\n物品状态：\n{objects}\n\n对话内容：\n{dialogue}\n\n内心想法：\n{thoughts}\n\n感官细节：\n{sensory_details}\n\n写作要求：\n1. 使用{style}风格进行描写\n2. 将固定帧中的所有元素自然地融入叙述\n3. 保持连贯性和流畅性\n4. 适当添加过渡和细节描述\n5. 字数控制在300-800字\n6. 使用生动的语言和恰当的修辞\n7. 注意与前文和后文的衔接，保持故事连贯性\n\n请直接输出扩写后的段落，不需要额外的说明或标记。\"",
+  "template": "\"请将以下\"固定帧\"扩写为一个完整的文学段落：\n\n{context_info}\n\n固定帧信息：\n时间：{timestamp}\n场景：{scene_id}\n当前动作：{current_action}\n\n在场角色：\n{characters}\n\n地点描述：\n{location}\n\n环境条件：\n{environment}\n\n物品状态：\n{objects}\n\n对话内容：\n{dialogue}\n\n内心想法：\n{thoughts}\n\n感官细节：\n{sensory_details}\n\n写作要求：\n1. 使用{style}风格进行描写\n2. 将固定帧中的所有元素自然地融入叙述\n3. 保持连贯性和流畅性\n4. 确保角色行为与之前设定保持一致\n5. 适当添加过渡和细节描述\n6. 字数控制在300-800字\n7. 使用生动的语言和恰当的修辞\n8. 注意与前文和后文的衔接，保持故事连贯性\n\n请直接输出扩写后的段落，不需要额外的说明或标记。\"",
   "version": "1.0",
   "variables": ["context_info", "timestamp", "scene_id", "current_action", "characters", "location", "environment", "objects", "dialogue", "thoughts", "sensory_details", "style"],
-  "system_prompt": "你是一个专业的小说作家，擅长将固定帧扩写为完整的文学段落。请根据/提供的固定帧信息，使用指定的文学风格进行扩写，确保段落连贯、生动且符合故事发展。"
+  "system_prompt": "你是一个专业的小说作家，擅长将固定帧扩写为完整的文学段落。请根据提供的固定帧信息，使用指定的文学风格进行扩写，确保段落连贯、生动且符合故事发展。确保角色行为与之前设定保持一致。"
 }
