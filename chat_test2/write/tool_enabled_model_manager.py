@@ -163,25 +163,27 @@ class CreateCharacterTool(Tool):
     
     def execute(self, arguments: Dict[str, Any]) -> str:
         try:
-            name = arguments.get("name", "")
-            role = arguments.get("role", "配角")
-            basic_info = arguments.get("basic_info", {})
-            personality = arguments.get("personality", {})
-            background = arguments.get("background", "")
-            story_requirements = arguments.get("story_requirements", "")
+            plot_role = arguments.get("plot_role", "")
+            background = arguments.get("background", {})
+            naming_requirement = arguments.get("naming_requirement", {})
+            relationships = arguments.get("relationships", "")
+            life_cycle_status = arguments.get("life_cycle_status", "")
+            ability_profile = arguments.get("ability_profile", "")
+            personality_requirements = arguments.get("personality_requirements", "")
             
             # 构建人物创建模板数据
             template_data = {
-                "name": name,
-                "role": role,
-                "basic_info": basic_info,
-                "personality": personality,
+                "plot_role": plot_role,
                 "background": background,
-                "story_requirements": story_requirements
+                "naming_requirement": naming_requirement,
+                "relationships": relationships,
+                "life_cycle_status": life_cycle_status,
+                "ability_profile": ability_profile,
+                "personality_requirements": personality_requirements
             }
             
             # 调用专门的人物创建模型
-            logger.info(f"调用专门的人物创建模型来创建角色: {name}")
+            logger.info(f"调用专门的人物创建模型来创建角色，剧情角色: {plot_role}")
             
             # 使用character_creation模板调用模型
             character_result = self.character_model_manager.call_with_template(
@@ -194,22 +196,23 @@ class CreateCharacterTool(Tool):
             # 解析模型返回的人物数据
             try:
                 # 尝试从模型回复中提取JSON格式的人物数据
-                character_data = self._extract_character_data(character_result, name, role)
+                character_data = self._extract_character_data(character_result, plot_role)
             except Exception as e:
                 logger.warning(f"人物数据解析失败，使用基础信息: {e}")
                 # 如果解析失败，使用基础信息创建人物
-                character_data = self._create_basic_character_data(name, role, basic_info, personality, background, story_requirements)
+                character_data = self._create_basic_character_data(plot_role, "", background, naming_requirement, relationships, life_cycle_status, ability_profile, personality_requirements)
             
-            # 保存人物数据
-            character_file = os.path.join(self.character_dir, f"{name}.json")
+            # 从解析的数据中获取角色名称，如果没有则生成一个默认名称
+            character_name = character_data.get("name", f"角色_{int(time.time())}")
+            character_file = os.path.join(self.character_dir, f"{character_name}.json")
             with open(character_file, 'w', encoding='utf-8') as f:
                 json.dump(character_data, f, ensure_ascii=False, indent=2)
             
-            logger.info(f"人物创建成功: {name}, 文件路径: {character_file}")
+            logger.info(f"人物创建成功: {character_name}, 文件路径: {character_file}")
             
             return json.dumps({
                 "success": True,
-                "character_name": name,
+                "character_name": character_name,
                 "file_path": character_file,
                 "character_data": character_data,
                 "model_response": character_result
@@ -219,7 +222,7 @@ class CreateCharacterTool(Tool):
             logger.error(f"创建人物失败: {str(e)}")
             return json.dumps({"error": f"创建人物失败: {str(e)}"})
     
-    def _extract_character_data(self, model_response: str, name: str, role: str) -> Dict[str, Any]:
+    def _extract_character_data(self, model_response: str, plot_role: str, name: str = "") -> Dict[str, Any]:
         """从模型回复中提取人物数据"""
         try:
             # 尝试直接解析JSON
@@ -232,8 +235,9 @@ class CreateCharacterTool(Tool):
                 character_data = json.loads(json_str)
                 
                 # 确保包含必要字段
-                character_data.setdefault("name", name)
-                character_data.setdefault("role", role)
+                character_data.setdefault("plot_role", plot_role)
+                if name:
+                    character_data.setdefault("name", name)
                 character_data.setdefault("created_at", time.time())
                 
                 return character_data
@@ -249,24 +253,34 @@ class CreateCharacterTool(Tool):
                 fixed_json = repair_json(model_response, ensure_ascii=False)
                 character_data = json.loads(fixed_json)
                 
-                character_data.setdefault("name", name)
-                character_data.setdefault("role", role)
+                character_data.setdefault("plot_role", plot_role)
+                if name:
+                    character_data.setdefault("name", name)
                 character_data.setdefault("created_at", time.time())
                 
                 return character_data
             except:
                 raise ValueError("JSON修复失败")
     
-    def _create_basic_character_data(self, name: str, role: str, basic_info: Dict[str, Any], 
-                                   personality: Dict[str, Any], background: str, story_requirements: str) -> Dict[str, Any]:
+    def _create_basic_character_data(self, plot_role: str, name: str = "", background: Dict[str, Any] = None, 
+                                   naming_requirement: Dict[str, Any] = None, relationships: str = "", 
+                                   life_cycle_status: str = "", ability_profile: str = "", 
+                                   personality_requirements: str = "") -> Dict[str, Any]:
         """创建基础人物数据"""
+        if background is None:
+            background = {}
+        if naming_requirement is None:
+            naming_requirement = {}
+            
         return {
+            "plot_role": plot_role,
             "name": name,
-            "role": role,
-            "basic_info": basic_info,
-            "personality": personality,
             "background": background,
-            "story_requirements": story_requirements,
+            "naming_requirement": naming_requirement,
+            "relationships": relationships,
+            "life_cycle_status": life_cycle_status,
+            "ability_profile": ability_profile,
+            "personality_requirements": personality_requirements,
             "created_at": time.time(),
             "relationships": {},
             "character_arc": "待补充的人物成长弧线",

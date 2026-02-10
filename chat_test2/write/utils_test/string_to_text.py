@@ -37,7 +37,9 @@ def main():
     else:
         # 如果没有提供命令行参数，从标准输入读取
         print("请输入要转换的转义字符串（按Ctrl+D结束输入）:")
-        input_string = ''
+        input_string = '''
+        
+        '''
         try:
             while True:
                 line = input()
