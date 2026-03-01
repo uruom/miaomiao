@@ -1711,5 +1711,169 @@
       "scene_id": "scene_02",
       "scene_title": "玛莎太太的友谊与危机"
     }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-02-11T14:40:30.361869",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-02-11T14:57:37.234554",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-02-11T15:14:23.100543",
+    "data": {
+      "outline_title": "黑暗森林的伪装者：狼外婆的自我救赎",
+      "parts_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-02-11T15:14:23.105175",
+    "data": {
+      "chapter_id": "P1C1",
+      "chapter_title": "第1卷：最后一次扮演"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-02-11T15:32:33.957912",
+    "data": {
+      "chapter_id": "P1C1",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-02-11T15:32:33.962122",
+    "data": {
+      "chapter_id": "P1C2",
+      "chapter_title": "第2卷：规则的裂痕"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-02-11T15:42:37.001337",
+    "data": {
+      "chapter_id": "P1C2",
+      "scenes_count": 2,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-02-11T15:42:37.005021",
+    "data": {
+      "chapter_id": "P2C1",
+      "chapter_title": "第3卷：被迫的同盟"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-02-11T15:49:32.475523",
+    "data": {
+      "chapter_id": "P2C1",
+      "scenes_count": 2,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-02-11T15:49:32.480633",
+    "data": {
+      "chapter_id": "P2C2",
+      "chapter_title": "第4卷：真名与新生"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-02-11T15:56:38.679851",
+    "data": {
+      "chapter_id": "P2C2",
+      "scenes_count": 2,
+      "attempt": 2
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-02-11T15:56:38.688951",
+    "data": {
+      "scene_id": "scene_1_1",
+      "scene_title": "厌倦的开端：黑暗森林小木屋的等待"
+    }
+  },
+  {
+    "step": "frame_generation_failed",
+    "timestamp": "2026-02-11T15:57:32.399011",
+    "data": {
+      "scene_id": "scene_1_1",
+      "error": "generate_frames方法失败：JSON解析失败: Expecting value: line 1 column 1 (char 0)",
+      "max_retries": 3
+    }
+  },
+  {
+    "step": "frame_generation_start",
+    "timestamp": "2026-02-11T15:57:32.406843",
+    "data": {
+      "scene_id": "scene_1_2",
+      "scene_title": "危险的会面：伪装与真相的博弈"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-02-11T19:52:19.754713",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_start",
+    "timestamp": "2026-02-12T14:16:41.340918",
+    "data": {
+      "concept": "一个小故事，狼外婆改变，大概十万字就好"
+    }
+  },
+  {
+    "step": "outline_generation_complete",
+    "timestamp": "2026-02-12T15:04:36.332145",
+    "data": {
+      "outline_title": "狼外婆的守护：深山藏妖王，外孙是小红帽",
+      "parts_count": 3,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-02-12T16:01:26.812162",
+    "data": {
+      "chapter_id": "P1C1",
+      "chapter_title": "河边的危险气息"
+    }
+  },
+  {
+    "step": "detail_generation_complete",
+    "timestamp": "2026-02-12T21:09:59.942745",
+    "data": {
+      "chapter_id": "P1C1",
+      "scenes_count": 2,
+      "attempt": 1
+    }
+  },
+  {
+    "step": "detail_generation_start",
+    "timestamp": "2026-02-12T21:10:02.711007",
+    "data": {
+      "chapter_id": "P1C2",
+      "chapter_title": "猎户的试探"
+    }
   }
 ]

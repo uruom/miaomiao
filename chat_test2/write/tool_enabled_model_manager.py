@@ -190,7 +190,7 @@ class CreateCharacterTool(Tool):
                 template_name="character_creation",
                 template_data=template_data,
                 temperature=0.8,
-                max_tokens=4000
+                max_tokens=12000
             )
             
             # 解析模型返回的人物数据
@@ -434,7 +434,7 @@ class ToolEnabledModelManager:
                 setattr(self.config, key, value)
     
     def call_model_with_tools(self, prompt: str, system_prompt: str = "", 
-                             max_iterations: int = 10, **kwargs) -> str:
+                             max_iterations: int = 100, **kwargs) -> str:
         """
         支持工具调用的模型调用方法
         
